@@ -4,5 +4,42 @@ theme: just-the-docs
 
 url: https://koengr.github.io/QCforBusiness
 
+# Define Jekyll collections.
+# Example: Define a collection named "NAME", its documents reside in the "_NAME" directory
+collections:
+  part1:
+    permalink: "/:collection/:path/"
+    output: true
+  part2:
+    permalink: "/:collection/:path/"
+    output: true
+  part3:
+    permalink: "/:collection/:path/"
+    output: true
+
+# Define which collections are used in just-the-docs
+just_the_docs:
+  collections:
+    part1:
+      name: "Part 1: The essentials"
+      # Exclude the collection from the navigation (true/false)
+      nav_exclude: False
+      # Fold the collection in the navigation
+      nav_fold: false  
+    part2:
+      name: "Part 2: Understanding the applications"
+    part3:
+      name: "Part 3: Going deeper"
+
+
+callouts:
+  warning:
+    title: Warning
+    color: red
+  note:
+    color: blue
+  new:
+    color: yellow
+
 # aux_links:
 #   Template Repository: https://github.com/just-the-docs/just-the-docs-template
