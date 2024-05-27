@@ -28,3 +28,35 @@ details summary
 fieldset {
 	margin-top: 2em;
 }
+
+// Make sidebar bigger (from https://github.com/just-the-docs/just-the-docs/discussions/1204)
+
+// .side-bar {
+// 	z-index: 0;
+// 	display: flex;
+// 	flex-wrap: wrap;
+// 	background-color: $sidebar-color;
+  
+// 	@include mq(md) {
+// 	  flex-flow: column nowrap;
+// 	  position: fixed;
+// 	  width: $nav-width-md;
+// 	  height: 100%;
+// 	  border-right: $border $border-color;
+// 	  align-items: flex-end;
+// 	}
+  
+// 	@include mq(lg) {
+// 	  width: calc((100% - #{$nav-width + $content-width}) / 20 + #{$nav-width});
+// 	  min-width: $nav-width;
+// 	}
+//   }
+
+// .side-bar {
+// 	width: 30%;
+//    }
+
+.site-header, .site-nav, .site-footer {
+	width:90%;
+	max-width: 25rem;
+}
