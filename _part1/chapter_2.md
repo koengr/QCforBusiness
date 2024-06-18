@@ -1,72 +1,294 @@
 ---
 layout: default
-title: 2 The background, why are we so enthusiastic about Quantum Technology?
+title: 2 An introduction to the quantum world
 nav_order: 2
 ---
 
+## An introduction to the quantum world
 
-### What is Quantum?  
+![A magnifying glass over a circuit board Description automatically
+generated](/media/image2.png){width="7.411615266841645in"
+height="2.329364610673666in"}
 
-**Quantum Physics** is the theory that describes the smallest particles,
-like electrons, atoms, and sometimes even small molecules. It's the
-machinery that describes things that happen at the scale of nanometers.
-You may contrast it to Newton's classical physics, which works great for
-objects that are the size of a human, but becomes inaccurate at much
-smaller scales. Quantum is, in a sense, a *refinement *of classical
-physics: the theories agree for large objects, but one requires the more
-difficult quantum theory to describe small things. 
+<fieldset class="field-set" markdown="1"> 
+<legend class="leg-title">At a glance</legend>
 
-It should not come as a surprise that quantum physics is relevant for
-several kinds of technology that operate on a small scale,
-like [nano-cars that consist of just a few
-atoms](https://www.rug.nl/news/2019/12/molecular-motors-and-switches?lang=en),
-or [ever-smaller transistors on computer
-chips](https://www.nature.com/articles/nature.2012.9747). However,
-quantum technology goes further than simply telling us how to handle
-small particles: **quantum allows us to perform certain processes in a
-fundamentally different way. **We will see an insightful example of this
-very soon. 
+You don't need to understand quantum mechanics to understand the
+*functionality* of quantum computers.
 
-In particular, we will refer to 'classical' technology to mean devices
-that don't carefully exploit the possibilities of quantum physics. For
-example, you're most likely reading this on a classical computer or
-phone right now, using the classical internet. Whereas classical
-computers work with 'bits', quantum technology will store information in
-something called 'quantum bits', or shortly 'qubits'. Generally, under
-the nomer of **quantum technology**, we distinguish four categories:
+But if you insist: quantum mechanics describes the behaviour of the
+smallest particles. It leads to many counter-intuitive phenomena:
+computer memory can store multiple pieces of data at the same time, but
+upon measurement, nature selects just a single piece (and throws away
+all the others).
 
-\-\-- Begin fancy comparison table:
+</fieldset>
 
-Quantum Computers
+If you want to drive a car, do you need to understand how its engine
+works? Of course you don't! In a similar vein, you don't need to know
+the details of quantum physics to read the rest of this book. So feel
+free to skip this chapter.
 
-Devices that use quantum physics to perform automatic calculations in
-order to solve a certain problem. Computing is the main focus of this
-blog. 
+Nevertheless, I know that most people *want* to have some conceptual
+intuition about what quantum mechanics really is. It is not natural to
+leave one of the most used word in this book as an abstract concept, and
+it might be hard for the human brain to proceed without at least seeing
+some examples.
 
-Quantum Networks
+Here is my best attempt to explain quantum mechanics in accessible
+terms. Proceed with caution, as things will surely get confusing from
+here.
 
-A connection between quantum devices over which *qubits *can be
-transmitted. The most relevant use case is to strengthen cryptography
-used by classical computers, but there are many more applications.
+### What is quantum?  
 
-Quantum Sensors
+**Quantum physics** or **quantum mechanics** is the theory that
+describes the tiniest particles, like electrons, atoms, and sometimes
+even small molecules. They are the laws of nature that dictate cause and
+effect at the scale of nanometers. You may contrast it to Newton's
+classical physics, which works great for objects the size of a building
+or football but becomes inaccurate at much smaller scales. Quantum is,
+in a sense, a *refinement *of classical physics: the theories are
+effectively identical when applied to a coffee mug, but one requires the
+more difficult quantum theory to describe very small things. 
 
-Devices that exploit quantum-mechanical effects to accurately measure
-certain quantities, like a magnetic field or the strength of the earth's
-gravity. Quantum clocks also fall in this category. 
+Some examples of systems where quantum could play a role are:
 
-Quantum Simulators
+-   Atoms and the electrons that orbit around them.
 
-Devices that carefully reproduce the behaviour of atoms and electrons in
-a piece of material, allowing us to understand the properties of said
-material. 
+-   Flows of electricity in microscopic (nano-scale) wires and chips
 
-\-\-- End comparison table
+-   Photons, the particles out of which 'light' is made.
 
-In this blog, we mainly focus on **computers **and **internet**: simply
-because these will have the biggest impact on typical (business) users.
-If you'd like to know more about the technical details, we recommend the
-following sources as a great introduction: 
+![A magnifying glass over a circuit board Description automatically
+generated](/media/image3.png){width="6.267361111111111in"
+height="0.65625in"}First, we need some physics jargon. The **state** of
+the world is a complete description of everything there is to know about
+its contents: all the particles inside it, their velocities, how much
+they rotate, etcetera. Usually, the entire universe is too big to study,
+so we often simplify our 'world' to just a single isolated particle, or
+to a limited piece of computer memory. For example, for our prototypical
+particle, we imagine we're only interested in its location, which we'll
+call $x$ (and we forget about any other structure in the world). In the
+spirit of computing, we might look at a 'bit' that stores information.
+You may think of it as a tiny magnet that can either point 'up' (0) or
+'down' (1). Note that a state is valid for just one instant, as there
+could be reasons for it to change as time flows.
+
+![](/media/image4.png){width="6.122641076115485in"
+height="1.956583552055993in"}
+
+### Four surprising phenomena in the quantum world
+
+The most iconic quantum phenomenon is **superposition.** Think about any
+property that we can (classically) measure, such as the position of a
+particle, or the value of a bit on a hard drive (0 or 1). In quantum
+mechanics, the state of the world can be such that several conflicting
+measurement outcomes are 'true' at the same time: a particle can be at
+multiple positions at once, or a bit could be 0 and 1 simultaneously.
+
+How can you possibly describe a state like that? Well, if we look at
+just a single particle, the state should contain a long list of all
+possible positions: to what extent is it at position x=0, to what extent
+at position x=1, and so forth, for every possible location that the
+particle can be at. And indeed, this list could be infinite!
+
+For the case of a bit, we'd need just two numbers denoting the extent to
+which it is '0' or '1'. To make things even more confusing, these
+numbers can be negative (and for math experts, they can even be complex
+numbers). Because we will talk about quantum-mechanical bits a lot, we
+will give them a shorter name: **qubits.** If we have a bunch of qubits
+together, we'll call it a quantum memory.
+
+To throw in some more examples, an electron can move at a velocity of 10
+m/s and 100 m/s at the same time (which obviously also leads to a
+superposition in its position). More relevant for us: a quantum memory
+might use binary notation to store numbers 5 and 11 simultanously, or
+even 46 different Microsoft Excel spreadsheets at once.
+
+More physics-oriented books might call this the *particle-wave duality*:
+all particles can also be described as a 'wave', which is yet another
+description of how a particle is spread out over space. The wave is high
+when a particle is very likely to be there, and small at unlikely
+locations.
+
+The second weird phenomenon is how **quantum measurements** work. Why do
+we never observe an electron at two places at the same time? Why do I
+never find my chair both moving and standing still? In quantum
+mechanics, as soon as we measure the location of a particle, it
+instantly jumps to just a single location at random. When we measure a
+qubit, it jumps to either '0' or '1' with some probability. When we
+measure the data in a quantum memory, we may find any one of the 46
+spreadsheets that were stored.
+
+This means that the world is intrinsically random (and hence, not
+deterministic!). But this doesn't imply that we cannot understand it. We
+can calculate the *probabilities* of measurement outcomes with
+incredible precision as long as we know the state before the
+measurement.
+
+It is important to note that we cannot learn anything about the world
+without measuring -- it is our only way to obtain data from the world,
+and any process that extracts data must involve a measurement. However,
+measurements are destructive in the sense that they change the state of
+the world. In fact, they delete all the rich data encoded in a
+superposition! If a particle was initially at position x=0, x=3 and
+x=10, all simultaneously, then upon measurement, it jumps to one of
+these three options. In jargon, we call this instantaneous change a
+'collapse'. From then onwards, it is 100% at a fixed location: if we
+measure x=3, then from then onwards, it is located uniquely at x=3 until
+some other force starts acting on it. This means that, during a quantum
+computation, we should be cautious about the timing of our measurements
+-- we cannot just peek at the data at any moment we like, or we risk
+disturbing a superposition.
+
+Importantly, this also means that a single piece of quantum memory
+cannot store an immense number of spreadsheets at the same time -- at
+least, you wouldn't be able to retrieve each of them. To store 15 MB
+worth of classical data, we need 15 MB worth of 'qubits'. Hence, quantum
+computers are not particularly useful for storing classical data.
+
+The fact that a 'measurement' changes the state of the world poses a
+serious problem when engineering a quantum computer. No matter what
+material we construct our qubits from, they will surely 'interact' with
+other nearby particles, and some of these interactions could be
+destructive measurements. We call this effect **decoherence**, and we
+will later see that this forms one of the core challenges to building
+large and accurate quantum computers.
+
+At this point, quantum data doesn't seem particularly useful. Why would
+we want to deal with superpositions if they lead to all this
+uncertainty? Intuitively, think about the advantage of a quantum
+computer in this way: what if we can jump between specific superposition
+states to reach our goal (the correct answer) in very few steps,
+exploiting states that a classical computer could never reach?
+
+This is precisely what **quantum operations** do. These are physical
+forces that change the state of a particle or a quantum memory. They can
+turn a classical-looking state into a quantum superposition or vice
+versa. They can act like logical operations, such as AND and OR, but
+also like new quantum 'logic' that has no classical counterpart. Unlike
+measurements, quantum operations are deterministic: they change quantum
+states in a precisely defined way. In this book, we mainly deal with
+operations that work on qubits. We will call such operations **quantum
+gates** or simply 'gates'**.**
+
+A quantum gate takes one or more qubits as input, changes their internal
+state, and then outputs the same number of qubits (with their altered
+states). In other words, the number of physical objects remains
+unchanged, but their quantum states change. As an example, you may think
+of our prototypical magnet that was initially pointing 'up', but a
+quantum gate might flip this to 'down'. Because there are many possible
+quantum gates, each having a different effect on their input, we like to
+give them names in capital letters, such as [X, Z, H, and
+CNOT](https://en.wikipedia.org/wiki/Quantum_logic_gate).
+
+![](/media/image5.png){width="2.676101268591426in"
+height="1.047169728783902in"}
+
+In the same jargon as the 'quantum waves', we can see quantum operations
+as manipulating these waves. This leads to effects similar to when you
+throw two stones in a pond, and look at how the resulting waves meet:
+when the peeks of two waves are at the same location, the water heights
+will add up. We call this constructive interference. But waves can also
+have 'negative' heights, where the water is lower than normal. Such
+parts may cancel an incoming peak: destructive interference.\
+Quantum gates will have similar effects on a qubit's quantum state, as
+negative and positive property assignments can interfere destrictively
+or constructively.
+
+The canonical way to describe a quantum computer program is by defining
+a sequence of quantum gates, one after the other, each of which could
+act on a different set of qubits. At the end of the computation, we
+measure all qubits. Below, an example of such a sequence is given, using
+the standard Quantum Assembly (QASM) language.
+
+![](/media/image6.png){width="4.4811318897637795in"
+height="2.0817957130358704in"}
+
+Together, these steps can be graphically displayed in a **quantum
+circuit**, as shown here on the right. Quantum circuits represent each
+qubit with a horizontal line and indicate time flowing from left to
+right. Whenever a box with a letter is displayed over a qubit line, then
+the corresponding gate should be applied. This isn't quite unlike the
+way we read sheet music!
+
+Note that when we run a circuit on an actual quantum computer, the final
+measurements lead to probabilistic outcomes. We get to see a bunch of
+ones and zeroes: one classical bit for each qubit. If the circuit was a
+'good' quantum algorithm, then with high probability, these classical
+bits will tell us the answer we were looking for. But even then, we
+might need to redo the computation a few times and take (for example)
+the most common result as our final answer.
+
+If you are completely confused at this point, you are not alone. The
+whole business of quantum superposition and quantum operations is
+incredibly complex and is not something you could possibly master after
+reading four pages. Even after studying the subject for many years, you
+will encounter paradoxes and counter-intuitive phenomena. On the other
+hand, I hope that the *functionality* of quantum circuits makes a lot of
+sense: we define a list of instructions, and we employ machines that
+execute these instructions in a well-defined way. This should be an
+example of how we can operate a quantum device without understanding
+what's going on under the hood.
+
+There is one more quantum phenomenon to cover -- one that comes with a
+mysterious flair around itself. We're talking about quantum
+**entanglement.**
+
+Imagine that we have two qubits, which we can transport independently
+from each other without disturbing the data they store (in other words,
+they remain in the same quantum state). According to quantum mechanics,
+this pair of qubits may be simultaneously 00 and 11. Now, imagine that
+computer scientist Alice grabs one of the qubits, takes it on her rocket
+ship, and flies it all the way to dwarf planet Pluto. The other qubit
+remains on Earth, in the hands of physicist Bob. Upon arriving on Pluto,
+Alice measures her qubit and finds outcome '1'. A deep question is: what
+do we now know about the other qubit?
+
+Since the possible measurement outcomes were 00 and 11, the other can
+only be measured as '1' from now onwards. It essentially collapses to be
+100% in the state '1'. But how could the earth-based qubit possibly
+*know* that a measurement occurred on Pluto? According to Einstein's
+theory of relativity, information cannot travel faster than the speed of
+light, which translates into a few hours between Earth and Pluto.
+Nevertheless, measuring the qubit on earth will always give a consistent
+result, even when done within the hour.
+
+This paradox shows once again how confusing quantum mechanics can be.
+However, the story above is perfectly consistent with both quantum
+mechanics and relativity. The core principle is that *no information can
+be sent faster than light between Alice and Bob*. For example, can you
+see why Bob has no way of detecting when Alice reached Pluto just by
+looking at his entangled qubit? In the most common interpretation of
+quantum mechanics, the Earth qubit does indeed change its state
+instantaneously when Alice measures, although there is no way to exploit
+this effect.
+
+There's a fascinating further discussion about the philosophy behind
+entanglement, but we'll leave that to other sources. What matters to us
+is that distant qubits can still share specific properties that would be
+impossible classically, leading to new functionalities we can exploit.
+We will discover what these functionalities are in the chapter on
+quantum networks.
+
+So there you have it: four surprising phenomena you may hear frequently
+in quantum technology conversations. To summarise:
+
+-   Superposition: the phenomenon where a qubit is both 0 and 1 at the
+    same time.
+
+-   Quantum measurement: measuring a quantum memory destroys
+    superposition. The result we obtain is probabilistic.
+
+-   Quantum operations/gates: deterministic changes to the state of
+    qubits, which generalise classical logic gates like OR, AND, NOT. A
+    list of several quantum gates forms a quantum circuit.
+
+-   Entanglement: Qubits separated over a long distance can still share
+    unique properties.
+
+If you'd like to know more about the physics and math behind qubits, we
+recommend the following sources:
 
 -   [Quantum Country](http://new.quantum.country/) -- a great online
     textbook about Quantum Computing by Andy Matuschak and Michael
@@ -75,130 +297,4 @@ following sources as a great introduction: 
 -   [QuTech Academy's ](https://www.qutube.nl/)*[School of
     Quantum]{.underline} -- *A broad range of topics explained using
     short videos. 
-
--   [The Map of Quantum Computing
-    (Youtube)](https://www.youtube.com/watch?v=-UlxHPIEVqA)  -- A
-    30-minute video that forms a great supplement to this blog. 
-
-### What can Quantum Technologies do for us? 
-
-Quantum computers are devices that perform automatic computations at our
-command, very much like their classical counterparts. The 'quantum' part
-stems from the fact that it can actually exploit the laws of quantum
-mechanics. This should be contrasted to our conventional 'classical'
-computers, which technically can also be completely described by quantum
-mechanics, but they just happen to also work fine according to classical
-physics. By no means are they supposed to ever deal with quantum
-phenomena
-like [superposition](https://en.wikipedia.org/wiki/Quantum_superposition) or [entanglement](https://en.wikipedia.org/wiki/Quantum_entanglement).
-Contrarily, a proper quantum computer does exploit these purely quantum
-mechanical effects. 
-
-A naive view of quantum computers is that they're simply *faster* than
-their conventional cousins. Or perhaps one may naively point at Moore's
-Law: with transistors reaching atomic scales, we run into quantum
-effects, hence quantum physics may help us make better chips. However,
-none of these are our core motivation to look at quantum computers. 
-
-Firstly, **quantum computers are much, much slower than conventional
-computers,** if one focuses on their 'time to perform a basic step'. A
-modern CPU can handle 64-bit numbers (meaning that all numbers between 0
-and 2^64^-1= 18,446,744,073,709,551,615 can be represented). It can
-perform basic arithmetic like addition, multiplication, and so forth on
-these numbers, essentially in one single 'step'. The speed of a modern
-CPU is incredible: a typical Intel or AMD processor bought in 2022
-performs these steps at roughly 4 GHz , i.e., 4 billion steps per
-second. There's no way a human can possibly keep up with such speeds
-when it comes to plain calculations! 
-
-Now, quantum computers are supposed to be even faster, right? Well, it's
-not hard to find backing for that claim: 
-
--   [Google creates quantum chip millions of times faster than the
-    fastest
-    supercomputer](https://www.techradar.com/news/google-creates-quantum-chip-millions-of-times-faster-than-the-fastest-supercomputer)
-
--   [Chinese Scientists Create Quantum Processor 60,000 Times Faster
-    Than Current
-    Supercomputers](https://www.iflscience.com/technology/chinese-scientists-create-quantum-processor-60000-times-faster-than-current-supercomputers/)
-
- 
-
-However, you may be disappointed to hear that quantum computers, at this
-moment, cannot even add or multiply numbers of more than 3 or 4 bits.
-And even if they could, their rate of operation would by no means reach
-4 GHz, but more likely several MHz (a few million operations per
-second), at best. In other words, they're more than a thousand
-times *slower. *To make things worse, the information in quantum
-computers is extremely fragile and requires to be constantly checked and
-corrected, using so-called **error correction***. *This is a form of
-overhead that could make quantum computers another several orders of
-magnitude slower. Even in the far future, when quantum computers are
-more mature and more reliable, we still expect them to be much slower
-than the classical chips at that time. 
-
-How does this rhyme with the news about ever faster quantum computers?
-And why are we still interested in these slow machines? As we claimed
-before, we hope to do certain computations in a **fundamentally
-different way**. We borrow the following analogy from Andy Matuschak and
-Michael Nielsen's [Quantum.country](https://quantum.country/). 
-
-![The Strait of
-Gibraltar](/media/image1.jpeg){width="3.8614195100612423in"
-height="3.8229166666666665in"}Image source:
-https://commons.wikimedia.org/wiki/File:STS059-238-074_Strait_of_Gibraltar.jpg
-
-Imagine that you'd like to travel from Morocco to Spain. If your
-technology does not allow you to cross the Strait of Gibraltar (say, you
-only have a car or a bike), your only choice is to traverse all the way
-through North-Africa, past the Arabian Peninsula, and through Europe,
-before you can reach your destination. This represents the steps taken
-by a classical algorithm. In the same analogy, a quantum computer endows
-you with the ability to traverse the sea at the Strait of Gibraltar
-(like a hovercraft). The fundamentally new possibilities that quantum
-offers allow us to do computations in *fewer steps*: even with a slower
-vehicle (computer), one may arrive at the destination sooner. In fact,
-this advantage often grows as problems become larger and more
-complicated. It is still an active area of research to completely map
-the landscape over which quantum computers can travel, and hence to
-determine which problems can be sped up, and which cannot. 
-
-We like this analogy in particular, because it indicates that **some
-problems can profit greatly from a quantum computer, whereas many
-won't**: you would not want to travel by hovercraft from Amsterdam to
-Berlin. For this reason, we don't expect that classical computers will
-be 'replaced' any time soon: instead, different types of processors
-(classical, quantum) should synergize and work together to solve a
-problem as efficiently as possible.
-
-In the analogy with the Strait of Gibraltar, the precise 'route' that
-you travel is the **algorithm. **More precisely, an algorithm is
-a **step-by-step list of instructions** that guarantee a human or a
-computer to find the solutions. The '*steps' *here should be
-sufficiently simple so that it is completely unambiguously how to do
-them: for example, adding, multiplying or comparing numbers. A **quantum
-algorithm** has a wider spectrum of allowed 'steps', as made possible by
-a quantum computer. In the end, simply finding the 'recipe' itself is
-not enough: the algorithm has to be turned into **quantum software**, a
-piece of computer code that tells a computer explicitly how to execute
-the step-by-step instructions, given the possibilities and limitations
-of the computer hardware.
-
-The difference between 'algorithms' and 'software' is subtle: you may
-think of the algorithm as a recipe to bake the perfect chocolate cookie.
-The algorithm should unambiguously describe the required steps to bake
-the cookie: what ingredients are needed, in what order they should be
-mixed, how long the cookie should be baked, etcetera. However, if you'd
-like to build a factory that produces these cookies, you need to be even
-more specific: out of what pipe does the dough flow, and in what pot
-does it have to be mixed? What exactly is the tool that performs the
-mixing? How are cookies laid next to each other in the oven?
-
-Hence, the 'algorithm' is a very general solution to a problem: once
-found, it can be re-used different times, by different software
-developers. The 'software' is specific to a (type of) computer (here:
-the 'factory'). 
-
-In the next part, we'll dive into precisely what **quantum
-algorithms **are known, and how much impact these will have.
 

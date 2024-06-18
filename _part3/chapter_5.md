@@ -4,6 +4,9 @@ title: 5 Further reading
 nav_order: 5
 ---
 
+## Further reading
+
+{: toc }
 
 ### I want to learn the technical details
 

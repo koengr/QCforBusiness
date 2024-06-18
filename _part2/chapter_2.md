@@ -4,6 +4,7 @@ title: 2 Quantum networks
 nav_order: 2
 ---
 
+## Quantum networks
 
 If we're building computers that deal with qubits, superposition and
 entanglement, wouldn't these computers also need some way to send qubits

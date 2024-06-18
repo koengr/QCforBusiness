@@ -4,6 +4,7 @@ title: 3 The impact on cybersecurity
 nav_order: 3
 ---
 
+## The impact on cybersecurity
 
 In the world of quantum computers, the most convincing exponential
 speedup lies in codebreaking. Anyone who wants to understand the impact
@@ -48,8 +49,8 @@ following is missing, cybercriminals can cause a lot of harm: 
     seemingly impossible task if bare internet traffic can be read by
     anyone, but modern cryptography has a solution.
 
-There are some others
-like [non-repudiation](https://en.wikipedia.org/wiki/Non-repudiation) and [availability](https://www.fortinet.com/resources/cyberglossary/cia-triad) that
+There are some others,
+like [non-repudiation](https://en.wikipedia.org/wiki/Non-repudiation) and [availability](https://www.fortinet.com/resources/cyberglossary/cia-triad), that
 we don't discuss here. Remember the above bold-faced words, as we will
 come across them a lot more. 
 
@@ -83,7 +84,7 @@ different types of cryptography: the symmetric and the asymmetric
 (public key) variants. 
 
 ![Symm and asymmetric cryptography Page 1 copy
-2](/media/image9.png){width="3.306185476815398in"
+2](/media/image14.png){width="3.306185476815398in"
 height="1.7604166666666667in"}
 
 In **symmetric (or private key) cryptography, **we assume that both
@@ -99,7 +100,7 @@ efficiently, and that it's considered extremely safe (without the key,
 nobody could reasonably break this encryption). 
 
 ![Symm and asymmetric cryptography Page 3 copy 2
-1](/media/image10.png){width="3.1501399825021874in" height="1.96875in"}
+1](/media/image15.png){width="3.1501399825021874in" height="1.96875in"}
 
 In asymmetric cryptography, or more often called **public-key
 cryptography (PKC)**, each participant has two keys: a public key and
@@ -116,7 +117,7 @@ which they can then use for symmetric cryptography (which is often a lot
 faster).
 
 ![Symm and asymmetric cryptography Page 4 copy
-2](/media/image11.png){width="3.0625in" height="1.9333180227471567in"}
+2](/media/image16.png){width="3.0625in" height="1.9333180227471567in"}
 
 Furthermore, the protocol works in 'reverse'. Alice can use her private
 key to encrypt a message, which then anyone in the world (including Bob)
@@ -129,7 +130,7 @@ forms the basis of digital signatures.  
  
 
 ![security google
-chrome](/media/image12.png){width="3.0416666666666665in"
+chrome](/media/image17.png){width="3.0416666666666665in"
 height="1.3781277340332458in"}
 
 This is precisely what's used whenever you open a webpage. Your browser
@@ -188,9 +189,9 @@ called **harvest now, decrypt later. **Encrypted messages that are sent
 over a network today can be intercepted and stored for many years, until
 a quantum computer can efficiently decrypt the messages. In practice, we
 use public-key encryption mainly to establish temporary secret keys to
-be used with symmetric-key cryptography, but even these can in principle
-be found retroactively. In other words: the confidentiality of today's
-communication is already threatened! 
+be used with symmetric-key cryptography, but even these can, in
+principle, be found retroactively. In other words: the confidentiality
+of today's communication is already threatened! 
 
 Further reading:
 
@@ -203,21 +204,21 @@ Further reading:
 
 The following table summarizes how our cryptosystems are threatened:
 
-+--------------------+------------------+-------------+--------------+
-|                    | Symmetric        | Public-key  |              |
-+====================+==================+=============+==============+
-|                    | **Today (AES,    | **Today     | **PQC        |
-|                    | ... )**          | (RSA,       |              |
-|                    |                  | ECC)**      |   **         |
-+--------------------+------------------+-------------+--------------+
-| Against classical  | Safe             | Safe        | Safe         |
-| computers          |                  |             |              |
-+--------------------+------------------+-------------+--------------+
-| Against quantum    | Safe\*           | **Unsafe**  | Safe         |
-| computers          |                  |             |              |
-|                    | \*with double    |             |              |
-|                    | key lengths      |             |              |
-+--------------------+------------------+-------------+--------------+
++----------------------+-------------------+-------------+-------------+
+|                      | Symmetric         | Public-key  |             |
++======================+===================+=============+=============+
+|                      | **Today (AES, ... | **Today     | **PQC       |
+|                      | )**               | (RSA,       |             |
+|                      |                   | ECC)**      |     **      |
++----------------------+-------------------+-------------+-------------+
+| Against classical    | Safe              | Safe        | Safe        |
+| computers            |                   |             |             |
++----------------------+-------------------+-------------+-------------+
+| Against quantum      | Safe\*            | **Unsafe**  | Safe        |
+| computers            |                   |             |             |
+|                      | \*with double key |             |             |
+|                      | lengths           |             |             |
++----------------------+-------------------+-------------+-------------+
 
 **\
 Why don't we switch to symmetric cryptography? **
@@ -230,8 +231,8 @@ this. This is the fundamental problem of **key distribution**. Let us
 look at the functionality offered by the two types of cryptography: 
 
   -----------------------------------------------------------------------
-                            **Symmetric**            **Public-key   
-                                                      **              
+                            Symmetric                Public-key         
+                                                              
   ------------------------- ------------------------ --------------------
   Confidentiality (privacy) Only with pre-shared     ✔
                             keys                     

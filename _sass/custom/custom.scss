@@ -1,9 +1,66 @@
-
+// ==============================
 // Fancybox is (for now) just a weird background
 
 .fancybox-red { background-color: rgb(250, 200, 200); }
 .fancybox-blue { background-color: rgb(197, 197, 255); }
 
+// ==============================
+// The .gradient-bg class gets a gradient background.
+.gradient-bg {
+	width: 100%;
+	background: rgb(63,94,251);
+	background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+
+// ==============================
+// Make the Menu / Hamburger menu stick the LEFT (instead of the 'title' taking up space). 
+.site-header{ 
+	flex-direction: row-reverse
+}
+
+
+// ==============================
+// At a glance boxes: create space around the legend (header)
+legend {
+  font-weight: bold;
+  text-align: center;
+}
+
+// ==============================
+// The .bg gives a fancy bachground to a header
+
+.bg {
+	width: 90%;
+	// height: 100vw;
+	height: 14rem;
+	position: relative;
+  }
+  
+  .bg::before,
+  .bg::after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+  }
+  
+  .bg::after {
+	background-image: linear-gradient(90deg, #5e41d0 0%, #293D62 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+  }
+  
+  .bg::before {
+	background-image: linear-gradient(90deg, #cbdeee 0%, #5480a5 100%);
+	clip-path: polygon(0 50%, 100% 50%, 100% 95%, 0 50%);
+  }
+
+
+// ==============================
 // "details" are expandable boxes; these look pretty neat. 
 // Use <details> and <summary> tags!
 
@@ -29,6 +86,7 @@ fieldset {
 	margin-top: 2em;
 }
 
+// ==============================
 // Make sidebar bigger (from https://github.com/just-the-docs/just-the-docs/discussions/1204)
 
 // .side-bar {

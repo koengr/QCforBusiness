@@ -4,8 +4,10 @@ title: 2 Error correction
 nav_order: 2
 ---
 
+## Error correction
 
-**At a glance:**
+<fieldset class="field-set" markdown="1"> 
+<legend class="leg-title">At a glance</legend>
 
 -   To run long computations, we need to dramatically reduce the
     likelihood of error of each elementary step -- not just a little
@@ -19,6 +21,8 @@ nav_order: 2
 -   Logical qubits are still not perfect qubits: the 'number of steps'
     that they can survive is an important specification that determines
     whether they can run your application.
+
+</fieldset>
 
 The recently
 announced [roadmap](https://www.quera.com/press-releases/quera-computing-releases-a-groundbreaking-roadmap-for-advanced-error-corrected-quantum-computers-pioneering-the-next-frontier-in-quantum-innovation) by
@@ -62,7 +66,7 @@ a very favourable trade-off between the number of qubits, and the
 accuracy of the qubits.
 
 ![qubits in boxes for
-ecc](/media/image14.png){width="3.662234251968504in" height="1.625in"}
+ecc](/media/image19.png){width="3.662234251968504in" height="1.625in"}
 
 **Doesn't measuring a quantum state destroy the information in the
 qubits?**
@@ -89,7 +93,7 @@ consecutive steps that need to be performed. In early hardware, you may
 interpret one step as a single quantum gate. 
 
 ![circuit depth computer
-program](/media/image15.png){width="3.5749365704286964in"
+program](/media/image20.png){width="3.5749365704286964in"
 height="4.375in"}
 
 The concept of  'width' is pretty straightforward: if the computer
@@ -106,9 +110,8 @@ error grows, the probability to find a correct outcome is
 reduced *exponentially*. We illustrate this in more detail in the box
 below. 
 
-**\-\-- BEGIN BOXES**
-
-**\
+**{{ begin fancy box }}\
+\
 To illustrate, why do we need such small error rates?**
 
 Let's look at a very simple model of a computer, which is not unlike
@@ -189,7 +192,7 @@ Now, assume we improve our hardware, towards an error rate of 0.1%
 
 A probability to succeed of 37% sounds bad, but for truly high-end
 computations we might actually be okay with that. If the program results
-in a recipe for a brand-new medicine, or if it would tell us the perfect
+in a recipe for a brand-new medicine, or if it tells us the perfect
 design for an aeroplane wing, then surely we don't mind repeating the
 computation 10 or 100 times, after which we're very likely to learn this
 breakthrough result. On the other hand, if the probability of success is
@@ -217,6 +220,10 @@ of errors, native gate sets, connectivity, and so forth --- these make
 the story much more complicated, but will not change our qualitative
 conclusions.
 
+**{{ end fancy box }}**
+
+**{{ begin fancy box }}**
+
 **Why don't we just make the hardware more stable?**
 
 To some degree, we can still greatly reduce errors by creating more
@@ -224,11 +231,15 @@ accurate hardware. However, quantum objects are so incredibly fragile
 that even getting down to 10^-2^ errors requires some of the world's
 most astonishing engineering. We definitely hope to see two-qubit gate
 errors reduced to 10^-3^ and perhaps even 10^-4^, but achieving targets
-of 10^-9^ seem unlikely with incremental hardware engineering alone. On
+of 10^-9^ seems unlikely with incremental hardware engineering alone. On
 the other hand, quantum error correction is incredibly effective: the
 error drops dramatically at the cost of adding a modest number of
 qubits, which are assumed to be scalable anyway. That's why experts
 agree that error correction is the right way forward.  
+
+**{{ end fancy box }}**
+
+**{{ begin fancy box }}**
 
 **Do we use error correction in classical computers too?**
 
@@ -247,7 +258,7 @@ correction](https://en.wikipedia.org/wiki/Reliability,_availability_and_servicea
 sometimes used in older mainframes and (even today) in [space
 probes](https://arstechnica.com/science/2019/11/space-grade-cpus-how-do-you-send-more-computing-power-into-space/). 
 
-**\-\-- END BOXES**
+**{{ end fancy box }}**
 
 ### Longer computations need more qubits
 
@@ -259,7 +270,7 @@ consider the problem of "factoring a number that can be written down
 using at most N bits"). 
 
 ![circuit depth
-scaling](/media/image16.png){width="6.268055555555556in"
+scaling](/media/image21.png){width="6.268055555555556in"
 height="3.5416666666666665in"}
 
 Keep in mind: we're talking about the requirements to solve a problem
@@ -282,7 +293,7 @@ error-corrected computer that can trade between depth and width (in
 certain discrete steps). 
 
 ![circuit depth with or without
-correction](/media/image17.png){width="6.268055555555556in"
+correction](/media/image22.png){width="6.268055555555556in"
 height="2.671527777777778in"}
 
 The computer without error correction might have enough memory to solve
@@ -296,7 +307,7 @@ have both at the same time. Hence, neither computer solves the N=40
 problem. 
 
 ![circuit depth with or without correction problem
-sizes](/media/image18.png){width="6.268055555555556in"
+sizes](/media/image23.png){width="6.268055555555556in"
 height="2.671527777777778in"}
 
 Towards cracking the N=40 problem, our best bet is to upgrade the
@@ -411,7 +422,7 @@ completely open. 
 Firstly, we would need just *slightly* more accurate hardware. We
 mentioned a certain
 accuracy [threshold](https://en.wikipedia.org/wiki/Threshold_theorem) earlier:
-state of the art hardware seems to be close to this threshold, but not
+state-of-the-art hardware seems to be close to this threshold, but not
 comfortably over it. Secondly, error correction also requires
 significant classical computing power, which needs to solve a fairly
 complex 'decoding' problem within extremely small time bounds (within
@@ -420,7 +431,7 @@ become more mature, both at the hardware and the software level. It is
 not unlikely that purpose-built hardware will need to be developed,
 which for some platforms might be placed inside a cryogenic environment
 (placing stringent bounds on heat dissipation). Theoretical
-breakthroughs can still reduce the requirements on classical
+breakthroughs can still reduce the requirements of classical
 processing. 
 
 Lastly, it turns out that 'mid-circuit measurements' are technically

@@ -4,6 +4,7 @@ title: 1 Quantum hardware
 nav_order: 1
 ---
 
+## Quantum hardware
 
 Conventional computer hardware is extremely well standardized. No matter
 what supplier you buy a computer from, you can be reasonably sure that
@@ -29,7 +30,7 @@ should at best give an impression of the current state of the art. Let
 us start by taking a closer look at the functionalities.
 
 ![universal simulator annealer 2023
-1](/media/image13.png){width="6.268055555555556in"
+1](/media/image18.png){width="6.268055555555556in"
 height="4.622916666666667in"}
 
 Our biggest dream is to have a **'universal quantum computer**'. The

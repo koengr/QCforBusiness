@@ -1,0 +1,16 @@
+
+{% assign lines = include.content | newline_to_br | split: '<br />' %}
+{% assign first_line = lines[1] | strip_newlines %}
+{% assign rest_of_content = lines | slice: 2, lines.size | join: '<br />' %}
+
+<!-- 
+SLICE: {{ lines | slice: 0 }}
+
+FIRSTLINE: {{ first_line[0] }} -->
+
+
+<details>
+	<summary>{{ first_line }} </summary>
+	{{ rest_of_content | markdownify }}
+</details>
+

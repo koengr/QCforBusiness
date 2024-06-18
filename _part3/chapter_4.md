@@ -4,6 +4,7 @@ title: 4 What steps should your organization take?
 nav_order: 4
 ---
 
+## What steps should your organization take?
 
 In the previous parts, we discussed
 the [use-cases](https://www.quantum.amsterdam/part-2-the-applications-of-quantum-computing-how-will-these-machines-change-society/),
@@ -36,7 +37,7 @@ all mention reasonable strategic steps that organisation can take, which
 we will lay out below. Let's break them up into 3 different stages:
 
 ![what steps can businesses companies take in quantum professionals
-guide 1](/media/image19.png){width="6.268055555555556in"
+guide 1](/media/image24.png){width="6.268055555555556in"
 height="2.922222222222222in"}
 
 **1. Start with no-regret moves**
@@ -215,7 +216,7 @@ long-lived systems that will still be in use decades from now."
 **THE PQC MIGRATION HANDBOOK**
 
 ![Screenshot 2023 05 09 at
-17.54.18](/media/image20.png){width="2.3854166666666665in"
+17.54.18](/media/image25.png){width="2.3854166666666665in"
 height="3.3762128171478567in"}
 
 Judging from previous migrations, \[implementing PQC\] might take well
@@ -223,7 +224,7 @@ over five years.
 
 **THE PQC MIGRATION HANDBOOK**
 
-\-\-- End Quotess
+\-\-- End Quote
 
 **3b. Migrate**
 
