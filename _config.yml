@@ -3,7 +3,7 @@ description: This is a description - where does it appear?
 theme: just-the-docs
 
 url: https://koengr.github.io
-baseurl: 
+baseurl: QCforBusiness
 
 # Define Jekyll collections.
 # Example: Define a collection named "NAME", its documents reside in the "_NAME" directory
