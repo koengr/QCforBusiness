@@ -29,13 +29,12 @@ that is available (below, yellow). This list is by no means complete! It
 should at best give an impression of the current state of the art. Let
 us start by taking a closer look at the functionalities.
 
-![universal simulator annealer 2023
-1](/media/image18.png){width="6.268055555555556in"
-height="4.622916666666667in"}
+<img src="/media/image17.png" style="width:6.26806in;height:4.62292in"
+alt="universal simulator annealer 2023 1" />
 
-Our biggest dream is to have a **'universal quantum computer**'. The
-word 'universal' indicates that it is capable of executing any quantum
-algorithm (or technically: to approximate any algorithm's output to
+Our biggest dream is to have a **‘universal quantum computer**’. The
+word ‘universal’ indicates that it is capable of executing any quantum
+algorithm (or technically: to approximate any algorithm’s output to
 arbitrary precision). For comparison: your laptop, phone, and even a
 smartwatch are universal classical computers, making them capable of
 running any classical application you can think of: spreadsheets, 3D
@@ -43,14 +42,14 @@ games, data encryption, and so on. Similarly, a proper universal quantum
 computer is suitable for any quantum application, regardless of whether
 it is known today or invented in the future. 
 
-The definition of 'universal' is blind to some details such as memory
+The definition of ‘universal’ is blind to some details such as memory
 limitations (it assumes you will never run out of RAM), and omits
-tedious details about software compatibility (a Playstation game won't
+tedious details about software compatibility (a Playstation game won’t
 run on an XBox). In our high level overview, such details are
 unimportant: the main point is that there also exist devices that
 can *not *run just any algorithm.
 
-**Does a universal computer need to be \"gate-based\"?**
+**Does a universal computer need to be "gate-based"?**
 
 No matter what architecture or qubit type you pick, our current
 technology will not allow you to run very long computations. This is due
@@ -75,27 +74,27 @@ a **Quantum Simulator**, the computer specialises in simulating a
 certain class of materials or molecules. The precise capabilities are
 often captured in a Hamiltonian that specifies which materials qualify.
 As an example, Harvard-spinoff QuEra has a quantum simulator available
-over the cloud that mimics a quantum Ising model. Today's simulators
-(like QuEra's) are fairly close to a universal computer (lacking only a
+over the cloud that mimics a quantum Ising model. Today’s simulators
+(like QuEra’s) are fairly close to a universal computer (lacking only a
 few technical ingredients) and are similarly subject to accumulating
 errors. However, they are not designed to run conventional (gate-based)
 algorithms.
 
-There might be some confusion in jargon here, as the term 'quantum
-simulation' is also sometimes used when a classical computer tries to
+There might be some confusion in jargon here, as the term ‘quantum
+simulation’ is also sometimes used when a classical computer tries to
 mimic the behaviour of a quantum computer. Others use the term
-'emulation' for such classical approaches. 
+‘emulation’ for such classical approaches. 
 
 See also:
 
--   [QuEra announces a 256 qubit
-    simulator](https://www.technologyreview.com/2021/11/17/1040243/quantum-computer-256-bit-startup/) available
-    over the Cloud. 
+- [QuEra announces a 256 qubit
+  simulator](https://www.technologyreview.com/2021/11/17/1040243/quantum-computer-256-bit-startup/) available
+  over the Cloud. 
 
--   [Pasqal performs a material science simulation with 196
-    qubits](https://www.pasqal.com/articles/simulating-phases-of-matter-in-magnetic-materials-with-qubits) and [sells
-    100-qubit simulator in a EuroHPC
-    tender](https://eurohpc-ju.europa.eu/two-100-qubits-quantum-computers-pasqal-fzj-and-genci-boost-hpcqs-pan-european-hybrid-hpcquantum-2022-05-30_en).
+- [Pasqal performs a material science simulation with 196
+  qubits](https://www.pasqal.com/articles/simulating-phases-of-matter-in-magnetic-materials-with-qubits) and [sells
+  100-qubit simulator in a EuroHPC
+  tender](https://eurohpc-ju.europa.eu/two-100-qubits-quantum-computers-pasqal-fzj-and-genci-boost-hpcqs-pan-european-hybrid-hpcquantum-2022-05-30_en).
 
 Another special-purpose device is the **Quantum Annealer, **for which
 the Canadian scale-up D-Wave is especially well known. These
@@ -106,13 +105,13 @@ quadratic unconstrained binary optimization. There is a well-developed
 theory of mapping various problems into the QUBO formalism, making
 annealers fairly versatile machines. However, quantum annealers will
 never be able to take advantage of the various other quantum algorithms
-out there: even with enough qubits, we don't see them cracking codes
-with Shor's algorithm. 
+out there: even with enough qubits, we don’t see them cracking codes
+with Shor’s algorithm. 
 
 See also:
 
--   [D-Wave's introduction to its quantum annealing
-    platform](https://docs.dwavesys.com/docs/latest/c_gs_2.html)
+- [D-Wave’s introduction to its quantum annealing
+  platform](https://docs.dwavesys.com/docs/latest/c_gs_2.html)
 
 ###  Different building blocks
 
@@ -127,33 +126,33 @@ For conventional computer electronics, we converged to a single choice
 of material and broadly a single manufacturing process, based on silicon
 wafers and lithography. For quantum computers, there is still a fierce
 race between the different platforms, and it is totally unclear which
-will eventually be the winner --- or whether we will converge to a
-single winner at all. 
+will eventually be the winner — or whether we will converge to a single
+winner at all. 
 
 There is an interesting story behind the different hardware types, but
-we won't delve into that in this non-technical guide (would you
+we won’t delve into that in this non-technical guide (would you
 otherwise care what material your classical CPU is made of?). However,
 anyone who wants to test quantum programs on actual hardware should
 definitely know the details. Interested readers can start here:
 
 ***Further reading:***
 
--   [Different types of qubits explained by
-    Sifted.eu](https://sifted.eu/articles/quest-qubits-quantum-startups-explained)
+- [Different types of qubits explained by
+  Sifted.eu](https://sifted.eu/articles/quest-qubits-quantum-startups-explained)
 
--   [Different types of qubits at IQC
-    Waterloo](https://uwaterloo.ca/institute-for-quantum-computing/quantum-101/quantum-information-science-and-technology/what-qubit)
+- [Different types of qubits at IQC
+  Waterloo](https://uwaterloo.ca/institute-for-quantum-computing/quantum-101/quantum-information-science-and-technology/what-qubit)
 
--   [Different types of qubits on
-    Wikipedia](https://en.wikipedia.org/wiki/Qubit#Physical_implementations)
+- [Different types of qubits on
+  Wikipedia](https://en.wikipedia.org/wiki/Qubit#Physical_implementations)
 
--   [A MOOC about different hardware types by TU
-    Delft](https://online-learning.tudelft.nl/courses/the-hardware-of-a-quantum-computer)
+- [A MOOC about different hardware types by TU
+  Delft](https://online-learning.tudelft.nl/courses/the-hardware-of-a-quantum-computer)
 
 It is interesting to note that all these different machines (universal,
 annealers, simulators) can in principle be built using any type of
 qubit. If you go back to the figure at the top, you can see that there
-exist different qubit types with different functionalities. It's not
+exist different qubit types with different functionalities. It’s not
 unthinkable that the empty squares will also be filled, so that we have
 access to superconducting-based simulators, or annealers that use
 ultracold atom qubits (or perhaps the authors have missed this!). In

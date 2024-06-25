@@ -9,14 +9,14 @@ nav_order: 4
 <fieldset class="field-set" markdown="1"> 
 <legend class="leg-title">At a glance</legend>
 
--   Four key applications in IT are: simulation of chemistry and
-    materials, cracking cryptography, using quantum networks to
-    distribute cryptographic keys, and solving large-scale optimization
-    and AI problems. 
+- Four key applications in IT are: simulation of chemistry and
+  materials, cracking cryptography, using quantum networks to distribute
+  cryptographic keys, and solving large-scale optimization and AI
+  problems. 
 
--   Not every quantum speedup is useful: a much faster classical
-    computer is often a better choice. In optimisation and AI, we have
-    not found a truly valuable 'killer application' yet.
+- Not every quantum speedup is useful: a much faster classical computer
+  is often a better choice. In optimisation and AI, we have not found a
+  truly valuable ‘killer application’ yet.
 
 </fieldset>
 
@@ -26,20 +26,18 @@ is, in fewer steps. The most important question in this field is: **what
 advantage do quantum computers have on which problems**? To answer this
 question, we break it down into two parts:
 
--   [What are projected applications and use
-    cases?](https://www.quantum.amsterdam/part-2-the-applications/#applications)
+- What are projected applications with a quantum speedup?
 
--   [How large is the advantage of known
-    speedups?](https://www.quantum.amsterdam/part-2-the-applications/#classify)
+- [How large is the advantage of known
+  speedups?](https://www.quantum.amsterdam/part-2-the-applications/#classify)
 
-### What are projected applications and use cases?
+### What are projected applications with a quantum speedup?
 
 We foresee four major use cases where quantum computing can make a real
 impact on society. We briefly discuss each of them here and link to a
 later chapter that discusses each application in more depth. 
 
-1\. Simulation of other quantum systems: molecules, materials, and
-chemical processes
+#### 1. Simulation of other quantum systems: molecules, materials, and chemical processes
 
 Most materials can be accurately simulated on classical computers.
 However, in some specific situations, the locations of atoms and
@@ -67,26 +65,25 @@ efficiently?**](https://www.quantum.amsterdam/part-3-the-search-for-a-killer-app
 
 See also:
 
--   [Startup PhaseCraft studies the famous Fermi-Hubbard model using a
-    quantum
-    computer](https://www.phasecraft.io/news/phasecraft-has-achieved-a-milestone-for-quantum-computing)
+- [Startup PhaseCraft studies the famous Fermi-Hubbard model using a
+  quantum
+  computer](https://www.phasecraft.io/news/phasecraft-has-achieved-a-milestone-for-quantum-computing)
 
--   [Startup Zapata reduces the runtime and error rate of famous
-    chemistry
-    algorithm](https://www.zapatacomputing.com/news/robust-amplitude-estimation-experiment/)
+- [Startup Zapata reduces the runtime and error rate of famous chemistry
+  algorithm](https://www.zapatacomputing.com/news/robust-amplitude-estimation-experiment/)
 
--   [IBM and Daimler research next-gen
-    batteries](https://www.ibm.com/blogs/research/2020/01/next-gen-lithium-sulfur-batteries/)
+- [IBM and Daimler research next-gen
+  batteries](https://www.ibm.com/blogs/research/2020/01/next-gen-lithium-sulfur-batteries/)
 
--   [Roche started a project to find medicines for
-    Alzheimer's](https://thequantuminsider.com/2021/01/31/cqc-roche-partner-to-use-quantum-algorithms-to-tackle-drug-discovery-for-alzheimers-disease/)
+- [Roche started a project to find medicines for
+  Alzheimer’s](https://thequantuminsider.com/2021/01/31/cqc-roche-partner-to-use-quantum-algorithms-to-tackle-drug-discovery-for-alzheimers-disease/)
 
--   [An overview of various simulation software packages for quantum
-    computers](https://www.linkedin.com/pulse/8-quantum-computing-packages-chemistry-simulations-2022-hariharan/)
+- [An overview of various simulation software packages for quantum
+  computers](https://www.linkedin.com/pulse/8-quantum-computing-packages-chemistry-simulations-2022-hariharan/)
 
-2\. Cracking a certain type of cryptography
+#### 2. Cracking a certain type of cryptography
 
-The security of today's internet communication relies heavily on a
+The security of today’s internet communication relies heavily on a
 cryptographic protocol invented by Rivest, Shamit and Adleman
 ([RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem))) in the late
 70s. The protocol helps distribute secret encryption keys (so that
@@ -95,16 +92,16 @@ files and webpages (so that you know that the latest Windows update
 actually came from Microsoft, and not from some cybercriminal). RSA
 works thanks to an ingenious mathematical trick: honest users can set up
 their encryption using relatively few computational steps, whereas
-'spying' on others would require one to solve an extremely hard problem.
+‘spying’ on others would require one to solve an extremely hard problem.
 For the RSA cryptosystem, that problem is *prime factorisation, *where
 the goal is to decompose a very large number (for illustration purposes,
-let's think of 15) into its prime factors (here: 3 and 5). As far as we
+let’s think of 15) into its prime factors (here: 3 and 5). As far as we
 know, for sufficiently large numbers, this task can take a classical
 computer such a long time that nobody would ever succeed in breaking a
-relevant code -- think of thousands of years. RSA was deemed adequately
+relevant code – think of thousands of years. RSA was deemed adequately
 secure, at least, until computer scientist Peter Shor discovered that
-quantum computers are quite good at factoring.\
-\
+quantum computers are quite good at factoring.  
+  
 The quantum algorithm by Shor can crack RSA (and also its cousin
 called [elliptic curve
 cryptography](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography))
@@ -126,39 +123,39 @@ cryptography*](https://en.wikipedia.org/wiki/Public-key_cryptography)*, *which
 delivers a certain range of functionalities. A different class of
 protocols is *[symmetric key
 cryptography](https://en.wikipedia.org/wiki/Cryptography#Modern_cryptography),* which
-is reasonably safe against quantum computers but doesn't provide the
+is reasonably safe against quantum computers but doesn’t provide the
 same rich functionality as *public key *crypto. The most sensible
 approach is replacing RSA with so-called [post-quantum
 cryptography](https://en.wikipedia.org/wiki/Post-quantum_cryptography) (PQC):
 public-key cryptosystems resilient to attackers with a large-scale
 quantum computer. Interestingly, PQC does *not* require honest users
-(that's you) to have a quantum computer: it will work perfectly fine on
-today's PCs, laptops and servers.
+(that’s you) to have a quantum computer: it will work perfectly fine on
+today’s PCs, laptops and servers.
 
 [**Read more: How will quantum computers impact
 cybersecurity? **](https://www.quantum.amsterdam/part-8-the-impact-on-cybersecurity/)
 
 See also:
 
--   [MinutePhysics has a fantastic (but technical!) explainer of Shor's
-    algorithm](https://www.youtube.com/watch?v=lvTqbM5Dq4Q). 
+- [MinutePhysics has a fantastic (but technical!) explainer of Shor’s
+  algorithm](https://www.youtube.com/watch?v=lvTqbM5Dq4Q). 
 
--   [NIST's competition to standardize new public-key
-    algorithms](https://csrc.nist.gov/projects/post-quantum-cryptography/post-quantum-cryptography-standardization)   
+- [NIST’s competition to standardize new public-key
+  algorithms](https://csrc.nist.gov/projects/post-quantum-cryptography/post-quantum-cryptography-standardization)   
 
--   Nature feature article: [The race to save the Internet from quantum
-    hackers](https://www.nature.com/articles/d41586-022-00339-5)
+- Nature feature article: [The race to save the Internet from quantum
+  hackers](https://www.nature.com/articles/d41586-022-00339-5)
 
  
 
 During the following decade, every large organisation will have to worry
-about updating to post-quantum cryptography -- a complex migration that
+about updating to post-quantum cryptography – a complex migration that
 comes in addition to the many existing cybersecurity threats. The
 American National Institute of Standards and Technology (NIST) runs a
 competition to select a new standard that is adequate for most
 applications. Nevertheless, many organisations run a vast amount of
 legacy software that is hard to update, so completing this update in the
-upcoming [\~8
+upcoming [~8
 years](https://www.quantum.amsterdam/part-5-when-can-we-expect-a-useful-quantum-computer-a-closer-look-at-timelines/) poses
 a complex operational challenge. For this reason, organisations are
 encouraged to start this process as early as possible. 
@@ -175,32 +172,32 @@ take?**](https://quantum.amsterdam/part-6-getting-started)
 
 Other great sources are:
 
--   [The PQC Migration
-    Handbook](https://english.aivd.nl/publications/publications/2023/04/04/the-pqc-migration-handbook),
-    written by the Dutch secret service AIVD and research organizations
-    CWI and TNO.
+- [The PQC Migration
+  Handbook](https://english.aivd.nl/publications/publications/2023/04/04/the-pqc-migration-handbook),
+  written by the Dutch secret service AIVD and research organizations
+  CWI and TNO.
 
--   Cloudflare [tracks the adoption of post-quantum
-    cryptography](https://blog.cloudflare.com/pq-2024) and explains many
-    technical details extremely well. 
+- Cloudflare [tracks the adoption of post-quantum
+  cryptography](https://blog.cloudflare.com/pq-2024) and explains many
+  technical details extremely well. 
 
--   US National Institute for Standards and Technology (NIST): [Getting
-    Ready for Post-Quantum Cryptography: Explore Challenges Associated
-    with Adoption and Use of Post-Quantum Cryptographic
-    Algorithms](https://csrc.nist.gov/publications/detail/white-paper/2021/04/28/getting-ready-for-post-quantum-cryptography/final)
+- US National Institute for Standards and Technology (NIST): [Getting
+  Ready for Post-Quantum Cryptography: Explore Challenges Associated
+  with Adoption and Use of Post-Quantum Cryptographic
+  Algorithms](https://csrc.nist.gov/publications/detail/white-paper/2021/04/28/getting-ready-for-post-quantum-cryptography/final)
 
--   UK National Cyber Security Center: [Preparing for Quantum-Safe
-    Cryptography](https://www.ncsc.gov.uk/whitepaper/preparing-for-quantum-safe-cryptography)
+- UK National Cyber Security Center: [Preparing for Quantum-Safe
+  Cryptography](https://www.ncsc.gov.uk/whitepaper/preparing-for-quantum-safe-cryptography)
 
--   BSI (German secret service): [Quantum-safe cryptography --
-    fundamentals, current developments and
-    recommendations](https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/Brochure/quantum-safe-cryptography.html?nn=916626)
+- BSI (German secret service): [Quantum-safe cryptography –
+  fundamentals, current developments and
+  recommendations](https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/Brochure/quantum-safe-cryptography.html?nn=916626)
 
--   NCSC (Dutch National Cyber Security Center): [Factsheet
-    Postquantumcryptografie
-    \[NL\]](https://www.ncsc.nl/binaries/ncsc/documenten/factsheets/2019/juni/01/factsheet-postkwantumcryptografie/20170831+Factsheet-Postkwantumcryptografie-v1.1.pdf)
+- NCSC (Dutch National Cyber Security Center): [Factsheet
+  Postquantumcryptografie
+  \[NL\]](https://www.ncsc.nl/binaries/ncsc/documenten/factsheets/2019/juni/01/factsheet-postkwantumcryptografie/20170831+Factsheet-Postkwantumcryptografie-v1.1.pdf)
 
-3\. Quantum Key Distribution to strengthen cryptography
+#### 3. Quantum Key Distribution to strengthen cryptography
 
 Out of all the applications for quantum networks, Quantum Key
 Distribution (QKD) is the one to watch. It allows two parties to
@@ -209,13 +206,13 @@ everyday needs like encryption and authentication. It requires a quantum
 network connection that transports photons in fragile quantum states.
 Such connections can currently reach a few hundred kilometres, and there
 is a clear roadmap to expand to a much wider internet. The most likely
-usage will be as an "add-on" for high-security purposes (such as
+usage will be as an “add-on” for high-security purposes (such as
 military communication or data exchange between data centres), in
 addition to standard post-quantum cryptography. 
 
 Unfortunately, we often see media articles suggesting that QKD is a
-solution to the threat of Shor's algorithm and that it would form an
-'unbreakable internet'. Both claims are highly inaccurate. Firstly, QKD
+solution to the threat of Shor’s algorithm and that it would form an
+‘unbreakable internet’. Both claims are highly inaccurate. Firstly, QKD
 does not offer the wide range of functionality that public-key
 cryptography offers, so it is not a complete replacement for the
 cryptosystems broken by Shor. Secondly, there will almost certainly be
@@ -229,26 +226,26 @@ remain confidential for an extremely long period of time. 
 At this time, pretty much every national security agency discourages the
 use of QKD simply because the available products are far from mature
 (and because PQC should be prioritised). It is unclear how successful
-QKD could be in the future---we will discuss this in depth in a next
-chapter.\
-\
+QKD could be in the future—we will discuss this in depth in a next
+chapter.  
+  
 [**Read more: What are the use cases of quantum
 networks?**](https://www.quantum.amsterdam/part-4-the-applications-of-quantum-networks/)
 
 See also: 
 
--   [A short video explainer about how QKD
-    works.](https://www.youtube.com/watch?v=2kdRuqvIaww&ab_channel=QuantumVisions%28WWUM%C3%BCnster%29)
+- [A short video explainer about how QKD
+  works.](https://www.youtube.com/watch?v=2kdRuqvIaww&ab_channel=QuantumVisions%28WWUM%C3%BCnster%29)
 
--   [The NCSC states that it "does not endorse the use of QKD for any
-    government or military
-    applications"](https://www.quantum.amsterdam/%E2%80%A2%09https:/www.ncsc.gov.uk/whitepaper/quantum-security-technologies)
+- [The NCSC states that it “does not endorse the use of QKD for any
+  government or military
+  applications”](https://www.quantum.amsterdam/%E2%80%A2%09https:/www.ncsc.gov.uk/whitepaper/quantum-security-technologies)
 
--   [The French ANSSI, German BSI, Dutch NLNCSA and Swedish SNCSA
-    published a critical position paper on QKD in
-    2024. ](https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Crypto/Quantum_Positionspapier.html)
+- [The French ANSSI, German BSI, Dutch NLNCSA and Swedish SNCSA
+  published a critical position paper on QKD in
+  2024. ](https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Crypto/Quantum_Positionspapier.html)
 
-\-\-\--
+----
 
 Quote:
 
@@ -258,18 +255,17 @@ regarded as the best way to mitigate the quantum threat.
 
 **THE PQC MIGRATION HANDBOOK**
 
-![Screenshot 2023 05 09 at
-17.54.18](/media/image8.png){width="1.8178587051618547in"
-height="2.5729166666666665in"}
+<img src="/media/image7.png" style="width:1.81786in;height:2.57292in"
+alt="Screenshot 2023 05 09 at 17.54.18" />
 
 End quote
 
-\-\-\--
+----
 
-We firmly warn that other security products with the word "quantum" in
-the name are no guarantee for protection against Shor's algorithm. In
-particular, "[quantum random number
-generators](https://en.wikipedia.org/wiki/Hardware_random_number_generator)"
+We firmly warn that other security products with the word “quantum” in
+the name are no guarantee for protection against Shor’s algorithm. In
+particular, “[quantum random number
+generators](https://en.wikipedia.org/wiki/Hardware_random_number_generator)”
 (QRNGs) are sometimes promoted as a saviour against the quantum threat,
 which is nonsense. These devices serve a completely different purpose:
 they compete with existing hardware to generate unpredictable secret
@@ -279,10 +275,10 @@ centres. 
 
 See also: 
 
--   [Samsung builds QRNGs into certain phones on the South Korean
-    market. ](https://www.sammobile.com/news/galaxy-a-quantum-launched-south-korea-sk-telecom-exclusive/)
+- [Samsung builds QRNGs into certain phones on the South Korean
+  market. ](https://www.sammobile.com/news/galaxy-a-quantum-launched-south-korea-sk-telecom-exclusive/)
 
-4\. Optimisation and machine-learning
+#### 4. Optimisation and machine-learning
 
 This is the part where most enterprises get excited: Can we combine the
 success of AI and machine learning with the radically new capabilities
@@ -295,10 +291,10 @@ Under the hood, all such applications are based on concrete mathematical
 problems such as (discrete) optimisation, differential equations,
 classification, and optimal planning. For conciseness, we collectively
 refer to these problems (including machine learning tasks)
-as *'optimisation'*. The classical field of optimisation is of great
-importance and takes up a significant fraction of the world's
-computational resources!\
-\
+as *‘optimisation’*. The classical field of optimisation is of great
+importance and takes up a significant fraction of the world’s
+computational resources!  
+  
 Contrary to the many classical successes, the impact of quantum
 optimisation or machine learning is not yet clear. To better understand
 the available algorithms, we will consider three different categories. 
@@ -325,59 +321,58 @@ requires less *time*! All of the above optimisation algorithms offer a
 so-called *polynomial speedup *(in the case of Grover, this is sometimes
 further specified to be a *quadratic speedup*). As we will soon see, it
 is not entirely clear if these speedups are enough to compensate for the
-slowness of a realistic quantum computer -- at least in the foreseeable
+slowness of a realistic quantum computer – at least in the foreseeable
 future. 
 
-*\
-***Heuristic algorithms\
-**\
+*  
+***Heuristic algorithms  
+**  
 On the other hand, some algorithms claim much larger speedups, but there
 is no undisputed evidence to back this up. Often, these algorithms are
 tested on small datasets using the limited quantum computers available
-today -- which are still so tiny that not much can be concluded about
-larger-scale problems. Nonetheless, these 'high risk, high reward'
+today – which are still so tiny that not much can be concluded about
+larger-scale problems. Nonetheless, these ‘high risk, high reward’
 approaches typically make the bold claims that receive media attention.
 The most noteworthy variants are:
 
--   [Variational quantum
-    circuits](https://pennylane.ai/qml/glossary/variational_circuit/) (VQC)
-    are relatively short quantum programs that a classical computer can
-    incrementally change. In jargon, these are quantum circuits that
-    rely on a set of free parameters. The classical computer will run
-    these programs many times, trying different parameters until the
-    quantum program behaves as desired (for example, it might output
-    very good train schedules or accurately describe a complex
-    molecule). The philosophy is that we squeeze as much as possible out
-    of small quantum computers with short-lived qubits: the (fast)
-    classical computer takes care of most of the computation, whereas
-    the quantum computer runs just long enough to sprinkle some quantum
-    magic into the solution.\
-    Although its usefulness is disputed, this algorithm is highly
-    flexible, leading to quantum variants of classifiers, neural
-    networks, and support vector machines. Variants of this algorithm
-    may be found under different names, such as Quantum Approximate
-    optimisation Algorithm (QAOA), Variational Quantum Eigensolver
-    (VQE), and quantum neural networks. 
+- [Variational quantum
+  circuits](https://pennylane.ai/qml/glossary/variational_circuit/) (VQC)
+  are relatively short quantum programs that a classical computer can
+  incrementally change. In jargon, these are quantum circuits that rely
+  on a set of free parameters. The classical computer will run these
+  programs many times, trying different parameters until the quantum
+  program behaves as desired (for example, it might output very good
+  train schedules or accurately describe a complex molecule). The
+  philosophy is that we squeeze as much as possible out of small quantum
+  computers with short-lived qubits: the (fast) classical computer takes
+  care of most of the computation, whereas the quantum computer runs
+  just long enough to sprinkle some quantum magic into the solution.  
+  Although its usefulness is disputed, this algorithm is highly
+  flexible, leading to quantum variants of classifiers, neural networks,
+  and support vector machines. Variants of this algorithm may be found
+  under different names, such as Quantum Approximate optimisation
+  Algorithm (QAOA), Variational Quantum Eigensolver (VQE), and quantum
+  neural networks. 
 
--   [Quantum
-    annealing](https://en.wikipedia.org/wiki/Quantum_annealing) solves a
-    particular class of optimisation problems. The problem is encoded
-    into a physical system (in jargon: a Hamiltonian) so that at very
-    low temperatures, the physical system somehow describes a solution
-    to the problem. For example, when finding the optimal locations to
-    place mobile phone masts, a qubit in the state "1" might indicate a
-    good site. A quantum annealing algorithm is a smart way to 'make'
-    such a low-temperature system (often by starting in a setting where
-    it's trivial to 'cool' and then slowly introducing the complex
-    forces corresponding to the target system).\
-    Annealing itself is a mature classical algorithm. The advantage of a
-    'quantum' approach is not immediately apparent, although there are
-    claims that hard-to-find solutions are more easily reached thanks to
-    'quantum fluctuations' or 'tunnelling'.\
-    Quantum annealing was popularised by the Canadian
-    company [D-Wave](https://www.dwavesys.com/), which builds dedicated
-    hardware with up to 5000 qubits and offers a cloud service that
-    handles relatively large optimisation problems. 
+- [Quantum
+  annealing](https://en.wikipedia.org/wiki/Quantum_annealing) solves a
+  particular class of optimisation problems. The problem is encoded into
+  a physical system (in jargon: a Hamiltonian) so that at very low
+  temperatures, the physical system somehow describes a solution to the
+  problem. For example, when finding the optimal locations to place
+  mobile phone masts, a qubit in the state “1” might indicate a good
+  site. A quantum annealing algorithm is a smart way to ‘make’ such a
+  low-temperature system (often by starting in a setting where it’s
+  trivial to ‘cool’ and then slowly introducing the complex forces
+  corresponding to the target system).  
+  Annealing itself is a mature classical algorithm. The advantage of a
+  ‘quantum’ approach is not immediately apparent, although there are
+  claims that hard-to-find solutions are more easily reached thanks to
+  ‘quantum fluctuations’ or ‘tunnelling’.  
+  Quantum annealing was popularised by the Canadian
+  company [D-Wave](https://www.dwavesys.com/), which builds dedicated
+  hardware with up to 5000 qubits and offers a cloud service that
+  handles relatively large optimisation problems. 
 
  
 
@@ -390,14 +385,14 @@ analysis](https://www.nature.com/articles/ncomms10138) (a method to
 assess certain global features of a dataset), which promises an
 exponential advantage under certain assumptions. However, to our best
 knowledge, no interesting datasets have been found that fit the
-algorithm's requirements.
+algorithm’s requirements.
 
 **A fourth class: quantum-inspired algorithms**
 
 Some impressive speedups that were recently found have been
-'dequantized': these algorithms were found to work on classical
-computers too! There's a beautiful story behind this process, where Ewin
-Tang, a Master's student at the time, made one of the largest
+‘dequantized’: these algorithms were found to work on classical
+computers too! There’s a beautiful story behind this process, where Ewin
+Tang, a Master’s student at the time, made one of the largest
 algorithmic breakthroughs of the decade. A great report can be found
 here: <https://medium.com/qiskit/how-ewin-tangs-dequantized-algorithms-are-helping-quantum-algorithm-researchers-3821d3e29c65>
 
@@ -410,27 +405,27 @@ machine learning!) is rather over-hyped. 
 
 Of course, there are still good hopes that we will find *new *algorithms
 and applications. To truly understand this field, we should examine the
-prospects of finding a new 'killer algorithm'. The next section becomes
-slightly more technical and helps us quantify the amount of 'quantum
-advantage' that different algorithms have. 
+prospects of finding a new ‘killer algorithm’. The next section becomes
+slightly more technical and helps us quantify the amount of ‘quantum
+advantage’ that different algorithms have. 
 
  
 
 Further reading: 
 
--   Volkswagen and ExxonMobil used annealing to optimise routes
-    for [buses](https://www.volkswagen-newsroom.com/en/press-releases/volkswagen-optimizes-traffic-flow-with-quantum-computers-5507) and [transport
-    ships](https://ibm-research.medium.com/exxonmobil-ibm-scientists-explore-state-of-art-quantum-algorithms-to-solve-routing-formulations-e7ce39f8741c).
+- Volkswagen and ExxonMobil used annealing to optimise routes
+  for [buses](https://www.volkswagen-newsroom.com/en/press-releases/volkswagen-optimizes-traffic-flow-with-quantum-computers-5507) and [transport
+  ships](https://ibm-research.medium.com/exxonmobil-ibm-scientists-explore-state-of-art-quantum-algorithms-to-solve-routing-formulations-e7ce39f8741c).
 
--   [Professor Scott Aaronson warns us to 'Read the fine print' of
-    optimisation
-    algorithms.](https://scottaaronson.com/papers/qml.pdf) \[Appeared
-    in [Nature Physics, with
-    paywall](https://www.nature.com/articles/nphys3272)\] 
+- [Professor Scott Aaronson warns us to ‘Read the fine print’ of
+  optimisation
+  algorithms.](https://scottaaronson.com/papers/qml.pdf) \[Appeared
+  in [Nature Physics, with
+  paywall](https://www.nature.com/articles/nphys3272)\] 
 
--   [Professor Sanker Das Sarma warns of hype within the field of
-    quantum optimisation and machine
-    learning.](https://www.technologyreview.com/2022/03/28/1048355/quantum-computing-has-a-hype-problem/)
+- [Professor Sanker Das Sarma warns of hype within the field of quantum
+  optimisation and machine
+  learning.](https://www.technologyreview.com/2022/03/28/1048355/quantum-computing-has-a-hype-problem/)
 
 ### How large is the advantage of known speedups? 
 
@@ -443,57 +438,59 @@ should offer a substantial speedup before they become competitive. 
 
 **{{ begin box }}**
 
-**What does an "algorithmic speedup" mean?**
+**What does an “algorithmic speedup” mean?**
 
-We can assess algorithms by their so-called "asymptotic complexity": As
-a problem becomes 'bigger', how much longer does a computation take? The
+We can assess algorithms by their so-called “asymptotic complexity”: As
+a problem becomes ‘bigger’, how much longer does a computation take? The
 main figure of merit is how this scales towards very large sizes. 
 
-For every instance of a problem, we can define a 'size' that influences
+For every instance of a problem, we can define a ‘size’ that influences
 the difficulty. For example, computing 54 x 12 is much easier than
-231.423 x 971.321, even though they're technically the same problem, and
-we'd use the very same [multiplication
+231.423 x 971.321, even though they’re technically the same problem, and
+we’d use the very same [multiplication
 algorithm](https://en.wikipedia.org/wiki/Multiplication_algorithm).
 Similarly, creating a work schedule for a team of 5 is simpler than
-dealing with 10.000 employees. We typically use the letter 'n' to denote
+dealing with 10.000 employees. We typically use the letter ‘n’ to denote
 the problem size. You can see n as the number of digits in a
 multiplication (like 2 or 6 above) or the number of employees involved
 in a schedule. 
 
 For some very hard problems, the time to solution takes the form of an
-exponential: T \~ e^n^, where T is the time taken. Exponential scaling
-is typically a bad thing, as the function e^n^ becomes incredibly large
-even for moderate values of n. The problem of factoring (on a classical
-computer) scales [somewhat
+exponential: T ~ e<sup>n</sup>, where T is the time taken. Exponential
+scaling is typically a bad thing, as the function e<sup>n</sup> becomes
+incredibly large even for moderate values of n. The problem of factoring
+(on a classical computer) scales [somewhat
 similar](https://en.wikipedia.org/wiki/General_number_field_sieve) to T
-\~ e^n^. 
+~ e<sup>n</sup>. 
 
 There are also problems for which the scaling looks like a polynomial,
-like T \~ n^3^ or T \~ n^2^. Polynomials grow much slower than
-exponentials, making it easier to solve large problems in a reasonable
-amount of time. The problem of factoring on a quantum computer takes
-scales roughly as T \~ n^3^ (thanks to [Shor's
+like T ~ n<sup>3</sup> or T ~ n<sup>2</sup>. Polynomials grow much
+slower than exponentials, making it easier to solve large problems in a
+reasonable amount of time. The problem of factoring on a quantum
+computer takes scales roughly as T ~ n<sup>3</sup> (thanks to [Shor’s
 algorithm](https://en.wikipedia.org/wiki/Shor%27s_algorithm)\*). Because
 a quantum computer brought the exponential down to a polynomial, we call
-this an '**exponential speedup**'. Such speedups are a computer
-scientist's dream because they have an incredible impact on practical
+this an ‘**exponential speedup**’. Such speedups are a computer
+scientist’s dream because they have an incredible impact on practical
 runtimes. 
 
-Often, we deal with 'merely' a **polynomial speedup**, which happens
-when we obtain a smaller polynomial (for example, going from T \~
-n^2^ towards T \~ n), or perhaps even a 'smaller' exponential function
-(like T \~ e^n^ towards T \~ e^n/2^. Reducing the exponent by a factor
-of two (like n^2 ^-\> n) is also sometimes called a **quadratic
-speedup **(which is precisely what Grover's algorithm gives us).
+Often, we deal with ‘merely’ a **polynomial speedup**, which happens
+when we obtain a smaller polynomial (for example, going from T ~
+n<sup>2</sup> towards T ~ n), or perhaps even a ‘smaller’ exponential
+function (like T ~ e<sup>n</sup> towards T ~ e<sup>n/2</sup>. Reducing
+the exponent by a factor of two (like n<sup>2 </sup>-\> n) is also
+sometimes called a **quadratic speedup **(which is precisely what
+Grover’s algorithm gives us).
 
 Further reading:
 
--   At a more coarse level, we can define different ["complexity
-    classes"](https://medium.com/qiskit/what-can-a-quantum-computer-actually-do-4daed0691f6b). 
+- At a more coarse level, we can define different [“complexity
+  classes”](https://medium.com/qiskit/what-can-a-quantum-computer-actually-do-4daed0691f6b). 
 
- \
+   
  \* You may find even sources stating smaller polynomials, like
-n^2^ log(n). These are theoretically possible but rely on [asymptotic
+n<sup>2</sup> log(n). These are theoretically possible but rely
+on [asymptotic
 optimizations](https://en.wikipedia.org/wiki/Sch%C3%B6nhage%E2%80%93Strassen_algorithm) that
 are unlikely to be used in practice.
 
@@ -504,27 +501,26 @@ today, categorised by their type of speedup:
 
  
 
-![Quantum Speedups Exponential Heuristic inforgraphic
-2024](/media/image9.png){width="6.268055555555556in"
-height="2.859722222222222in"}
+<img src="/media/image8.png"
+style="width:6.26806in;height:2.85972in" />
 
-🟢   The "**exponential**" box is the most interesting one, featuring
+🟢   The “**exponential**” box is the most interesting one, featuring
 applications where quantum computers seem to have a groundbreaking
-advantage over classical computers. It contains **Shor's algorithm** for
+advantage over classical computers. It contains **Shor’s algorithm** for
 factoring, explaining the incredible advantage that quantum computers
 have in codebreaking. We also believe it contains some applications
 in **chemistry and material science**, especially those relating to
 dynamics (studying how molecules and materials change over time). 
 
-🟡   The **"polynomial" **box is still interesting, but its
+🟡   The **“polynomial” **box is still interesting, but its
 applicability is unclear. Recall that a quantum computer would need much
-more time *per step *-- and on top of that, it will have considerable
+more time *per step *– and on top of that, it will have considerable
 overhead due to [error
 correction](https://www.quantum.amsterdam/part-9-why-we-need-error-correction/).
 Does a polynomial reduction in the number of steps overcome this
 slowness? According to a [recent
 paper](https://arxiv.org/abs/2011.04149), small polynomial speedups (as
-achieved by **Grover's algorithm**) will not cut it, at least not in the
+achieved by **Grover’s algorithm**) will not cut it, at least not in the
 foreseeable future. 
 
 🔴   For some computations, a quantum computer offers **no
@@ -547,12 +543,12 @@ heuristic quantum algorithms will be. 
 
 See also:
 
--   [A quantitative analysis of Grover's runtime compared to today's
-    supercomputers.](https://cacm.acm.org/research/disentangling-hype-from-practicality-on-realistically-achieving-quantum-advantage/) 
+- [A quantitative analysis of Grover’s runtime compared to today’s
+  supercomputers.](https://cacm.acm.org/research/disentangling-hype-from-practicality-on-realistically-achieving-quantum-advantage/) 
 
--   [(Technical!) Amazon researchers lay out a comprehensive list of
-    end-to-end complexities of nearly every known quantum
-    algorithm.](https://arxiv.org/abs/2310.03011)
+- [(Technical!) Amazon researchers lay out a comprehensive list of
+  end-to-end complexities of nearly every known quantum
+  algorithm.](https://arxiv.org/abs/2310.03011)
 
 ### Where is the killer application?
 
@@ -571,7 +567,7 @@ properties: 
     most likely requires an *exponential *speedup, or a large polynomial
     speedup. 
 
-Several algorithms, most notably Grover's algorithm and VQE's, have a
+Several algorithms, most notably Grover’s algorithm and VQE’s, have a
 very wide range of industrial applicability. However, it seems that in
 practice, other (classical) approaches solve such problems faster and
 more cheaply. 
@@ -580,18 +576,18 @@ Then there exist exponential speedups, like the algorithm for
 topological data analysis, for which no practical uses have been found
 (despite many scientific and industrial efforts). 
 
-To our best knowledge, only codebreaking (Shor's algorithm) is
+To our best knowledge, only codebreaking (Shor’s algorithm) is
 both *exponentially faster* and *extremely impactful*. Unfortunately,
-this is primarily a *negative *application that helps criminals -- we
-are not aware of any positive uses of Shor, hence this is not quite the
-killer application that we're looking for. 
+this is primarily a *negative *application that helps criminals – we are
+not aware of any positive uses of Shor, hence this is not quite the
+killer application that we’re looking for. 
 
 Even in chemistry, it is hard to pinpoint a convincing application.
 Classical computers are already incredibly fast, and very good classical
 algorithmic techniques have been developed. Scientist Garnet Chan
 gives [talks](https://www.youtube.com/watch?v=DZPH7ENcRLU) which are
-suggestively titled "Is There Evidence of Exponential Quantum Advantage
-in Quantum Chemistry?". 
+suggestively titled “Is There Evidence of Exponential Quantum Advantage
+in Quantum Chemistry?”. 
 
 Could the nature of quantum mechanics be such that it helps us in
 codebreaking, but in literally nothing else? We think that such a
@@ -599,41 +595,7 @@ scenario is unlikely. It seems that a killer algorithm has not yet been
 found, but there are good reasons to hope that we will find one in the
 future. Perhaps we need novel mathematical tools, or perhaps we simply
 need to play around on increasingly mature quantum hardware. We hope
-that we'll have to incrementally update this page over the coming years,
+that we’ll have to incrementally update this page over the coming years,
 as we slowly uncover the complete set of capabilities that quantum
 computers have!
-
-**Where should we look for a killer application?**
-
-Well, we simply don't know! However, some useful technical hints may be:
-
--   As described above, we'd most likely require an *exponential *or
-    some *heuristic *speedup. This is much more likely achieved on
-    problems where we don't already know very efficient classical
-    algorithms. 
-
--   When reading data is a limiting factor (as in "big data"
-    applications), quantum computers appear to be very slow. Getting the
-    data into a quantum computer seems to take at least as long as
-    processing the data on a much cheaper supercomputer. This holds, for
-    example, when searching through a database, but also for
-    data-intensive simulations like weather forecasting. 
-
--   Similarly, if the desired output is a large amount of data (such as
-    a very large list or table), then a quantum computer is likely not
-    efficient. Most quantum algorithms look at a global property of a
-    function or dataset that can be encoded in a very small output (like
-    Deutsch-Jozsa or Shor's algorithm when interpreted as finding the
-    period of a function). 
-
--   Some people would say that if quantum computers are not "faster",
-    perhaps they might solve a problem "more accurately" (for example,
-    they might produce a more reliable forecast). However, when we look
-    at speedups, then accuracy is already taken into account: we compare
-    the number of steps *asserting the output has a given accuracy. *
-
--   Classical computers are already incredibly fast, and the bottleneck
-    for many real-world computational problems is not in a computer's
-    speed. If an application does require a supercomputer today, then
-    it's unlikely that anyone will invest in a quantum computer soon.
 

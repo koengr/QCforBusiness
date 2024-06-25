@@ -20,7 +20,7 @@ molecules.
 
 Again, there are good arguments to be skeptical about the impact of
 quantum computers. Computational chemistry has seen many years of
-developments and optimizations to work around the classical computer's
+developments and optimizations to work around the classical computer’s
 bottlenecks, which has raised a high bar before a quantum computer can
 contribute meaningful insights. A true near-term killer application is
 likely to be limited to[ a very specific
@@ -32,8 +32,8 @@ relevant example, we dive into the world of artificial fertilizer.
 
 ### The case of FeMoco
 
-![](/media/image13.png){width="1.3333333333333333in"
-height="2.486666666666667in"}
+<img src="/media/image12.png"
+style="width:1.33333in;height:2.48667in" />
 
 {{ begin figure caption }}
 
@@ -41,9 +41,9 @@ Chemical structure of the FeMo cofactor, taken from Wikimedia.
 
 {{ end figure caption }}
 
-Today's agriculture relies heavily on the use of artificial fertilizer
+Today’s agriculture relies heavily on the use of artificial fertilizer
 to grow our crops. Without large-scale use of supplementary nutrients,
-it would be problematic to feed our world's huge population. In fact,
+it would be problematic to feed our world’s huge population. In fact,
 about [half of the nitrogen
 atoms](https://cen.acs.org/articles/86/i33/Haber-Bosch-Reaction-Early-Chemical.html) in
 our body have previously passed a fertilizer factory!
@@ -60,7 +60,7 @@ converting this into ammonia. Microorganisms can convert this into
 further nitrogen-containing compounds that can be absorbed by the root
 system.
 
-Pretty much all of the world's ammonia production follows the so-called
+Pretty much all of the world’s ammonia production follows the so-called
 Haber-Bosch process, where hydrogen gas (H2) and nitrogen gas (N2) react
 together to form ammonia. The process can be implemented in large,
 high-yield production lines, but also comes with a major disadvantage:
@@ -69,13 +69,13 @@ steps: producing sufficiently pure hydrogen and nitrogen gasses, and
 later separating the H2 and N2 molecules into individual atoms. The
 latter is especially challenging for N2 due to its strong triple bond.
 To achieve this, factories operate at extreme conditions, with high
-temperatures (\~400 degrees Celsius) and high pressure, largely driven
-by natural gas. As much as [1.8% of the world's CO2
+temperatures (~400 degrees Celsius) and high pressure, largely driven by
+natural gas. As much as [1.8% of the world’s CO2
 emission](https://royalsociety.org/topics-policy/projects/low-carbon-energy-programme/green-ammonia/) is
 caused by factories performing such reactions, consuming around 3-5% of
-the world's natural gas production!
+the world’s natural gas production!
 
-Can't this be done more efficiently? In this case, we strongly suspect
+Can’t this be done more efficiently? In this case, we strongly suspect
 so. Certain bacteria are also capable of making ammonia, but in a much
 more efficient way: without high temperatures or high pressure. It would
 be extremely valuable to copy this trick.
@@ -94,8 +94,8 @@ time](https://www.quantum.amsterdam/part-3-the-search-for-a-killer-application-w
 a single simulation could be accomplished.
 
 If we manage, like bacteria, to do this nitrogen fixation at room
-temperature, this will save a significant percentage of the world's
-energy consumption and greenhouse gas emissions. Tom O'Brien, assistant
+temperature, this will save a significant percentage of the world’s
+energy consumption and greenhouse gas emissions. Tom O’Brien, assistant
 professor at Leiden University and researcher at Google, [was
 quoted](https://www.universiteitleiden.nl/en/research-dossiers/the-quantum-computer/quantumchemie-en) that
 he believes that the simulation of FeMoco is the *killer

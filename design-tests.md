@@ -27,7 +27,7 @@ This is a gradient background part.
 
 
 This is a beautiful main page. 
-<img src="/media/image1.jpeg" width="100" />
+<img src="/images/image1.jpeg" width="100" />
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
