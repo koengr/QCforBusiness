@@ -79,7 +79,7 @@ For research projects, internships or theses:
   board](https://jobs.quantumdelta.nl/jobs). 
 
 - Students of University of Amsterdam can find quantum projects
-  on [Datanose](https://datanose.nl/).  
+  on Datanose.  
 
 Scientific papers
 

@@ -195,8 +195,8 @@ different way**. Let’s look at the following analogy that Andy Matuschak
 and Michael Nielsen bring up in their online course
 [Quantum.country](https://quantum.country/). 
 
-<img src="/media/image6.jpeg"
-style="width:3.86142in;height:3.82292in" />Image source:
+<img src=" {{ site.baseurl }}/media/image6.jpeg"
+style="width:3.86142in" />Image source:
 https://commons.wikimedia.org/wiki/File:STS059-238-074_Strait_of_Gibraltar.jpg
 
 Imagine that you’d like to travel from Morocco to Spain. If your

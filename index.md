@@ -26,9 +26,6 @@ computers, without going into tedious technical details. It answers questions su
 </center>
 <br>
 
-<a href="{{ site.baseurl }}/part2/chapter_1"><button class="btn fs-6">Start reading 2</button></a>
-
-
 
 ### Audience
 

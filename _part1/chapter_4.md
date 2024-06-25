@@ -255,7 +255,7 @@ regarded as the best way to mitigate the quantum threat.
 
 **THE PQC MIGRATION HANDBOOK**
 
-<img src="/media/image7.png" style="width:1.81786in;height:2.57292in"
+<img src=" {{ site.baseurl }}/media/image7.png" style="width:1.81786in"
 alt="Screenshot 2023 05 09 at 17.54.18" />
 
 End quote
@@ -306,10 +306,9 @@ speedup: *there is no dispute that these require *fewer* *computational
 steps* than any classical algorithm. For instance, a famous quantum
 algorithm invented by [Lov
 Grover](https://en.wikipedia.org/wiki/Grover's_algorithm) (with
-extensions by [Durr and Hoyer](https://arxiv.org/abs/quant-ph/9607014))
-finds the maximum of a function in fewer steps than conventional
-brute-force search. Similarly, quantum speedups were found for popular
-computational methods such
+extensions by Durr and Hoyer) finds the maximum of a function in fewer
+steps than conventional brute-force search. Similarly, quantum speedups
+were found for popular computational methods such
 as [backtracking](https://arxiv.org/abs/1509.02374), [gradient
 descent](https://arxiv.org/abs/1711.00465), [semidefinite
 programming](https://arxiv.org/abs/1710.02581), [lasso](https://arxiv.org/abs/2110.13086),
@@ -501,8 +500,8 @@ today, categorised by their type of speedup:
 
  
 
-<img src="/media/image8.png"
-style="width:6.26806in;height:2.85972in" />
+<img src=" {{ site.baseurl }}/media/image8.png"
+style="width:6.26806in" />
 
 🟢   The “**exponential**” box is the most interesting one, featuring
 applications where quantum computers seem to have a groundbreaking

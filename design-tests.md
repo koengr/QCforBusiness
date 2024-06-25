@@ -40,6 +40,18 @@ $$ \pi = \frac{1}{2} $$
 And inline it goes like \\( 3+3 = \frac{1}{\pi} \\) this.
 
 
+## Hyperlinks and (base)url
+
+<a href="{{ site.baseurl }}/part1/chapter_2">baseurl href to p1ch2</a> (does not add file extension)
+
+<a href="{{ site.baseurl }}{% link _part2/chapter_1.md %}">baseurl + LINK href to p2ch1</a> (adds file extension)
+
+<a href="{% link _part3/chapter_1.md %}">LINK href to p3ch1</a>
+
+<a href="{{ site.baseurl }}{% link _part3/chapter_2.md %}">baseurl + LINK href to p3ch2</a>
+
+
+
 ## Tables
 
 Food    | Description                           | Category | Sample type

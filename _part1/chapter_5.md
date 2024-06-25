@@ -275,10 +275,9 @@ means that IonQ will have *at least *this number of qubits, but also
 guarantees sufficient gate accuracy to be able to run reasonably long
 circuits. It’s unclear whether a simple form of error correction may be
 needed to achieve this. If so, the actual number of physical qubits may
-be some orders of magnitude
-higher. [Quantinuum](https://www.honeywell.com/us/en/news/2020/10/get-to-know-honeywell-s-latest-quantum-computer-system-model-h1) (previously
-Honeywell Quantum Solutions) makes less concrete predictions, but
-expects fault-tolerant computing by 2030 (meaning that significant error
+be some orders of magnitude higher. Quantinuum (previously Honeywell
+Quantum Solutions) makes less concrete predictions, but expects
+fault-tolerant computing by 2030 (meaning that significant error
 correction is in place). In terms of today’s hardware, Quantinuum holds
 a record with roughly [19 algorithmic
 qubits](https://www.quantinuum.com/news/quantinuum-h-series-quantum-computer-accelerates-through-3-more-performance-records-for-quantum-volume-217-218-and-219).
@@ -286,8 +285,8 @@ qubits](https://www.quantinuum.com/news/quantinuum-h-series-quantum-computer-acc
 In the figure below, we plot the road maps of Google and IBM, and
 compare these to Moore’s law.
 
-<img src="/media/image9.png"
-style="width:6.26806in;height:2.70278in" />
+<img src=" {{ site.baseurl }}/media/image9.png"
+style="width:6.26806in" />
 
 **What does Moore’s law say?**
 
@@ -320,7 +319,7 @@ previously saw that around 20 million qubits would be needed for this.
 The results from December 2023, gathered from 37 quantum experts from
 academia and industry, are displayed below.
 
-<img src="/media/image10.png" style="width:5.27992in;height:3.45833in"
+<img src=" {{ site.baseurl }}/media/image10.png" style="width:5.27992in"
 alt="threat timeline expert estimates" />Figure credits:
 GlobalRiskInsitute.org.
 
@@ -355,7 +354,7 @@ In the figure below, we extrapolate IBM’s road map, assuming the same
 doubling time of roughly every eight-and-a-half months. We also indicate
 the predictions of Moore’s law with a doubling time of 1 or 2 years.
 
-<img src="/media/image11.png" style="width:6.26806in;height:2.72639in"
+<img src=" {{ site.baseurl }}/media/image11.png" style="width:6.26806in"
 alt="qubits long term scaling watermark" />
 
 If IBM manages to adhere to its road map, relevant applications like

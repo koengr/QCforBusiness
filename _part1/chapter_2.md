@@ -55,7 +55,7 @@ Some examples of systems where quantum could play a role are:
 
 - Photons, the particles out of which ‘light’ is made.
 
-<img src="/media/image2.png" style="width:6.26736in;height:0.65625in"
+<img src=" {{ site.baseurl }}/media/image2.png" style="width:6.26736in"
 alt="A magnifying glass over a circuit board Description automatically generated" />First,
 we need some physics jargon. The **state** of the world is a complete
 description of everything there is to know about its contents: all the
@@ -70,8 +70,8 @@ think of it as a tiny magnet that can either point ‘up’ (0) or ‘down’
 (1). Note that a state is valid for just one instant, as there could be
 reasons for it to change as time flows.
 
-<img src="/media/image3.png"
-style="width:6.12264in;height:1.95658in" />
+<img src=" {{ site.baseurl }}/media/image3.png"
+style="width:6.12264in" />
 
 ### Four surprising phenomena in the quantum world
 
@@ -178,7 +178,7 @@ quantum gates, each having a different effect on their input, we like to
 give them names in capital letters, such as [X, Z, H, and
 CNOT](https://en.wikipedia.org/wiki/Quantum_logic_gate).
 
-<img src="/media/image4.png" style="width:2.6761in;height:1.04717in" />
+<img src=" {{ site.baseurl }}/media/image4.png" style="width:2.6761in" />
 
 In the same jargon as the ‘quantum waves’, we can see quantum operations
 as manipulating these waves. This leads to effects similar to when you
@@ -197,7 +197,7 @@ act on a different set of qubits. At the end of the computation, we
 measure all qubits. Below, an example of such a sequence is given, using
 the standard Quantum Assembly (QASM) language.
 
-<img src="/media/image5.png" style="width:4.48113in;height:2.0818in" />
+<img src=" {{ site.baseurl }}/media/image5.png" style="width:4.48113in" />
 
 Together, these steps can be graphically displayed in a **quantum
 circuit**, as shown here on the right. Quantum circuits represent each

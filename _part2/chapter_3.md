@@ -83,7 +83,7 @@ and Bob, who want to communicate with each other. We distinguish two
 different types of cryptography: the symmetric and the asymmetric
 (public key) variants. 
 
-<img src="/media/image13.png" style="width:3.30619in;height:1.76042in"
+<img src=" {{ site.baseurl }}/media/image13.png" style="width:3.30619in"
 alt="Symm and asymmetric cryptography Page 1 copy 2" />
 
 In **symmetric (or private key) cryptography, **we assume that both
@@ -98,7 +98,7 @@ only thing that’s relevant is that our computers can do this very
 efficiently, and that it’s considered extremely safe (without the key,
 nobody could reasonably break this encryption). 
 
-<img src="/media/image14.png" style="width:3.15014in;height:1.96875in"
+<img src=" {{ site.baseurl }}/media/image14.png" style="width:3.15014in"
 alt="Symm and asymmetric cryptography Page 3 copy 2 1" />
 
 In asymmetric cryptography, or more often called **public-key
@@ -115,7 +115,7 @@ the previous encryption method, Alice could send a secret key to Bob,
 which they can then use for symmetric cryptography (which is often a lot
 faster).
 
-<img src="/media/image15.png" style="width:3.0625in;height:1.93332in"
+<img src=" {{ site.baseurl }}/media/image15.png" style="width:3.0625in"
 alt="Symm and asymmetric cryptography Page 4 copy 2" />
 
 Furthermore, the protocol works in ‘reverse’. Alice can use her private
@@ -128,7 +128,7 @@ forms the basis of digital signatures.  
 
  
 
-<img src="/media/image16.png" style="width:3.04167in;height:1.37813in"
+<img src=" {{ site.baseurl }}/media/image16.png" style="width:3.04167in"
 alt="security google chrome" />
 
 This is precisely what’s used whenever you open a webpage. Your browser

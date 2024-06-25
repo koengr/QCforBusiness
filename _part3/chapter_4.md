@@ -36,7 +36,7 @@ risks of missing out and the need to take actions quickly. However, they
 all mention reasonable strategic steps that organisation can take, which
 we will lay out below. Let’s break them up into 3 different stages:
 
-<img src="/media/image23.png" style="width:6.26806in;height:2.92222in"
+<img src=" {{ site.baseurl }}/media/image23.png" style="width:6.26806in"
 alt="what steps can businesses companies take in quantum professionals guide 1" />
 
 **1. Start with no-regret moves**
@@ -106,8 +106,7 @@ Optional but recommended: 
 
 - Start concrete explorations, for example by testing and implementing
   trial use-cases. It is relatively easy (and fun!) to follow the
-  tutorial of programming packages
-  like [Qiskit ](https://qiskit.org/learn/)or [Cirq](https://quantumai.google/cirq). 
+  tutorial of programming packages like Qiskit or Cirq. 
 
 - Find a partner. Save costs by collaborating on early, pre-competitive
   exploration. 
@@ -212,7 +211,7 @@ long-lived systems that will still be in use decades from now.”
 
 **THE PQC MIGRATION HANDBOOK**
 
-<img src="/media/image24.png" style="width:2.38542in;height:3.37621in"
+<img src=" {{ site.baseurl }}/media/image24.png" style="width:2.38542in"
 alt="Screenshot 2023 05 09 at 17.54.18" />
 
 Judging from previous migrations, \[implementing PQC\] might take well
@@ -269,7 +268,6 @@ events](https://www.quantum.amsterdam/further-reading-list-of-information-resour
 where you may find like-minded partners. We also encourage you
 to [contact us](https://www.quantum.amsterdam/contact/) for some
 sparring on what your organization can do, and to get connected to
-Netherlands-based knowledge institutes
-like [QuSoft](http://www.qusoft.org/) and [Quantum Application
-Lab](http://www.quantumapplicationlab.com/). 
+Netherlands-based knowledge institutes like QuSoft and [Quantum
+Application Lab](http://www.quantumapplicationlab.com/). 
 

@@ -32,8 +32,8 @@ relevant example, we dive into the world of artificial fertilizer.
 
 ### The case of FeMoco
 
-<img src="/media/image12.png"
-style="width:1.33333in;height:2.48667in" />
+<img src=" {{ site.baseurl }}/media/image12.png"
+style="width:1.33333in" />
 
 {{ begin figure caption }}
 
