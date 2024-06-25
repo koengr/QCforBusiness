@@ -2,7 +2,8 @@ title: Introduction to Quantum Computing for Business
 description: This is a description - where does it appear?
 theme: just-the-docs
 
-url: https://koengr.github.io/QCforBusiness
+url: https://koengr.github.io
+baseurl: 
 
 # Define Jekyll collections.
 # Example: Define a collection named "NAME", its documents reside in the "_NAME" directory
