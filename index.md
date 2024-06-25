@@ -22,7 +22,7 @@ computers, without going into tedious technical details. It answers questions su
 <br>
 <br>
 <center>
-<a href="/part1/chapter_1"><button class="btn fs-6">Start reading</button></a>
+<a href="{{ site.url }}/part1/chapter_1"><button class="btn fs-6">Start reading</button></a>
 </center>
 <br>
 
