@@ -4,8 +4,8 @@ layout: default
 nav_order: 0
 ---
 
-{: .fs-8 }
-Introduction to Quantum Computing for Business
+<img src="/site-img/header-logo.png" width="700" />
+
 
 This free book contains everything you should know about quantum
 computers, without going into tedious technical details. It answers questions such as:
@@ -27,7 +27,7 @@ computers, without going into tedious technical details. It answers questions su
 <br>
 
 
-### Audience
+## Audience
 
 This book targets anyone who encounters quantum technologies in their professional lives, but who don't not need a full physics background. This includes:
 
@@ -48,7 +48,7 @@ This book targets anyone who encounters quantum technologies in their profession
 | **✓** | Timelines |  | ✗ | Exhaustive information about every possible detail |
 | **✓** | Links to other great resources |  |  |  |
 
-### Get the softcover
+## Get the softcover
 
 Prefer to read a printed edition? A physical edition will be released in Q4 2024.
 

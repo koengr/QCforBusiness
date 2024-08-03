@@ -29,7 +29,7 @@ that is available (below, yellow). This list is by no means complete! It
 should at best give an impression of the current state of the art. Let
 us start by taking a closer look at the functionalities.
 
-<img src=" {{ site.baseurl }}/media/image17.png" style="width:6.26806in"
+<img src=" {{ site.baseurl }}/media/image22.png" style="width:6.26806in"
 alt="universal simulator annealer 2023 1" />
 
 Our biggest dream is to have a **‘universal quantum computer**’. The

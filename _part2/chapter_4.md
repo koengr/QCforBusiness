@@ -1,12 +1,12 @@
 ---
 layout: default
-title: 4 Optimization and Machine Learning, What do current players do?
+title: 4 Applications in optimisation and machine learning
 nav_order: 4
 ---
 
-## Optimization and Machine Learning: What do current players do? 
+## Applications in optimisation and machine learning 
 
-TODO: write section!
+TODO: write section! 🡪 See separate document!
 
 **Where should we look for a killer application?**
 

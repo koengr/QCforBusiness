@@ -20,16 +20,31 @@ nav_order: 4
 
 </fieldset>
 
-In the previous part, we saw that quantum computers are extremely slow
-computers, but they happen to solve some problems more efficiently, that
-is, in fewer steps. The most important question in this field is: **what
-advantage do quantum computers have on which problems**? To answer this
-question, we break it down into two parts:
+In the previous chapter, we saw that quantum computers are extremely
+slow computers, but they happen to solve some problems more efficiently,
+that is, in fewer steps. The most important question in this field
+is: **what advantage do quantum computers have on which problems**?
+
+The [Quantum Algorithm Zoo](https://quantumalgorithmzoo.org/)[^3] lists
+pretty much all known quantum algorithms. It has grown into an
+impressive list that cites over 400 papers. Unfortunately, upon closer
+inspection, it’s hard to extract precisely the useful business
+applications from it, for various reasons. Several algorithms solve
+highly artificial problems for which no real business use-cases are
+known. Others may make unrealistic assumptions or may only offer a
+speedup in the formal number of computational steps (but not in actual
+wall clock time). Nevertheless, it’s definitely recommended to scroll
+through.
+
+For this book, we take a different approach. We focus specifically on
+algorithms with plausible business applications. To assess their
+advantage, we break our main question down in two parts:
 
 - What are projected applications with a quantum speedup?
 
-- [How large is the advantage of known
-  speedups?](https://www.quantum.amsterdam/part-2-the-applications/#classify)
+- How large is the advantage of known speedups?
+
+[^3]: https://quantumalgorithmzoo.org/
 
 ### What are projected applications with a quantum speedup?
 
@@ -57,7 +72,7 @@ not be spitting out recipes for new pharmaceuticals by themselves.
 Breakthroughs in chemistry and material science will still require a mix
 of theory, lab testing, computation, and most of all, the hard work of
 smart scientists and engineers. From this perspective, quantum computers
-should become a useful new tool for R&D departments.
+have the potential to become a valued new tool for R&D departments.
 
 [**Read more: How can quantum computers help us produce agricultural
 fertiliser more
@@ -255,7 +270,7 @@ regarded as the best way to mitigate the quantum threat.
 
 **THE PQC MIGRATION HANDBOOK**
 
-<img src=" {{ site.baseurl }}/media/image7.png" style="width:1.81786in"
+<img src=" {{ site.baseurl }}/media/image11.png" style="width:1.81786in"
 alt="Screenshot 2023 05 09 at 17.54.18" />
 
 End quote
@@ -306,9 +321,10 @@ speedup: *there is no dispute that these require *fewer* *computational
 steps* than any classical algorithm. For instance, a famous quantum
 algorithm invented by [Lov
 Grover](https://en.wikipedia.org/wiki/Grover's_algorithm) (with
-extensions by Durr and Hoyer) finds the maximum of a function in fewer
-steps than conventional brute-force search. Similarly, quantum speedups
-were found for popular computational methods such
+extensions by [Durr and Hoyer](https://arxiv.org/abs/quant-ph/9607014))
+finds the maximum of a function in fewer steps than conventional
+brute-force search. Similarly, quantum speedups were found for popular
+computational methods such
 as [backtracking](https://arxiv.org/abs/1509.02374), [gradient
 descent](https://arxiv.org/abs/1711.00465), [semidefinite
 programming](https://arxiv.org/abs/1710.02581), [lasso](https://arxiv.org/abs/2110.13086),
@@ -375,16 +391,30 @@ The most noteworthy variants are:
 
  
 
-**Fast solutions in search of a problem**
+**Fast solutions in search of a suitable problem**
 
 Lastly, there exist algorithms with large speedups, for which we are
 still looking for use-cases with any scientific or economic relevance.
-The most notable example is the quantum algorithm for [topological data
+The most notable example is the quantum algorithm that solves [systems
+of linear equations](https://en.wikipedia.org/wiki/HHL_algorithm)[^4]
+with an exponential advantage. This problem is ubiquitous in engineering
+and optimization, but unfortunately there are [so many
+caveats](https://doi.org/10.1038/nphys3272) that no convincing practical
+use cases have been found[^5].
+
+Recently, much attention has gone to the algorithm for [topological data
 analysis](https://www.nature.com/articles/ncomms10138) (a method to
 assess certain global features of a dataset), which promises an
-exponential advantage under certain assumptions. However, to our best
-knowledge, no interesting datasets have been found that fit the
-algorithm’s requirements.
+exponential advantage under certain assumptions. Again, scientists are
+still searching for a convincing application.
+
+Similarly, a quantum version of a classical machine learning algorithm
+called Support Vector Machines was found to have an [exponential
+advantage over classical
+methods](https://www.nature.com/articles/s41567-021-01287-z)[^6].
+Unfortunately, this only works with a very specific dataset based on the
+factoring problem that Shor’s algorithm is well known for, hence we see
+no practical uses.
 
 **A fourth class: quantum-inspired algorithms**
 
@@ -392,8 +422,8 @@ Some impressive speedups that were recently found have been
 ‘dequantized’: these algorithms were found to work on classical
 computers too! There’s a beautiful story behind this process, where Ewin
 Tang, a Master’s student at the time, made one of the largest
-algorithmic breakthroughs of the decade. A great report can be found
-here: <https://medium.com/qiskit/how-ewin-tangs-dequantized-algorithms-are-helping-quantum-algorithm-researchers-3821d3e29c65>
+algorithmic breakthroughs of the decade. A great report can be found [on
+Medium](https://medium.com/qiskit/how-ewin-tangs-dequantized-algorithms-are-helping-quantum-algorithm-researchers-3821d3e29c65)[^7]. 
 
 Unfortunately, there does not yet exist an optimisation algorithm with
 obvious economic value: all of them come with serious caveats. This
@@ -425,6 +455,19 @@ Further reading: 
 - [Professor Sanker Das Sarma warns of hype within the field of quantum
   optimisation and machine
   learning.](https://www.technologyreview.com/2022/03/28/1048355/quantum-computing-has-a-hype-problem/)
+
+[^4]: Harrow, Aram W; Hassidim, Avinatan; Lloyd, Seth (2008). "Quantum
+    algorithm for linear systems of equations". Physical Review Letters.
+    103 (15) 150502. <https://doi.org/10.1103/PhysRevLett.103.150502>
+
+[^5]: Aaronson, S. Read the fine print. Nature Phys 11, 291–293 (2015).
+    <https://doi.org/10.1038/nphys3272>
+
+[^6]: Liu, Y., Arunachalam, S. & Temme, K. A rigorous and robust quantum
+    speed-up in supervised machine learning. Nat. Phys. 17, 1013–1017
+    (2021). <https://doi.org/10.1038/s41567-021-01287-z>
+
+[^7]: https://medium.com/qiskit/how-ewin-tangs-dequantized-algorithms-are-helping-quantum-algorithm-researchers-3821d3e29c65
 
 ### How large is the advantage of known speedups? 
 
@@ -500,7 +543,7 @@ today, categorised by their type of speedup:
 
  
 
-<img src=" {{ site.baseurl }}/media/image8.png"
+<img src=" {{ site.baseurl }}/media/image12.png"
 style="width:6.26806in" />
 
 🟢   The “**exponential**” box is the most interesting one, featuring
@@ -540,6 +583,21 @@ in this category, and these caused a significant revolution in AI.
 Unfortunately, it is unclear what the impact of currently known
 heuristic quantum algorithms will be. 
 
+In summary, we see that the utility of the mentioned quantum
+applications is unclear – but some are more unclear than others. The
+following graph summarises this well: the most ‘valuable’ applications
+(like quantum machine learning) also come with the largest risks,
+whereas the most convincing speedups (like codebreaking) offer less
+value. The applications of chemistry and material science sit somewhere
+in between.
+
+<img src=" {{ site.baseurl }}/media/image13.png"
+style="width:5.16239in" />
+
+Unfortunately, we don’t dare to assign concrete numbers to this graph.
+That’s something that we will need to empirically find out in the near
+future.
+
 See also:
 
 - [A quantitative analysis of Grover’s runtime compared to today’s
@@ -562,14 +620,14 @@ properties: 
     is the most attractive solution. This is achieved when a realistic
     quantum computer solves the problem faster than any classical
     machine could, but other aspects like energy consumption or total
-    cost of hardware and software development can also play a role. This
-    most likely requires an *exponential *speedup, or a large polynomial
-    speedup. 
+    cost of hardware and software development can also play a role.
+    Ideally, the quantum computer enjoys an *exponential *speedup, or at
+    least a large polynomial speedup. 
 
-Several algorithms, most notably Grover’s algorithm and VQE’s, have a
-very wide range of industrial applicability. However, it seems that in
-practice, other (classical) approaches solve such problems faster and
-more cheaply. 
+Several algorithms, most notably Grover’s algorithm, have a very wide
+range of industrial applicability. However, it seems that in practice,
+other (classical) approaches solve such problems faster and more
+cheaply. 
 
 Then there exist exponential speedups, like the algorithm for
 topological data analysis, for which no practical uses have been found

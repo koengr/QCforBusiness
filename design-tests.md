@@ -27,13 +27,13 @@ This is a gradient background part.
 
 
 This is a beautiful main page. 
-<img src="/images/image1.jpeg" width="100" />
+<img src="/site-img/header-logo.png" width="500" />
 
+
+## LaTeX
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-
-
-Does latex work?
+LaTeX works when importing the MathJax javascript code?
 
 $$ \pi = \frac{1}{2} $$
 
@@ -42,13 +42,21 @@ And inline it goes like \\( 3+3 = \frac{1}{\pi} \\) this.
 
 ## Hyperlinks and (base)url
 
-<a href="{{ site.baseurl }}/part1/chapter_2">baseurl href to p1ch2</a> (does not add file extension)
+Correct way to set hyperlinks:
 
-<a href="{{ site.baseurl }}{% link _part2/chapter_1.md %}">baseurl + LINK href to p2ch1</a> (adds file extension)
+{% highlight ruby %}
+<a href="{{ site.baseurl }}/part1/chapter_2">baseurl href to p1ch2</a> 
+{% endhighlight %}
+
+<a href="{{ site.baseurl }}/part1/chapter_2">baseurl href to p1ch2</a> 
+
+Or use the link command (without baseurl)
+
+{% highlight ruby %}
+<a href="{% link _part3/chapter_1.md %}">LINK href to p3ch1</a>
+{% endhighlight %}
 
 <a href="{% link _part3/chapter_1.md %}">LINK href to p3ch1</a>
-
-<a href="{{ site.baseurl }}{% link _part3/chapter_2.md %}">baseurl + LINK href to p3ch2</a>
 
 
 

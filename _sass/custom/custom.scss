@@ -15,9 +15,20 @@
 
 // ==============================
 // Make the Menu / Hamburger menu stick the LEFT (instead of the 'title' taking up space). 
-.site-header{ 
-	flex-direction: row-reverse
-}
+// .site-header{ 
+// 	flex-direction: row-reverse
+// }
+
+// ===========================
+// Ugly H4 headers
+
+h4 {
+	@include fs-4;
+	font-size: 2rem;
+	//font-weight: 400;
+	text-transform: none;
+	letter-spacing: 0rem;
+  }
 
 
 // ==============================
@@ -66,8 +77,8 @@ legend {
 
 details {
 
-	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+	// Box shadow: ( xstart, ystart, blur-size, shadow-size, color )
+	box-shadow: 5px 5px 3px 1.5px rgba(0, 0, 0, .1);
 	width: 100%;
 	background: #f5f6fa;
 	border-radius: 12px;
@@ -85,36 +96,86 @@ details summary
 fieldset {
 	margin-top: 2em;
 }
+ 
+// ADJUST THE SIDEBAR (past certain screen sizes)
+// Size jumps happen at: 
+// - 50rem: sidebar appears on the side
+// - 1270px: sidebar becomes wider. 
+
+// Make sidebare wide on large screens.
+@media (min-width: 1270px) {
+    .site-nav, .site-header, .site-footer {
+        width: 23.5rem;
+    }
+}
+
+
+// Make the sidebar logo bigger (adaptive)
+
+// .site-logo {
+// 	background-image: url(/site-img/lineart-header-wide.png);  // this is the default
+// }
+
+@media (min-width: 50rem) {
+	.site-logo {
+		background-image: url(/site-img/header-logo.png);
+	}
+
+	.site-header {
+		height: 12rem;
+		max-height: 12rem;
+		border-bottom: none;
+	}
+
+	// Make the main content a bit smaller (normally width: 50rem)
+	.main-content {
+		width: 40rem;
+	}
+	
+}
+
+
 
 // ==============================
-// Make sidebar bigger (from https://github.com/just-the-docs/just-the-docs/discussions/1204)
+// Old attempts to Make sidebar bigger (from https://github.com/just-the-docs/just-the-docs/discussions/1204)
 
-// .side-bar {
-// 	z-index: 0;
-// 	display: flex;
-// 	flex-wrap: wrap;
-// 	background-color: $sidebar-color;
-  
-// 	@include mq(md) {
-// 	  flex-flow: column nowrap;
-// 	  position: fixed;
-// 	  width: $nav-width-md;
-// 	  height: 100%;
-// 	  border-right: $border $border-color;
-// 	  align-items: flex-end;
-// 	}
-  
-// 	@include mq(lg) {
-// 	  width: calc((100% - #{$nav-width + $content-width}) / 20 + #{$nav-width});
-// 	  min-width: $nav-width;
-// 	}
-//   }
+///// The better code to use: 
+// .site-header, .site-nav, .site-footer {
+// 	width:90%;
+// 	max-width: 25rem;
+// }
 
-// .side-bar {
-// 	width: 30%;
-//    }
 
-.site-header, .site-nav, .site-footer {
-	width:90%;
-	max-width: 25rem;
-}
+// @media (min-width: 65rem) {
+//     .site-header, .site-nav, .site-footer {
+//         width: calc((100% - 16rem) / 2 + 16rem);
+//         min-width: 16rem;
+//     }
+// }
+
+// @media (min-width: 50rem) {
+//     .site-header, .site-nav, .site-footer {
+//         width: 16rem;
+//     }
+// }
+
+// @media (min-width: 66.5rem) {
+//     .side-bar {
+//         width: calc((100% - 66.5rem) / 2 + 30.5rem);
+//         min-width: 30.5rem;
+//     }
+// }
+
+// @media (min-width: 50rem) {
+//     .side-bar {
+//         flex-flow: column nowrap;
+//         position: fixed;
+//         width: 15.5rem;
+//         height: 100%;
+//         border-right: 1px solid #eeebee;
+//         align-items: flex-end;
+//     }
+// }
+
+// Fix the SIZE OF THE SITE LOGO
+// background-image: url(/site-img/lineart-header-wide.png);

@@ -1,10 +1,10 @@
 ---
 layout: default
-title: 2 Quantum networks
+title: 2 Applications of quantum networks
 nav_order: 2
 ---
 
-## Quantum networks
+## Applications of quantum networks
 
 If we’re building computers that deal with qubits, superposition and
 entanglement, wouldn’t these computers also need some way to send qubits

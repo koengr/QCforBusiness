@@ -1,9 +1,23 @@
+# General information
 title: Introduction to Quantum Computing for Business
-description: This is a description - where does it appear?
+description: 
 theme: just-the-docs
 
+# Rendering setings
+markdown: kramdown
 url: https://koengr.github.io
-baseurl: QCforBusiness
+#baseurl: QCforBusiness  ## ENABLE FOR GITHUB!
+
+
+# Use customized colors
+color_scheme: mycolors  
+
+
+# Fancy logo (appears on top-left above navigation)
+logo: "/site-img/lineart-header-wide.png"
+favicon_ico: "/site-img/linaert-atom-favicon.ico"
+
+
 
 # Define Jekyll collections.
 # Example: Define a collection named "NAME", its documents reside in the "_NAME" directory
@@ -15,6 +29,9 @@ collections:
     permalink: "/:collection/:path/"
     output: true
   part3:
+    permalink: "/:collection/:path/"
+    output: true
+  part4:
     permalink: "/:collection/:path/"
     output: true
 
@@ -31,8 +48,10 @@ just_the_docs:
       name: "Part 2: Understanding the applications"
     part3:
       name: "Part 3: Going deeper"
+    part4:
+      name: "Part 4: (extra)"
 
-
+# Define callout boxes
 callouts:
   warning:
     title: Warning

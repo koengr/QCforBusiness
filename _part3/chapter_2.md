@@ -24,23 +24,20 @@ nav_order: 2
 
 </fieldset>
 
-The recently
-announced [roadmap](https://www.quera.com/press-releases/quera-computing-releases-a-groundbreaking-roadmap-for-advanced-error-corrected-quantum-computers-pioneering-the-next-frontier-in-quantum-innovation) by
-QuEra caused quite a buzz: the startup presents its plans in terms
-of *logical qubits*, aiming to have 100 of these by 2026. This is a
-significant shift from their earlier focus on physical qubits. Experts
-agree that achieving error correction is [one of the key
-milestones](https://globalriskinstitute.org/publication/2023-quantum-threat-timeline-report/) towards
-large-scale computations, like breaking cryptography. As we expect many
-breakthroughs in error correction in the years to come, this is the
-right time to understand the importance of error correction and clear up
-some misconceptions about logical qubits.
+Around 2024, we’re seeing a major shift in the road maps of quantum
+computer manufacturers. Several companies no longer put their bare
+qubits in the spotlight, but instead focus *logical qubits.* Error
+correction seems to be an essential component of large-scale quantum
+computing, adding yet another facet in which these devices differ from
+their classical counterparts.
 
-A statement that we often hear is the following (which is incorrect!)
+As with many aspects of quantum computing, error correction can be
+rather confusing. A statement that we often hear is the following (which
+is incorrect!)
 
-*"Logical qubits (or: error-corrected qubits) are resilient to errors
-that occur during a computation. Once we have logical qubits, we can
-increase the length of our computations indefinitely. "*
+> *"Logical qubits (or: error-corrected qubits) are resilient to errors
+> that occur during a computation. Once we have logical qubits, we can
+> increase the length of our computations indefinitely. "*
 
 What’s the problem here? Well, not every logical qubit is created
 equally. We expect to soon see logical qubits that are perhaps 2x more
@@ -48,10 +45,9 @@ accurate than today’s bare hardware qubits, and later 10x, and in the
 future perhaps 1000x. Error correction is a trick to *reduce* the
 probability of errors, but it will not eliminate errors completely. In
 the following decade, we expect to see gradual improvements, hopefully
-down to error rates of 10<sup>-10</sup> and below. Let’s explore the
-reasons behind this.
+down to error rates of 10<sup>-10</sup> and below.
 
-**What is error correction?**
+### What is error correction?
 
 In quantum error correction, we combine some number (think of hundreds
 or thousands) of **‘physical’** hardware qubits into a
@@ -65,7 +61,7 @@ when we combine more physical qubits per logical qubit. Hence, we obtain
 a very favourable trade-off between the number of qubits, and the
 accuracy of the qubits.
 
-<img src=" {{ site.baseurl }}/media/image18.png" style="width:3.66223in"
+<img src=" {{ site.baseurl }}/media/image23.png" style="width:3.66223in"
 alt="Image alt text" />
 
 **Doesn’t measuring a quantum state destroy the information in the
@@ -92,7 +88,7 @@ of qubits it requires. It also has a **depth,** which is the number of
 consecutive steps that need to be performed. In early hardware, you may
 interpret one step as a single quantum gate. 
 
-<img src=" {{ site.baseurl }}/media/image19.png" style="width:3.57494in" />
+<img src=" {{ site.baseurl }}/media/image24.png" style="width:3.57494in" />
 
 The concept of  ‘width’ is pretty straightforward: if the computer
 doesn’t have enough memory, it will not be able to run the program.
@@ -108,9 +104,9 @@ imbalance between depth and error grows, the probability to find a
 correct outcome is reduced *exponentially*. We illustrate this in more
 detail in the box below. 
 
-**{{ begin fancy box }}  
+<details markdown="1">
   
-To illustrate, why do we need such small error rates?**
+<summary>To illustrate, why do we need such small error rates?**</summary>
 
 Let’s look at a very simple model of a computer, which is not unlike
 what happens inside a quantum computer or a modern (classical) CPU. As
@@ -159,6 +155,9 @@ total steps: 
 | 1000                  | ( 0.99 )<sup>1000</sup> = 0.004 %               |
 | 10,000                | ( 0.99 )<sup>10,000</sup> =   10<sup>-44</sup>  |
 
+Figure 5. The number of qubits in the most mature quantum computers from
+a selection of different manufacturers, as of 2024.
+
 In this simple model, we assume that *any* error is catastrophic. This
 is quite accurate for most programs. You might argue that there is a
 miniscule chance that two errors cancel, or that the error has very
@@ -175,6 +174,9 @@ Now, assume we improve our hardware, towards an error rate of 0.1%
 | 100                     | ( 0.999 )<sup>10</sup> = 90%        |
 | 1000                    | ( 0.999 )<sup>1000</sup> = 37%      |
 | 10,000                  | ( 0.999 )<sup>10,000</sup> = 0.004  |
+
+Figure 6: Results of an expert survey by Global Risk Institute
+(globalriskinstitute.org).
 
 A probability to succeed of 37% sounds bad, but for truly high-end
 computations we might actually be okay with that. If the program results
@@ -207,11 +209,11 @@ of errors, native gate sets, connectivity, and so forth — these make the
 story much more complicated, but will not change our qualitative
 conclusions.
 
-**{{ end fancy box }}**
+</details>
 
-**{{ begin fancy box }}**
+<details markdown="1">
 
-**Why don’t we just make the hardware more stable?**
+<summary>**Why don’t we just make the hardware more stable?**</summary>
 
 To some degree, we can still greatly reduce errors by creating more
 accurate hardware. However, quantum objects are so incredibly fragile
@@ -225,11 +227,11 @@ at the cost of adding a modest number of qubits, which are assumed to be
 scalable anyway. That’s why experts agree that error correction is the
 right way forward.  
 
-**{{ end fancy box }}**
+</details>
 
-**{{ begin fancy box }}**
+<details markdown="1">
 
-**Do we use error correction in classical computers too?**
+<summary>**Do we use error correction in classical computers too?**</summary>
 
 This might be a good moment to appreciate the incredible perfection of
 classical computer chips: while doing billions of steps per second,
@@ -246,7 +248,7 @@ correction](https://en.wikipedia.org/wiki/Reliability,_availability_and_servicea
 sometimes used in older mainframes and (even today) in [space
 probes](https://arstechnica.com/science/2019/11/space-grade-cpus-how-do-you-send-more-computing-power-into-space/). 
 
-**{{ end fancy box }}**
+</details>
 
 ### Longer computations need more qubits
 
@@ -257,7 +259,7 @@ as the difficulty or the size of the problem: for example, we might
 consider the problem of “factoring a number that can be written down
 using at most N bits”). 
 
-<img src=" {{ site.baseurl }}/media/image20.png" style="width:6.26806in"
+<img src=" {{ site.baseurl }}/media/image25.png" style="width:6.26806in"
 alt="circuit depth scaling" />
 
 Keep in mind: we’re talking about the requirements to solve a problem
@@ -279,7 +281,7 @@ correction (hence it has a small, fixed depth). The other is an
 error-corrected computer that can trade between depth and width (in
 certain discrete steps). 
 
-<img src=" {{ site.baseurl }}/media/image21.png" style="width:6.26806in"
+<img src=" {{ site.baseurl }}/media/image26.png" style="width:6.26806in"
 alt="circuit depth with or without correction" />
 
 The computer without error correction might have enough memory to solve
@@ -292,7 +294,7 @@ computer might have sufficient depth OR sufficient width, but it doesn’t
 have both at the same time. Hence, neither computer solves the N=40
 problem. 
 
-<img src=" {{ site.baseurl }}/media/image22.png" style="width:6.26806in"
+<img src=" {{ site.baseurl }}/media/image27.png" style="width:6.26806in"
 alt="circuit depth with or without correction problem sizes" />
 
 Towards cracking the N=40 problem, our best bet is to upgrade the
@@ -312,32 +314,15 @@ Effectively, once we reach an era of error correction, then increasing
 the number of physical qubits will still be among the top of our
 wishlist. 
 
-**Further reading:**
+### What is the current state-of-the-art?
 
-- Craig Gidney (Google) has a [more technical blog
-  post](https://algassert.com/post/1800) on why adding physical qubits
-  will remain relevant in the following decades. 
-
-- \[Technical!\] Some *scientific* work speaks of ‘early fault-tolerant’
-  quantum computing, such as:
-
-  - “[Early Fault-Tolerant Quantum
-    Computing](https://arxiv.org/abs/2311.14814)”, discussing how we can
-    squeeze as much as possible out of limited devices.
-
-  - “[Assessing the Benefits and Risks of Quantum
-    Computers](https://arxiv.org/abs/2311.14814)” takes a similar width
-    x depth approach as we do here, but uses it to assess what
-    applications will be within reach first.
-
-### \[Technical\] What is the current state-of-the-art?
-
-As of January 2024, there have been several demonstrations of error
-correction (and the slightly less demanding cousin: error *detection*),
-but these have all been with limited numbers of qubits, and with very
-limited benefit to depth (if any at all). However, we seem to be at a
-stage where hardware is sufficiently mature that we can start exploring
-early error correction. 
+This is a more technical section that can be safely skipped. As of 2024,
+there have been several demonstrations of error correction (and the
+slightly less demanding cousin: error *detection*), but these have all
+been with limited numbers of qubits, and with very limited benefit to
+depth (if any at all). However, we seem to be at a stage where hardware
+is sufficiently mature that we can start exploring early error
+correction. 
 
 Below are the three most popular approaches to error correction. Each of
 them can be considered a ‘family’ of different methods, based on similar
@@ -348,8 +333,6 @@ ideas:
 - Color codes
 
 - Low-Density Parity Check (LPDC) codes
-
- 
 
 The surface code (or toric code) has received a lot of scientific
 attention, as this seems to be on the roadmap of large tech companies
@@ -388,21 +371,10 @@ scaling properties over the surface code. 
   codes](https://quantumcomputingreport.com/alice-bob-collaborates-with-inria-to-develop-high-efficiency-error-correction-codes-using-cat-qubits-and-ldpc/),
   which can theoretically match very elegantly. 
 
- 
-
 Which code will eventually become the standard (if any), is still
-completely open. 
+completely open.  
 
-**See also:**
-
-- [The Quantum Threat Timeline
-  Report](https://globalriskinstitute.org/publication/2023-quantum-threat-timeline-report/) asked
-  several experts what they find the most likely approach to fault
-  tolerance (section 4.5). 
-
- 
-
-**What are the main challenges?**
+#### What are the main challenges?
 
 Firstly, we would need just *slightly* more accurate hardware. We
 mentioned a certain
@@ -429,13 +401,7 @@ as “error mitigation” and “error suppression” exist. They might be
 useful for incremental fidelity improvements, but they don’t facilitate
 an exponential increase in depth like proper error correction does. 
 
-**See also:**
-
-- British startup Riverlane builts a hardware chip that ‘decodes’ which
-  error occurred on logical qubits. ([Technical
-  report](https://arxiv.org/abs/2309.05558)). 
-
-**Conclusion**
+###  Conclusion
 
 The bottom line is that one shouldn’t blindly take ‘logical qubits’ as
 perfect building blocks that will run indefinitely. A logical qubit is
@@ -445,4 +411,32 @@ anything about whether this error correction works well at all). A much
 more interesting metric is the probability of error in a single step (in
 jargon: the fidelity of an operation), which gives a reasonable
 indication of the number of steps that a device can handle!
+
+### See also:
+
+- [The Quantum Threat Timeline
+  Report](https://globalriskinstitute.org/publication/2023-quantum-threat-timeline-report/) asked
+  several experts what they find the most likely approach to fault
+  tolerance (section 4.5). 
+
+- British startup [Riverlane builts a hardware
+  chip](https://www.riverlane.com/news/riverlane-announces-world-s-most-powerful-quantum-decoder) that
+  ‘decodes’ which error occurred on logical qubits. ([Technical
+  report](https://arxiv.org/abs/2309.05558)). 
+
+- Craig Gidney (Google) has a [more technical blog
+  post](https://algassert.com/post/1800) on why adding physical qubits
+  will remain relevant in the following decades. 
+
+- \[Technical!\] Some *scientific* work speaks of ‘early fault-tolerant’
+  quantum computing, such as:
+
+  - “[Early Fault-Tolerant Quantum
+    Computing](https://arxiv.org/abs/2311.14814)”, discussing how we can
+    squeeze as much as possible out of limited devices.
+
+  - “[Assessing the Benefits and Risks of Quantum
+    Computers](https://arxiv.org/abs/2311.14814)” takes a similar width
+    x depth approach as we do here, but uses it to assess what
+    applications will be within reach first.
 

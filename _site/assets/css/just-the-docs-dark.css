@@ -1108,6 +1108,15 @@ blockquote {
   }
 }
 
+.site-logo {
+  width: 100%;
+  height: 100%;
+  background-image: url("/site-img/lineart-header-wide.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+}
+
 .site-button {
   display: flex;
   height: 100%;
@@ -7745,8 +7754,16 @@ blockquote.new-title > p:last-child {
   background: linear-gradient(90deg, rgb(63, 94, 251) 0%, rgb(252, 70, 107) 100%);
 }
 
-.site-header {
-  flex-direction: row-reverse;
+h4 {
+  font-size: 0.875rem !important;
+  font-size: 2rem;
+  text-transform: none;
+  letter-spacing: 0rem;
+}
+@media (min-width: 31.25rem) {
+  h4 {
+    font-size: 1rem !important;
+  }
 }
 
 legend {
@@ -7783,7 +7800,7 @@ legend {
 }
 
 details {
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: 5px 5px 3px 1.5px rgba(0, 0, 0, 0.1);
   width: 100%;
   background: #f5f6fa;
   border-radius: 12px;
@@ -7801,9 +7818,23 @@ fieldset {
   margin-top: 2em;
 }
 
-.site-header, .site-nav, .site-footer {
-  width: 90%;
-  max-width: 25rem;
+@media (min-width: 1270px) {
+  .site-nav, .site-header, .site-footer {
+    width: 23.5rem;
+  }
+}
+@media (min-width: 50rem) {
+  .site-logo {
+    background-image: url(/site-img/header-logo.png);
+  }
+  .site-header {
+    height: 12rem;
+    max-height: 12rem;
+    border-bottom: none;
+  }
+  .main-content {
+    width: 40rem;
+  }
 }
 
 /*# sourceMappingURL=just-the-docs-dark.css.map */

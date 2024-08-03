@@ -1,0 +1,65 @@
+// For details on customization
+// https://just-the-docs.com/docs/customization/#switchable-custom-scheme
+
+// For all variables that can be changed; 
+// https://github.com/just-the-docs/just-the-docs/blob/main/_sass/color_schemes/light.scss
+
+// Select pretty schemes:  https://coolors.co/palettes/trending
+
+
+
+@import "./color_schemes/light";
+
+// $color-mid: #40798C;
+// $color-dark: #164656;
+// $color-faint: #edf2f4;
+// $color-alt: #A790A5;
+
+// $color-mid: #40798C;
+// $color-dark: #164656;
+// $color-faint: #edf2f4;
+// $color-alt: #A790A5;
+
+//$color-mid: #4F7278;
+//$color-headings: #be8e3a; 
+
+$color-mid: #9e6c56;
+$color-headings: darken( $color-mid, 10%) ;
+
+$color-dark: #33494d;
+$color-faint: #f9f0e0; 
+$color-alt: #9c675e;
+
+
+
+
+
+$body-heading-color: $color-headings;
+$link-color: $color-mid;
+
+$body-text-color: $grey-dk-100 !default;
+
+
+
+// Sidebar & main body
+$sidebar-color: $color-faint;
+$feedback-color: lighten($color-faint, 4%);
+$body-background-color: $white ;
+
+
+// SETTING THE FONT
+// $body-font-family: Brush  ;
+
+body {
+    font-family: $body-font-family; 
+}
+
+// CHANGE THE SIDEBAR IN NAV
+// Change the SCROLL BAR Behaviour
+
+body {
+    scrollbar-width: thin;
+	scrollbar-color: darken($color-faint,8%) $color-faint; /* Two valid colors.
+	The first applies to the thumb of the scrollbar, the second to the track. */    
+
+}

@@ -83,7 +83,7 @@ and Bob, who want to communicate with each other. We distinguish two
 different types of cryptography: the symmetric and the asymmetric
 (public key) variants. 
 
-<img src=" {{ site.baseurl }}/media/image13.png" style="width:3.30619in"
+<img src=" {{ site.baseurl }}/media/image18.png" style="width:3.30619in"
 alt="Symm and asymmetric cryptography Page 1 copy 2" />
 
 In **symmetric (or private key) cryptography, **we assume that both
@@ -98,7 +98,7 @@ only thing that’s relevant is that our computers can do this very
 efficiently, and that it’s considered extremely safe (without the key,
 nobody could reasonably break this encryption). 
 
-<img src=" {{ site.baseurl }}/media/image14.png" style="width:3.15014in"
+<img src=" {{ site.baseurl }}/media/image19.png" style="width:3.15014in"
 alt="Symm and asymmetric cryptography Page 3 copy 2 1" />
 
 In asymmetric cryptography, or more often called **public-key
@@ -115,7 +115,7 @@ the previous encryption method, Alice could send a secret key to Bob,
 which they can then use for symmetric cryptography (which is often a lot
 faster).
 
-<img src=" {{ site.baseurl }}/media/image15.png" style="width:3.0625in"
+<img src=" {{ site.baseurl }}/media/image20.png" style="width:3.0625in"
 alt="Symm and asymmetric cryptography Page 4 copy 2" />
 
 Furthermore, the protocol works in ‘reverse’. Alice can use her private
@@ -128,7 +128,7 @@ forms the basis of digital signatures.  
 
  
 
-<img src=" {{ site.baseurl }}/media/image16.png" style="width:3.04167in"
+<img src=" {{ site.baseurl }}/media/image21.png" style="width:3.04167in"
 alt="security google chrome" />
 
 This is precisely what’s used whenever you open a webpage. Your browser
@@ -203,6 +203,8 @@ Further reading:
 The following table summarizes how our cryptosystems are threatened:
 
 <table>
+<caption><p>Figure 3: News header by IFLScience. Source: <a
+href="https://www.iflscience.com/chinese-scientists-create-quantum-processor-60000-times-faster-than-current-supercomputers-61475">https://www.iflscience.com/chinese-scientists-create-quantum-processor-60000-times-faster-than-current-supercomputers-61475</a></p></caption>
 <colgroup>
 <col style="width: 32%" />
 <col style="width: 28%" />
@@ -239,6 +241,9 @@ The following table summarizes how our cryptosystems are threatened:
 </tbody>
 </table>
 
+Figure 3: News header by IFLScience. Source:
+<https://www.iflscience.com/chinese-scientists-create-quantum-processor-60000-times-faster-than-current-supercomputers-61475>
+
 **  
 Why don’t we switch to symmetric cryptography? **
 
@@ -254,6 +259,9 @@ look at the functionality offered by the two types of cryptography: 
 | Confidentiality (privacy) | Only with pre-shared keys | ✔ |
 | Authentication / Integrity   | Only with pre-shared keys | ✔ |
 | Establishing secret keys | **✗** | ✔ |
+
+Figure 4: Aerial view of the strait of Gibraltar. Image source:
+https://commons.wikimedia.org/wiki/File:STS059-238-074_Strait_of_Gibraltar.jpg
 
 If only we could somehow give Alice and Bob pre-shared keys in a secure
 way, we would resolve most of these problems. Without public-key
