@@ -4,8 +4,7 @@ layout: default
 nav_order: 0
 ---
 
-<img src="/site-img/header-logo.png" width="700" />
-
+<img src=" {{ site.baseurl }}/site-img/header-logo.png" width="700" />
 
 This free book contains everything you should know about quantum
 computers, without going into tedious technical details. It answers questions such as:

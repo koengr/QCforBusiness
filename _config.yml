@@ -14,8 +14,8 @@ color_scheme: mycolors
 
 
 # Fancy logo (appears on top-left above navigation)
-logo: "/site-img/lineart-header-wide.png"
-favicon_ico: "/site-img/linaert-atom-favicon.ico"
+logo: "{{site.baseurl}}/site-img/lineart-header-wide.png"
+favicon_ico: "{{site.baseurl}}/site-img/linaert-atom-favicon.ico"
 
 
 

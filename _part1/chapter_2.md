@@ -56,9 +56,7 @@ Some examples of systems where quantum could play a role are:
 
 - Photons, the particles out of which ‘light’ is made.
 
-<img src=" {{ site.baseurl }}/media/image1.png" style="width:6.26736in"
-alt="A magnifying glass over a circuit board Description automatically generated" />To
-proceed, we need some physics jargon. We like to use the word
+To proceed, we need some physics jargon. We like to use the word
 ‘**state**’, which is a complete description of all the physical
 properties of the world at one instance: the locations of all the
 different particle, their velocities, how much they rotate, etcetera.
