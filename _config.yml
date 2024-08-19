@@ -6,7 +6,7 @@ theme: just-the-docs
 # Rendering setings
 markdown: kramdown
 url: https://koengr.github.io
-baseurl: QCforBusiness  ## ENABLE FOR GITHUB!
+#baseurl: QCforBusiness  ## ENABLE FOR GITHUB!
 
 
 # Use customized colors
