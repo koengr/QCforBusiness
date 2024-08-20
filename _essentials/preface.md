@@ -1,10 +1,10 @@
 ---
 layout: default
-title: 1 Preface, Why this book?
+title: "Preface: why this book?"
 nav_order: 1
 ---
 
-## Preface: Why this book?
+# Preface: Why this book?
 
 > *“Quantum computing will change everything,” the man in front of me
 > said. Standing tall and confident, he took another sip of his drink

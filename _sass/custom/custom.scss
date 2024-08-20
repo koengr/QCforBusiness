@@ -1,4 +1,35 @@
 // ==============================
+// NEXT buttons in the footer
+
+.footer-next {
+
+
+	// min-height: 100px;
+}
+
+.btn-next {
+	margin-top: 1em;
+	padding: 1em 2em;
+	width: -webkit-fill-available;
+	text-align: center;
+}
+
+// ==============================
+// FOOTNOTES at the end of some pages (auto-generated)
+.footnotes {
+	font-size: small;
+	margin-top: 2rem;
+}
+
+.footnotes::before {
+	display: block;
+	font-size: larger;
+	content: "References";
+}
+
+
+
+// ==============================
 // Fancybox is (for now) just a weird background
 
 .fancybox-red { background-color: rgb(250, 200, 200); }
@@ -112,9 +143,9 @@ fieldset {
 
 // Make the sidebar logo bigger (adaptive)
 
-// .site-logo {
-// 	background-image: url(/site-img/lineart-header-wide.png);  // this is the default
-// }
+.site-logo {
+	background-image: url(/site-img/lineart-header-wide.png);  // this is the default
+}
 
 @media (min-width: 50rem) {
 	.site-logo {
@@ -129,10 +160,11 @@ fieldset {
 
 	// Make the main content a bit smaller (normally width: 50rem)
 	.main-content {
-		width: 40rem;
+		max-width: 42rem;
 	}
 	
 }
+
 
 
 

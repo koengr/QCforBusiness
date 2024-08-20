@@ -1,10 +1,10 @@
 ---
 layout: default
-title: 2 Error correction
+title: "Error correction"
 nav_order: 2
 ---
 
-## Error correction
+# Error correction
 
 <fieldset class="field-set" markdown="1"> 
 <legend class="leg-title">At a glance</legend>
@@ -47,7 +47,7 @@ probability of errors, but it will not eliminate errors completely. In
 the following decade, we expect to see gradual improvements, hopefully
 down to error rates of 10<sup>-10</sup> and below.
 
-### What is error correction?
+## What is error correction?
 
 In quantum error correction, we combine some number (think of hundreds
 or thousands) of **‘physical’** hardware qubits into a
@@ -155,8 +155,6 @@ total steps: 
 | 1000                  | ( 0.99 )<sup>1000</sup> = 0.004 %               |
 | 10,000                | ( 0.99 )<sup>10,000</sup> =   10<sup>-44</sup>  |
 
-Figure 5. The number of qubits in the most mature quantum computers from
-a selection of different manufacturers, as of 2024.
 
 In this simple model, we assume that *any* error is catastrophic. This
 is quite accurate for most programs. You might argue that there is a
@@ -175,8 +173,7 @@ Now, assume we improve our hardware, towards an error rate of 0.1%
 | 1000                    | ( 0.999 )<sup>1000</sup> = 37%      |
 | 10,000                  | ( 0.999 )<sup>10,000</sup> = 0.004  |
 
-Figure 6: Results of an expert survey by Global Risk Institute
-(globalriskinstitute.org).
+
 
 A probability to succeed of 37% sounds bad, but for truly high-end
 computations we might actually be okay with that. If the program results
@@ -250,7 +247,7 @@ probes](https://arstechnica.com/science/2019/11/space-grade-cpus-how-do-you-send
 
 </details>
 
-### Longer computations need more qubits
+## Longer computations need more qubits
 
 As problems become ‘more complex’, they typically require more from our
 computers: both in terms of width (number of bits) and depth (number of
@@ -314,7 +311,7 @@ Effectively, once we reach an era of error correction, then increasing
 the number of physical qubits will still be among the top of our
 wishlist. 
 
-### What is the current state-of-the-art?
+## What is the current state-of-the-art?
 
 This is a more technical section that can be safely skipped. As of 2024,
 there have been several demonstrations of error correction (and the
@@ -374,7 +371,7 @@ scaling properties over the surface code. 
 Which code will eventually become the standard (if any), is still
 completely open.  
 
-#### What are the main challenges?
+### What are the main challenges?
 
 Firstly, we would need just *slightly* more accurate hardware. We
 mentioned a certain
@@ -401,7 +398,7 @@ as “error mitigation” and “error suppression” exist. They might be
 useful for incremental fidelity improvements, but they don’t facilitate
 an exponential increase in depth like proper error correction does. 
 
-###  Conclusion
+##  Conclusion
 
 The bottom line is that one shouldn’t blindly take ‘logical qubits’ as
 perfect building blocks that will run indefinitely. A logical qubit is
@@ -412,7 +409,7 @@ more interesting metric is the probability of error in a single step (in
 jargon: the fidelity of an operation), which gives a reasonable
 indication of the number of steps that a device can handle!
 
-### See also:
+## See also:
 
 - [The Quantum Threat Timeline
   Report](https://globalriskinstitute.org/publication/2023-quantum-threat-timeline-report/) asked

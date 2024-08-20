@@ -1,12 +1,12 @@
 ---
 layout: default
-title: 6 Four myths about quantum computing
+title: "Four myths about quantum computing"
 nav_order: 6
 ---
 
-## Four myths about quantum computing
+# Four myths about quantum computing
 
-### Myth 1: Quantum computers can try a huge number of solutions at once
+## Myth 1: Quantum computers can try a huge number of solutions at once
 
 This myth derives from the concept of superposition: if a qubit can
 represent the numbers 0 and 1 at the same time, then a mere 1000 qubits
@@ -75,7 +75,7 @@ example, the number of required steps is reduced to
 we’re still looking at a number of steps larger than the number of atoms
 in the universe – which is far from ‘efficient’.
 
-### Myth 2: Qubits can store much more data than the same number of classical bits. 
+## Myth 2: Qubits can store much more data than the same number of classical bits. 
 
 This myth is very similar to the previous one: can’t N qubits represent
 \\(2^{N}\\)different numbers at the same time? Or aren’t they perhaps even
@@ -97,7 +97,7 @@ like to look up out of theoretical interest. Also, when your data is
 actually quantum (for example, the state of electrons in a molecule),
 then storing this data in qubits does have a potentially huge advantage.
 
-### Myth 3: Entanglement allows you to send information faster than light, or to influence objects at a distance
+## Myth 3: Entanglement allows you to send information faster than light, or to influence objects at a distance
 
 Entanglement is an incredibly confusing phenomenon, especially because
 our most common interpretation of quantum mechanics states that whenever
@@ -163,9 +163,9 @@ include:
   limited number of qubits can fit on a single chip, or within a single
   fridge.
 
-### 
+## 
 
-### Myth 4: Quantum computers are always 10 years away.
+## Myth 4: Quantum computers are always 10 years away.
 
 This statement is a playful reference to the situation around nuclear
 fusion, where predictions of its realisation being just 30 years in the
@@ -224,9 +224,9 @@ rapid rate of progress is undeniable.
 
 [^28]: https://www.bcg.com/publications/2023/enterprise-grade-quantum-computing-almost-ready
 
-### 
+## 
 
-### Further reading
+## Further reading
 
 - [Veritasium explains
   Entanglement](https://www.youtube.com/watch?v=ZuvK-od647c)

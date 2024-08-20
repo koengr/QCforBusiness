@@ -1,10 +1,10 @@
 ---
 layout: default
-title: 2 Applications of quantum networks
+title: "Applications of quantum networks"
 nav_order: 2
 ---
 
-## Applications of quantum networks
+# Applications of quantum networks
 
 If we’re building computers that deal with qubits, superposition and
 entanglement, wouldn’t these computers also need some way to send qubits
@@ -39,7 +39,7 @@ This technology, using a quantum network to establish a secret key
 between two endpoints, is called Quantum Key Distribution (QKD) – an
 application that we will address in much more detail below.
 
-### The promises of the quantum internet
+## The promises of the quantum internet
 
 There is a long list of arguments why we should be excited about the
 quantum internet. Here is a list of the applications that we hear most
@@ -134,7 +134,7 @@ Key Distribution (QKD)** is by far the most interesting application.
 
  
 
-### The case for QKD
+## The case for QKD
 
 To fully understand QKD, we will need to have a bit more background
 about cryptography, especially the “key distribution problem”. For a

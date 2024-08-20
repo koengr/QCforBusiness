@@ -1,10 +1,10 @@
 ---
 layout: default
-title: 1 Applications in chemistry and material science
+title: "Applications in chemistry and material science"
 nav_order: 1
 ---
 
-## Applications in chemistry and material science
+# Applications in chemistry and material science
 
 Perhaps the most credible application of quantum computers is to study
 of quantum physics itself, and how it drives the behaviour of
@@ -28,7 +28,7 @@ receives such widespread attention.
 [^29]: Feynman, R.P. Simulating physics with computers. *Int J Theor
     Phys* **21**, 467–488 (1982). https://doi.org/10.1007/BF02650179
 
-### What problems in chemistry and material science will we solve? 
+## What problems in chemistry and material science will we solve? 
 
 The computational problems that chemists care about typically come in
 two flavours. The most studied problem is finding the arrangement of
@@ -143,7 +143,7 @@ the development of higher capacity batteries.
     catalysis, Phys. Rev. Research 3, 033055.
     <https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.3.033055>
 
-### Algorithms for quantum chemistry
+## Algorithms for quantum chemistry
 
 Three quantum methods deserve to be mentioned. The first is the
 [**Trotter-Suzuki**](https://en.wikipedia.org/wiki/Time-evolving_block_decimation)
@@ -207,7 +207,7 @@ TODO
     R. *et al.* Drug design on quantum computers. *Nat. Phys.* **20**,
     549–557 (2024). <https://doi.org/10.1038/s41567-024-02411-5>.
 
-### A hype around quantum computing for climate changes
+## A hype around quantum computing for climate changes
 
 Some sources make spectacular (but extremely dubious) claims about how
 quantum computing could be a key ingredient to solve climate change,
@@ -241,7 +241,7 @@ of this molecule, we need to dive into the world of food production.
 
 [^37]: https://www.imperial.ac.uk/grantham/publications/climate-change-faqs/how-and-when-do-we-need-to-act-on-climate-change-/
 
-### A case study of a promising enzyme: FeMoco
+## A case study of a promising enzyme: FeMoco
 
 <img src=" {{ site.baseurl }}/media/image17.png"
 style="width:1.33333in" />

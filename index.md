@@ -21,7 +21,7 @@ computers, without going into tedious technical details. It answers questions su
 <br>
 <br>
 <center>
-<a href="{{ site.baseurl }}/part1/chapter_1"><button class="btn fs-6">Start reading</button></a>
+<a href="{{ site.baseurl }}/essentials/preface"><button class="btn fs-6">Start reading</button></a>
 </center>
 <br>
 

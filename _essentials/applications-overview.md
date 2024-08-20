@@ -1,10 +1,10 @@
 ---
 layout: default
-title: 4 The applications, What problems will we solve with quantum computers?
+title: "The applications: what problems will we solve?"
 nav_order: 4
 ---
 
-## The applications: What problems will we solve with quantum computers?
+# The applications: What problems will we solve with quantum computers?
 
 <fieldset class="field-set" markdown="1"> 
 <legend class="leg-title">At a glance</legend>
@@ -46,13 +46,13 @@ advantage, we break our main question down in two parts:
 
 [^3]: https://quantumalgorithmzoo.org/
 
-### What are projected applications with a quantum speedup?
+## What are projected applications with a quantum speedup?
 
 We foresee four major use cases where quantum computing can make a real
 impact on society. We briefly discuss each of them here and link to a
 later chapter that discusses each application in more depth. 
 
-#### 1. Simulation of other quantum systems: molecules, materials, and chemical processes
+### 1. Simulation of other quantum systems: molecules, materials, and chemical processes
 
 Most materials can be accurately simulated on classical computers.
 However, in some specific situations, the locations of atoms and
@@ -96,7 +96,7 @@ See also:
 - [An overview of various simulation software packages for quantum
   computers](https://www.linkedin.com/pulse/8-quantum-computing-packages-chemistry-simulations-2022-hariharan/)
 
-#### 2. Cracking a certain type of cryptography
+### 2. Cracking a certain type of cryptography
 
 The security of today’s internet communication relies heavily on a
 cryptographic protocol invented by Rivest, Shamit and Adleman
@@ -212,7 +212,7 @@ Other great sources are:
   Postquantumcryptografie
   \[NL\]](https://www.ncsc.nl/binaries/ncsc/documenten/factsheets/2019/juni/01/factsheet-postkwantumcryptografie/20170831+Factsheet-Postkwantumcryptografie-v1.1.pdf)
 
-#### 3. Quantum Key Distribution to strengthen cryptography
+### 3. Quantum Key Distribution to strengthen cryptography
 
 Out of all the applications for quantum networks, Quantum Key
 Distribution (QKD) is the one to watch. It allows two parties to
@@ -293,7 +293,7 @@ See also: 
 - [Samsung builds QRNGs into certain phones on the South Korean
   market. ](https://www.sammobile.com/news/galaxy-a-quantum-launched-south-korea-sk-telecom-exclusive/)
 
-#### 4. Optimisation and machine-learning
+### 4. Optimisation and machine-learning
 
 This is the part where most enterprises get excited: Can we combine the
 success of AI and machine learning with the radically new capabilities
@@ -469,7 +469,7 @@ Further reading: 
 
 [^7]: https://medium.com/qiskit/how-ewin-tangs-dequantized-algorithms-are-helping-quantum-algorithm-researchers-3821d3e29c65
 
-### How large is the advantage of known speedups? 
+## How large is the advantage of known speedups? 
 
 When looking at the applications of quantum computers, one should always
 keep in mind: Are these actual improvements over our current
@@ -607,7 +607,7 @@ See also:
   end-to-end complexities of nearly every known quantum
   algorithm.](https://arxiv.org/abs/2310.03011)
 
-### Where is the killer application?
+## Where is the killer application?
 
 For a quantum algorithm to be truly impactful, we require two
 properties: 

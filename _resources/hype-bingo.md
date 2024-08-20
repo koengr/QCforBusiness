@@ -1,10 +1,10 @@
 ---
 layout: default
-title: 2 Quantum Hype Bingo
+title: "Quantum hype bingo"
 nav_order: 2
 ---
 
-## Quantum Hype Bingo
+# Quantum Hype Bingo
 
 <table>
 <colgroup>

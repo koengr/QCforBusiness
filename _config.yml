@@ -1,12 +1,22 @@
 # General information
 title: Introduction to Quantum Computing for Business
-description: 
 theme: just-the-docs
+
+
+# SEO information (https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md)
+description: Everything you should know about the applications of quantum technology.
+# tagline : # Optional SEO argument, will appear in title of html page.
+author:
+  name: Koen Groenland
+logo: "/site-img/header-logo.png"
+### additionally, add the following to individual posts: image; title; description.
+
+
 
 # Rendering setings
 markdown: kramdown
 url: https://koengr.github.io
-#baseurl: QCforBusiness  ## ENABLE FOR GITHUB!
+#baseurl: QCforBusiness  ## ENABLE FOR GITHUB without custom domain!
 
 
 # Use customized colors
@@ -14,42 +24,47 @@ color_scheme: mycolors
 
 
 # Fancy logo (appears on top-left above navigation)
-logo: "/site-img/lineart-header-wide.png"
+logo: "/site-img/lineart-header-wide.png"   # seems bugged - just-the-docs adds untranslated {base_url} in css?
 favicon_ico: "/site-img/linaert-atom-favicon.ico"
+locale: en_GB
+
+# Extra plugins, mainly for search engine optimization
+plugins:
+  - jekyll-seo-tag      # No need to add {% seo %} in head.html when using just-the-docs, it's included by default.
 
 
 
 # Define Jekyll collections.
 # Example: Define a collection named "NAME", its documents reside in the "_NAME" directory
 collections:
-  part1:
+  essentials:
     permalink: "/:collection/:path/"
     output: true
-  part2:
+  applications:
     permalink: "/:collection/:path/"
     output: true
-  part3:
+  advanced:
     permalink: "/:collection/:path/"
     output: true
-  part4:
+  resources:
     permalink: "/:collection/:path/"
     output: true
 
 # Define which collections are used in just-the-docs
 just_the_docs:
   collections:
-    part1:
+    essentials:
       name: "Part 1: The essentials"
       # Exclude the collection from the navigation (true/false)
       nav_exclude: False
       # Fold the collection in the navigation
       nav_fold: false  
-    part2:
+    applications:
       name: "Part 2: Understanding the applications"
-    part3:
+    advanced:
       name: "Part 3: Going deeper"
-    part4:
-      name: "Part 4: (extra)"
+    resources:
+      name: "Part 4: Recommended resources"
 
 # Define callout boxes
 callouts:

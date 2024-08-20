@@ -919,7 +919,7 @@ h6,
   margin-bottom: 1em;
   font-weight: 500;
   line-height: 1.25;
-  color: #7d5544;
+  color: #754a37;
 }
 
 p {
@@ -928,7 +928,7 @@ p {
 }
 
 a {
-  color: #9e6c56;
+  color: #b4785e;
   text-decoration: none;
 }
 
@@ -938,7 +938,7 @@ a:not([class]) {
   text-underline-offset: 2px;
 }
 a:not([class]):hover {
-  text-decoration-color: rgba(158, 108, 86, 0.45);
+  text-decoration-color: rgba(180, 120, 94, 0.45);
 }
 
 code {
@@ -1118,7 +1118,7 @@ blockquote {
   align-items: center;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  color: #7d5544;
+  color: #754a37;
   padding-right: 1rem;
   padding-left: 1rem;
 }
@@ -1147,7 +1147,7 @@ blockquote {
 .site-logo {
   width: 100%;
   height: 100%;
-  background-image: url("/%7B%7Bsite.baseurl%7D%7D/site-img/lineart-header-wide.png");
+  background-image: url("/site-img/lineart-header-wide.png");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: contain;
@@ -1219,7 +1219,7 @@ body {
 .icon {
   width: 1.5rem;
   height: 1.5rem;
-  color: #9e6c56;
+  color: #b4785e;
 }
 
 .main-content {
@@ -1369,7 +1369,7 @@ body {
   display: inline-block;
   width: 100%;
   height: 100%;
-  color: #9e6c56;
+  color: #b4785e;
   visibility: hidden;
 }
 .main-content .anchor-heading:hover svg,
@@ -1519,7 +1519,7 @@ body {
   width: 3rem;
   height: 3rem;
   padding: 0.75rem;
-  color: #9e6c56;
+  color: #b4785e;
 }
 @media (min-width: 50rem) {
   .nav-list .nav-list-item .nav-list-expander {
@@ -1588,10 +1588,10 @@ body {
   padding: 0;
 }
 .nav-list.nav-category-list > .nav-list-item > .nav-list > .nav-list-item > .nav-list-link {
-  color: #9e6c56;
+  color: #b4785e;
 }
 .nav-list.nav-category-list > .nav-list-item > .nav-list > .nav-list-item > .nav-list-expander {
-  color: #9e6c56;
+  color: #b4785e;
 }
 
 .aux-nav {
@@ -1820,7 +1820,7 @@ h6,
   font-size: inherit;
   font-weight: 500;
   line-height: 1.5;
-  color: #9e6c56;
+  color: #b4785e;
   text-decoration: none;
   vertical-align: baseline;
   cursor: pointer;
@@ -1839,7 +1839,7 @@ h6,
   box-shadow: 0 0 0 3px rgba(0, 0, 255, 0.25);
 }
 .btn:hover, .btn.zeroclipboard-is-hover {
-  color: #976752;
+  color: #b17257;
 }
 .btn:hover, .btn:active, .btn.zeroclipboard-is-hover, .btn.zeroclipboard-is-active {
   text-decoration: none;
@@ -1862,12 +1862,12 @@ h6,
 }
 
 .btn-outline {
-  color: #9e6c56;
+  color: #b4785e;
   background: transparent;
   box-shadow: inset 0 0 0 2px #e6e1e8;
 }
 .btn-outline:hover, .btn-outline:active, .btn-outline.zeroclipboard-is-hover, .btn-outline.zeroclipboard-is-active {
-  color: #91634f;
+  color: #ad6d51;
   text-decoration: none;
   background-color: transparent;
   box-shadow: inset 0 0 0 3px #e6e1e8;
@@ -2036,7 +2036,7 @@ h6,
   outline: 0;
 }
 .search-input:focus + .search-label .search-icon {
-  color: #9e6c56;
+  color: #b4785e;
 }
 
 .search-label {
@@ -2159,7 +2159,7 @@ h6,
   width: 1rem;
   height: 1rem;
   margin-right: 0.5rem;
-  color: #9e6c56;
+  color: #b4785e;
   flex-shrink: 0;
 }
 .search-result-doc .search-result-doc-title {
@@ -2245,7 +2245,7 @@ h6,
   width: 3.5rem;
   height: 3.5rem;
   background-color: #fff;
-  border: 1px solid rgba(158, 108, 86, 0.3);
+  border: 1px solid rgba(180, 120, 94, 0.3);
   border-radius: 1.75rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
   align-items: center;
@@ -7616,7 +7616,7 @@ a.skip-to-main {
 
 a.skip-to-main:focus,
 a.skip-to-main:active {
-  color: #9e6c56;
+  color: #b4785e;
   background-color: #fff;
   left: auto;
   top: auto;
@@ -7813,6 +7813,24 @@ blockquote.new-title > p:last-child {
   margin-bottom: 0;
 }
 
+.btn-next {
+  margin-top: 1em;
+  padding: 1em 2em;
+  width: -webkit-fill-available;
+  text-align: center;
+}
+
+.footnotes {
+  font-size: small;
+  margin-top: 2rem;
+}
+
+.footnotes::before {
+  display: block;
+  font-size: larger;
+  content: "References";
+}
+
 .fancybox-red {
   background-color: rgb(250, 200, 200);
 }
@@ -7898,6 +7916,10 @@ fieldset {
     width: 23.5rem;
   }
 }
+.site-logo {
+  background-image: url(/site-img/lineart-header-wide.png);
+}
+
 @media (min-width: 50rem) {
   .site-logo {
     background-image: url(/site-img/header-logo.png);
@@ -7908,7 +7930,7 @@ fieldset {
     border-bottom: none;
   }
   .main-content {
-    width: 40rem;
+    max-width: 42rem;
   }
 }
 

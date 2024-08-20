@@ -1,17 +1,17 @@
 ---
 layout: default
-title: 1 Further reading
+title: "Further reading"
 nav_order: 1
 ---
 
-## Further reading
+# Further reading
 
 Below, we give a selection of recommended sources to learn more about
 this fascinating topic.
 
-### I want to learn the technical details
+## I want to learn the technical details
 
-#### For (late) high school students:
+### For (late) high school students:
 
 (or those who followed high-school level mathematics):
 
@@ -24,7 +24,7 @@ this fascinating topic.
   (Cooke) \[Book\] teaches the theory (mathematics) of quantum computing
   using diagrams.
 
-#### Undergraduate (Bachelor's) university level:
+### Undergraduate (Bachelor's) university level:
 
 - [**Quantum.Country**](https://quantum.country/qcvc) \[Website\] – the
   “Duolingo of Quantum Computing”, a very well-written introduction for
@@ -51,7 +51,7 @@ this fascinating topic.
   holes and consciousness, making it a good read for those looking for
   something much more broad than just quantum computing.
 
-#### Graduate (Master's) level:
+### Graduate (Master's) level:
 
 These assume no prior knowledge about quantum physics, but require a
 strong background in mathematics (i.e. linear algebra, calculus,
@@ -69,7 +69,7 @@ go into much more detail. 
 - [**Lecture Notes for Caltech course “Quantum Computing” by John
   Preskil **](http://theory.caltech.edu/~preskill/ph229/)
 
-#### Scientific overview papers
+### Scientific overview papers
 
 The papers below are aimed at scientists from fields other than quantum
 computing itself. All papers we mention are open-access and
@@ -83,7 +83,7 @@ peer-reviewed, making them very suitable for citation. 
   Society**](https://arxiv.org/abs/1712.05380) (Ronald de Wolf)
   \[[**video lecture**](https://www.youtube.com/watch?v=ych-yB9QP_A)\]
 
-#### Scientific opinions and discussions
+### Scientific opinions and discussions
 
 - [**Scott Aaronson’s blog**](https://scottaaronson.com/blog). Although
   written from a theoretical computer science perspective, this blog
@@ -91,7 +91,7 @@ peer-reviewed, making them very suitable for citation. 
   Aaronson has a strong authority in the field, and his posts attract
   readership and comments from a broad range of prominent scientists. 
 
-### I want to learn to program a quantum computer
+## I want to learn to program a quantum computer
 
 Several programming packages for quantum computers exist, mostly
 maintained by major hardware providers. All of them offer great
@@ -118,9 +118,9 @@ introductory tutorials. The ones we recommend below are all in Python. 
 - [**PennyLane**](https://pennylane.ai/) is a package by startup Xanadu
   with a strong focus on machine learning applications.
 
-### I want to stay up-to-date with the latest developments
+## I want to stay up-to-date with the latest developments
 
-#### Major conferences
+### Major conferences
 
 - [**Q2B (organized by QCWare)**](https://q2b.qcware.com/)
 
@@ -132,7 +132,7 @@ introductory tutorials. The ones we recommend below are all in Python. 
 - [**Commercializing Quantum (organized by The
   Economist)**](https://events.economist.com/commercialising-quantum/)
 
-#### Business News 
+### Business News 
 
 - [**Quantum Computing
   Report**](https://quantumcomputingreport.com/news/) - don’t be fooled
@@ -144,7 +144,7 @@ introductory tutorials. The ones we recommend below are all in Python. 
 
 - [**The Quantum Insider**](https://thequantuminsider.com/)
 
-#### Scientific news
+### Scientific news
 
 None of these focus exclusively on Quantum Technology, but all offer
 high-quality news (and surely none would miss any important quantum
@@ -154,11 +154,11 @@ breakthroughs). 
 
 - [**Phys.org**](https://phys.org/)
 
-### 
+## 
 
-### 
+## 
 
-### I want to learn more about business implications
+## I want to learn more about business implications
 
 Several sources cover similar topics as this book. Most of these come
 from consultants of hardware providers who have a financial interest in
@@ -175,7 +175,7 @@ they collect insightful details about financial matters. 
 - **Cloudlfare**’s support pages contain an incredibly complete [bible
   of Post-Quantum Cryptography.](https://blog.cloudflare.com/pq-2024)
 
-#### Workshops and trainings
+### Workshops and trainings
 
 These might not be the most relevant if you completed this book, by can
 be particularly useful to inspire your colleagues.

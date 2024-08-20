@@ -1,17 +1,17 @@
 ---
 layout: default
-title: 3 The impact on cybersecurity
+title: "The impact on cybersecurity"
 nav_order: 3
 ---
 
-## The impact on cybersecurity
+# The impact on cybersecurity
 
 In the world of quantum computers, the most convincing exponential
 speedup lies in codebreaking. Anyone who wants to understand the impact
 of quantum computers, will need to know their basics of cryptography.
 Let’s start at the beginning. 
 
-### Cryptography is much more than just secrecy 
+## Cryptography is much more than just secrecy 
 
 Why do we actually use cryptography? Pretty much everyone will
 immediately think of:
@@ -143,7 +143,7 @@ to some powerful mathematics. (I don’t know of any physical locks that
 work this way). However, it turns out that the delicate relationship
 between the two keys is also a weak spot…
 
-### How good are quantum computers at cracking cryptography? 
+## How good are quantum computers at cracking cryptography? 
 
 In principle,** symmetric-key cryptography** is fairly safe against
 quantum hackers. The biggest problems are brute-force attacks, where an
@@ -203,8 +203,6 @@ Further reading:
 The following table summarizes how our cryptosystems are threatened:
 
 <table>
-<caption><p>Figure 3: News header by IFLScience. Source: <a
-href="https://www.iflscience.com/chinese-scientists-create-quantum-processor-60000-times-faster-than-current-supercomputers-61475">https://www.iflscience.com/chinese-scientists-create-quantum-processor-60000-times-faster-than-current-supercomputers-61475</a></p></caption>
 <colgroup>
 <col style="width: 32%" />
 <col style="width: 28%" />
@@ -241,8 +239,6 @@ href="https://www.iflscience.com/chinese-scientists-create-quantum-processor-600
 </tbody>
 </table>
 
-Figure 3: News header by IFLScience. Source:
-<https://www.iflscience.com/chinese-scientists-create-quantum-processor-60000-times-faster-than-current-supercomputers-61475>
 
 **  
 Why don’t we switch to symmetric cryptography? **
@@ -260,8 +256,7 @@ look at the functionality offered by the two types of cryptography: 
 | Authentication / Integrity   | Only with pre-shared keys | ✔ |
 | Establishing secret keys | **✗** | ✔ |
 
-Figure 4: Aerial view of the strait of Gibraltar. Image source:
-https://commons.wikimedia.org/wiki/File:STS059-238-074_Strait_of_Gibraltar.jpg
+
 
 If only we could somehow give Alice and Bob pre-shared keys in a secure
 way, we would resolve most of these problems. Without public-key
@@ -279,7 +274,7 @@ cryptography, especially if one considers the sheer number integrity and
 authenticity checks we perform every day, and the incredible number of
 online entities we potentially want to communicate with. 
 
-### What solutions exist?
+## What solutions exist?
 
 TODO: More on PQC, hopefully when new standards are released!
 
@@ -358,4 +353,6 @@ methods, so it is not unlikely that new security issues will be found.
 Quantum computers, before they are even built, are already destined to
 make the next decade an incredibly complex period for anyone who deals
 with cryptography! 
+
+
 

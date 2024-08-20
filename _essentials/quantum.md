@@ -1,10 +1,10 @@
 ---
 layout: default
-title: 2 An introduction to the quantum world
+title: "An introduction to the quantum world"
 nav_order: 2
 ---
 
-##  An introduction to the quantum world
+#  An introduction to the quantum world
 
 <fieldset class="field-set" markdown="1"> 
 <legend class="leg-title">At a glance</legend>
@@ -35,7 +35,7 @@ Here is my best attempt to explain quantum mechanics in accessible
 terms. Proceed with caution, as things will surely get confusing from
 here.
 
-### What is quantum?  
+## What is quantum?  
 
 **Quantum physics** or **quantum mechanics** is the theory that
 describes the tiniest particles, like electrons, atoms, and sometimes
@@ -56,7 +56,9 @@ Some examples of systems where quantum could play a role are:
 
 - Photons, the particles out of which ‘light’ is made.
 
-To proceed, we need some physics jargon. We like to use the word
+<img src=" {{ site.baseurl }}/media/image1.png" style="width:6.26736in"
+alt="A magnifying glass over a circuit board Description automatically generated" />To
+proceed, we need some physics jargon. We like to use the word
 ‘**state**’, which is a complete description of all the physical
 properties of the world at one instance: the locations of all the
 different particle, their velocities, how much they rotate, etcetera.
@@ -83,7 +85,7 @@ Importantly, the state of the world can change over time. We will often
 care about the state of the world at a certain moment, for example at
 the beginning of computation, or at the end of it.
 
-### Four surprising phenomena
+## Four surprising phenomena
 
 The most iconic quantum phenomenon is **superposition.** Think about any
 property that we can (classically) measure, such as the position of a
@@ -305,7 +307,7 @@ in quantum technology conversations. To summarise:
 - Entanglement: Qubits separated over a long distance can still share
   unique properties.
 
-### What does a quantum computer look like?
+## What does a quantum computer look like?
 
 Most large-scale computing today happens in data centres, where we don’t
 care much about the specifics of the devices that do our calculations.

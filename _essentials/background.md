@@ -1,10 +1,10 @@
 ---
 layout: default
-title: 3 The background, why are we so enthusiastic about Quantum Technology?
+title: "The background: why are we so enthusiastic about quantum?"
 nav_order: 3
 ---
 
-## The background: why are we so enthusiastic about Quantum Technology? 
+# The background: why are we so enthusiastic about Quantum Technology? 
 
 <fieldset class="field-set" markdown="1"> 
 <legend class="leg-title">At a glance</legend>
@@ -20,7 +20,7 @@ specific problems in much fewer steps.
 
 </fieldset>
 
-### What is quantum technology?
+## What is quantum technology?
 
 Quantum physics has already proven itself as an invaluable basis for
 technologies such as LED lighting, MRI scanners and solar cells. And
@@ -86,9 +86,9 @@ In this book, we mainly focus on **computers **and **networks**: simply
 because these seem to have the biggest impact on typical (business)
 users.
 
-### 
+## 
 
-### The importance of high-performance computing
+## The importance of high-performance computing
 
 The abundance of cheap computational power has given humanity incredible
 wealth. We automated the most tedious tasks to free up time for leisure
@@ -129,9 +129,9 @@ Graphical Processing Units (GPU’s).
     and
     <https://www.mordorintelligence.com/industry-reports/cloud-high-performance-computing-hpc-market>
 
-### 
+## 
 
-### Why can quantum computers have an advantage? 
+## Why can quantum computers have an advantage? 
 
 Quantum computers are devices that perform automatic computations at our
 command, very much like their classical counterparts. The ‘quantum’ part
@@ -244,7 +244,7 @@ a large-scale quantum computer today, its value would be limited. For
 this reason, the ongoing development of novel algorithms is incredibly
 important.
 
-### From algorithm to software
+## From algorithm to software
 
 In the end, simply finding the ‘recipe’ itself is not enough: the
 algorithm has to be turned into **software**, a piece of language that
@@ -287,7 +287,7 @@ Now that we have come to appreciate algorithms, it is natural to ask
 computers solve well? And how do these algorithms compare to their
 classical equivalents? This will be the topic of the next chapter.
 
-### Further reading
+## Further reading
 
 - [The Map of Quantum Computing
   (Youtube)](https://www.youtube.com/watch?v=-UlxHPIEVqA)  – A 30-minute

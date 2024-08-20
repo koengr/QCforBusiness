@@ -1,10 +1,10 @@
 ---
 layout: default
-title: 4 What steps should your organization take?
+title: "What steps should your organization take?"
 nav_order: 4
 ---
 
-## What steps should your organization take?
+# What steps should your organization take?
 
 TODO: add
 
@@ -238,7 +238,7 @@ so we stress that such migration should be completed well before that
 time — taking in to account that IT migrations can take significantly
 longer than originally planned!
 
-### FAQ
+## FAQ
 
 **Should I have knowledge of quantum mechanics? Should I understand
 quantum hardware? **

@@ -1,10 +1,10 @@
 ---
 layout: default
-title: 1 Quantum hardware
+title: "Quantum hardware"
 nav_order: 1
 ---
 
-## Quantum hardware
+# Quantum hardware
 
 Conventional computer hardware is extremely well standardized. No matter
 what supplier you buy a computer from, you can be reasonably sure that
@@ -21,7 +21,7 @@ architecture. In this chapter, we take a high-level business perspective
 at quantum computing hardware. What should you know when starting your
 quantum journey? 
 
-### Different functionalities
+## Different functionalities
 
 The figure below shows different types of functionalities that quantum
 computers can have (top, brown), along with some examples of hardware
@@ -113,7 +113,7 @@ See also:
 - [D-Wave’s introduction to its quantum annealing
   platform](https://docs.dwavesys.com/docs/latest/c_gs_2.html)
 
-###  Different building blocks
+##  Different building blocks
 
 There is another question about what material the qubits are actually
 made of. Scientists have cooked up several competing approaches, such as

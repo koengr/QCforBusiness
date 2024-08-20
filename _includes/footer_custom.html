@@ -1,0 +1,28 @@
+
+
+<div class="footer-next">
+
+    {% assign part1 = site.essentials | sort: 'nav_order'  %}
+    {% assign part2 = site.applications | sort: 'nav_order'  %}
+    {% assign part3 = site.advanced | sort: 'nav_order'  %}
+    {% assign part4 = site.resources | sort: 'nav_order'  %}
+
+    {% assign sorted_pages = part1  | concat: part2 | concat:part3 | concat: part4  %}
+
+    {% for item in sorted_pages %}
+        {% if item == page %}
+            {% assign position = forloop.index0 %}
+            {% break %} 
+        {% endif %}
+    {% endfor %}
+
+    {% assign next_index = position | plus: 1 %}
+    {% assign next_page = sorted_pages[next_index] %}
+
+
+    {% if next_page %}
+      <h2>Next chapter: </h2>
+      <a href="{{ next_page.url }}" class="btn btn-next"> {{ next_page.title }} → </a>
+    {% endif %} 
+
+  </div>

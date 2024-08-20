@@ -1,10 +1,10 @@
 ---
 layout: default
-title: 5 Timelines, When can we expect a useful Quantum Computer?
+title: "The timelines: when can we expect useful quantum computers?"
 nav_order: 5
 ---
 
-## Timelines: When can we expect a useful Quantum Computer?
+# Timelines: When can we expect a useful Quantum Computer?
 
 <fieldset class="field-set" markdown="1"> 
 <legend class="leg-title">At a glance</legend>
@@ -48,9 +48,9 @@ outperforms a classical computer on a useful task (by being faster, more
 accurate, or incurring lower costs). In this chapter, we’ll use the word
 ‘**utility’** to refer to this concept.
 
-### 
+## 
 
-### What parameters are relevant?
+## What parameters are relevant?
 
 Compared to currently available technology, we’d require a fundamental
 improvement to these specifications:
@@ -68,7 +68,7 @@ matters by assuming that all of these other parameters are not a
 bottleneck, allowing us to focus only on the number of qubits and gate
 accuracies.
 
-#### Balancing qubits and accuracies
+### Balancing qubits and accuracies
 
 In the previous chapter, we learned that error correction allows us to
 sacrifice some fraction of qubits in exchange for better accuracies. In
@@ -161,7 +161,7 @@ correction](https://www.quantum.amsterdam/part-9-why-we-need-error-correction/).
 
 </details>
 
-###  How many qubits are needed?
+##  How many qubits are needed?
 
 In a previous chapter, we discussed the three main applications of
 quantum computers: quantum simulation, breaking cryptography, and
@@ -282,18 +282,12 @@ We can summarize our conclusions in the table below.
 |  |  | Simulation of P450 | ~ 5 million | ~ 0.1 % |
 | Optimization / AI | Bad | ? | ? |  |
 
-Figure 1: The electrons around an atom are generally in a superposition
-over an infinite number of locations. Shown are the areas with a large
-probability of finding the electron. In some regions, the amplitudes are
-positive numbers (blue), in others, they are negative (yellow). Image
-source:
-https://en.wikipedia.org/wiki/Atom#/media/File:Atomic-orbital-clouds_spdf_m0.png
 
 [^8]: How to factor 2048 bit RSA integers in 8 hours using 20 million
     noisy qubits; Craig Gidney, and Martin Ekerå, Quantum 5, 433 (2021),
     https://quantum-journal.org/papers/q-2021-04-15-433/
 
-#### What about future improvements?
+### What about future improvements?
 
 It seems almost inevitable that methodologies to break cryptography and
 simulate molecules will improve. On the other hand, it’s impossible to
@@ -320,8 +314,6 @@ physics models).
 | Chemistry (Optimistic) | Reasonable | Simulation of FeMoco (with 10x improved methods) | ~ 400.000 | ~ 0.1 % |
 | Science | Reasonable | 2D Transverse field Ising model | ~ 900.000 | ~ 0.1 % |
 
-Figure 2: News header by Techradar. Source:
-<https://www.techradar.com/news/google-creates-quantum-chip-millions-of-times-faster-than-the-fastest-supercomputer>
 
 [^9]: See <https://www.youtube.com/watch?v=-UrdExQW0cs&t=1024s>,
     starting at 17:04.
@@ -329,11 +321,11 @@ Figure 2: News header by Techradar. Source:
 [^10]: McKinsey Quantum Technology Monitor 2024,
     <https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/steady-progress-in-approaching-the-quantum-advantage>
 
-### 
+## 
 
-### 
+## 
 
-### Can noisy algorithms be good enough?
+## Can noisy algorithms be good enough?
 
 Current quantum computers are somewhat small and not yet capable of
 large-scale error correction: they are Noisy Intermediate-Scale Quantum
@@ -418,9 +410,9 @@ backlashes in hardware development or even unforeseen funding stops.
     Rev.* 2019, 119, 19, 10856–10915,
     <https://pubs.acs.org/doi/abs/10.1021/acs.chemrev.8b00803>
 
-### 
+## 
 
-### How long until we have million-qubit machines?
+## How long until we have million-qubit machines?
 
 Now that we’ve set our target to roughly a million qubits, we’d like to
 estimate when such hardware will be available. We highlight the
@@ -432,7 +424,7 @@ following sources:
 
 3.  Extrapolation of Moore’s law
 
-#### What do manufacturers say?
+### What do manufacturers say?
 
 Below, we see the qubit numbers that several manufacturers have already
 realized (solid disks) and what they will produce in the future
@@ -498,7 +490,7 @@ error correction is in place).
 
 [^23]: https://www.honeywell.com/us/en/news/2020/10/get-to-know-honeywell-s-latest-quantum-computer-system-model-h1
 
-#### What does Moore’s law say?
+### What does Moore’s law say?
 
 One could assume that quantum computers will ‘grow’ at a similar rate as
 classical computers. Moore’s law states that the number of transistors
@@ -514,7 +506,7 @@ a quantum computer’s size each year is already a daunting challenge,
 companies like IBM and Pasqal and QuEra set the bar even higher for
 themselves, hoping to double every 7-9 months.
 
-#### What do experts say?
+### What do experts say?
 
 The Global Risk Institute conducts yearly surveys asking experts to
 state the *likelihood* that quantum computers pose a significant threat
@@ -564,7 +556,7 @@ we shall see below.
 
 [^24]: https://globalriskinstitute.org/publication/2023-quantum-threat-timeline-report/
 
-### Putting it all together
+## Putting it all together
 
 In the infographic below, we present all of our findings in a single
 graph.
@@ -606,10 +598,12 @@ and many other important subfields of quantum computing. Hopefully, all
 these disciplines will find the required breakthroughs that will enable
 the exponential growth of quantum computing hardware.
 
-**Further reading:**
+## Further reading:
 
 - Scientist Samuel Jaques (Waterloo) makes insightful graphs that
   combine the number of qubits *and* the error rates, and puts them in
   the perspective of what is required for various applications.
   <https://sam-jaques.appspot.com/quantum_landscape_2023>
+
+
 
