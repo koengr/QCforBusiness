@@ -29,7 +29,7 @@ that is available (below, yellow). This list is by no means complete! It
 should at best give an impression of the current state of the art. Let
 us start by taking a closer look at the functionalities.
 
-<img src=" {{ site.baseurl }}/media/image22.png" style="width:6.26806in"
+<img src=" {{ site.baseurl }}/media/image23.png" style="width:6.26806in"
 alt="universal simulator annealer 2023 1" />
 
 Our biggest dream is to have a **‘universal quantum computer**’. The
@@ -58,7 +58,7 @@ devices. The imperfections cause errors to accumulate during a
 computation, so that after some number of steps, the result is almost
 surely corrupted and unusable. For longer computations, it is essential
 to fix errors on the fly, using so-called **error correction** (also
-known as: fault-tolerance).  
+known as fault-tolerance).  
 
 Today, we are stuck in a so-called NISQ-era, with **Noisy
 Intermediate-Scale Quantum** devices. Many are in principle universal,

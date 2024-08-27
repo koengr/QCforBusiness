@@ -12,7 +12,7 @@ microscopic systems like molecules, materials, or even sub-atomic
 particles. As far back as 1981, physicist Richard Feynman ended a
 conference talk with a famous
 [quote](https://link.springer.com/article/10.1007/BF02650179), hinting
-at the opportunities of quantum computing[^29]:
+at the opportunities of quantum computing[^41]:
 
 > *“I'm not happy with all the analyses that go with just the classical
 > theory, because nature isn't classical, dammit, and if you want to
@@ -25,7 +25,7 @@ impact quantum computing may have on chemistry and material science,
 discuss the most relevant algorithms, and analyze why the enzyme FeMoco
 receives such widespread attention.
 
-[^29]: Feynman, R.P. Simulating physics with computers. *Int J Theor
+[^41]: Feynman, R.P. Simulating physics with computers. *Int J Theor
     Phys* **21**, 467–488 (1982). https://doi.org/10.1007/BF02650179
 
 ## What problems in chemistry and material science will we solve? 
@@ -57,16 +57,18 @@ problems arise because we may need to keep track of all the possible
 locations that particle A can be, but also all the locations of particle
 B, and the same for particle C, etcetera, which quickly winds up to an
 *exponential* number of possible sets of conditional locations. In other
-words, the number of relevant *amplitudes* (see the section <u>What is
-quantum?)</u> that we need to keep track of, grows very quickly. Even
-with a mere one hundred particles, brute-force simulation is far beyond
-the capabilities of the world’s best supercomputers.
+words, the number of relevant *amplitudes* (see the [chapter that
+introduces quantum
+physics](https://quantumcomputingforbusiness.com/essentials/quantum/))
+that we need to keep track of, grows very quickly. Even with a mere one
+hundred particles, brute-force simulation is far beyond the capabilities
+of the world’s best supercomputers.
 
 It is a common misconception that quantum computers straightforwardly
 offer an exponential advantage compared to classical computers for all
 chemistry problems. An influential recent
 [paper](https://www.nature.com/articles/s41467-023-37587-6)
-reports[^30]:
+reports[^42]:
 
 > *“\[…\] we conclude that evidence for such an exponential advantage
 > across chemical space has yet to be found. While quantum computers may
@@ -91,7 +93,7 @@ computer excels. It is not entirely clear how large this niche is, and
 it is an active research area to identify more systems where classical
 methods fall short. To illustrate, a recent [review
 article](https://www.nature.com/articles/s41567-024-02411-5)
-states[^31]:
+states[^43]:
 
 > *\[Classical methods struggle with\] multi-metal systems, where
 > multiple metal ions are in similar electronic environments and
@@ -108,38 +110,38 @@ experiments today. We wouldn’t call these devices computers yet, but
 rather ‘analogue simulators’. One of the first actual ‘computer’
 applications could be to study models of quantum materials, such as the
 famous [Hubbard
-model](https://www.nature.com/articles/s41586-022-04940-6)[^32].
+model](https://www.nature.com/articles/s41586-022-04940-6)[^44].
 
 Looking at more commercially relevant applications, the aforementioned
 multi-metal systems are often cited, which are relevant to calculating
 ligand binding affinities in drugs and understanding the mechanism
 behind the biological production of ammonia. We study the latter example
 at the end of this chapter. Another potential area could be to
-understand and search for high-temperature, superconductors[^33]. It is
+understand and search for high-temperature, superconductors[^45]. It is
 hard to say what the impact of quantum computers will be beyond these
 niche areas, as this will depend strongly on the usefulness of small
 polynomial speedups and unpredictable breakthroughs in quantum
 algorithms. We see a broad palette of applications that are proposed,
 such as water splitting (to efficiently produce hydrogen as fuel),
-carbon capture mechanisms[^34], the study of efficient solar cells and
+carbon capture mechanisms[^46], the study of efficient solar cells and
 the development of higher capacity batteries.
 
-[^30]: Lee, S., Lee, J., Zhai, H. et al. Evaluating the evidence for
+[^42]: Lee, S., Lee, J., Zhai, H. et al. Evaluating the evidence for
     exponential quantum advantage in ground-state quantum chemistry. Nat
     Commun 14, 1952 (2023). https://doi.org/10.1038/s41467-023-37587-6
 
-[^31]: Santagati, R., Aspuru-Guzik, A., Babbush, R. et al. Drug design
+[^43]: Santagati, R., Aspuru-Guzik, A., Babbush, R. et al. Drug design
     on quantum computers. Nat. Phys. 20, 549–557 (2024).
     <https://doi.org/10.1038/s41567-024-02411-5>
 
-[^32]: Daley, A.J., Bloch, I., Kokail, C. et al. Practical quantum
+[^44]: Daley, A.J., Bloch, I., Kokail, C. et al. Practical quantum
     advantage in quantum simulation. Nature 607, 667–676 (2022).
     <https://doi.org/10.1038/s41586-022-04940-6>
 
-[^33]: Garnet Kin-Lic Chan, Quantum chemistry, classical heuristics, and
+[^45]: Garnet Kin-Lic Chan, Quantum chemistry, classical heuristics, and
     quantum advantage (preprint); <https://arxiv.org/abs/2407.11235>
 
-[^34]: Von Burg et al., Quantum computing enhanced computational
+[^46]: Von Burg et al., Quantum computing enhanced computational
     catalysis, Phys. Rev. Research 3, 033055.
     <https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.3.033055>
 
@@ -185,7 +187,7 @@ with tools such as [Density functional theory
 (CI)](https://en.wikipedia.org/wiki/Configuration_interaction) and
 [Quantum Monte Carlo
 (QMC)](https://en.wikipedia.org/wiki/Quantum_Monte_Carlo), although
-these are too slow to address very large systems such as drugs[^35].
+these are too slow to address very large systems such as drugs[^47].
 
 A typical workflow for finding a ground state on a quantum computer
 could be as follows: We construct a quantum circuit that first performs
@@ -201,7 +203,7 @@ sources, such as:
 
 TODO
 
-[^35]: “Current classical quantum-chemistry algorithms fail to describe
+[^47]: “Current classical quantum-chemistry algorithms fail to describe
     quantum systems accurately and efficiently enough to be of practical
     use for drug design.”, Santagati, R., Aspuru-Guzik, A., Babbush,
     R. *et al.* Drug design on quantum computers. *Nat. Phys.* **20**,
@@ -213,13 +215,13 @@ Some sources make spectacular (but extremely dubious) claims about how
 quantum computing could be a key ingredient to solve climate change,
 thanks to the boost to R&D on batteries, carbon capture, and more
 efficient chemical processes. But McKinsey takes the biscuit with their
-report titled “Quantum computing just might save the planet”[^36]. We’ll
+report titled “Quantum computing just might save the planet”[^48]. We’ll
 remain agnostic as to whether the impact of chemistry R&D is really
 sufficient to save the planet, but the claim of quantum computing as a
 saviour is especially ridiculous because it will still take several
 years before these machines are sufficiently mature. To limit global
 warming to no more than 1.5° C, we need to take action much sooner.
-Imperial College London writes on their website[^37], referencing the
+Imperial College London writes on their website[^49], referencing the
 2014 IPCC report:
 
 > “Limiting warming to 1.5°C will only be possible if global emissions
@@ -237,20 +239,17 @@ We’ll zoom in on the molecule FeMoco, which precisely has a multi-metal
 system that classical methods struggle with. To understand the relevance
 of this molecule, we need to dive into the world of food production.
 
-[^36]: https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/quantum-computing-just-might-save-the-planet
+[^48]: https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/quantum-computing-just-might-save-the-planet
 
-[^37]: https://www.imperial.ac.uk/grantham/publications/climate-change-faqs/how-and-when-do-we-need-to-act-on-climate-change-/
+[^49]: https://www.imperial.ac.uk/grantham/publications/climate-change-faqs/how-and-when-do-we-need-to-act-on-climate-change-/
 
 ## A case study of a promising enzyme: FeMoco
 
-<img src=" {{ site.baseurl }}/media/image17.png"
+<img src=" {{ site.baseurl }}/media/image18.png"
 style="width:1.33333in" />
 
-{{ begin figure caption }}
-
-Chemical structure of the FeMo cofactor, taken from Wikimedia.
-
-{{ end figure caption }}
+{: .caption }  
+Figure: Chemical structure of the FeMo cofactor, taken from Wikimedia.
 
 Today’s agriculture relies heavily on the use of artificial fertilizer
 to grow our crops. Without large-scale use of supplementary nutrients,
@@ -309,7 +308,7 @@ all the boxes for quantum utility: classical methods are limited, we
 have well-understood quantum methods, and computational results have a
 significant commercial and societal impact. Unfortunately, there is yet
 another catch -- innovation never comes so easily. [A recent
-article](https://arxiv.org/abs/2407.11235)[^38] quotes that industrial
+article](https://arxiv.org/abs/2407.11235)[^50] quotes that industrial
 production of a ton of Ammonia costs around 26 GJ of energy, compared to
 at least 24 GJ (estimated) in bacteria. This is indeed not the massive
 reduction we were hoping for. The article concludes that perhaps the
@@ -344,6 +343,6 @@ Further reading:
 - (2019 review article) Quantum Chemistry in the Age of Quantum
   Computing <https://pubs.acs.org/doi/10.1021/acs.chemrev.8b00803>
 
-[^38]: Garnet Kin-Lic Chan, Quantum chemistry, classical heuristics, and
+[^50]: Garnet Kin-Lic Chan, Quantum chemistry, classical heuristics, and
     quantum advantage (preprint); https://arxiv.org/abs/2407.11235
 

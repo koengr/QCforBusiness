@@ -52,7 +52,7 @@ following is missing, cybercriminals can cause a lot of harm: 
 There are some others,
 like [non-repudiation](https://en.wikipedia.org/wiki/Non-repudiation) and [availability](https://www.fortinet.com/resources/cyberglossary/cia-triad), that
 we don’t discuss here. Remember the above bold-faced words, as we will
-come across them a lot more. 
+come across them a lot. 
 
 We hope that this introduction makes the reader aware of the enormous
 importance of proper cryptography, and the sheer number of cryptographic
@@ -60,7 +60,7 @@ checks that are required for proper functioning of our IT. You would be
 surprised how often you use cryptography on a daily basis, through your
 laptop, phone, car keys, or smart cards.
 
-**The quantum threat is mainly to public-key cryptography. **
+## The quantum threat is mainly to public-key cryptography. 
 
 A common misconception, which we see a lot in popular literature, is
 that the quantum threat can be summarised as follows. (Both of the
@@ -76,14 +76,12 @@ To better understand this, let’s first look at what cryptography a
 quantum computer will break, and which it won’t. Later, we will look at
 the necessity of a quantum internet. 
 
- 
+In line with common cryptography jargon, we will typically have two
+parties, Alice and Bob, who want to communicate with each other. We
+distinguish two different types of cryptography: the symmetric and the
+asymmetric (public key) variants. 
 
-In line with common cryptography jargon, we will have two parties, Alice
-and Bob, who want to communicate with each other. We distinguish two
-different types of cryptography: the symmetric and the asymmetric
-(public key) variants. 
-
-<img src=" {{ site.baseurl }}/media/image18.png" style="width:3.30619in"
+<img src=" {{ site.baseurl }}/media/image19.png" style="width:3.30619in"
 alt="Symm and asymmetric cryptography Page 1 copy 2" />
 
 In **symmetric (or private key) cryptography, **we assume that both
@@ -95,27 +93,27 @@ like [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard).
 Bob can then use the same key to decrypt this message. The details of
 how encryption and decryption work are unimportant for our purposes. The
 only thing that’s relevant is that our computers can do this very
-efficiently, and that it’s considered extremely safe (without the key,
-nobody could reasonably break this encryption). 
+efficiently, and that it’s considered sufficiently safe: without the
+key, nobody could reasonably break this encryption.
 
-<img src=" {{ site.baseurl }}/media/image19.png" style="width:3.15014in"
+<img src=" {{ site.baseurl }}/media/image20.png" style="width:3.15014in"
 alt="Symm and asymmetric cryptography Page 3 copy 2 1" />
 
 In asymmetric cryptography, or more often called **public-key
 cryptography (PKC)**, each participant has two keys: a public key and
 a private key. The public key can be shared with anyone, while
 the private key must be kept secret. That’s why we use the suggestive
-colours green (save to share) and red (be careful!). If Alice wants to
+colours green (save to share) and red (keep private!). If Alice wants to
 send an encrypted message to Bob, she uses Bob’s public key to encrypt
 the message. If Bob wants to decrypt the message, he uses his private
 key. 
 
 The setting with two keys offers more functionality. For example, using
 the previous encryption method, Alice could send a secret key to Bob,
-which they can then use for symmetric cryptography (which is often a lot
-faster).
+which they can then use for symmetric cryptography, which is faster in
+practice.
 
-<img src=" {{ site.baseurl }}/media/image20.png" style="width:3.0625in"
+<img src=" {{ site.baseurl }}/media/image21.png" style="width:3.0625in"
 alt="Symm and asymmetric cryptography Page 4 copy 2" />
 
 Furthermore, the protocol works in ‘reverse’. Alice can use her private
@@ -128,68 +126,67 @@ forms the basis of digital signatures.  
 
  
 
-<img src=" {{ site.baseurl }}/media/image21.png" style="width:3.04167in"
+<img src=" {{ site.baseurl }}/media/image22.png" style="width:3.04167in"
 alt="security google chrome" />
 
 This is precisely what’s used whenever you open a webpage. Your browser
-(here: Chrome) will display that the connection is secure, which means
-that (amongst others) it verified that the digital signature is valid.
-This ensures authenticity and integrity. 
+(like Chrome or Firefox) will display that the connection is secure,
+which means that, amongst other things, it verified that the digital
+signature is valid. This ensures authenticity and integrity. 
 
 It should come somewhat as a surprise that public-key cryptography is
 even possible at all! It’s kind of a small wonder that encryption and
 decryption with two totally different keys can be made to work, thanks
-to some powerful mathematics. (I don’t know of any physical locks that
-work this way). However, it turns out that the delicate relationship
-between the two keys is also a weak spot…
+to some powerful mathematics. For example, I don’t know of any physical
+locks that work this way. However, it turns out that the delicate
+relationship between the two keys is also a weak spot…
 
-## How good are quantum computers at cracking cryptography? 
+### How good are quantum computers at cracking cryptography? 
 
 In principle,** symmetric-key cryptography** is fairly safe against
 quantum hackers. The biggest problems are brute-force attacks, where an
 attacker effectively tries every possible secret key. Using a key of 128
 bits, the total number of possible keys is 2<sup>128</sup> — that’s an
-incomprehensibly large number (much more than the number of atoms in a
-human). 
+incomprehensibly large number, much more than the number of atoms in a
+human body. 
 
 We know that Grover’s algorithm speeds up brute-force search, by
-reducing the number of attempts from 2128 to its square root, which
-is 264. This is something that cryptographers are not happy about, but
-considering the slowness and extra overhead that comes with quantum
-computers, this doesn’t seem to be a problem in the foreseeable future.
-Still, to be on the safe side, it is recommended to double key lengths,
-hence to use the same algorithm with 256-bit keys. Changing this in
-existing IT infrastructure is relatively straightforward, although one
-shouldn’t underestimate the time and costs for such changes within large
-organisations.
+reducing the number of attempts from 2<sup>128</sup> to its square root,
+which is 2<sup>64</sup>. This is something that cryptographers are not
+happy about, but considering the slowness and extra overhead that comes
+with quantum computers, this doesn’t seem to be a problem in the
+foreseeable future. Still, to be on the safe side, it is recommended to
+double key lengths, hence to use the same algorithm with 256-bit keys.
+Changing this in existing IT infrastructure is relatively
+straightforward, although one shouldn’t underestimate the time and costs
+for such changes within large organisations.
 
 The situation is completely different with **public-key
 cryptography. **The most-used algorithms
 today, [RSA ](https://en.wikipedia.org/wiki/RSA_(cryptosystem))and [ECC](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography),
 can be straightforwardly broken by a large quantum computer. We
 discussed the details of  Shor’s
-algorithm [earlier](https://www.quantum.amsterdam/part-2-the-applications/).
-(To be precise: today’s best
-results [estimate](https://quantum-journal.org/papers/q-2021-04-15-433/) that
-20 million qubits and around 8 hours are needed). Luckily, there exist
+algorithm [earlier](https://quantumcomputingforbusiness.com/essentials/applications-overview/),
+and saw that around [20 million
+qubits](https://quantum-journal.org/papers/q-2021-04-15-433/) and around
+8 hours are needed to retrieve a secret RSA key. Luckily, there exist
 PKC systems that are believed to be safe against quantum computers, and
 an obvious way forward is to start using these. We call such
 systems **post-quantum cryptography**, and despite the confusing name,
 they’re built to work on conventional computers. We discuss the rabbit
 hole of migrating to new cryptography [in a different
-chapter](https://quantum.amsterdam/part-6-getting-started), and
-similarly for estimating [how many years we still
-have](https://www.quantum.amsterdam/part-5-when-can-we-expect-a-useful-quantum-computer-a-closer-look-at-timelines/) until
-a quantum computer can attack RSA and ECC. 
+chapter](https://quantumcomputingforbusiness.com/advanced/strategic-actions/).
 
-There is another threat that everyone should be aware of,
-called **harvest now, decrypt later. **Encrypted messages that are sent
-over a network today can be intercepted and stored for many years, until
-a quantum computer can efficiently decrypt the messages. In practice, we
-use public-key encryption mainly to establish temporary secret keys to
-be used with symmetric-key cryptography, but even these can, in
-principle, be found retroactively. In other words: the confidentiality
-of today’s communication is already threatened! 
+Unfortunately, today’s communication is already at risk due to a
+practice called **harvest now, decrypt later. **Encrypted messages that
+are sent over a network can be intercepted and stored for many years,
+until a quantum computer can efficiently decrypt the messages. Even
+though we use public-key encryption mainly to establish temporary keys
+for symmetric cryptography, a smart attacker could still derive the
+necessary intermediate keys. It is inclear at what scales such
+large-scale storage of sufficiently detailed internet data is actually
+happening, but it seems plausible that security agencies of larger
+nations are working on it.
 
 Further reading:
 
@@ -239,9 +236,7 @@ The following table summarizes how our cryptosystems are threatened:
 </tbody>
 </table>
 
-
-**  
-Why don’t we switch to symmetric cryptography? **
+### Why don’t we switch to symmetric cryptography? 
 
 Public-key cryptography solves a very fundamental problem: how can Alice
 and Bob agree on a secret key before they have a means of encryption in
@@ -255,8 +250,6 @@ look at the functionality offered by the two types of cryptography: 
 | Confidentiality (privacy) | Only with pre-shared keys | ✔ |
 | Authentication / Integrity   | Only with pre-shared keys | ✔ |
 | Establishing secret keys | **✗** | ✔ |
-
-
 
 If only we could somehow give Alice and Bob pre-shared keys in a secure
 way, we would resolve most of these problems. Without public-key
@@ -354,5 +347,11 @@ Quantum computers, before they are even built, are already destined to
 make the next decade an incredibly complex period for anyone who deals
 with cryptography! 
 
+## Further reading
 
+- [The NSA publishes
+  recommendations](https://en.wikipedia.org/wiki/Commercial_National_Security_Algorithm_Suite)
+  on what which cryptographic algorithms should be used, and sketches a
+  concrete timeline about when national security systems should be
+  updated.
 

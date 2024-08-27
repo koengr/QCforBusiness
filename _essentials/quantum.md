@@ -56,10 +56,8 @@ Some examples of systems where quantum could play a role are:
 
 - Photons, the particles out of which ‘light’ is made.
 
-<img src=" {{ site.baseurl }}/media/image1.png" style="width:6.26736in"
-alt="A magnifying glass over a circuit board Description automatically generated" />To
-proceed, we need some physics jargon. We like to use the word
-‘**state**’, which is a complete description of all the physical
+To proceed, we need some physics jargon. We like to use the word
+‘**state’**, which is a complete description of all the physical
 properties of the world at one instance: the locations of all the
 different particle, their velocities, how much they rotate, etcetera.
 Usually, the entire universe is too big to study, so we often simplify
@@ -123,9 +121,6 @@ obviously also leads to a superposition in its location). More relevant
 for us: a quantum memory might use binary notation to store numbers 5
 and 11 simultaneously, or even 46 different Microsoft Excel spreadsheets
 at once.
-
-<img src=" {{ site.baseurl }}/media/image5.png" style="width:3.72059in"
-alt="undefined" />
 
 These amplitudes feel somewhat analogous to probabilities, which can
 similarly describe the likelihood that a particle can be found at some
@@ -210,12 +205,12 @@ of our prototypical magnet that was initially pointing ‘up’, but a
 quantum gate might flip this to ‘down’. There are many such gates
 possible, each having a different effect on their input, we like to give
 them names in capital letters, such as [X, Z, H, and
-CNOT](https://en.wikipedia.org/wiki/Quantum_logic_gate). Importantly, a
+CX](https://en.wikipedia.org/wiki/Quantum_logic_gate). Importantly, a
 quantum gate is *deterministic,* meaning that it’s input-output
 behaviour is always the same, as opposed to the quantum measurements we
 saw earlier.
 
-<img src=" {{ site.baseurl }}/media/image6.png" style="width:2.6761in" />
+<img src=" {{ site.baseurl }}/media/image5.png" style="width:2.2748in" />
 
 The canonical way to describe a quantum computer program is by defining
 a sequence of quantum gates, one after the other, each of which could
@@ -223,7 +218,8 @@ act on a different set of qubits. At the end of the computation, we
 measure all qubits. Below, an example of such a sequence is given, using
 the standard Quantum Assembly (QASM) language.
 
-<img src=" {{ site.baseurl }}/media/image7.png" style="width:4.48113in" />
+<img src=" {{ site.baseurl }}/media/image6.png"
+style="width:6.26806in" />
 
 Together, these steps can be graphically displayed in a **quantum
 circuit**, as shown here on the right. Quantum circuits represent each
@@ -289,7 +285,8 @@ entanglement, but we’ll leave that to other sources. What matters to us
 is that distant qubits can still share specific properties that would be
 impossible to mimic classically, leading to new functionalities we can
 exploit. We will discover what these functionalities are in the chapter
-on quantum networks.
+on [quantum
+networks](https://quantumcomputingforbusiness.com/applications/networks/).
 
 So there you have it: four surprising phenomena you may hear frequently
 in quantum technology conversations. To summarise:

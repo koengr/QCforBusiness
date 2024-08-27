@@ -72,7 +72,8 @@ callouts:
     title: Warning
     color: red
   note:
-    color: blue
+    title: Note
+    color: grey-dk
   new:
     color: yellow
 

@@ -1,9 +1,27 @@
+
+// ==============================
+// CENTER IMAGES
+
+img {
+	display: block;
+    //width: 60%;  // This is typically superceded by individual image settings.
+    margin: auto;	// A block with auto-margins automatically has left/right margins equal (=centered).
+}
+
+
+// ==============================
+// CUSTOM FIGURE CAPTIONS (pandoc doesn't work well with native captions in word. 
+
+.caption {
+	font-size: small;
+}
+
+
+
 // ==============================
 // NEXT buttons in the footer
 
 .footer-next {
-
-
 	// min-height: 100px;
 }
 

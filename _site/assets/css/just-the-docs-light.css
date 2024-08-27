@@ -7420,14 +7420,23 @@ blockquote.warning-title > p:last-child {
 }
 
 p.note, blockquote.note {
-  background: rgba(44, 132, 250, 0.2);
-  border-left: 4px solid #183385;
+  background: rgba(149, 147, 150, 0.2);
+  border-left: 4px solid #27262b;
   border-radius: 4px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
   padding: 0.8rem;
 }
+p.note::before, blockquote.note::before {
+  color: #27262b;
+  content: "Note";
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  padding-bottom: 0.125rem;
+}
 p.note > .note-title, blockquote.note > .note-title {
-  color: #183385;
+  color: #27262b;
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -7436,8 +7445,8 @@ p.note > .note-title, blockquote.note > .note-title {
 }
 
 p.note-title, blockquote.note-title {
-  background: rgba(44, 132, 250, 0.2);
-  border-left: 4px solid #183385;
+  background: rgba(149, 147, 150, 0.2);
+  border-left: 4px solid #27262b;
   border-radius: 4px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
   padding: 0.8rem;
@@ -7445,7 +7454,7 @@ p.note-title, blockquote.note-title {
 p.note-title > p:first-child, blockquote.note-title > p:first-child {
   margin-top: 0;
   margin-bottom: 0;
-  color: #183385;
+  color: #27262b;
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -7529,6 +7538,15 @@ blockquote.new-title > p:nth-child(2) {
 }
 blockquote.new-title > p:last-child {
   margin-bottom: 0;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+.caption {
+  font-size: small;
 }
 
 .btn-next {
