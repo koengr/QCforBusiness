@@ -1,3 +1,9 @@
-<!-- We add MathJax to the head of every page. -->
+{% if page.collection != nil %}
+
+
+<!-- We add MathJax to the head of every page, as long as the page is in a collection. -->
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+
+{% endif %} 
 

@@ -4,7 +4,7 @@ title: "What steps should your organization take?"
 nav_order: 4
 ---
 
-# What steps should your organization take?
+# What steps should your organisation take?
 
 TODO: add
 
@@ -26,7 +26,7 @@ couple of years. 
 Several organisations (especially consultants that would love to support
 you) have extensive writings on how to get started. Some examples:
 
-- [Capgemini – Quantum technologies: How to prepare your organization
+- [Capgemini – Quantum technologies: How to prepare your organisation
   for a quantum advantage
   now](https://www.capgemini.com/insights/research-library/quantum-technologies/)
 
@@ -186,7 +186,7 @@ Migrating to post-quantum cryptography
 **2b. Prepare for migration to post-quantum cryptography. **
 
 Cryptography is a completely different beast, with a more concrete goal,
-and more urgent timelines for most organizations ([here’s
+and more urgent timelines for most organisations ([here’s
 why](https://www.quantum.amsterdam/part-2-the-applications-of-quantum-computing-how-will-these-machines-change-society/)).
 Luckily, pretty much everyone faces the same problem, making it easier
 to give concrete guidelines. In essence, anyone who uses modern
@@ -273,7 +273,7 @@ Typically, business developers meet each other at [conferences and
 events](https://www.quantum.amsterdam/further-reading-list-of-information-resources-about-quantum-computing/),
 where you may find like-minded partners. We also encourage you
 to [contact us](https://www.quantum.amsterdam/contact/) for some
-sparring on what your organization can do, and to get connected to
+sparring on what your organisation can do, and to get connected to
 Netherlands-based knowledge institutes like QuSoft and [Quantum
 Application Lab](http://www.quantumapplicationlab.com/). 
 

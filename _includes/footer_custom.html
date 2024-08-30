@@ -1,7 +1,4 @@
 
-
-<div class="footer-next">
-
   {% if page.collection != nil %}
 
     {% assign part1 = site.essentials | sort: 'nav_order'  %}
@@ -23,10 +20,11 @@
 
 
     {% if next_page %}
+    <div class="footer-next">
       <h2>Next chapter: </h2>
       <a href="{{ next_page.url }}" class="btn btn-next"> {{ next_page.title }} → </a>
+    </div>
     {% endif %} 
 
   {% endif %}
 
-  </div>

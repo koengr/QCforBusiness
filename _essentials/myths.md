@@ -2,6 +2,7 @@
 layout: default
 title: "Four myths about quantum computing"
 nav_order: 6
+toc: true
 ---
 
 # Four myths about quantum computing
@@ -158,7 +159,8 @@ locations.
 -              Creating certifiable randomness.
 
 -              Forming connections between separate quantum computers,
-allowing them to send quantum data to each other using teleportation.
+allowing them to send quantum data to each other using
+[teleportation](https://en.wikipedia.org/wiki/Quantum_teleportation).
 For this to work, devices also need to transfer some classical data, so
 qubit transmission is never faster than the speed of light.
 Teleportation is an intriguing method to scale up quantum computers when
@@ -186,7 +188,7 @@ several years later, it’s still primarily used for testing and
 education. In 2019, consulting firm Gartner published “The CIO's Guide
 to Quantum Computing” which indicates that 100—200 qubits are sufficient
 for “key potential applications” in chemistry. They also predicted that
-“by 2023, 20% of organizations will be budgeting for quantum computing
+“by 2023, 20% of organisations will be budgeting for quantum computing
 projects”. Clearly, these predictions were overly optimistic.
 
 Similarly, Microsoft made claims in 2018 that their cloud platform Azure

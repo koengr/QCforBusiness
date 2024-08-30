@@ -6,11 +6,16 @@ nav_order: 1
 
 # Applications in chemistry and material science
 
+{% include components/page-toc.html %}
+
 Perhaps the most credible application of quantum computers is to study
-of quantum physics itself, and how it drives the behaviour of
-microscopic systems like molecules, materials, or even sub-atomic
-particles. As far back as 1981, physicist Richard Feynman ended a
-conference talk with a famous
+quantum physics itself. This helps us deepen our understanding of
+microscopic systems like molecules, atoms, or even sub-atomic particles,
+ultimately leading to the discovery of new drugs, materials and chemical
+production methods. At first sight, there seems to be a significant
+advantage compared to conventional computers, which struggle to store
+the complex quantum state of systems with many particles. As far back as
+1981, physicist Richard Feynman ended a conference talk with a famous
 [quote](https://link.springer.com/article/10.1007/BF02650179), hinting
 at the opportunities of quantum computing[^41]:
 
@@ -19,11 +24,19 @@ at the opportunities of quantum computing[^41]:
 > make a simulation of nature, you'd better make it quantum
 > mechanical”.*
 
-Since then, scientists found increasingly sophisticated algorithms to
-mimic nature on quantum devices. In this chapter, we will address the
-impact quantum computing may have on chemistry and material science,
-discuss the most relevant algorithms, and analyze why the enzyme FeMoco
-receives such widespread attention.
+Since then, scientists have become increasingly adept at accurately
+controlling quantum systems. Today, universities boast a wide spectrum
+of analogue quantum experiments that help us understand nature under
+exotic circumstances. We’re now lining up our tools to take these
+simulations to the next level: studying nature with digital quantum
+machines.
+
+In this chapter, we will assess how quantum computers can impact the
+fields of chemistry and material science. That makes this chapter more
+technical, and we’ll assume some (very) basic background in chemistry
+and physics. We discuss the most relevant algorithms, evaluate claims
+about quantum computing’s benefits in the fight against climate change,
+and analyse why the enzyme FeMoco receives such widespread attention.
 
 [^41]: Feynman, R.P. Simulating physics with computers. *Int J Theor
     Phys* **21**, 467–488 (1982). https://doi.org/10.1007/BF02650179
@@ -32,7 +45,7 @@ receives such widespread attention.
 
 The computational problems that chemists care about typically come in
 two flavours. The most studied problem is finding the arrangement of
-particles that has the lowest possible energy, which we call the *ground
+particles with the lowest possible energy, which we call the *ground
 state*. In nature, we often find a system in (or close to) its ground
 state. In the context of molecules, the atomic nuclei are relatively
 heavy, while the lightweight electrons move much faster and are more
@@ -43,24 +56,22 @@ problem.*
 
 The other problem is about dynamics: given some initial configuration of
 particles, how do they reconfigure themselves after a certain amount of
-time? This is often referred to as the *(time) evolution* of a system.
-Both problems are often informally referred to as *‘quantum
-simulation’*.
+time? This is often referred to as a system's *(time) evolution*. Both
+problems are often informally referred to as ***quantum simulation***.
 
-We often receive the question: why is it so hard to simulate quantum
-mechanics on a *classical* computer? Intuitively, the problem arises
+We often receive the question of why it’s so hard to simulate quantum
+mechanics on a *classical* computer. Intuitively, this hardness arises
 when we deal with many particles that exhibit large amounts of
 superposition and entanglement, such that the location of one particle
 is heavily dependent on the (undecided) position of many other
-particles. We call such states *strongly correlated*. The computational
-problems arise because we may need to keep track of all the possible
+particles. We call such states *strongly correlated*. Classical
+computers struggle because they need to keep track of all the possible
 locations that particle A can be, but also all the locations of particle
 B, and the same for particle C, etcetera, which quickly winds up to an
 *exponential* number of possible sets of conditional locations. In other
-words, the number of relevant *amplitudes* (see the [chapter that
-introduces quantum
+words, the number of relevant *amplitudes* (see the [chapter on quantum
 physics](https://quantumcomputingforbusiness.com/essentials/quantum/))
-that we need to keep track of, grows very quickly. Even with a mere one
+that we need to keep track of grows very quickly. Even with a mere one
 hundred particles, brute-force simulation is far beyond the capabilities
 of the world’s best supercomputers.
 
@@ -83,15 +94,15 @@ for *time evolutions.*
 
 There is more bad news for quantum computers. Over the years,
 computational chemists have found brilliant hacks and optimisations to
-work around the classical computer’s bottlenecks, which has raised a
-high bar before a quantum computer can meaningfully compete. For nearly
-every problem in chemistry, there appears to be a clever trick to run
-this somewhat efficiently on a classical machine. For a quantum killer
-application, we likely need to search in a fairly specific niche, right
-at the sweet spot where classical methods struggle while a quantum
-computer excels. It is not entirely clear how large this niche is, and
-it is an active research area to identify more systems where classical
-methods fall short. To illustrate, a recent [review
+work around the classical computer’s bottlenecks, raising a high bar
+before a quantum computer can meaningfully compete. For nearly every
+problem in chemistry, there appears to be a clever trick to solve it
+somewhat efficiently on a classical machine. For a killer application,
+we likely need to search in a fairly specific niche, right at the sweet
+spot where classical methods struggle while a quantum computer excels.
+It is not entirely clear how large this niche is, and it is an active
+research area to identify more systems where classical methods fall
+short. To illustrate, a recent [review
 article](https://www.nature.com/articles/s41567-024-02411-5)
 states[^43]:
 
@@ -112,19 +123,22 @@ applications could be to study models of quantum materials, such as the
 famous [Hubbard
 model](https://www.nature.com/articles/s41586-022-04940-6)[^44].
 
-Looking at more commercially relevant applications, the aforementioned
-multi-metal systems are often cited, which are relevant to calculating
-ligand binding affinities in drugs and understanding the mechanism
-behind the biological production of ammonia. We study the latter example
-at the end of this chapter. Another potential area could be to
-understand and search for high-temperature, superconductors[^45]. It is
-hard to say what the impact of quantum computers will be beyond these
-niche areas, as this will depend strongly on the usefulness of small
-polynomial speedups and unpredictable breakthroughs in quantum
-algorithms. We see a broad palette of applications that are proposed,
-such as water splitting (to efficiently produce hydrogen as fuel),
-carbon capture mechanisms[^46], the study of efficient solar cells and
-the development of higher capacity batteries.
+The first error-corrected quantum computers will hopefully find their
+place in industrial R&D settings. One of the first application areas
+could be the aforementioned multi-metal systems, which are relevant in
+calculations of ligand binding affinities in drugs and in understanding
+the mechanism behind the biological production of ammonia. We address
+the latter example at the end of this chapter. Another exciting area
+could be to explore the mechanism behind Type-II superconductivity and
+to search for materials that become superconducting at even higher
+temperatures[^45]. It is hard to say what the impact of quantum
+computers will be beyond such niche areas, as this will depend strongly
+on the usefulness of small polynomial speedups and unpredictable
+breakthroughs in quantum algorithms. We see a broad palette of other
+impactful applications that have been proposed, such as water splitting
+(to efficiently produce hydrogen fuel)[^46], carbon capture
+mechanisms[^47], the study of efficient solar cells[^48] and the
+development of higher capacity batteries[^49].
 
 [^42]: Lee, S., Lee, J., Zhai, H. et al. Evaluating the evidence for
     exponential quantum advantage in ground-state quantum chemistry. Nat
@@ -141,19 +155,26 @@ the development of higher capacity batteries.
 [^45]: Garnet Kin-Lic Chan, Quantum chemistry, classical heuristics, and
     quantum advantage (preprint); <https://arxiv.org/abs/2407.11235>
 
-[^46]: Von Burg et al., Quantum computing enhanced computational
+[^46]: <https://quantumapplicationlab.com/2024/01/08/photocatalysis-for-water-splitting/>
+
+[^47]: Von Burg et al., Quantum computing enhanced computational
     catalysis, Phys. Rev. Research 3, 033055.
     <https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.3.033055>
 
+[^48]: <https://www.pv-magazine.com/2023/08/04/quantum-physics-supercomputers-and-solar-cell-efficiency/>
+
+[^49]: <https://spectrum.ieee.org/lithium-air-battery-quantum-computing>
+
 ## Algorithms for quantum chemistry
 
-Three quantum methods deserve to be mentioned. The first is the
+We describe three of the most important quantum simulation algorithms.
+The first is the
 [**Trotter-Suzuki**](https://en.wikipedia.org/wiki/Time-evolving_block_decimation)
 method, sometimes called ‘Trotterization’, which simulates time
-evolution. In this case, we assume that the initial state is encoded in
-the qubits of the quantum computer. The Trotter-Suzuki method is
-guaranteed to return a good approximation of the state at a later time,
-again encoded in the qubit registers.
+evolution. In this case, we assume that some correct initial state of
+the world is encoded in the qubits of some quantum computer. The
+Trotter-Suzuki method is guaranteed to return a good approximation of
+the state at a later time, again encoded in the qubit registers.
 
 The most common tool for finding a ground state is [**quantum phase
 estimation
@@ -166,7 +187,7 @@ shifts the problem to: how do we produce a good candidate for the ground
 state?
 
 The most popular algorithm for creating states with certain properties
-is the [**variational quantum eigensolver
+(like very low energies) is the [**variational quantum eigensolver
 (VQE)**](https://en.wikipedia.org/wiki/Variational_quantum_eigensolver).
 This is an example of a variational quantum circuit: a series of gates
 that can be gradually changed until the output matches certain
@@ -186,64 +207,120 @@ with tools such as [Density functional theory
 [Configuration Interaction
 (CI)](https://en.wikipedia.org/wiki/Configuration_interaction) and
 [Quantum Monte Carlo
-(QMC)](https://en.wikipedia.org/wiki/Quantum_Monte_Carlo), although
-these are too slow to address very large systems such as drugs[^47].
+(QMC)](https://en.wikipedia.org/wiki/Quantum_Monte_Carlo). These work
+for small systems but are often too slow to study large systems such as
+proteins or drugs[^50]. A workaround is to apply these methods to just a
+small part of the target system, employing faster but less accurate
+methods to oversee the larger whole.
 
-A typical workflow for finding a ground state on a quantum computer
-could be as follows: We construct a quantum circuit that first performs
-a VQE, followed by QPE on the output of the variational circuit. This
-way, the output of the circuit represents the energy of the state
-produced by the VQE. We then allow a classical optimiser to run this
-circuit many times, gradually changing the parameters of the VQE until
-the lowest possible energy is found.
+An example of a basic workflow to find find a ground state on a quantum
+computer could be as follows. The first step is to train a VQE to output
+states with low energy[^51]. These might not be the exact ground states,
+but they will hopefully be very similar (in jargon, they have a large
+overlap with the ground state). As a second step, we append a QPE
+circuit, that will not only report the energy of the VQE states, but
+also has a fair probability of changing these states into perfect ground
+states (in jargon: it projects onto the ground state). Running the VQE +
+QPE combination a few times will almost certainly give the lowest energy
+states, assuming the VQE produces proper approximations of it.
 
-Needless to say, there exist various more technical and more
-sophisticated methods, for which we refer to other more technical
-sources, such as:
+[^50]: Santagati, R., Aspuru-Guzik, A., Babbush, R. *et al.* Drug design
+    on quantum computers. *Nat. Phys.* **20**, 549–557 (2024).
+    <https://doi.org/10.1038/s41567-024-02411-5>.  
+    Quote from this article: “Current classical quantum-chemistry
+    algorithms fail to describe quantum systems accurately and
+    efficiently enough to be of practical use for drug design.”
 
-TODO
+[^51]: An interesting subtlety is how we measure the energy that the VQE
+    is supposed to optimise. Luckily, there exist very short circuits
+    that we can append to measure the output states in different
+    *bases*. By running the VQE a relatively small number of times, we
+    can make good estimates of the energy of its output states. This
+    avoids performing the more complex QPE during the optimisation
+    phase.
 
-[^47]: “Current classical quantum-chemistry algorithms fail to describe
-    quantum systems accurately and efficiently enough to be of practical
-    use for drug design.”, Santagati, R., Aspuru-Guzik, A., Babbush,
-    R. *et al.* Drug design on quantum computers. *Nat. Phys.* **20**,
-    549–557 (2024). <https://doi.org/10.1038/s41567-024-02411-5>.
+### Further reading on simulation algorithms
 
-## A hype around quantum computing for climate changes
+Various more technical and sophisticated methods exist, for which we
+refer to other more technical sources. These require expert knowledge of
+quantum chemistry.
 
-Some sources make spectacular (but extremely dubious) claims about how
-quantum computing could be a key ingredient to solve climate change,
-thanks to the boost to R&D on batteries, carbon capture, and more
-efficient chemical processes. But McKinsey takes the biscuit with their
-report titled “Quantum computing just might save the planet”[^48]. We’ll
-remain agnostic as to whether the impact of chemistry R&D is really
-sufficient to save the planet, but the claim of quantum computing as a
-saviour is especially ridiculous because it will still take several
-years before these machines are sufficiently mature. To limit global
-warming to no more than 1.5° C, we need to take action much sooner.
-Imperial College London writes on their website[^49], referencing the
-2014 IPCC report:
+- Introduction to Quantum Algorithms for Physics and Chemistry
+  (2012)[^52], a pedagogical book chapter. Open version:
+  <https://arxiv.org/abs/1203.1331>.
+
+- Quantum Algorithms for Quantum Chemistry and Quantum Materials Science
+  (2020)[^53], a scientific overview article. Open version:
+  <https://arxiv.org/abs/2001.03685>.
+
+[^52]: Yung, M.-H. et al. (2014) ‘Introduction to Quantum Algorithms for
+    Physics and Chemistry’, in Quantum Information and Computation for
+    Chemistry. John Wiley & Sons, Ltd, pp. 67–106. Available at:
+    <https://doi.org/10.1002/9781118742631.ch03>.
+
+[^53]: Bauer, B. et al. (2020) ‘Quantum Algorithms for Quantum Chemistry
+    and Quantum Materials Science’, Chemical Reviews, 120(22), pp.
+    12685–12717. Available at:
+    <https://doi.org/10.1021/acs.chemrev.9b00829>.
+
+## A hype around quantum computing for climate change
+
+Some businesses make spectacular claims about how quantum computing
+could be a cornerstone in solving climate change, thanks to the boost to
+R&D on batteries, carbon capture, and more efficient chemical factories.
+However, rarely do we see any evidence – most seem to assume that
+quantum computers simply spit out blueprints for revolutionary
+sustainable technologies.
+
+McKinsey takes the biscuit with their report titled “[Quantum computing
+just might save the
+planet](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/quantum-computing-just-might-save-the-planet)”[^54].
+The article rightfully selects some of the most impactful technologies
+to reduce CO<sub>2</sub> emissions, like electrification of transport,
+improved solar panels, and even vaccines that reduce methane emissions
+by cattle (indeed, due to cow farts). The article concludes that the
+selected innovations could reduce global warming from 1.7-1.8 °C by 2050
+down to just 1.5 °C. It is a mystery to me why they throw in quantum
+computing because there is no mention whatsoever about why specifically
+quantum algorithms would be the key enabling factor. This exemplifies
+what we see more frequently in popular articles: quantum computers are
+depicted simply as insanely fast computers that will magically solve the
+barriers to other new technologies on our wishlist.
+
+What are the true prospects for quantum computing in the context of
+climate change? Sceptics will point out that technological innovations
+alone will be sufficient to avert a climate disaster – we will remain
+agnostic in this debate. A much more concrete issue is the mismatch in
+timelines. Climate experts agree that, to limit global warming to no
+more than 1.5° C, we need to take action relatively soon. Imperial
+College London concludes on their website[^55], referencing the 2014
+IPCC report:
 
 > “Limiting warming to 1.5°C will only be possible if global emissions
 > peak within the next few years, and then start to decline rapidly,
 > halving by 2030.”
 
-At the same time, our chapter on timelines shows that it is exceedingly
-unlikely that serious quantum utility in chemistry R&D is possible
-anywhere before the 2030s.
+Our chapter on timelines shows that it is exceedingly unlikely that
+significant quantum utility is possible anywhere before the 2030s.
+Additionally, it will take several years before a computational
+discovery is sufficiently mature for large-scale deployment. For this
+reason, we don’t see quantum computers as a good investment against
+climate change, but rather as a long-term development that can help us
+tackle other problems that humanity will face in the future.
 
-Nevertheless, it’s interesting to look at one of the ‘killer
-applications’ often mentioned in this context: a use case that has
-both 1) a convincing quantum speedup and 2) serious real-world impact.
-We’ll zoom in on the molecule FeMoco, which precisely has a multi-metal
-system that classical methods struggle with. To understand the relevance
-of this molecule, we need to dive into the world of food production.
+Do we really have no concrete applications in climate science? Well, we
+do have some concrete leads. In the search for a killer application in
+chemistry, perhaps the most-studied topic is the enzyme FeMoco. This is
+precisely a multi-metal system that classical methods struggle with, and
+as we’ll soon see, it appears in reputable plans for decarbonization. To
+understand the relevance of this molecule, we need to dive into the
+world of food production.
 
-[^48]: https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/quantum-computing-just-might-save-the-planet
+[^54]: https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/quantum-computing-just-might-save-the-planet
 
-[^49]: https://www.imperial.ac.uk/grantham/publications/climate-change-faqs/how-and-when-do-we-need-to-act-on-climate-change-/
+[^55]: https://www.imperial.ac.uk/grantham/publications/climate-change-faqs/how-and-when-do-we-need-to-act-on-climate-change-/
 
-## A case study of a promising enzyme: FeMoco
+## A case study of potential killer application: FeMoco
 
 <img src=" {{ site.baseurl }}/media/image18.png"
 style="width:1.33333in" />
@@ -251,64 +328,65 @@ style="width:1.33333in" />
 {: .caption }  
 Figure: Chemical structure of the FeMo cofactor, taken from Wikimedia.
 
-Today’s agriculture relies heavily on the use of artificial fertilizer
-to grow our crops. Without large-scale use of supplementary nutrients,
-it would be problematic to feed our world’s huge population. In fact,
-about [half of the nitrogen
+Today’s agriculture relies heavily on the use of artificial fertilisers.
+Without large-scale use of supplementary nutrients, we would not be able
+to sustain intensive farming practices and feeding our world’s huge
+population would be problematic. In fact, about [half of the nitrogen
 atoms](https://cen.acs.org/articles/86/i33/Haber-Bosch-Reaction-Early-Chemical.html) in
-our body have previously passed a fertilizer factory!
+our body have previously passed a fertiliser factory!
 
-Unfortunately, the production of fertilizer involves enormous energy
-consumptions and carbon emissions. The main culprit is the ingredient
-ammonia (NH3), of which we use as much as [230 Mton per
+Unfortunately, the production of fertiliser involves enormous energy
+consumption and carbon emissions. The main culprit is the ingredient
+ammonia (NH<sub>3</sub>), of which we use as much as [230 Mton per
 year](https://www.statista.com/statistics/1065865/ammonia-production-capacity-globally/).
-Although our air consists mainly of molecular nitrogen (N2), plants
-cannot directly absorb this. Instead, they rely on bacteria (or, in the
-case of artificial fertilizer, humans) to perform so-called nitrogen
-fixation, breaking the strong triple bond of molecular nitrogen and
-converting this into ammonia. Microorganisms can convert this into
-further nitrogen-containing compounds that can be absorbed by the root
-system.
+Although our air consists mainly of molecular nitrogen (N<sub>2</sub>),
+plants cannot directly absorb this. Instead, they rely on bacteria (or,
+in the case of artificial fertiliser, humans) to perform so-called
+nitrogen fixation, breaking the strong triple bond of molecular nitrogen
+and converting this into ammonia. Microorganisms can convert this into
+further nitrogen-containing compounds that the root system can absorb.
 
-Pretty much all of the world’s ammonia production follows the so-called
-Haber-Bosch process, where hydrogen gas (H2) and nitrogen gas (N2) react
-together to form ammonia. The process can be implemented in large,
-high-yield production lines, but also comes with a major disadvantage:
-its staggering energy consumption. This is mainly due to two essential
-steps: producing sufficiently pure hydrogen and nitrogen gasses, and
-later separating the H2 and N2 molecules into individual atoms. The
-latter is especially challenging for N2 due to its strong triple bond.
-To achieve this, factories operate at extreme conditions, with high
-temperatures (~400 degrees Celsius) and high pressure, largely driven by
-natural gas. As much as [1.8% of the world’s CO2
+Pretty much all of the world’s ammonia production facilities follow the
+so-called [Haber-Bosch](https://en.wikipedia.org/wiki/Haber_process)
+process, where hydrogen gas (H<sub>2</sub>) and nitrogen gas
+(N<sub>2</sub>) react together to form ammonia. This method has the
+benefit that it can be implemented in large, high-yield production lines
+but comes with the disadvantage of its staggering energy consumption.
+The inefficiency stems from two essential steps: first, producing
+sufficiently pure hydrogen and nitrogen gasses, and later, separating
+the H<sub>2</sub> and N<sub>2</sub> molecules into individual atoms.
+Breaking N<sub>2</sub> is especially challenging due to its strong
+triple bond. As an effect, factories operate at extreme conditions, with
+high temperatures (~400 degrees Celsius) and high pressure, driven
+mainly by natural gas. As much as [1.8% of the world’s CO2
 emission](https://royalsociety.org/topics-policy/projects/low-carbon-energy-programme/green-ammonia/) is
 caused by factories performing such reactions, consuming around 3-5% of
 the world’s natural gas production!
 
-Can’t this be done more efficiently? In this case, we strongly suspect
-so. Certain bacteria are also capable of making ammonia, but in a much
-more efficient way: without high temperatures or high pressure. It would
-be extremely valuable to copy this trick.
+Can’t this be done more efficiently? We strongly suspect so. Certain
+bacteria are also capable of making ammonia, but in a seemingly more
+efficient way, without high temperatures or high pressure. It would be
+extremely valuable to copy this trick.
 
 To imitate the bacteria, we need to better understand a particular
 substance, the FeMo cofactor (short: FeMoco), which acts as a catalytic
 active site during ammonia production. A perfect simulation of FeMoco is
 not possible on classical computers, as the structure of roughly 120
-strongly reacting electrons rapidly becomes intractable. [Researchers
-from ETH Zurich and
+strongly reacting electrons rapidly becomes intractable. In
+2016, [researchers from ETH Zurich and
 Microsoft](https://www.pnas.org/content/114/29/7555) were the first to
-recognize that a quantum computer may aid in a more accurate study of
-FeMoco. A few years later, researchers at Google gave a more concrete
-prediction: with about [4 million qubits and 4 days of computing
-time](https://www.quantum.amsterdam/part-3-the-search-for-a-killer-application-with-a-closer-look-at-artificial-fertilizer/o%09https:/journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.2.030305),
-a single simulation could be accomplished.
+report that a moderately large quantum computer could come to the
+rescue. A few years later, Google researchers refined the prospects even
+further, describing how simulations could be accomplished with about [4
+million qubits and 4 days of computing
+time](https://www.quantum.amsterdam/part-3-the-search-for-a-killer-application-with-a-closer-look-at-artificial-fertilizer/o%09https:/journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.2.030305).
 
 With FeMoco, we seem to finally have an example that confidently ticks
 all the boxes for quantum utility: classical methods are limited, we
-have well-understood quantum methods, and computational results have a
+have well-understood quantum methods, and computational outputs have a
 significant commercial and societal impact. Unfortunately, there is yet
-another catch -- innovation never comes so easily. [A recent
-article](https://arxiv.org/abs/2407.11235)[^50] quotes that industrial
+another catch - innovation never comes so easily. [A recent
+article](https://arxiv.org/abs/2407.11235)[^56] quotes that industrial
 production of a ton of Ammonia costs around 26 GJ of energy, compared to
 at least 24 GJ (estimated) in bacteria. This is indeed not the massive
 reduction we were hoping for. The article concludes that perhaps the
@@ -322,16 +400,20 @@ true value lies in a better understanding of this process:
 > ambient conditions.”*
 
 As a final note, we want to stress that quantum computers do not
-magically spit out recipes for fertilizers, nor for medicines,
-batteries, or catalysts. For real breakthroughs, we need a team of
-chemists, engineers, and other experts, who spend several years to run
-experiments, have discussions, employ computer simulations, make
-mistakes, go back to the drawing board a few times, and slowly converge
-to practical solutions. We should not forget that quantum computers
-merely provide a new set of tools. The best we can hope for is that
-smart people will use them in the right way!
+magically spit out recipes for fertilisers, nor for medicines,
+batteries, or catalysts. For real breakthroughs, we need collaborations
+between chemists, engineers, and many other experts who spend several
+years running experiments, having discussions, employing computer
+simulations, making mistakes, going back to the drawing board a few
+times, and slowly converging to practical solutions. We should not
+forget that quantum computers merely provide a new set of tools. The
+best we can hope for is that smart people will use them in the right
+way!
 
-Further reading:
+[^56]: Garnet Kin-Lic Chan, Quantum chemistry, classical heuristics, and
+    quantum advantage (preprint); https://arxiv.org/abs/2407.11235
+
+## Further reading:
 
 - (Scientific article) Toward the first quantum simulation with quantum
   speedup <https://www.pnas.org/doi/10.1073/pnas.1801723115>
@@ -342,7 +424,4 @@ Further reading:
 
 - (2019 review article) Quantum Chemistry in the Age of Quantum
   Computing <https://pubs.acs.org/doi/10.1021/acs.chemrev.8b00803>
-
-[^50]: Garnet Kin-Lic Chan, Quantum chemistry, classical heuristics, and
-    quantum advantage (preprint); https://arxiv.org/abs/2407.11235
 

@@ -80,9 +80,8 @@ of theory, lab testing, computation, and, most of all, the hard work of
 smart scientists and engineers. From this perspective, quantum computers
 have the potential to become a valued new tool for R&D departments.
 
-**[Read more:
-What](https://quantumcomputingforbusiness.com/applications/chemistry/)
-are the main applications in chemistry and material science?**
+[**Read more: What are the main applications in chemistry and material
+science?**](https://quantumcomputingforbusiness.com/applications/chemistry/)
 
 See also:
 
@@ -305,9 +304,10 @@ speedup: *there is no dispute that these require *fewer* *computational
 steps* than any classical algorithm. For instance, a famous quantum
 algorithm invented by [Lov
 Grover](https://en.wikipedia.org/wiki/Grover's_algorithm) (with
-extensions by Durr and Hoyer) finds the maximum of a function in fewer
-steps than conventional brute-force search. Similarly, quantum speedups
-were found for popular computational methods such
+extensions by [Durr and Hoyer](https://arxiv.org/abs/quant-ph/9607014))
+finds the maximum of a function in fewer steps than conventional
+brute-force search. Similarly, quantum speedups were found for popular
+computational methods such
 as [backtracking](https://arxiv.org/abs/1509.02374), [gradient
 descent](https://arxiv.org/abs/1711.00465), [semidefinite
 programming](https://arxiv.org/abs/1710.02581), [lasso](https://arxiv.org/abs/2110.13086),

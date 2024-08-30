@@ -506,10 +506,11 @@ its road map in a different format: they aim to have 1024 so-called
 qubits, but also guarantees sufficient gate accuracy to run reasonably
 long circuits. It’s unclear whether error correction will be used for
 this. If so, the actual number of physical qubits may be some orders of
-magnitude higher. Quantinuum (previously working under the name
-Honeywell) makes less concrete predictions but expects fault-tolerant
-computing by 2030[^35] (meaning that significant error correction should
-be in place).
+magnitude
+higher. [Quantinuum](https://www.honeywell.com/us/en/news/2020/10/get-to-know-honeywell-s-latest-quantum-computer-system-model-h1) (previously
+working under the name Honeywell) makes less concrete predictions but
+expects fault-tolerant computing by 2030[^35] (meaning that significant
+error correction should be in place).
 
 [^29]: <https://fortune.com/2020/09/15/ibm-quantum-computer-1-million-qubits-by-2030/>
 

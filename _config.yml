@@ -31,6 +31,8 @@ locale: en_GB
 # Extra plugins, mainly for search engine optimization
 plugins:
   - jekyll-seo-tag      # No need to add {% seo %} in head.html when using just-the-docs, it's included by default.
+  #- jekyll-toc
+
 
 
 

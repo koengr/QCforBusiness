@@ -129,7 +129,10 @@ details {
 	// Box shadow: ( xstart, ystart, blur-size, shadow-size, color )
 	box-shadow: 5px 5px 3px 1.5px rgba(0, 0, 0, .1);
 	width: 100%;
-	background: #f5f6fa;
+	// background: #f5f6fa;  // Original background for blue-ish theme.
+	background: #f4f2f1; // Set background to sidebar color?
+	// background: #faf9f5;  // Slightly more dim blue background
+
 	border-radius: 12px;
 	position: relative;
 	/* width: 500px; */

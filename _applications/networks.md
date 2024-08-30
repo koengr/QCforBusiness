@@ -162,7 +162,7 @@ cryptography, which must rely on certain mathematical assumptions. We
 know for sure that, with sufficient computational power, these codes can
 be broken, but we argue that this takes such an awfully long time that
 nobody will bother (except for bragging rights and [prize
-money](https://en.wikipedia.org/wiki/RSA_Factoring_Challenge)[^51]).
+money](https://en.wikipedia.org/wiki/RSA_Factoring_Challenge)[^57]).
 Still, such statements about computation times are based on assumptions,
 and our trust is purely based on our experience that cryptographers have
 not been able to break them yet. In fact, well-regarded cryptosystems do
@@ -197,7 +197,7 @@ the key distribution problem. 
 
  
 
-[^51]: See <https://en.wikipedia.org/wiki/RSA_Factoring_Challenge>.
+[^57]: See <https://en.wikipedia.org/wiki/RSA_Factoring_Challenge>.
 
 ### Further reading about QKD
 
@@ -260,9 +260,9 @@ couriers. 
  
 
 What’s left is a very niche use-case for the most forward-thinking
-organizations that deal with extreme security requirements. It is
+organisations that deal with extreme security requirements. It is
 somewhat of a pity that QKD is not so mature yet today, now that many
-organizations will start a migration to quantum-safe cryptography. A
+organisations will start a migration to quantum-safe cryptography. A
 widespread adoption of QKD would make it easier to expand to a
 large-scale quantum internet in the future. Nevertheless, since a
 quantum threat could be here as soon as the early 2030s, most companies
