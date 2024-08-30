@@ -16,7 +16,7 @@ nav_order: 2
 <tr class="odd">
 <td>Unprecedented capabilities</td>
 <td>“Our algorithm solves …”<br />
-(without benchmark comparison)</td>
+(without comparison to classical computers)</td>
 <td>Solve (NP-)hard optimization problems</td>
 </tr>
 <tr class="even">
@@ -25,9 +25,10 @@ nav_order: 2
 <td>Transformative</td>
 </tr>
 <tr class="odd">
-<td></td>
-<td></td>
-<td></td>
+<td>Unhackable</td>
+<td>Solve climate change</td>
+<td>“X times faster”<br />
+(without fair benchmark)</td>
 </tr>
 </tbody>
 </table>

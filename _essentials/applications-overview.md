@@ -153,7 +153,7 @@ cybersecurity? **](https://quantumcomputingforbusiness.com/applications/cyberse
 
 See also:
 
-- [MinutePhysics has a fantastic (but technical!) explainer of Shor’s
+- (Youtube, technical) [MinutePhysics explains Shor’s
   algorithm](https://www.youtube.com/watch?v=lvTqbM5Dq4Q). 
 
 - Nature feature article: [The race to save the Internet from quantum
@@ -586,7 +586,7 @@ See also:
 - [A quantitative analysis of Grover’s runtime compared to today’s
   supercomputers.](https://cacm.acm.org/research/disentangling-hype-from-practicality-on-realistically-achieving-quantum-advantage/) 
 
-- [(Technical!) Amazon researchers lay out a comprehensive list of
+- (Technical) [Amazon researchers lay out a comprehensive list of
   end-to-end complexities of nearly every known quantum
   algorithm.](https://arxiv.org/abs/2310.03011)
 

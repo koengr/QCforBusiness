@@ -2,10 +2,13 @@
 layout: default
 title: "Four myths about quantum computing"
 nav_order: 6
-toc: true
 ---
 
 # Four myths about quantum computing
+
+{: .no
+
+{% include components/page-toc.html %}
 
 ## Myth 1: Quantum computers can try a huge number of solutions at once
 
@@ -230,8 +233,8 @@ relevant, but the rapid rate of progress is undeniable.
 - [Veritasium explains
   Entanglement](https://www.youtube.com/watch?v=ZuvK-od647c)
 
-- [(Technical!) Minute Physics explains Teleportation (with some math
-  notation).](https://www.youtube.com/watch?v=DxQK1WDYI_k)
+- (Technical) [Minute Physics explains
+  Teleportation](https://www.youtube.com/watch?v=DxQK1WDYI_k)
 
 - Chris Ferrie debunks more myths in his free book “[What you shouldn’t
   know about Quantum Computers](https://arxiv.org/abs/2405.15838)”

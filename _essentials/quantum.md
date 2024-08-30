@@ -2,8 +2,6 @@
 layout: default
 title: "An introduction to the quantum world"
 nav_order: 2
-toc: true
-
 ---
 
 #  An introduction to the quantum world

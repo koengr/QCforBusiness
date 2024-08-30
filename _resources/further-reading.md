@@ -154,10 +154,6 @@ breakthroughs). 
 
 - [**Phys.org**](https://phys.org/)
 
-## 
-
-## 
-
 ## I want to learn more about business implications
 
 Several sources cover similar topics as this book. Most of these come

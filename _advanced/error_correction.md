@@ -413,8 +413,9 @@ indication of the number of steps that a device can handle!
   several experts what they find the most likely approach to
   fault-tolerance (section 4.5). 
 
-- British startup Riverlane builts a hardware chip that ‘decodes’ which
-  error occurred on logical qubits. ([Technical
+- British startup [Riverlane builts a hardware
+  chip](https://www.riverlane.com/news/riverlane-announces-world-s-most-powerful-quantum-decoder) that
+  ‘decodes’ which error occurred on logical qubits. ([Technical
   report](https://arxiv.org/abs/2309.05558)). 
 
 - Craig Gidney (Google) has a [more technical blog

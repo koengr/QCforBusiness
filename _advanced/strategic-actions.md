@@ -112,7 +112,8 @@ Optional but recommended: 
 
 - Start concrete explorations, for example by testing and implementing
   trial use-cases. It is relatively easy (and fun!) to follow the
-  tutorial of programming packages like Qiskit or Cirq. 
+  tutorial of programming packages
+  like [Qiskit ](https://qiskit.org/learn/)or [Cirq](https://quantumai.google/cirq). 
 
 - Find a partner. Save costs by collaborating on early, pre-competitive
   exploration. 
@@ -274,6 +275,7 @@ events](https://www.quantum.amsterdam/further-reading-list-of-information-resour
 where you may find like-minded partners. We also encourage you
 to [contact us](https://www.quantum.amsterdam/contact/) for some
 sparring on what your organisation can do, and to get connected to
-Netherlands-based knowledge institutes like QuSoft and [Quantum
-Application Lab](http://www.quantumapplicationlab.com/). 
+Netherlands-based knowledge institutes
+like [QuSoft](http://www.qusoft.org/) and [Quantum Application
+Lab](http://www.quantumapplicationlab.com/). 
 
