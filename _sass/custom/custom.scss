@@ -164,13 +164,15 @@ fieldset {
 
 // Make the sidebar logo bigger (adaptive)
 
-.site-logo {
-	background-image: url(/site-img/lineart-header-wide.png);  // this is the default
-}
+// // This is not needed -- it's set in config.yml as the main logo
+// .site-logo {  
+// 	background-image: url(/site-img/lineart-header-wide.webp);  // this is the default
+// }
 
+// This picks the bigger logo whenever the site is wide enough.	
 @media (min-width: 50rem) {
 	.site-logo {
-		background-image: url(/site-img/header-logo.png);
+		background-image: url(/site-img/header-logo.webp);
 	}
 
 	.site-header {

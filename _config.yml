@@ -8,7 +8,6 @@ description: Everything you should know about the applications of quantum techno
 # tagline : # Optional SEO argument, will appear in title of html page.
 author:
   name: Koen Groenland
-logo: "/site-img/header-logo.png"
 ### additionally, add the following to individual posts: image; title; description.
 
 
@@ -24,7 +23,7 @@ color_scheme: mycolors
 
 
 # Fancy logo (appears on top-left above navigation)
-logo: "/site-img/lineart-header-wide.png"   # seems bugged - just-the-docs adds untranslated {base_url} in css?
+logo: "/site-img/lineart-header-wide.webp"   # seems bugged - just-the-docs adds untranslated {base_url} in css?
 favicon_ico: "/site-img/linaert-atom-favicon.ico"
 locale: en_GB
 
