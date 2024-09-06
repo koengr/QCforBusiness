@@ -109,7 +109,7 @@ error-resilient logical qubit, leaving a programmer with just 10.000
 logical qubits to use. The image below shows a similar situation with a
 ratio of 1:12 between logical and physical qubits.
 
-<img src=" {{ site.baseurl }}/media/image13.png"
+<img src=" {{ site.baseurl }}/media/image14.png"
 style="width:4.17102in" />
 
 For error correction to work, we need to make several assumptions. For
@@ -468,7 +468,7 @@ that these computers are worse. In fact, the machines with the lower
 numbers of qubits on this graph have an important edge in other
 parameters, such as gate accuracies and qubit connectivity.
 
-<img src=" {{ site.baseurl }}/media/image14.png"
+<img src=" {{ site.baseurl }}/media/image15.png"
 style="width:4.14493in" />
 
 {: .caption }  
@@ -506,11 +506,10 @@ its road map in a different format: they aim to have 1024 so-called
 qubits, but also guarantees sufficient gate accuracy to run reasonably
 long circuits. It’s unclear whether error correction will be used for
 this. If so, the actual number of physical qubits may be some orders of
-magnitude
-higher. [Quantinuum](https://www.honeywell.com/us/en/news/2020/10/get-to-know-honeywell-s-latest-quantum-computer-system-model-h1) (previously
-working under the name Honeywell) makes less concrete predictions but
-expects fault-tolerant computing by 2030[^35] (meaning that significant
-error correction should be in place).
+magnitude higher. Quantinuum (previously working under the name
+Honeywell) makes less concrete predictions but expects fault-tolerant
+computing by 2030[^35] (meaning that significant error correction should
+be in place).
 
 [^29]: <https://fortune.com/2020/09/15/ibm-quantum-computer-1-million-qubits-by-2030/>
 
@@ -529,7 +528,7 @@ error correction should be in place).
 
 ### What does Moore’s law say?
 
-<img src=" {{ site.baseurl }}/media/image15.png"
+<img src=" {{ site.baseurl }}/media/image16.png"
 style="width:4.48551in" />
 
 One could assume that quantum computers will ‘grow’ at a similar rate as
@@ -564,7 +563,7 @@ in the field (like professors and corporate leaders) take part in this
 study. The results from December 2023[^36], gathered from 37
 participants, are displayed below.
 
-<img src=" {{ site.baseurl }}/media/image16.png" style="width:5.27992in"
+<img src=" {{ site.baseurl }}/media/image17.png" style="width:5.27992in"
 alt="threat timeline expert estimates" />
 
 {: .caption }  
@@ -604,7 +603,7 @@ we shall see below.
 ## Putting it all together
 
 The infographic below sums up our earlier findings.
-<img src=" {{ site.baseurl }}/media/image17.png"
+<img src=" {{ site.baseurl }}/media/image18.png"
 style="width:6.26806in" />
 
 Assuming that qubit numbers will grow exponentially (and that all other

@@ -341,6 +341,14 @@ be to cool a first environment to 35 Kelvin (-283 °Celsius or -396.7
 °Fahrenheit), followed by subsequent stages to ~3K, 900mK, 100mK, until
 the final stage of ~10mK is reached.
 
+<img src=" {{ site.baseurl }}/media/image7.jpeg"
+style="width:6.26806in" />
+
+{: .caption }  
+A superconducting quantum computer from IBM. Image from the [IBM Media
+Center image
+gallery.](https://newsroom.ibm.com/media-center#gallery_gallery_0:22083)
+
 One often hangs the fridge on the ceiling so that the higher
 temperatures are on top and the ultracold quantum chip is placed at the
 very bottom. The internals are shaped accordingly: several layers of
@@ -390,7 +398,8 @@ a rack full of classical electronic devices, all of which work together
 to keep the microscopic qubits in the coldest part of the fridge
 working.
 
-Further reading  
+## Further reading
+
 If you’d like to know more about the physics and math behind qubits, we
 recommend the following sources:
 

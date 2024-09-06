@@ -61,7 +61,7 @@ when we combine more physical qubits per logical qubit. Hence, we obtain
 a very favourable trade-off between the number of qubits, and the
 accuracy of the qubits.
 
-<img src=" {{ site.baseurl }}/media/image24.png" style="width:3.66223in"
+<img src=" {{ site.baseurl }}/media/image25.png" style="width:3.66223in"
 alt="Image alt text" />
 
 **Doesn’t measuring a quantum state destroy the information in the
@@ -88,7 +88,7 @@ of qubits it requires. It also has a **depth,** which is the number of
 consecutive steps that need to be performed. In early hardware, you may
 interpret one step as a single quantum gate. 
 
-<img src=" {{ site.baseurl }}/media/image25.png" style="width:3.57494in" />
+<img src=" {{ site.baseurl }}/media/image26.png" style="width:3.57494in" />
 
 The concept of  ‘width’ is pretty straightforward: if the computer
 doesn’t have enough memory, it will not be able to run the program.
@@ -253,7 +253,7 @@ as the difficulty or the size of the problem: for example, we might
 consider the problem of “factoring a number that can be written down
 using at most N bits”). 
 
-<img src=" {{ site.baseurl }}/media/image26.png" style="width:6.26806in"
+<img src=" {{ site.baseurl }}/media/image27.png" style="width:6.26806in"
 alt="circuit depth scaling" />
 
 Keep in mind: we’re talking about the requirements to solve a problem
@@ -275,7 +275,7 @@ correction (hence it has a small, fixed depth). The other is an
 error-corrected computer that can trade between depth and width (in
 certain discrete steps). 
 
-<img src=" {{ site.baseurl }}/media/image27.png" style="width:6.26806in"
+<img src=" {{ site.baseurl }}/media/image28.png" style="width:6.26806in"
 alt="circuit depth with or without correction" />
 
 The computer without error correction might have enough memory to solve
@@ -288,7 +288,7 @@ computer might have sufficient depth OR sufficient width, but it doesn’t
 have both at the same time. Hence, neither computer solves the N=40
 problem. 
 
-<img src=" {{ site.baseurl }}/media/image28.png" style="width:6.26806in"
+<img src=" {{ site.baseurl }}/media/image29.png" style="width:6.26806in"
 alt="circuit depth with or without correction problem sizes" />
 
 Towards cracking the N=40 problem, our best bet is to upgrade the
@@ -413,9 +413,8 @@ indication of the number of steps that a device can handle!
   several experts what they find the most likely approach to
   fault-tolerance (section 4.5). 
 
-- British startup [Riverlane builts a hardware
-  chip](https://www.riverlane.com/news/riverlane-announces-world-s-most-powerful-quantum-decoder) that
-  ‘decodes’ which error occurred on logical qubits. ([Technical
+- British startup Riverlane builts a hardware chip that ‘decodes’ which
+  error occurred on logical qubits. ([Technical
   report](https://arxiv.org/abs/2309.05558)). 
 
 - Craig Gidney (Google) has a [more technical blog

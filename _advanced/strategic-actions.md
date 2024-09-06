@@ -6,12 +6,6 @@ nav_order: 4
 
 # What steps should your organisation take?
 
-TODO: add
-
-<https://arxiv.org/abs/2310.15505> The Quantum Tortoise and the
-Classical Hare: A simple framework for understanding which problems
-quantum computing will accelerate (and which it will not)
-
 In the previous parts, we discussed
 the [use-cases](https://www.quantum.amsterdam/part-2-the-applications-of-quantum-computing-how-will-these-machines-change-society/),
 the [threats](https://www.quantum.amsterdam/part-8-the-impact-on-cybersecurity/), and
@@ -42,7 +36,7 @@ risks of missing out and the need to take actions quickly. However, they
 all mention reasonable strategic steps that organisation can take, which
 we will lay out below. Let’s break them up into 3 different stages:
 
-<img src=" {{ site.baseurl }}/media/image29.png" style="width:6.26806in"
+<img src=" {{ site.baseurl }}/media/image30.png" style="width:6.26806in"
 alt="what steps can businesses companies take in quantum professionals guide 1" />
 
 **1. Start with no-regret moves**
@@ -112,8 +106,7 @@ Optional but recommended: 
 
 - Start concrete explorations, for example by testing and implementing
   trial use-cases. It is relatively easy (and fun!) to follow the
-  tutorial of programming packages
-  like [Qiskit ](https://qiskit.org/learn/)or [Cirq](https://quantumai.google/cirq). 
+  tutorial of programming packages like Qiskit or Cirq. 
 
 - Find a partner. Save costs by collaborating on early, pre-competitive
   exploration. 
@@ -218,7 +211,7 @@ long-lived systems that will still be in use decades from now.”
 
 **THE PQC MIGRATION HANDBOOK**
 
-<img src=" {{ site.baseurl }}/media/image30.png" style="width:2.38542in"
+<img src=" {{ site.baseurl }}/media/image31.png" style="width:2.38542in"
 alt="Screenshot 2023 05 09 at 17.54.18" />
 
 Judging from previous migrations, \[implementing PQC\] might take well
@@ -275,7 +268,6 @@ events](https://www.quantum.amsterdam/further-reading-list-of-information-resour
 where you may find like-minded partners. We also encourage you
 to [contact us](https://www.quantum.amsterdam/contact/) for some
 sparring on what your organisation can do, and to get connected to
-Netherlands-based knowledge institutes
-like [QuSoft](http://www.qusoft.org/) and [Quantum Application
-Lab](http://www.quantumapplicationlab.com/). 
+Netherlands-based knowledge institutes like QuSoft and [Quantum
+Application Lab](http://www.quantumapplicationlab.com/). 
 

@@ -151,10 +151,10 @@ weave these basic operations together to form efficient software.
 Now, quantum computers are supposed to be even faster, right? Well, it’s
 not hard to find backing for that claim: 
 
-> <img src=" {{ site.baseurl }}/media/image7.png"
+> <img src=" {{ site.baseurl }}/media/image8.png"
 > style="width:4.44635in" />
 >
-> <img src=" {{ site.baseurl }}/media/image8.png"
+> <img src=" {{ site.baseurl }}/media/image9.png"
 > style="width:5.06565in" />
 
 {: .caption }  
@@ -183,7 +183,8 @@ different way**. Let’s look at a beautiful analogy that Andy Matuschak
 and Michael Nielsen bring up in their online course
 [Quantum.country](https://quantum.country/). 
 
-<img src=" {{ site.baseurl }}/media/image9.png" style="width:4.9899in" />
+<img src=" {{ site.baseurl }}/media/image10.png"
+style="width:4.9899in" />
 
 Imagine that you’d like to travel from Morocco to Spain, which are
 separated by a small piece of sea called the Strait of Gibraltar. If

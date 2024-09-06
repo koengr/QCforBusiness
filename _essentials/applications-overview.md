@@ -304,10 +304,9 @@ speedup: *there is no dispute that these require *fewer* *computational
 steps* than any classical algorithm. For instance, a famous quantum
 algorithm invented by [Lov
 Grover](https://en.wikipedia.org/wiki/Grover's_algorithm) (with
-extensions by [Durr and Hoyer](https://arxiv.org/abs/quant-ph/9607014))
-finds the maximum of a function in fewer steps than conventional
-brute-force search. Similarly, quantum speedups were found for popular
-computational methods such
+extensions by Durr and Hoyer) finds the maximum of a function in fewer
+steps than conventional brute-force search. Similarly, quantum speedups
+were found for popular computational methods such
 as [backtracking](https://arxiv.org/abs/1509.02374), [gradient
 descent](https://arxiv.org/abs/1711.00465), [semidefinite
 programming](https://arxiv.org/abs/1710.02581), [lasso](https://arxiv.org/abs/2110.13086),
@@ -526,7 +525,7 @@ today, categorised by their type of asymptotic speedup:
 
  
 
-<img src=" {{ site.baseurl }}/media/image10.png"
+<img src=" {{ site.baseurl }}/media/image11.png"
 style="width:6.26806in" />
 
 🟢   The “**exponential**” box is the most interesting one, featuring
@@ -574,7 +573,7 @@ whereas the most convincing speedups (like codebreaking) offer less
 value. The applications of chemistry and material science sit somewhere
 in between.
 
-<img src=" {{ site.baseurl }}/media/image11.png"
+<img src=" {{ site.baseurl }}/media/image12.png"
 style="width:4.05987in" />
 
 Unfortunately, we don’t dare to assign concrete numbers to this graph.
@@ -821,7 +820,7 @@ on these questions. If we allow ourselves to do some more hypothetical
 dreaming, I picture that the following future scenarios could be
 possible, on a spectrum of optimism versus pessimism:
 
-<img src=" {{ site.baseurl }}/media/image12.png"
+<img src=" {{ site.baseurl }}/media/image13.png"
 style="width:6.26806in" />
 
 Starting on the pessimistic side, if one believes that optimisation

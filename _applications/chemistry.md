@@ -322,7 +322,7 @@ world of food production.
 
 ## A case study of potential killer application: FeMoco
 
-<img src=" {{ site.baseurl }}/media/image18.png"
+<img src=" {{ site.baseurl }}/media/image19.png"
 style="width:1.33333in" />
 
 {: .caption }  
