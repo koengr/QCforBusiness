@@ -160,5 +160,4 @@ fact, we have already seen many academic showcases of superconducting
 simulators
 in [academic](https://arxiv.org/abs/2211.16439) [literature](https://www.nature.com/articles/ncomms8654).
 
-TODO: ADD OVERVIEW TABLE OF WHAT SUPPLIERS HAVE.
-
+=

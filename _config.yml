@@ -77,6 +77,12 @@ callouts:
     color: grey-dk
   new:
     color: yellow
+  graycallout:
+    color: faintgray
+  redcallout:
+    color: faintred
+  greencallout:
+    color: green
 
 # aux_links:
 #   Template Repository: https://github.com/just-the-docs/just-the-docs-template

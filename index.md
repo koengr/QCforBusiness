@@ -11,7 +11,7 @@ computers, without going into tedious technical details. It answers questions su
 
 - What are the  applications of quantum computers and quantum networks?
 
-- How long will it take before quantum computing becomes competetive?
+- When will we have large-scale quantum computers?
 
 - What are the consequences for cybersecurity?
 
@@ -19,13 +19,22 @@ computers, without going into tedious technical details. It answers questions su
 
 - What is the status of today's hardware?
 <br>
+
+As the first generation of quantum computers is on the horizon, understanding their impact is more important than ever. Luckily, you don't need a physics degree to understand their functionality - just like you don’t need to know how a transistor works to thrive in conventional IT. 
+
+This book is a gentle and business-oriented introduction to the opportunities and threats of quantum technologies. It equips you with the necessary knowledge to join cutting-edge discussions and to make strategic decisions. 
+
+
+**📖 Prefer to read a printed version? A paperback edition will be released in Q4 2024.**
+
+
 <br>
 <center>
 <a href="{{ site.baseurl }}/essentials/preface"><button class="btn fs-6">Start reading</button></a>
 </center>
 <br>
 
-
+<!-- 
 ## Audience
 
 This book targets anyone who encounters quantum technologies in their professional lives, but who don't not need a full physics background. This includes:
@@ -40,16 +49,51 @@ This book targets anyone who encounters quantum technologies in their profession
 
 - Investors
 
-|  | **This book is about…** |  |  | **This book does not contain…** |
+Moreover, it's an interesting journey for any tech enthusaist! 
+
+{: .new }
+ **This book is about…** \
+ *✓*  &nbsp; The impact that quantum technology has on business and society \
+ *✓*  &nbsp; Opportunities and threats \
+ *✓* &nbsp; Timelines \
+ *✓* &nbsp; Links to other great resources    
+
+
+{: .redcallout }
+ **This book is not…** \
+ *✗* &nbsp; A course in quantum math or physics \
+ ✗ &nbsp; A tutorial on quantum programming \
+ ✗ &nbsp; An exhaustive resource about every possible detail -->
+
+
+
+
+
+<!-- |  **This book is about…**  | **This book does not contain…** |
+|---|---|
+| The impact that quantum technology has on business and society | Essential math or physics |
+| Opportunities and threats |  Quantum programming | -->
+
+
+
+
+<!-- |  | **This book is about…** |  |  | **This book does not contain…** |
 |---:|----|----|---:|----|
-| **✓** | The impact that quantum technology has on business and society |  | ✗ | Essential math or physics |
-| **✓** | Opportunities and threats |  | ✗ | Quantum programming |
+| **✓** | |  | ✗ | Essential math or physics |
+| **✓** |  |  | ✗ | Quantum programming |
 | **✓** | Timelines |  | ✗ | Exhaustive information about every possible detail |
-| **✓** | Links to other great resources |  |  |  |
+| **✓** | Links to other great resources |  |  |  | -->
 
-## Get the softcover
+<!-- |  | **This book is about…** |  |  | **This book does not contain…** |
+|---:|----|----|---:|----|
+| **✓** | |  | ✗ | Essential math or physics |
+| **✓** |  |  | ✗ | Quantum programming |
+| **✓** | Timelines |  | ✗ | Exhaustive information about every possible detail |
+| **✓** | Links to other great resources |  |  |  | -->
 
-Prefer to read a printed edition? A physical edition will be released in Q4 2024.
+<!-- ## Get the softcover
+
+Prefer to read a printed edition? A physical edition will be released in Q4 2024. -->
 
 
 

@@ -6,8 +6,12 @@ nav_order: 1
 
 # Preface: Why this book?
 
+<br/> 
+
 <img src=" {{ site.baseurl }}/media/image1.png"
 style="width:6.26737in" />
+
+<br/> 
 
 *“Quantum computing will change everything,” the man in front of me
 said. Standing tall and confident, he took another sip of his drink

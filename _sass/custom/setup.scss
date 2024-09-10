@@ -1,0 +1,32 @@
+// Code used for color boxes
+
+$pink-000: #f77ef1;
+$pink-100: #f967f1;
+$pink-200: #e94ee1;
+$pink-300: #dd2cd4;
+
+$yellow-000: darken( #f9f0e0, 12%) ; 
+$yellow-100: darken( $yellow-000, 10%) ;
+$yellow-200: darken( $yellow-000, 50%) ;
+$yellow-300: darken( $yellow-000, 10%) ;
+
+$faintred-000: darken( #f9e1e0, 12%) ; 
+$faintred-100: darken( $yellow-000, 10%) ;
+$faintred-200: darken( $yellow-000, 50%) ;
+$faintred-300: darken( $yellow-000, 10%) ;
+
+$green-000: darken( #e0f9e0, 12%) ; 
+$green-100: darken( $yellow-000, 10%) ;
+$green-200: darken( $yellow-000, 50%) ;
+$green-300: darken( $yellow-000, 10%) ;
+
+$faintred-000: darken( #f9e1e0, 12%) ; 
+$faintred-100: darken( $yellow-000, 10%) ;
+$faintred-200: darken( $yellow-000, 50%) ;
+$faintred-300: darken( $yellow-000, 10%) ;
+
+// $faintgray-000: #dbdbdb ;   // Taken from buttons.scss but darkened to match. 
+$faintgray-000: #f4f2f1;                                // Taken from Details boxes
+$faintgray-100: darken( $faintgray-000, 1%) ;
+$faintgray-200: darken( $faintgray-000, 1%) ;
+$faintgray-300: darken( $faintgray-000, 30%) ;
