@@ -74,7 +74,8 @@ callouts:
     color: red
   note:
     title: Note
-    color: grey-dk
+    color: faintgray
+    #color: grey-dk
   new:
     color: yellow
   graycallout:
@@ -83,6 +84,9 @@ callouts:
     color: faintred
   greencallout:
     color: green
+  recommendationbox:
+    title: See also
+    color: testgray
 
 # aux_links:
 #   Template Repository: https://github.com/just-the-docs/just-the-docs-template

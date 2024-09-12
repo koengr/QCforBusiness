@@ -1,4 +1,6 @@
 // Code used for color boxes
+$color-borders-soft: #b1a29b;  // Soft gray, Used for Details, Callouts, etc. 
+$color-borders-details: #b4785e;  // Maroon, like the headers
 
 $pink-000: #f77ef1;
 $pink-100: #f967f1;
@@ -30,3 +32,12 @@ $faintgray-000: #f4f2f1;                                // Taken from Details bo
 $faintgray-100: darken( $faintgray-000, 1%) ;
 $faintgray-200: darken( $faintgray-000, 1%) ;
 $faintgray-300: darken( $faintgray-000, 30%) ;
+
+// $faintgray-000: #dbdbdb ;   // Taken from buttons.scss but darkened to match. 
+$testgray-000: #f9f0e027;                                // Taken from Details boxes
+$testgray-100: #1b7426;
+$testgray-200: #2614ab ;
+$testgray-300: #b4785e;
+
+
+

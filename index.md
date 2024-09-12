@@ -9,20 +9,20 @@ nav_order: 0
 This free book contains everything you should know about quantum
 computers, without going into tedious technical details. It answers questions such as:
 
-- What are the  applications of quantum computers and quantum networks?
+- What are the [applications]({% link _essentials/applications-overview.md %}) of quantum computers and quantum networks?
 
-- When will we have large-scale quantum computers?
+- In [what year]({% link _essentials/timelines.md %}) will we have large-scale quantum computers?
 
-- What are the consequences for cybersecurity?
+- What are the consequences for [cybersecurity]({% link _applications/cybersecurity.md %}) ?
 
-- How can an organisation effectively prepare? 
+- What [strategic actions]({% link _advanced/strategic-actions.md %}) should organisations take? 
 
-- What is the status of today's hardware?
+- What is the status of today's [hardware]({% link _advanced/hardware.md %})?
 <br>
 
 As the first generation of quantum computers is on the horizon, understanding their impact is more important than ever. Luckily, you don't need a physics degree to understand their functionality - just like you don’t need to know how a transistor works to thrive in conventional IT. 
 
-This book is a gentle and business-oriented introduction to the opportunities and threats of quantum technologies. It equips you with the necessary knowledge to join cutting-edge discussions and to make strategic decisions. 
+This book, written by [Koen Groenland](https://www.koengroenland.com), is a gentle and business-oriented introduction to the opportunities and threats of quantum technologies. It equips you with the necessary knowledge to join cutting-edge discussions and to make strategic decisions. 
 
 
 **📖 Prefer to read a printed version? A paperback edition will be released in Q4 2024.**
