@@ -321,7 +321,7 @@ world of food production.
 
 [^55]: https://www.imperial.ac.uk/grantham/publications/climate-change-faqs/how-and-when-do-we-need-to-act-on-climate-change-/
 
-## A case study of potential killer application: FeMoco
+## A case study of a potential killer application: FeMoco
 
 <img src=" {{ site.baseurl }}/media/image19.png"
 style="width:1.33333in" />
