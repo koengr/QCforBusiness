@@ -198,8 +198,12 @@ legend {
 
 // Below cateegories: more clear bottom borders
 .nav-category {
-    border-bottom: 1px solid $color-borders-soft;
+    // border-bottom: 1px solid $color-borders-soft;
+ border-top: 0px solid $color-borders-soft;
+ border-bottom: 0px solid $color-borders-soft;
+
 }
+
 
 // Side border 
 // regular background: #f9f0e0

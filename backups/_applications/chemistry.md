@@ -2,11 +2,13 @@
 layout: default
 title: "Applications in chemistry and material science"
 nav_order: 1
+toc: true
 ---
 
 # Applications in chemistry and material science
 
 {% include components/page-toc.html %}
+
 
 Perhaps the most credible application of quantum computers is to study
 quantum physics itself. This helps us deepen our understanding of

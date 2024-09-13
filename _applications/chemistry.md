@@ -5,6 +5,7 @@ nav_order: 1
 ---
 
 # Applications in chemistry and material science
+{: .no_toc }
 
 {% include components/page-toc.html %}
 

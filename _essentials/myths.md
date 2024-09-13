@@ -5,58 +5,67 @@ nav_order: 6
 ---
 
 # Four myths about quantum computing
+{: .no_toc }
 
 {% include components/page-toc.html %}
 
-## Myth 1: Quantum computers can try a huge number of solutions at once
+This chapter relies on a bit of quantum physics jargon. See the
+[Introduction to the quantum
+world](https://quantumcomputingforbusiness.com/essentials/quantum/) for
+a quick introduction.
 
-This myth derives from the concept of superposition: if a qubit can
-represent the numbers 0 and 1 at the same time, then a mere 1000 qubits
-can represent \\(2^{1000}\\) unique numbers, all at the same time. That’s an
-incomprehensibly large quantity of numbers that are represented at the
-same time, much more than there are atoms in the visible universe – even
-the fastest computers in the world couldn’t loop through all these
-numbers in a lifetime. Remember that all of these numbers, as stored in
-a quantum memory, can also be interpreted differently, perhaps as
-different Excel files, webpages, CAD drawings, or whatever kind of data
-we choose to work with.
+## Myth 1: Quantum computers find all solutions at once
 
-A smart computer scientist can devise a way to make 1000 bits represent
-‘solutions’ to some problem. For example, imagine that we want to find
-an optimal aeroplane wing that generates incredible lift while requiring
-as few materials as possible. Using quantum superposition, we might
-represent \\(2^{1000}\\) such wings all at once.
+This myth builds on a misinterpretation of the concept of superposition.
+A single qubit can be in two states at the same time (0 and 1), two
+qubits can represent four states (00, 01, 10, 11), and three qubits are
+potentially in eight unique configurations simultaneously. As we
+increase the number of qubits, this number of coexisting states scales
+exponentially! 
 
-We picked the example of aeroplane wings because it is clear that
-simulating its aerodynamic properties requires a pretty hefty
-computation. Let’s assume that we have written such a computer program
-that accurately simulates any wing, and call that program \\(f\\). It will
-output 1 if the wing works well (according to whatever metric), and 0
-otherwise. Surely, the program takes a very large number of computation
-steps, which we’ll call N. The program will need some input, denoted by
-\\(x\\), which is a 1000-bit description of all the relevant properties of a
-hypothetical aeroplane wing. In other words, the compute program
-computes \\(f(x) = 1\\) if \\(x\\) is a fantastic wing, and \\(f(x) = 0\\) if it’s
-rubbish.
+A mere 1000 qubits can effectively ‘store’ \\(2^{1000}\\)
+unique values, all at the same time. That’s an incomprehensibly large
+number, much more than there are atoms in the visible universe. Even the
+fastest computers in the world couldn’t loop through all these states in
+a lifetime. Each of these states can be interpreted like a file on a
+computer, be it an Excel spreadsheet, a web pages, a CAD drawing, or
+whatever kind of data we choose to work with.
+
+A smart computer scientist can also devise a way to make 1000 bits
+represent ‘solutions’ to some problem. For example, imagine that we want
+to find an optimal aeroplane wing that generates incredible lift while
+requiring as few materials as possible. Using quantum superposition, we
+might represent \\(2^{1000}\\) such wings all at once.
+
+We picked the example of aeroplane wings because simulating their
+aerodynamic properties requires a pretty hefty computation. Let’s assume
+that we have written such a computer program that accurately simulates
+any wing, and call that program \\(f\\). It will output 1 if the wing works
+well (according to whatever metric), and 0 otherwise. Surely, the
+program takes a very large number of computation steps, which we’ll call
+N. The program will need some input, denoted by \\(x\\), which is a 1000-bit
+description of all the relevant properties of a hypothetical aeroplane
+wing. In other words, the compute program computes \\(f(x) = 1\\) if \\(x\\) is
+a fantastic wing, and \\(f(x) = 0\\) if it’s rubbish.
 
 Now, a quantum computer should be able to execute any classical
 function, right? We should be able to run \\(f\\) on a quantum computer, but
-now we have the unique feature that the 1000-qubit input can actually
-represent a humongous number of potential aeroplane wings at the same
-time! By doing mere N computational steps, we can check the properties
-of \\(2^{1000}\\) solutions!
+now we have the unique feature that the 1000-qubit input can represent a
+humongous number of potential aeroplane wings at the same time! By doing
+mere N computational steps, we can check the properties of \\(2^{1000}\\)
+solutions!
 
 If this actually worked, quantum computers would have an astonishing
 power. They could straightforwardly find mathematical proofs that humans
-haven’t been able to solve in centuries. They would rapidly produce the
-perfect train and bus schedules, discover new drugs and
-straightforwardly hack encryption systems. They would solve problems in
-the [complexity class
+haven’t been able to solve in centuries, simply by trying all possible
+proofs in parallel. They would rapidly produce the perfect train and bus
+schedules, discover new drugs and straightforwardly hack encryption
+systems. They would solve problems in the [complexity class
 NP](https://en.wikipedia.org/wiki/NP_(complexity)), which is widely
 believed to be impossible with machines in our universe, owing to the
 famous P ≠ NP conjecture.
 
-So where’s the catch? For those who read the introduction to quantum
+So, where’s the catch? For those who read the introduction to quantum
 physics, we shouldn’t forget about the postulate of quantum measurement.
 The output of the computation would be a *superposition* over \\(2^{1000}\\)
 outcomes. If we want to learn anything about this output, we’d perform a
@@ -65,8 +74,8 @@ looking at \\(2^{1000}\\) different solutions simultaneously, we get to see
 only 1 outcome – corresponding to the performance of just a random
 aeroplane wing. In this case, there is no advantage compared to a
 classical computer, because we could’ve just as well picked a random
-wing at first, and then spent N steps on a (much faster) classical
-machine.
+wing at first, and then spent the same N steps on a (much faster)
+classical machine.
 
 Although this ‘quantum parallelism’ is too good to be true, quantum
 computers can use the above idea to some lesser extent. Using [Grover’s
@@ -76,7 +85,8 @@ find desirable solutions (the \\(x\\) for which \\(f(x) = 1\\)) in roughly the
 example, the number of required steps is reduced to
 \\(\sqrt{2^{1000}}\ N = 2^{500}\ N\\). This is an incredible reduction, but
 we’re still looking at a number of steps larger than the number of atoms
-in the universe – which is far from ‘efficient’.
+in the universe – finding solutions with this brute-force methods
+remains far from efficient.
 
 ## Myth 2: Qubits can store much more data than the same number of classical bits. 
 
@@ -154,19 +164,18 @@ that is limited by the speed of light.
 What is quantum entanglement good for, then? Some potential applications
 include:
 
--              Creating certifiably secure encryption keys at remote
-locations.
+- Creating certifiably secure encryption keys at remote locations.
 
--              Creating certifiable randomness.
+- Creating certifiable randomness.
 
--              Forming connections between separate quantum computers,
-allowing them to send quantum data to each other using
-[teleportation](https://en.wikipedia.org/wiki/Quantum_teleportation).
-For this to work, devices also need to transfer some classical data, so
-qubit transmission is never faster than the speed of light.
-Teleportation is an intriguing method to scale up quantum computers when
-a limited number of qubits can fit on a single chip or within a single
-fridge.
+- Forming connections between separate quantum computers, allowing them
+  to send quantum data to each other using
+  [teleportation](https://en.wikipedia.org/wiki/Quantum_teleportation).
+  For this to work, devices also need to transfer some classical data,
+  so qubit transmission is never faster than the speed of light.
+  Teleportation is an intriguing method to scale up quantum computers
+  when a limited number of qubits can fit on a single chip or within a
+  single fridge.
 
 ## Myth 4: Quantum computers are always ten years away.
 

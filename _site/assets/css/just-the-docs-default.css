@@ -8181,7 +8181,8 @@ legend {
 }
 
 .nav-category {
-  border-bottom: 1px solid #b1a29b;
+  border-top: 0px solid #b1a29b;
+  border-bottom: 0px solid #b1a29b;
 }
 
 @media (min-width: 50rem) {

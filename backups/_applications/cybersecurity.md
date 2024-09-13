@@ -1,285 +1,421 @@
 ---
 layout: default
 title: "The impact on cybersecurity"
-nav_order: 3
+nav_order: 2
 ---
 
-# Applications of quantum networks
+# The impact on cybersecurity
 
-If we're building computers that deal with qubits, superposition and
-entanglement, wouldn't these computers also need some way to send qubits
-to each other? This is the dream of the quantum internet: a network that
-exchanges quantum-mechanical photons between devices worldwide, parallel
-to our well-known classical internet. 
+In the world of quantum computers, the most convincing exponential
+speedup lies in codebreaking. Anyone who wants to understand the impact
+of quantum computers must know the basics of cryptography. Let's start
+at the beginning. 
 
-There is a bit of a paradox here. On the one hand, a full-blown quantum
-internet is very, very far away: a network that reliably transports
-actual qubits is arguably harder to realise than a large quantum
-computer, as it will build upon the [error
-correction](https://en.wikipedia.org/wiki/Quantum_error_correction)
-technology that we're only just figuring out. On the other hand, it is
-often said that quantum networks have a higher Technology Readiness
-Level than computing. That sounds like a contradiction, right?
+## Cryptography is much more than just secrecy 
 
-The main explanation is that there are some applications for 'imperfect'
-quantum networks, particularly in the context of cryptography. 
+Why do we actually use cryptography? Pretty much everyone will
+immediately think of:
 
-In a sense, quantum networking applications have always been ahead of
-quantum computing. Already in 1984, long before quantum computers were
-seriously considered, researchers Benett and Brassard discovered a
-method to securely negotiate a secret key (think of a password) between
-two distant parties, based on sending individual photons. Their result
-is now famously known as the [BB'84
-protocol](https://en.wikipedia.org/wiki/BB84). Similarly, the
-commercialisation of network technologies has long been ahead of
-computing. Early quantum startups like MagiQ Technologies and ID
-Quantique were founded around the new millennium, and their first
-commercial networking products were brought to the market in 2003 and
-2004. This technology, where a quantum network is used to generate a
-secret key at two endpoints, is called Quantum Key Distribution (QKD) –
-an application that we will address in much more detail below.
+- **Privacy/confidentiality: **ensuring others cannot read your data
+  (especially when messages are sent over a network).
 
-## The promises of the quantum internet
+However, there are many more threats that cryptography protects us from.
+Most people wouldn't normally worry about them, but when any of the
+following is missing, cybercriminals can cause a lot of harm: 
 
-There is a long list of arguments why we should be excited about the
-quantum internet. Here are some of the applications that we hear most
-frequently:
+- **Authentication: **You want to verify that a message really came from
+  the entity that claims to send the message. For example, during online
+  banking, you want to be 100% sure that you are communicating with your
+  bank and nobody else.  
+  Another example is when installing a new piece of software. When
+  executing the latest Windows update, your computer makes sure to check
+  that there is a **'digital signature' **that belongs to Microsoft.
+  Imagine how unsafe your laptop would be if anyone could send fake
+  updates!
 
-- **Clustering quantum computers:** By connecting multiple smaller
-  computers, one might build a much larger computer with more combined
-  memory, allowing it to tackle more complex problems.  
+- **Integrity: **You want to verify that nobody changed the message
+  during transit. Imagine the damage when anyone can alter emails or
+  file transfers, or when the commands coming from an air traffic
+  control tower are modified. Similarly, any software installer confirms
+  that the software wasn't changed by anyone but the original publisher,
+  by verifying a digital signature.
 
-- **Securing your classical communication. **The main contender here is
-  [Quantum Key Distribution
-  (QKD)](https://en.wikipedia.org/wiki/Quantum_key_distribution),
-  sometimes dubbed the "unhackable" network. This allows two distant
-  users to create a secret key (think of a password) that can be used in
-  further cryptographic applications.
+- **Exchanging secret keys: **How do you negotiate a new secret key with
+  a brand new webshop that you have never visited before? This is a
+  seemingly impossible task if anyone can read bare internet traffic,
+  but modern cryptography has a solution.
 
-- **"Blind computing": Encrypting your data while still allowing someone
-  else to process it. **What if you hire an Amazon cloud computer to do
-  calculations on your data, but you don't want Amazon to actually see
-  the data itself? It turns out that you can make quantum computers do
-  their computations even while the data remains encrypted, with some
-  caveats. Similarly, one could use 'encrypted' software to solve
-  someone else's problem without them discovering this algorithm. Such
-  applications often go by the name of blind computing or private
-  computing. 
+There are many other vital functionalities,
+like [non-repudiation](https://en.wikipedia.org/wiki/Non-repudiation)
+and [availability](https://www.fortinet.com/resources/cyberglossary/cia-triad),
+that we don't discuss here. Remember the bold-faced terms above, as we
+will often come across these. 
 
-  - [A scientific (hard!) overview of blind computing
-    applications. ](https://www.nature.com/articles/s41534-017-0025-3)
+We hope that this introduction makes you aware of the enormous
+importance of proper cryptography and the sheer number of cryptographic
+checks required for the proper functioning of our IT. You would be
+surprised how often you use cryptography on a daily basis through your
+laptop, phone, car keys, or smart cards.
 
-- **Position verification: **Can you prove that you are currently at a
-  given location, in a way that cannot be spoofed? 
+## The quantum threat is mainly to public-key cryptography 
 
-  - [A short introductory video
-    \[3:23\]](https://www.youtube.com/watch?v=afw0EXQ-4cI&ab_channel=M%C3%A1t%C3%A9Galambos)
+A common misconception, which we see a lot in popular literature, is
+that the quantum threat can be summarized as follows. (Both of the
+statements below are **incorrect!) **
 
-- **Protocols with multiple parties, where not every participant can be
-  trusted**, such as [leader
-  election](https://en.wikipedia.org/wiki/Leader_election) or [Byzantine
-  agreement](https://en.wikipedia.org/wiki/Quantum_Byzantine_agreement).
-  You can find many more in the [Quantum Protocol
-  Zoo. ](https://wiki.veriqloud.fr/index.php?title=Protocol_Library)
+- "A quantum computer will break all of today's cryptography."
 
-- **Make quantum sensors more effective**. There exist proposals to
-  combine different telescopes or gravitational wave detectors, and
-  plans to synchronise quantum clocks. 
+- "A quantum internet is needed to keep our cryptography safe again."
 
-  - [A scientific (hard!) overview of distributed quantum
-    sensing](https://iopscience.iop.org/article/10.1088/2058-9565/abd4c3)
+To better understand this, let's first look at what cryptography a
+quantum computer will break, and which it won't. Later, we will look at
+the necessity of a quantum internet. 
 
-Much more about the various applications can be found in an [online
-Quantum Internet
-magazine](https://tu-delft.foleon.com/tu-delft/quantum-internet/cover/)
-by TU Delft, or on the website of the [Quantum Internet
-Alliance](https://quantuminternetalliance.org/quantum-internet-use-cases/).
+In line with common cryptography jargon, we will typically have two
+parties, Alice and Bob, who want to communicate with each other. We
+distinguish two different types of cryptography: the symmetric and the
+asymmetric (public key) variants. 
 
-## How useful is the quantum internet in practice? 
+<img src=" {{ site.baseurl }}/media/image20.png" style="width:3.30619in"
+alt="Symm and asymmetric cryptography Page 1 copy 2" />
 
-The impact of many quantum network applications will depend on how much
-we will use quantum computers. If quantum computers become widespread in
-the future, then communication between them also seems to be extremely
-worthwhile. On the other hand, our current outlook of quantum computers
-focuses on special-purpose devices used to solve isolated problems. In
-the latter scenario, the value of exchanging quantum data is not
-immediately clear.
+In **symmetric (or private key) cryptography, **we assume that both
+Alice and Bob already know some secret key. This could be a password
+that they both know or, more commonly, a very long number represented by
+(say) 128 bits in their computer memory. Alice can use the key to
+encrypt any message using a protocol
+like [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard).
+Bob can then use the same key to decrypt this message. The details of
+how encryption and decryption work are unimportant for our purposes. The
+only relevant thing is that our computers can do this very efficiently
+and that it's considered sufficiently safe: without the key, nobody
+could reasonably break this encryption.
 
-There is an intriguing road map to build a reliable quantum internet in
-the future (involving fascinating tricks like [entanglement
-distillation](https://en.wikipedia.org/wiki/Entanglement_distillation)
-and [teleportation](https://en.wikipedia.org/wiki/Quantum_teleportation)),
-but this would require multiple error-corrected quantum computers by
-itself! Therefore, in this book, we're not yet ready to look ahead at
-applications like clustering computers, multi-party computations,
-private computing, or making sensors more effective. Regarding clustered
-quantum computers**, **we frequently hear arguments that one can make a
-bigger quantum computer by connecting individual ones, giving us access
-to larger numbers of qubits in a single calculation. It seems to me that
-building these computers right next to each other (and calling it a
-single computer) is much more effective than transporting fragile
-quantum data over large distances – clustering seems useful in extremely
-small networks.
+<img src=" {{ site.baseurl }}/media/image21.png" style="width:3.15014in"
+alt="Symm and asymmetric cryptography Page 3 copy 2 1" />
 
-In the foreseeable future, the first interesting applications are those
-that work over a "noisy" connection, and transport just one qubit at a
-time (or perhaps a handful of them). For practical interest, **Quantum
-Key Distribution (QKD)** is by far the most interesting application.
+In asymmetric cryptography, more often called **public-key cryptography
+(PKC)**, each participant has two keys: a public key and a private key.
+The public key can be shared with anyone, while the private key must be
+kept secret. That's why we use the suggestive colours green (save to
+share) and red (keep private!). If Alice wants to send an encrypted
+message to Bob, she uses Bob's public key to encrypt the message. If Bob
+wants to decrypt the message, he uses his own private key. 
 
-## The case for QKD
+The setting with two keys offers more functionality. For example, using
+the previous encryption method, Alice could send a secret key to Bob,
+which they can then use for symmetric cryptography, which is faster in
+practice. When public-key cryptography is built for this purpose, we
+call it a **key encapsulation mechanism** (KEM).  
 
-To fully understand QKD, we will need to have a bit more background
-about cryptography, especially the key distribution. For a full account,
-we [recommend first reading the chapter on
-cryptography](https://quantumcomputingforbusiness.com/applications/cybersecurity/).
-In short: we're wondering how Alice can agree on a secret key with her
-distant friend Bob, in a world where everyone can read plain data sent
-over the internet. Surely they can't just send their secrets or
-passwords over to each other, without having any encryption in the first
-place! This problem is commonly solved using *public key cryptography*
-(which we know will be revamped in the following years). If you really
-don't trust public-key cryptography, the main alternative is to
-physically transport a usb stick by a trusted courier. 
+<img src=" {{ site.baseurl }}/media/image22.png" style="width:3.0625in"
+alt="Symm and asymmetric cryptography Page 4 copy 2" />
 
-Compared to conventional cryptography, the unique selling point of QKD
-is that it is fundamentally impossible for cybercriminals to obtain the
-secret key as it is being distributed. As long as our understanding of
-quantum mechanics is correct (and we're quite convinced it is, as it's
-arguably the most [well-tested theory in
-science](https://www.forbes.com/sites/chadorzel/2015/07/20/three-experiments-that-show-quantum-physics-is-real/)),
-no amount of computational power or mathematical breakthroughs will let
-an attacker gain information about the key. Of course, this assumes that
-the protocol is executed precisely as prescribed and that there are no
-other vulnerabilities in the actual hardware or software. 
+Furthermore, the protocol works in 'reverse'. Alice can use her private
+key to encrypt a message, which then anyone in the world (including Bob)
+can decrypt using the corresponding public key. Bob should then be
+confident that Alice is the only person who could have encrypted this
+message. Indeed, something encrypted with the private key can *only* be
+decrypted with the public key, and vice versa. This forms the basis of
+digital signatures.  
 
-This fundamentally differs from today's approach of public key
-cryptography, which must rely on certain mathematical assumptions. We
-know for sure that, with sufficient computational power, these codes can
-be broken, but we argue that this takes such a painfully long time that
-nobody will bother. Still, such statements about computation times are
-based on assumptions, and our trust derives from the empirical evidence
-that our smartest cryptographers have not found any weaknesses yet. In
-fact, well-regarded cryptosystems do get broken from time to time. A
-prototypical example is
-[SIKE](https://arstechnica.com/information-technology/2022/08/sike-once-a-post-quantum-encryption-contender-is-koed-in-nist-smackdown/)[^57],
-which was in the race to become a new NIST standard until it was proven
-unsafe. 
+<img src=" {{ site.baseurl }}/media/image23.png" style="width:3.04167in"
+alt="security google chrome" />
 
-That said, although QKD is "unhackable" in theory, the actual
-hardware *and *software are likely to contain vulnerabilities. Contrary
-to well-trusted public-key cryptography, no QKD system has received
-proper certification and accreditation, and a significant fraction of
-historical
-products [have](https://opg.optica.org/oe/fulltext.cfm?uri=oe-15-15-9388&id=139925) [been](https://iopscience.iop.org/article/10.1088/1367-2630/11/6/065001/meta) [hacked](https://arxiv.org/abs/1008.4593). 
+You can see public-key cryptography in action whenever you visit a web
+page. Your browser (like Chrome or Firefox) will display that the
+connection is secure, which means that it verified that the digital
+signature is valid, amongst other things. This guarantees authenticity
+(the page came from a registered server) and integrity (the site arrived
+unchanged). 
 
-QKD has the downside that it requires specialised hardware, although it
-is much less demanding than other quantum internet applications we
-mentioned. It can already be practical with a basic point-to-point
-network with just two connected parties, with one party limited to
-sending photons and the other limited to just measuring them. Moreover,
-the qubits need only be sent and measured one at a time, so no quantum
-memory or extensive quantum computations are needed. There have already
-been several demonstrations that use standard telecom fibre (the stuff
-that's already in the ground) or satellite-based systems that
-communicate through air. QKD hardware is fancy and expensive, but not
-completely out of reach. 
+It should come somewhat as a surprise that public-key cryptography is
+even possible at all! It's kind of a small wonder that encryption and
+decryption with two totally different keys can be made to work, thanks
+to some powerful mathematics. However, it turns out that the delicate
+relationship between the two keys is also a weak spot…
 
-The main downside of QKD is that it features no intrinsic way to confirm
-who the person on the other end of the line is. Some form of
-authentication is still needed – which is done with secret keys that
-should already be present in the first place! This makes QKD just a
-partial solution to the key distribution problem: it's mostly a key
-*extension* protocol, creating arbitrary amounts of key material based
-on a small initial key.
+### How good are quantum computers at cracking cryptography? 
 
-[^57]: <https://arstechnica.com/information-technology/2022/08/sike-once-a-post-quantum-encryption-contender-is-koed-in-nist-smackdown/>
+**Symmetric-key cryptography** is quite safe against quantum hackers.
+The biggest problems are brute-force attacks, where an attacker
+effectively tries every possible secret key. Using a key size of 128
+bits, the total number of possible keys is 2<sup>128</sup> — that’s an
+incomprehensibly large number, much more than the number of atoms in a
+human body. 
 
-### Further reading about QKD
+We know that Grover’s algorithm speeds up brute-force search by reducing
+the number of attempts from 2<sup>128</sup> to its square root, which
+is 2<sup>64</sup>. This is something that cryptographers are not happy
+about, but considering the slowness and extra overhead that comes with
+quantum computers, this doesn’t seem to be a problem in the foreseeable
+future. Still, to be on the safe side, it is recommended to double key
+lengths, hence, to use the same algorithm with 256-bit keys. Changing
+this in existing IT infrastructure is relatively straightforward,
+although one shouldn’t underestimate the time and costs for such changes
+within large organisations.
 
-- A video explanation of QKD
-  for [laymen](https://www.youtube.com/watch?v=V3WzH2up7Os&ab_channel=ImprobableMatter)
-  or [experts](https://www.youtube.com/watch?v=2ExG7UJgfmQ&ab_channel=ArturEkert).
+The situation is entirely different with **public-key
+cryptography. **The most-used algorithms
+today, [RSA ](https://en.wikipedia.org/wiki/RSA_(cryptosystem))and [ECC](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography),
+can be straightforwardly broken by a large quantum computer. We
+discussed the details of Shor's
+algorithm [earlier](https://quantumcomputingforbusiness.com/essentials/applications-overview/),
+and saw that around [20 million
+qubits](https://quantum-journal.org/papers/q-2021-04-15-433/) and around
+8 hours are needed to retrieve a secret RSA key. Luckily, there exist
+PKC systems that are believed to be safe against quantum computers, and
+an obvious way forward is to start using these. We call such
+systems **post-quantum cryptography**, and despite the confusing name,
+they're built to work on conventional computers. We discuss the rabbit
+hole of migrating to new cryptography [in a different
+chapter](https://quantumcomputingforbusiness.com/advanced/strategic-actions/).
 
-- Companies
-  like [Toshiba](https://www.toshiba.eu/quantum/products/quantum-key-distribution/long-distance-qkd-system-ld/)
-  and [ID
-  Quantique](https://www.idquantique.com/quantum-safe-security/products/#quantum_key_distribution)
-  offer commercial QKD systems for distances of around 100 km. 
+Unfortunately, even today's communication could be at risk due to a
+practice called **harvest now, decrypt later. **Encrypted messages that
+are sent over a network can be intercepted and stored for many years,
+until a quantum computer can efficiently decrypt the messages. Even
+though we use public-key encryption mainly to establish temporary keys
+for symmetric cryptography, a smart attacker could still retrace all the
+intermediate steps and retroactively spy on our communication. It is
+unclear at what scale storage of sufficiently detailed internet data is
+genuinely happening, but it seems plausible that security agencies of
+larger nations are already doing this.
 
-- Chinese scientists achieve [QKD through
-  satellites](https://www.scientificamerican.com/article/china-reaches-new-milestone-in-space-based-quantum-communications/)
-  over 1000 km. 
+The following table summarizes how our cryptosystems are threatened:
 
-- Nature commentary [why practical long-range QKD is still out of
-  reach](https://www.nature.com/articles/s41534-022-00613-4). 
+<table style="width:100%;">
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 21%" />
+<col style="width: 15%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th> </th>
+<th>Symmetric</th>
+<th colspan="2">Public-key</th>
+<th>Quantum networks</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td> </td>
+<td>Today (AES, … )</td>
+<td>Today (RSA, ECC)</td>
+<td>PQC                      </td>
+<td>QKD</td>
+</tr>
+<tr class="even">
+<td>Safe against classical computers</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+</tr>
+<tr class="odd">
+<td>Safe against quantum computers</td>
+<td><p>✔*</p>
+<p>*with double key lengths</p></td>
+<td><strong>Unsafe</strong></td>
+<td>✔</td>
+<td>✔</td>
+</tr>
+</tbody>
+</table>
 
-### What do experts say? 
+### Why don’t we switch to symmetric cryptography? 
 
-Cybersecurity experts (indeed, the kind men and women who have been
-keeping our classical computers safe for decades) are typically
-sceptical about QKD. In fact, all security authorities that we are aware
-of will advise against the use of QKD at this current point in time.
-They find the use of additional, uncertified hardware too large of a
-security risk, and stress that there is a better solution that works on
-conventional computers: **post-quantum cryptography (PQC)**. From their
-perspective, PQC offers all the required functionalities, and is
-currently more practical to test, certify and implement. 
+Public-key cryptography solves a very fundamental problem: how can Alice
+and Bob agree on a secret key before they have a means of encryption in
+the first place? They cannot just send a new key over the internet
+without any form of encryption, because anyone would be able to read
+this. This is the fundamental **problem of** **key distribution**. Let
+us look at the functionality offered by the two types of cryptography: 
 
-Be careful not to confuse the abbreviations PQC and QKD. QKD is about
-communication with a fancy quantum network. PQC runs on conventional
-hardware. You may call both of them 'quantum-safe' cryptography, as they
-should both resist attacks from a large-scale quantum computer.
+|   | Symmetric | Public-key                    | Quantum key distribution |
+|----|----|----|----|
+| Confidentiality (privacy) | Only with pre-shared keys | ✔ | **✗** |
+| Authentication / Integrity   | Only with pre-shared keys | ✔ | **✗** |
+| Establishing secret keys | **✗** | ✔ | ✔ |
 
-A fair argument in favour of QKD, stems from the [harvest now, decrypt
-later](https://www.quantum.amsterdam/part-8-the-impact-on-cybersecurity/)
-attacks that could be done over today. These would imply that even the
-privacy of today's messages is compromised. This could be a convincing
-reason for organisations to rapidly switch to QKD for their most
-sensitive data. Still, for those willing to go the extra mile for their
-privacy, looking at more mature and readily available solutions might be
-more worthwhile. For example, there exist certified solutions that rely
-on symmetric encryption with trusted couriers.  
+If only we could somehow give Alice and Bob pre-shared keys in a secure
+way, we would resolve most of these problems. Without public-key
+cryptography, there are other options:
 
-What's left is a very niche use case for the most forward-thinking
-organisations that deal with fierce security requirements. It is
-somewhat of a pity that QKD is not so mature today, as many
-organisations will start a migration to quantum-safe cryptography soon.
-A widespread adoption of QKD would make it easier to expand to a
+- **Trusted courier:** Alice and Bob could meet every other week to
+  exchange USB drives with secret codes.
+
+- **Trusted third party:** Alice and Bob could both trust a large "key
+  server". If both share a secret key with the key server, they can
+  securely ask the server to generate a new secret key that they can use
+  together. 
+
+- **Quantum key distribution**. We discuss this solution further below.
+
+Unfortunately, trusted couriers or trusted third parties are rarely is
+an attractive alternative to public-key cryptography, especially when
+scaling up to networks with thousands or millions of connected users.
+Couriers are simply too slow for today’s standards, and single trusted
+parties would pose a particularly interesting target for attackers.
+
+## What solutions exist?
+
+There is a clear need for post-quantum cryptography to replace commonly
+used algorithms like RSA and ECC. Luckily, back in 2016, the [American
+National Institute of Standards and
+Technology](https://csrc.nist.gov/projects/post-quantum-cryptography)
+(NIST) started a competition to select a new cryptosystem which should
+balance safety and practical usability (for example, it should not be
+too slow or memory-inefficient). They invited experts from around the
+globe to propose cryptographic algorithms, which peers assessed. Four
+rounds and several broken algorithms later, NIST selected a first set of
+winners that are suitable for large-scale use. As of August 2024, the
+first three PQC algorithms are now official NIST standards.
+
+Even though this effort was coordinated by an American institute, the
+process was backed by cryptographers from around the world. A broad
+majority of cybersecurity experts have faith in NIST's competition and
+recommend the final standards. National security organizations from
+other countries like BSI (Germany) and ANSSI (France) may prefer
+different algorithms but have also explicitly stated that this does not
+mean that they consider NIST's standards unsafe.
+
+The results of the competition are as follows. Firstly, NIST selected
+one Key Encapsulation Mechanism that can be used to establish secret
+keys over an unencrypted connection - remember the problem of
+communicating with a webshop that you had never encountered before.
+
+| Functionality | NIST Name | Problem family | Documentation | Underlying algorithm |
+|----|----|----|----|----|
+| Key Encapsulation Mechanism | ML-KEM | Module-Lattice based | [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final) | CRYSTALS-Kyber |
+
+Secondly, NIST selected three different Digital Signature Algorithms.
+These are used for authentication and integrity – remember how we don't
+want our messages to be altered in transit, or how we want to prevent
+malware injected in software updates.  
+
+| Functionality | NIST Name | Algorithm family | Documentation | Underlying algorithm |
+|----|----|----|----|----|
+| Digital Signatures Algorithm | ML-DSA | Module-Lattice based | [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final) | CRYSTALS-Dilithium  |
+| Digital Signatures Algorithm | SLH-DSA | Stateless Hash-Based | [FIPS 205](https://csrc.nist.gov/pubs/fips/205/final) | SPHINCS<sup>+</sup> |
+| Digital Signatures Algorithm | FN-DSA | Fast-Fourier Transform over NTRU-Lattice based | FIPS 206 (coming soon) | FALCON |
+
+You might wonder why three algorithms were selected. Unfortunately, all
+algorithms come with downsides, for example, because the keys can be
+very long, or because the performance (time to sign or check) is
+problematic. The real-world impact will differ per use case. ML-DSA is
+the main cryptosystem recommended for general use, whereas SLH-DSA and
+FN-DSA may be beneficial in specific circumstances.
+
+### Are the new standards considered safe?
+
+The short answer is yes: the new PQC standards are considered ready for
+use, and choosing algorithms such as ML-KEM or ML-DSA is widely regarded
+as a sound decision. There may be exceptions in specific high-security
+scenarios, but if you are operating in such a context, you are likely
+already aware of these nuances.
+
+However, there seems to be some uncertainty within the cryptographic
+community regarding whether the new PQC standards will be as reliable as
+our trusted RSA or ECC. The new standards have not yet stood the test of
+time, and it is possible that unexpected weaknesses—whether minor
+implementation flaws or fundamental vulnerabilities—may still be
+present. Most authorities recommend a **hybrid** implementation that
+combines the strengths of both conventional and post-quantum PKC.
+Moreover, organisations are advised to invest in **cryptographic
+agility**, a broad term used to describe the ability to easily update
+cybersecurity defenses.
+
+The above may sound somewhat negative, but we don’t expect the slightly
+lower trust to stand in the way of adoption. Cryptographic algorithms
+themselves are rarely the weakest point, so it seems wise to focus on
+other potential vulnerabilities instead.
+
+### What about Quantum Key Distribution (QKD)?
+
+Quantum key distribution is also presented as a solution for key
+exchange, making it a potential alternative to today's key exchange
+methods.
+
+Still, many security
+authorities [warn](https://www.nsa.gov/Cybersecurity/Quantum-Key-Distribution-QKD-and-Quantum-Cryptography-QC/) [against](https://www.ncsc.gov.uk/whitepaper/quantum-security-technologies) [adopting](https://english.aivd.nl/publications/publications/2022/01/18/prepare-for-the-threat-of-quantumcomputers) [QKD](https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Quantentechnologien-und-Post-Quanten-Kryptografie/Quantenkryptografie/quantenkryptografie.html)
+today. Although the idea is promising, today's hardware is still
+immature. Moreover, QKD doesn't provide any functionality for digital
+signatures, thus we will need the migration to PQC anyway.
+
+It is somewhat of a pity that QKD is not so mature yet, because it would
+be a viable weapon against Harvest Now, Decrypt Later. Moreover,
+widespread adoption of QKD would make it easier to expand to a
 large-scale quantum internet in the future. Nevertheless, since a
-quantum threat could be here as soon as the early 2030s, most companies
-are recommended to urgently migrate to post-quantum cryptography (PQC)
-first, and potentially consider QKD as an add-on for additional security
-later, if needed. 
+quantum threat could be here as soon as the early 2030s, experts warn
+that companies and governments should fix their PQC first. At a later
+stage, QKD can be considered as an add-on for further security.
 
-### See also:
+### What about Quantum Random Number Generators (QRNG)?
 
-- [Compumatica offers symmetric encryption with keys transported on
-  SD-cards.](https://www.compumatica.com/products/products/cryptoguard/)
+Good random number generators are exceptionally important in
+cryptography, and QRNGs could provide a good alternative to
+the [hardware random number
+generators ](https://en.wikipedia.org/wiki/Hardware_random_number_generator)that
+are widely used today. 
 
-- [TNO designed a 'quantum-safe proxy' as add-on to existing
-  cryptography.](https://www.tno.nl/en/digital/digital-innovations/trusted-ict/cyber-security-through-quantum-safe/)
+However, all they do is generate random numbers – that doesn't make any
+protocol safe in itself quantum-safe. As a general warning: **products
+with 'quantum' in the name do not automatically protect against Shor's
+algorithm! **
 
-- StackOverflow question: ["Why does the NSA find QKD
-  impractical"](https://crypto.stackexchange.com/questions/93830/why-quantum-key-distribution-qkd-is-impractical)?
+### What steps should a typical company or government take? 
 
-- The French, Swedish, Dutch and German national security authorities
-  sound their criticism in a collective publication, "[The uses and
-  limits of quantum key
-  distribution](https://cyber.gouv.fr/actualites/uses-and-limits-quantum-key-distribution)".
+We dedicate a [separate
+chapter](https://www.quantum.amsterdam/part-6-getting-started/) to
+that! 
 
 ## Conclusion
 
-In conclusion, most applications of a quantum internet will not be
-immediately relevant in the foreseeable future, with an exception for
-QKD. And even QKD might not be the killer applications that many
-investors are hoping for – it most definitely shouldn't be called
-"unhackable". 
+Cryptography is strongly intertwined with quantum computing through
+Grover's algorithm, Shor's algorithm, and Quantum Key Distribution.
+Security experts recommend that there is an obvious way forward:
 
-Still, it seems unfair to us to dismiss a quantum internet because it
-would be 'too technologically challenging' or 'too expensive'. These
-arguments are correct today, but perhaps naive on a scale of several
-decades. Would anyone from the 70's have believed that today, almost
-everyone on the globe is streaming videos on a mobile phone for just a
-few dollars per month? Who knows what the quantum internet will look
-like 30 years from now? 
+- Replace current public-key cryptography with new, quantum-safe
+  protocols (PQC).
+
+- Double key lengths in symmetric cryptography. 
+
+Especially the first bullet is a major challenge. There are many legacy
+systems around on the internet that can not be updated so easily.
+Billions of devices are all interconnected, so updating one device may
+cause incompatibilities somewhere else. What's more, PQC protocols will
+surely require more CPU power and more memory than today's trusted
+methods. Companies may need to update the core code of hundreds or even
+thousands of applications. And lastly, the new protocols haven't been
+tested as extensively as our conventional methods, so it is not unlikely
+that new security issues will be found. Before they are even built,
+quantum computers are already causing headaches to cryptographers and
+cybersecurity managers.
+
+## Further reading
+
+- Cloudflare's resource page “[The state of the post-quantum
+  Internet](https://blog.cloudflare.com/pq-2024/)” explains many aspects
+  of the migration to post-quantum cryptography.
+
+- [The NSA publishes
+  recommendations](https://en.wikipedia.org/wiki/Commercial_National_Security_Algorithm_Suite)
+  on what which cryptographic algorithms should be used and sketches a
+  concrete timeline about when governmental security systems should be
+  updated.
+
+- “[The PQC Migration
+  Handbook](https://www.tno.nl/en/newsroom/2023/04-0/pqc-migration-handbook/)”
+  is a free guide for corporate managers on how to tackle the upcoming
+  cryptography migration, written by Dutch research organizations TNO,
+  CWI and the secret service AIVD.
+
+- In the context of Harvest Now, Decrypt Later, the urgency to migrate
+  depens on how long your data should remain confidential, according to
+  [Mosca’s
+  Theorem](https://www.redhat.com/en/blog/post-quantum-cryptography-introduction).
 
