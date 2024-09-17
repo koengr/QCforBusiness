@@ -3,8 +3,20 @@ layout: default
 title: "Quantum hardware"
 nav_order: 1
 ---
-
+ 
+ 
 # Quantum hardware
+{: .no_toc }
+
+<fieldset class="field-set" markdown="1"> 
+<legend class="leg-title">Contents</legend>
+- TOC
+{:toc}
+
+{: .fs-3 }
+Reading time: 7 minutes
+</fieldset>
+
 
 Conventional computer hardware is extremely reliable. Professional
 servers are supposed to run non-stop for years without any hardware
@@ -61,31 +73,27 @@ can *not *run just any algorithm.
 
 <details markdown="1">
 
-<summary>**Does a universal computer need to be "gate-based"?**</summary>
+<summary>Does a universal computer need to be "gate-based"?</summary>
 
 No, there are various computational models that are universal.
 
 There are different ways to make a ‘universal quantum computer’. The
-most popular way is to use
-a [**gate-based**](https://en.wikipedia.org/wiki/Quantum_circuit) approach,
-where elementary operations (‘gates’) change the data stored one or two
-qubits at a time. This perspective is most intuitive for those used to
-conventional logical circuits (with AND, OR and NOT gates), and most
-quantum algorithms are presented in this language. Other alternatives
-include [**adiabatic**](https://en.wikipedia.org/wiki/Adiabatic_quantum_computation) computation
-and [**measurement-based **](https://en.wikipedia.org/wiki/One-way_quantum_computer)computation,
+most popular way is to use a **gate-based** approach, where elementary
+operations (‘gates’) change the data stored one or two qubits at a time.
+This perspective is most intuitive for those used to conventional
+logical circuits (with AND, OR and NOT gates), and most quantum
+algorithms are presented in this language. Other alternatives
+include **adiabatic** computation and **measurement-based **computation,
 which can theoretically run any algorithm written for a gate-based 
 computer without issues. 
 
 At this moment, gate-based computers are by far the most widespread and
 appear to be the most popular approach in the race towards a
 million-qubit quantum computer: by nearly all large tech-companies rely
-on this architecture. There is one important exception.
-Some [**photonics
-startups**](https://www.hpcwire.com/2022/04/21/psiquantums-path-to-1-million-qubits-by-the-middle-of-the-decade/) are
-working towards measurement-based computing, as this overcomes the
-challenges in performing ‘entangling’ quantum gates with photons. In the
-following, we will focus mostly on gate-based computers.
+on this architecture. There is one important exception. Some **photonics
+startups** are working towards measurement-based computing, as this
+overcomes the challenges in performing ‘entangling’ quantum gates with
+photons. In the following, we will focus mostly on gate-based computers.
 
 </details>
 
@@ -133,14 +141,12 @@ discrete bursts on the qubits.
 Another special-purpose device is the **quantum annealer**, popularised
 mainly by the Canadian scale-up D-Wave. These special-purpose devices
 can solve a specific class of optimisation problems that goes by the
-name
-of [QUBO](https://en.wikipedia.org/wiki/Quadratic_unconstrained_binary_optimization):
-quadratic unconstrained binary optimisation. There is a well-developed
-theory of mapping various industrial problems into the QUBO formalism,
-making annealers fairly versatile machines. However, quantum annealers
-will never be able to take advantage of the various other quantum
-algorithms out there: even with enough qubits, we won't see them
-cracking codes using Shor's algorithm. 
+name of QUBO: quadratic unconstrained binary optimisation. There is a
+well-developed theory of mapping various industrial problems into the
+QUBO formalism, making annealers fairly versatile machines. However,
+quantum annealers will never be able to take advantage of the various
+other quantum algorithms out there: even with enough qubits, we won't
+see them cracking codes using Shor's algorithm. 
 
 [^58]: *Hamiltonian simulation on QuEra’s 256-qubit Aquila machine*.
     Available at:
@@ -148,6 +154,7 @@ cracking codes using Shor's algorithm. 
     (Accessed: 10 September 2024).
 
 ### Further reading
+{: .no_toc }
 
 - [D-Wave’s introduction to its quantum annealing
   platform](https://docs.dwavesys.com/docs/latest/c_gs_2.html)
@@ -198,6 +205,7 @@ purposes, and it's not unlikely that the empty fields will also be
 populated in the future.
 
 ### Further reading
+{: .no_toc }
 
 - [Different types of qubits explained by
   Sifted.eu](https://sifted.eu/articles/quest-qubits-quantum-startups-explained)

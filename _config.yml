@@ -30,6 +30,8 @@ locale: en_GB
 # Extra plugins, mainly for search engine optimization
 plugins:
   - jekyll-seo-tag      # No need to add {% seo %} in head.html when using just-the-docs, it's included by default.
+  - jekyll-analytics
+
   # - jekyll-toc
 
 
@@ -91,10 +93,17 @@ callouts:
 # aux_links:
 #   Template Repository: https://github.com/just-the-docs/just-the-docs-template
 
+# # Google analytics 
+jekyll_analytics:
+  GoogleAnalytics:          # Add, if you want to track with Google Analytics
+    id: G-7M9SW2XV5J          # Required - replace with your tracking id
+    anonymizeIp: true      # Optional - Default: false - set to true for anonymized tracking
+
+
 # for jekyll-toc package? Doens't seem to actually work :(.
 toc:
-  min_level: 5
-  max_level: 6
+  min_level: 1
+  max_level: 2
   ordered_list: true
   no_toc_section_class: no_toc_section
   list_id: koens-toc

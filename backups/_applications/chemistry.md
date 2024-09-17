@@ -2,12 +2,20 @@
 layout: default
 title: "Applications in chemistry and material science"
 nav_order: 1
-toc: true
 ---
-
+ 
+ 
 # Applications in chemistry and material science
+{: .no_toc }
 
-{% include components/page-toc.html %}
+<fieldset class="field-set" markdown="1"> 
+<legend class="leg-title">Contents</legend>
+- TOC
+{:toc}
+
+{: .fs-3 }
+Reading time: 15 minutes
+</fieldset>
 
 
 Perhaps the most credible application of quantum computers is to study
@@ -242,6 +250,7 @@ states, assuming the VQE produces proper approximations of it.
     phase.
 
 ### Further reading on simulation algorithms
+{: .no_toc }
 
 Various more technical and sophisticated methods exist, for which we
 refer to other more technical sources. These require expert knowledge of
@@ -322,7 +331,7 @@ world of food production.
 
 [^55]: https://www.imperial.ac.uk/grantham/publications/climate-change-faqs/how-and-when-do-we-need-to-act-on-climate-change-/
 
-## A case study of potential killer application: FeMoco
+## A case study of a potential killer application: FeMoco
 
 <img src=" {{ site.baseurl }}/media/image19.png"
 style="width:1.33333in" />

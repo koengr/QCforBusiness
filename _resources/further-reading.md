@@ -3,7 +3,8 @@ layout: default
 title: "Further reading"
 nav_order: 1
 ---
-
+ 
+ 
 # Further reading
 
 Below, we give a selection of recommended sources to learn more about
@@ -12,6 +13,7 @@ this fascinating topic.
 ## I want to learn the technical details
 
 ### For (late) high school students:
+{: .no_toc }
 
 (or those who followed high-school level mathematics):
 
@@ -25,6 +27,7 @@ this fascinating topic.
   using diagrams.
 
 ### Undergraduate (Bachelor's) university level:
+{: .no_toc }
 
 - [**Quantum.Country**](https://quantum.country/qcvc) \[Website\] – the
   “Duolingo of Quantum Computing”, a very well-written introduction for
@@ -52,6 +55,7 @@ this fascinating topic.
   something much more broad than just quantum computing.
 
 ### Graduate (Master's) level:
+{: .no_toc }
 
 These assume no prior knowledge about quantum physics, but require a
 strong background in mathematics (i.e. linear algebra, calculus,
@@ -70,6 +74,7 @@ go into much more detail. 
   Preskil **](http://theory.caltech.edu/~preskill/ph229/)
 
 ### Scientific overview papers
+{: .no_toc }
 
 The papers below are aimed at scientists from fields other than quantum
 computing itself. All papers we mention are open-access and
@@ -84,6 +89,7 @@ peer-reviewed, making them very suitable for citation. 
   \[[**video lecture**](https://www.youtube.com/watch?v=ych-yB9QP_A)\]
 
 ### Scientific opinions and discussions
+{: .no_toc }
 
 - [**Scott Aaronson’s blog**](https://scottaaronson.com/blog). Although
   written from a theoretical computer science perspective, this blog
@@ -121,6 +127,7 @@ introductory tutorials. The ones we recommend below are all in Python. 
 ## I want to stay up-to-date with the latest developments
 
 ### Major conferences
+{: .no_toc }
 
 - [**Q2B (organized by QCWare)**](https://q2b.qcware.com/)
 
@@ -133,6 +140,7 @@ introductory tutorials. The ones we recommend below are all in Python. 
   Economist)**](https://events.economist.com/commercialising-quantum/)
 
 ### Business News 
+{: .no_toc }
 
 - [**Quantum Computing
   Report**](https://quantumcomputingreport.com/news/) - don’t be fooled
@@ -145,6 +153,7 @@ introductory tutorials. The ones we recommend below are all in Python. 
 - [**The Quantum Insider**](https://thequantuminsider.com/)
 
 ### Scientific news
+{: .no_toc }
 
 None of these focus exclusively on Quantum Technology, but all offer
 high-quality news (and surely none would miss any important quantum
@@ -172,6 +181,7 @@ they collect insightful details about financial matters. 
   of Post-Quantum Cryptography.](https://blog.cloudflare.com/pq-2024)
 
 ### Workshops and trainings
+{: .no_toc }
 
 These might not be the most relevant if you completed this book, by can
 be particularly useful to inspire your colleagues.

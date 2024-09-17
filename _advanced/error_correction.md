@@ -3,8 +3,23 @@ layout: default
 title: "Error correction"
 nav_order: 2
 ---
-
+ 
+ 
 # Error correction
+{: .no_toc }
+
+
+Reading time: 16 minutes
+{: .fs-3 .floatr }
+
+## Contents
+{: .no_toc } 
+
+- TOC
+{:toc}
+
+
+
 
 <fieldset class="field-set" markdown="1"> 
 <legend class="leg-title">At a glance</legend>
@@ -367,6 +382,7 @@ Which code will eventually become the standard (if any), is still
 completely open.  
 
 ### What are the main challenges?
+{: .no_toc }
 
 Firstly, we would need just *slightly* more accurate hardware. We
 mentioned a certain

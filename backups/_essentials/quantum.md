@@ -2,11 +2,20 @@
 layout: default
 title: "An introduction to the quantum world"
 nav_order: 2
-toc: true
 ---
-
+ 
+ 
 #  An introduction to the quantum world
 {: .no_toc }
+
+<fieldset class="field-set" markdown="1"> 
+<legend class="leg-title">Contents</legend>
+- TOC
+{:toc}
+
+{: .fs-3 }
+Reading time: 17 minutes
+</fieldset>
 
 
 <fieldset class="field-set" markdown="1"> 
@@ -22,7 +31,6 @@ upon measurement, nature selects just a single piece (and throws away
 all the others).
 
 </fieldset>
-
 
 If you want to drive a car, do you need to understand how its engine
 works? Of course you don’t! In a similar vein, you don’t need to know

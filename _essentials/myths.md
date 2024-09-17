@@ -3,11 +3,23 @@ layout: default
 title: "Four myths about quantum computing"
 nav_order: 6
 ---
-
+ 
+ 
 # Four myths about quantum computing
 {: .no_toc }
 
-{% include components/page-toc.html %}
+
+Reading time: 9 minutes
+{: .fs-3 .floatr }
+
+## Contents
+{: .no_toc } 
+
+- TOC
+{:toc}
+
+
+
 
 This chapter relies on a bit of quantum physics jargon. See the
 [Introduction to the quantum
@@ -21,15 +33,15 @@ A single qubit can be in two states at the same time (0 and 1), two
 qubits can represent four states (00, 01, 10, 11), and three qubits are
 potentially in eight unique configurations simultaneously. As we
 increase the number of qubits, this number of coexisting states scales
-exponentially! 
+exponentially!
 
-A mere 1000 qubits can effectively ‘store’ \\(2^{1000}\\)
-unique values, all at the same time. That’s an incomprehensibly large
-number, much more than there are atoms in the visible universe. Even the
-fastest computers in the world couldn’t loop through all these states in
-a lifetime. Each of these states can be interpreted like a file on a
-computer, be it an Excel spreadsheet, a web pages, a CAD drawing, or
-whatever kind of data we choose to work with.
+A mere 1000 qubits can effectively ‘store’ \\(2^{1000}\\) unique values, all
+at the same time. That’s an incomprehensibly large number, much more
+than there are atoms in the visible universe. Even the fastest computers
+in the world couldn’t loop through all these states in a lifetime. Each
+of these states can be interpreted like a file on a computer, be it an
+Excel spreadsheet, a web pages, a CAD drawing, or whatever kind of data
+we choose to work with.
 
 A smart computer scientist can also devise a way to make 1000 bits
 represent ‘solutions’ to some problem. For example, imagine that we want

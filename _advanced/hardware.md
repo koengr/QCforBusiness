@@ -3,8 +3,23 @@ layout: default
 title: "Quantum hardware"
 nav_order: 1
 ---
-
+ 
+ 
 # Quantum hardware
+{: .no_toc }
+
+
+Reading time: 7 minutes
+{: .fs-3 .floatr }
+
+## Contents
+{: .no_toc } 
+
+- TOC
+{:toc}
+
+
+
 
 Conventional computer hardware is extremely reliable. Professional
 servers are supposed to run non-stop for years without any hardware
@@ -61,7 +76,7 @@ can *not *run just any algorithm.
 
 <details markdown="1">
 
-<summary>**Does a universal computer need to be "gate-based"?**</summary>
+<summary>Does a universal computer need to be "gate-based"?</summary>
 
 No, there are various computational models that are universal.
 
@@ -148,6 +163,7 @@ cracking codes using Shor's algorithm. 
     (Accessed: 10 September 2024).
 
 ### Further reading
+{: .no_toc }
 
 - [D-Wave’s introduction to its quantum annealing
   platform](https://docs.dwavesys.com/docs/latest/c_gs_2.html)
@@ -198,6 +214,7 @@ purposes, and it's not unlikely that the empty fields will also be
 populated in the future.
 
 ### Further reading
+{: .no_toc }
 
 - [Different types of qubits explained by
   Sifted.eu](https://sifted.eu/articles/quest-qubits-quantum-startups-explained)

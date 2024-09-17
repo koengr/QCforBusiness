@@ -3,8 +3,23 @@ layout: default
 title: "An introduction to the quantum world"
 nav_order: 2
 ---
-
+ 
+ 
 #  An introduction to the quantum world
+{: .no_toc }
+
+
+Reading time: 17 minutes
+{: .fs-3 .floatr }
+
+## Contents
+{: .no_toc } 
+
+- TOC
+{:toc}
+
+
+
 
 <fieldset class="field-set" markdown="1"> 
 <legend class="leg-title">At a glance</legend>

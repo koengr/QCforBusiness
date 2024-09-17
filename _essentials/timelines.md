@@ -3,8 +3,23 @@ layout: default
 title: "The timelines: when can we expect useful quantum computers?"
 nav_order: 5
 ---
+ 
+ 
+# Timelines: when can we expect a useful quantum computer?
+{: .no_toc }
 
-# Timelines: when can we expect a useful Quantum Computer?
+
+Reading time: 21 minutes
+{: .fs-3 .floatr }
+
+## Contents
+{: .no_toc } 
+
+- TOC
+{:toc}
+
+
+
 
 <fieldset class="field-set" markdown="1"> 
 <legend class="leg-title">At a glance</legend>
@@ -94,6 +109,7 @@ alone – even a breakthrough that reduces errors by 100x wouldn’t cut it.
     conclusions, so I prefer this more accessible explanation.
 
 ### Balancing qubits and accuracies
+{: .no_toc }
 
 Luckily, there exists a technique that shrinks the probability of
 mistakes *by any desired amount*: **error correction**. It works roughly
@@ -323,6 +339,7 @@ We can summarize our conclusions in the table below.
     <https://doi.org/10.48550/arXiv.2211.07629>.
 
 ### What about future improvements?
+{: .no_toc }
 
 It seems almost inevitable that the above methodologies will improve.
 Unfortunately, it’s impossible to estimate by how much. Will we reduce
@@ -355,7 +372,8 @@ scientific interest.
 [^22]: McKinsey Quantum Technology Monitor 2024,
     <https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/steady-progress-in-approaching-the-quantum-advantage>
 
-## Can noisy algorithms be good enough?
+### Can noisy algorithms be good enough?
+{: .no_toc }
 
 Current quantum computers have a limited number of qubits and are not
 yet capable of large-scale error correction: they are Noisy
@@ -458,6 +476,7 @@ following sources:
 3.  Extrapolation of Moore’s law
 
 ### What do manufacturers say?
+{: .no_toc }
 
 Below, we see the qubit numbers that several manufacturers have already
 realized (solid disks) and what they will produce in the future
@@ -530,6 +549,7 @@ it’s not too far off either.
 [^35]: <https://www.quantinuum.com/blog/quantinuum-accelerates-the-path-to-universal-fault-tolerant-quantum-computing-supports-microsofts-ai-and-quantum-powered-compute-platform-and-the-path-to-a-quantum-supercomputer>
 
 ### What does Moore’s law say?
+{: .no_toc }
 
 <img src=" {{ site.baseurl }}/media/image16.png"
 style="width:4.48551in" />
@@ -549,6 +569,7 @@ challenge, companies like IBM, Pasqal and QuEra set the bar even higher
 for themselves, hoping to double every 7-9 months.
 
 ### What do experts say?
+{: .no_toc }
 
 The Global Risk Institute conducts yearly surveys asking experts to
 state the *likelihood* that quantum computers will pose a significant

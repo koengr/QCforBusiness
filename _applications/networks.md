@@ -3,8 +3,23 @@ layout: default
 title: "Applications of quantum networks"
 nav_order: 3
 ---
-
+ 
+ 
 # Applications of quantum networks
+{: .no_toc }
+
+
+Reading time: 10 minutes
+{: .fs-3 .floatr }
+
+## Contents
+{: .no_toc } 
+
+- TOC
+{:toc}
+
+
+
 
 If we're building computers that deal with qubits, superposition and
 entanglement, wouldn't these computers also need some way to send qubits
@@ -195,6 +210,7 @@ on a small initial key.
 [^57]: <https://arstechnica.com/information-technology/2022/08/sike-once-a-post-quantum-encryption-contender-is-koed-in-nist-smackdown/>
 
 ### Further reading about QKD
+{: .no_toc }
 
 - A video explanation of QKD
   for [laymen](https://www.youtube.com/watch?v=V3WzH2up7Os&ab_channel=ImprobableMatter)
@@ -214,6 +230,7 @@ on a small initial key.
   reach](https://www.nature.com/articles/s41534-022-00613-4). 
 
 ### What do experts say? 
+{: .no_toc }
 
 Cybersecurity experts (indeed, the kind men and women who have been
 keeping our classical computers safe for decades) are typically
@@ -252,6 +269,7 @@ first, and potentially consider QKD as an add-on for additional security
 later, if needed. 
 
 ### See also:
+{: .no_toc }
 
 - [Compumatica offers symmetric encryption with keys transported on
   SD-cards.](https://www.compumatica.com/products/products/cryptoguard/)

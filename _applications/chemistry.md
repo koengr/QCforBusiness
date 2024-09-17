@@ -3,11 +3,23 @@ layout: default
 title: "Applications in chemistry and material science"
 nav_order: 1
 ---
-
+ 
+ 
 # Applications in chemistry and material science
 {: .no_toc }
 
-{% include components/page-toc.html %}
+
+Reading time: 15 minutes
+{: .fs-3 .floatr }
+
+## Contents
+{: .no_toc } 
+
+- TOC
+{:toc}
+
+
+
 
 Perhaps the most credible application of quantum computers is to study
 quantum physics itself. This helps us deepen our understanding of
@@ -241,6 +253,7 @@ states, assuming the VQE produces proper approximations of it.
     phase.
 
 ### Further reading on simulation algorithms
+{: .no_toc }
 
 Various more technical and sophisticated methods exist, for which we
 refer to other more technical sources. These require expert knowledge of

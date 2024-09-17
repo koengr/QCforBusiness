@@ -3,8 +3,23 @@ layout: default
 title: "The background: why are we so enthusiastic about quantum?"
 nav_order: 3
 ---
-
+ 
+ 
 # The background: why are we so enthusiastic about Quantum Technology? 
+{: .no_toc }
+
+
+Reading time: 12 minutes
+{: .fs-3 .floatr }
+
+## Contents
+{: .no_toc } 
+
+- TOC
+{:toc}
+
+
+
 
 <fieldset class="field-set" markdown="1"> 
 <legend class="leg-title">At a glance</legend>

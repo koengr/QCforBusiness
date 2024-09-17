@@ -3,8 +3,20 @@ layout: default
 title: "Error correction"
 nav_order: 2
 ---
-
+ 
+ 
 # Error correction
+{: .no_toc }
+
+<fieldset class="field-set" markdown="1"> 
+<legend class="leg-title">Contents</legend>
+- TOC
+{:toc}
+
+{: .fs-3 }
+Reading time: 16 minutes
+</fieldset>
+
 
 <fieldset class="field-set" markdown="1"> 
 <legend class="leg-title">At a glance</legend>
@@ -367,6 +379,7 @@ Which code will eventually become the standard (if any), is still
 completely open.  
 
 ### What are the main challenges?
+{: .no_toc }
 
 Firstly, we would need just *slightly* more accurate hardware. We
 mentioned a certain
@@ -410,9 +423,8 @@ number of steps that a device can handle!
   several experts what they find the most likely approach to
   fault-tolerance (section 4.5). 
 
-- British startup [Riverlane builts a hardware
-  chip](https://www.riverlane.com/news/riverlane-announces-world-s-most-powerful-quantum-decoder) that
-  ‘decodes’ which error occurred on logical qubits. ([Technical
+- British startup Riverlane builts a hardware chip that ‘decodes’ which
+  error occurred on logical qubits. ([Technical
   report](https://arxiv.org/abs/2309.05558)). 
 
 - Craig Gidney (Google) has a [more technical blog

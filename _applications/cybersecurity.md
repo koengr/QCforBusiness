@@ -3,8 +3,23 @@ layout: default
 title: "The impact on cybersecurity"
 nav_order: 2
 ---
-
+ 
+ 
 # The impact on cybersecurity
+{: .no_toc }
+
+
+Reading time: 13 minutes
+{: .fs-3 .floatr }
+
+## Contents
+{: .no_toc } 
+
+- TOC
+{:toc}
+
+
+
 
 In the world of quantum computers, the most convincing exponential
 speedup lies in codebreaking. Anyone who wants to understand the impact
@@ -136,6 +151,7 @@ to some powerful mathematics. However, it turns out that the delicate
 relationship between the two keys is also a weak spot…
 
 ### How good are quantum computers at cracking cryptography? 
+{: .no_toc }
 
 **Symmetric-key cryptography** is quite safe against quantum hackers.
 The biggest problems are brute-force attacks, where an attacker
@@ -227,6 +243,7 @@ The following table summarizes how our cryptosystems are threatened:
 </table>
 
 ### Why don’t we switch to symmetric cryptography? 
+{: .no_toc }
 
 Public-key cryptography solves a very fundamental problem: how can Alice
 and Bob agree on a secret key before they have a means of encryption in
@@ -311,6 +328,7 @@ the main cryptosystem recommended for general use, whereas SLH-DSA and
 FN-DSA may be beneficial in specific circumstances.
 
 ### Are the new standards considered safe?
+{: .no_toc }
 
 The short answer is yes: the new PQC standards are considered ready for
 use, and choosing algorithms such as ML-KEM or ML-DSA is widely regarded
@@ -335,6 +353,7 @@ themselves are rarely the weakest point, so it seems wise to focus on
 other potential vulnerabilities instead.
 
 ### What about Quantum Key Distribution (QKD)?
+{: .no_toc }
 
 Quantum key distribution is also presented as a solution for key
 exchange, making it a potential alternative to today's key exchange
@@ -355,6 +374,7 @@ that companies and governments should fix their PQC first. At a later
 stage, QKD can be considered as an add-on for further security.
 
 ### What about Quantum Random Number Generators (QRNG)?
+{: .no_toc }
 
 Good random number generators are exceptionally important in
 cryptography, and QRNGs could provide a good alternative to
@@ -368,6 +388,7 @@ with 'quantum' in the name do not automatically protect against Shor's
 algorithm! **
 
 ### What steps should a typical company or government take? 
+{: .no_toc }
 
 We dedicate a [separate
 chapter](https://www.quantum.amsterdam/part-6-getting-started/) to

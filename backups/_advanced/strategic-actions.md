@@ -3,22 +3,31 @@ layout: default
 title: "What steps should your organization take?"
 nav_order: 3
 ---
-
+ 
+ 
 # What steps should your organisation take?
+{: .no_toc }
 
-In the previous chapters, we discussed the [use
-cases](https://quantumcomputingforbusiness.com/essentials/applications-overview/),
-the [threats](https://quantumcomputingforbusiness.com/applications/cybersecurity/), and
-the [timelines](https://quantumcomputingforbusiness.com/essentials/timelines/)
-of quantum technologies. We will now look at the strategic perspective
-of a typical non-quantum enterprise. We will assume a typical
-large-scale organisation that does not sell IT products per se, but
-relies heavily on computing infrastructure to optimise its operations,
-supervise processes, communicate with suppliers and clients, and
-potentially invest in computer-aided R&D. While these organizations may
-be excited about the potential of quantum computing, they may also feel
-vulnerable—whether due to competitors advancing ahead or due to hackers
-attacking legacy cryptography.
+<fieldset class="field-set" markdown="1"> 
+<legend class="leg-title">Contents</legend>
+- TOC
+{:toc}
+
+{: .fs-3 }
+Reading time: 12 minutes
+</fieldset>
+
+
+In the previous chapters, we discussed the use cases, the threats, and
+the timelines of quantum technologies. We will now look at the strategic
+perspective of a typical non-quantum enterprise. We will assume a
+typical large-scale organisation that does not sell IT products per se,
+but relies heavily on computing infrastructure to optimise its
+operations, supervise processes, communicate with suppliers and clients,
+and potentially invest in computer-aided R&D. While these organizations
+may be excited about the potential of quantum computing, they may also
+feel vulnerable—whether due to competitors advancing ahead or due to
+hackers attacking legacy cryptography.
 
 The first steps, like growing expertise, finding adequate staff, and
 doing first proof-of-concept studies, will be largely
@@ -52,6 +61,7 @@ alt="what steps can businesses companies take in quantum professionals guide 1" 
 ## Common first steps
 
 ### Step 1: Start with no-regret moves
+{: .no_toc }
 
 Most companies start with early steps aimed at better understanding the
 situation. These can be done with very little financial risk.
@@ -99,6 +109,7 @@ directions separately.
 ## Prepare to use quantum applications
 
 ### Step 2a: Explore use-cases
+{: .no_toc }
 
 At this stage, most organisations will want to make low-regret moves
 that get them prepared to leverage quantum technologies fairly soon
@@ -136,6 +147,7 @@ environments.
   studies, and can offer advice for strategic decisions.
 
 ### Step 3a: Implementing actual applications, whenever ready
+{: .no_toc }
 
 From here onwards, it gets increasingly difficult to give concrete
 advice, as priorities may depend on your business and on the way the
@@ -152,6 +164,7 @@ have special departments for data science and/or AI. It may also be
 reasonable to combine these departments. 
 
 ### Identifying fruitful use cases
+{: .no_toc }
 
 From a top-down perspective, it is a good exercise to identify your
 current needs in high-performance computing.** **What do you currently
@@ -186,18 +199,16 @@ be found on their website:
 [www.quantumapplicationlab.com](http://www.quantumapplicationlab.com).
 
 ### Further reading
+{: .no_toc }
 
-- Scientists propose a framework to [discover which real-world problems
-  are potentially accelerated by quantum
-  computers](https://arxiv.org/abs/2310.15505).  
+- Scientists propose a framework to discover which real-world problems
+  are potentially accelerated by quantum computers.  
 
-- Consultant Olivier Ezratti proposes a framework to [assess the
-  maturity of quantum computing case
-  studies](https://www.oezratty.net/wordpress/2023/a-framework-to-analyze-quantum-computing-case-studies/).
+- Consultant Olivier Ezratti proposes a framework to assess the maturity
+  of quantum computing case studies.
 
-- (Youtube) A recording of Quantum.Amsterdam's online seminar “[What do
-  companies get out of quantum projects
-  today?](https://www.youtube.com/watch?v=ZqFBW8tFX40&pp=ygUzd2hhdCBkbyBjb21wYW5pZXMgZ2V0IG91dCBvZiBxdWFudHVtIHByb2plY3RzIHRvZGF5)”
+- (Youtube) A recording of Quantum.Amsterdam's online seminar “What do
+  companies get out of quantum projects today?”
 
 <details markdown="1">
 
@@ -247,9 +258,10 @@ reports, which risk disappearing in someone's drawer.
 ## Migrating to post-quantum cryptography
 
 This section relies on technical knowledge from the previous chapter on
-[cybersecurity](https://quantumcomputingforbusiness.com/applications/cybersecurity/).
+cybersecurity.
 
 ### Step 2b: Prepare your migration 
+{: .no_toc }
 
 Cryptography is a completely different beast, with a more concrete goal,
 and more urgent timelines for most organisations. Contrary to the
@@ -288,9 +300,8 @@ taken urgently by all large organisations.
   achieved in time, before the arrival of cryptographically relevant
   quantum computers.
 
-For more details, we recommend following the [PQC Migration
-Handbook](https://english.aivd.nl/publications/publications/2023/04/04/the-pqc-migration-handbook),
-a free guide written by the Dutch secret service AIVD and research
+For more details, we recommend following the PQC Migration Handbook, a
+free guide written by the Dutch secret service AIVD and research
 organisations CWI and TNO. Security authorities in other countries have
 made similar guidance available.
 
@@ -304,6 +315,7 @@ alt="Screenshot 2023 05 09 at 17.54.18" />
     exclusively used from 2033 onwards.
 
 #### Are you an urgent adopter?
+{: .no_toc }
 
 The PQC Migration Handbook distinguishes between regular and urgent
 adopters of quantum-safe cryptography. You are an urgent adopter when
@@ -324,6 +336,7 @@ construction agencies, etc. Urgent adopters are encouraged to start
 their migration as soon as possible if they haven't already.
 
 ### Step 3b: Migrate
+{: .no_toc }
 
 This is a much more technical step for which you will need a
 well-prepared migration plan from the previous step.
@@ -356,20 +369,17 @@ replaced. This is a vague term that isn't just a software feature - it
 requires alignment with business protocols and internal policies.
 
 ### Further reading
+{: .no_toc }
 
 - To learn more about transitioning to quantum-safe cryptography, we
-  strongly recommend the [PQC Migration
-  Handbook](https://english.aivd.nl/publications/publications/2023/04/04/the-pqc-migration-handbook)
-  written by the Dutch secret service AIVD and research organisations
-  TNO and CWI.
+  strongly recommend the PQC Migration Handbook written by the Dutch
+  secret service AIVD and research organisations TNO and CWI.
 
-- An extension to the handbook is the
-  [PQChoiceAssistant](https://tno.github.io/PQChoiceAssistant/), a tool
-  that recommends what cryptographic algorithms are best used in
-  specific situations.
+- An extension to the handbook is the PQChoiceAssistant, a tool that
+  recommends what cryptographic algorithms are best used in specific
+  situations.
 
-- In 2022, the NSA published [requirements for national security
-  systems](https://www.nsa.gov/Press-Room/News-Highlights/Article/Article/3148990/nsa-releases-future-quantum-resistant-qr-algorithm-requirements-for-national-se/).
+- In 2022, the NSA published requirements for national security systems.
   They indicate a concrete timeline with concrete deadlines between 2025
   and 2033.
 

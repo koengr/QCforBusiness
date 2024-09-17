@@ -3,8 +3,23 @@ layout: default
 title: "The applications: what problems will we solve?"
 nav_order: 4
 ---
-
+ 
+ 
 # The applications: what problems will we solve with quantum computers?
+{: .no_toc }
+
+
+Reading time: 25 minutes
+{: .fs-3 .floatr }
+
+## Contents
+{: .no_toc } 
+
+- TOC
+{:toc}
+
+
+
 
 <fieldset class="field-set" markdown="1"> 
 <legend class="leg-title">At a glance</legend>
@@ -46,19 +61,20 @@ For this book, we take a different approach. We focus specifically on
 algorithms with plausible business applications. To assess their
 advantage, we split our main question into two parts:
 
-- What are projected applications with a quantum speedup?
+- What applications offer a quantum speedup?
 
-- How large is the practical advantage these speedups?
+- How large is this speedup in practice?
 
 [^3]: https://quantumalgorithmzoo.org/
 
-## What are projected applications with a quantum speedup?
+## What applications offer a quantum speedup?
 
 We foresee four major families of use cases where quantum computing can
 make a real impact on society. We briefly discuss each of them here and
 link to a later chapter that discusses each application in more depth. 
 
 ### 1. Simulation of other quantum systems: molecules, materials, and chemical processes
+{: .no_toc }
 
 Most materials can be accurately simulated on classical computers.
 However, in some specific situations, the locations of atoms and
@@ -102,6 +118,7 @@ See also:
   computers](https://www.linkedin.com/pulse/8-quantum-computing-packages-chemistry-simulations-2022-hariharan/)
 
 ### 2. Cracking a certain type of cryptography
+{: .no_toc }
 
 The security of today’s internet communication relies heavily on a
 cryptographic protocol invented by Rivest, Shamit and Adleman
@@ -211,6 +228,7 @@ Other great sources are:
   PQC](https://csrc.nist.gov/projects/post-quantum-cryptography).
 
 ### 3. Quantum Key Distribution to strengthen cryptography
+{: .no_toc }
 
 Out of all the applications for quantum networks, Quantum Key
 Distribution (QKD) is the one to watch. It allows two parties to
@@ -274,6 +292,7 @@ See also: 
   market. ](https://www.sammobile.com/news/galaxy-a-quantum-launched-south-korea-sk-telecom-exclusive/)
 
 ### 4. Optimisation and machine-learning
+{: .no_toc }
 
 This is the part where most enterprises get excited. Can we combine the
 success of AI and machine learning with the radically new capabilities
@@ -298,6 +317,7 @@ usefulness. To start, we can classify the known algorithms in the
 following three categories.
 
 #### Rigorous but slow algorithms
+{: .no_toc }
 
 Many quantum optimisation algorithms have a well-proven *quantum
 speedup: *there is no dispute that these require *fewer* *computational
@@ -323,6 +343,7 @@ slowness of a realistic quantum computer – at least in the foreseeable
 future. 
 
 #### Heuristic algorithms
+{: .no_toc }
 
 Some algorithms claim much larger speedups, but there is no undisputed
 evidence to back this up. Often, these algorithms are tested on small
@@ -366,6 +387,7 @@ noteworthy variants are:
   handles relatively large optimisation problems. 
 
 #### Fast solutions in search of a suitable problem
+{: .no_toc }
 
 Finally, there exist algorithms with large speedups, for which we are
 still looking for use-cases with any scientific or economic relevance.
@@ -402,6 +424,7 @@ advantage is known for more general datasets.
     (2021). <https://doi.org/10.1038/s41567-021-01287-z>
 
 #### A fourth class: quantum-inspired algorithms
+{: .no_toc }
 
 Some impressive speedups that were recently found have been
 ‘dequantized’: these algorithms were found to work on classical
@@ -414,6 +437,7 @@ Medium](https://medium.com/qiskit/how-ewin-tangs-dequantized-algorithms-are-help
 [^7]: <https://medium.com/qiskit/how-ewin-tangs-dequantized-algorithms-are-helping-quantum-algorithm-researchers-3821d3e29c65>
 
 #### What’s left?
+{: .no_toc }
 
 Unfortunately, there does not yet exist an optimisation algorithm with
 undisputed economic value: all of them come with serious caveats. This
@@ -647,6 +671,7 @@ doesn’t comply with regulations”) because it feels somewhat artificial
 to dismiss a quantum algorithm for such reasons.
 
 ### Supremacy, advantage, utility
+{: .no_toc }
 
 Around 2019 and 2020, the terms **quantum supremacy** and **quantum
 advantage** were popularly used when quantum computers did, for the
@@ -722,6 +747,7 @@ benchmark against state-of-the-art classical techniques is included.
     <https://doi.org/10.48550/arXiv.2306.16372>
 
 ### Do known algorithms provide utility?
+{: .no_toc }
 
 With the quantum utility criteria in mind, we can revisit the algorithms
 that were discussed before.

@@ -3,7 +3,8 @@ layout: default
 title: "Quantum hype bingo"
 nav_order: 2
 ---
-
+ 
+ 
 # Quantum Hype Bingo
 
 <table>

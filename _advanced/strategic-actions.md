@@ -3,8 +3,23 @@ layout: default
 title: "What steps should your organization take?"
 nav_order: 3
 ---
-
+ 
+ 
 # What steps should your organisation take?
+{: .no_toc }
+
+
+Reading time: 12 minutes
+{: .fs-3 .floatr }
+
+## Contents
+{: .no_toc } 
+
+- TOC
+{:toc}
+
+
+
 
 In the previous chapters, we discussed the [use
 cases](https://quantumcomputingforbusiness.com/essentials/applications-overview/),
@@ -52,6 +67,7 @@ alt="what steps can businesses companies take in quantum professionals guide 1" 
 ## Common first steps
 
 ### Step 1: Start with no-regret moves
+{: .no_toc }
 
 Most companies start with early steps aimed at better understanding the
 situation. These can be done with very little financial risk.
@@ -99,6 +115,7 @@ directions separately.
 ## Prepare to use quantum applications
 
 ### Step 2a: Explore use-cases
+{: .no_toc }
 
 At this stage, most organisations will want to make low-regret moves
 that get them prepared to leverage quantum technologies fairly soon
@@ -136,6 +153,7 @@ environments.
   studies, and can offer advice for strategic decisions.
 
 ### Step 3a: Implementing actual applications, whenever ready
+{: .no_toc }
 
 From here onwards, it gets increasingly difficult to give concrete
 advice, as priorities may depend on your business and on the way the
@@ -152,6 +170,7 @@ have special departments for data science and/or AI. It may also be
 reasonable to combine these departments. 
 
 ### Identifying fruitful use cases
+{: .no_toc }
 
 From a top-down perspective, it is a good exercise to identify your
 current needs in high-performance computing.** **What do you currently
@@ -186,6 +205,7 @@ be found on their website:
 [www.quantumapplicationlab.com](http://www.quantumapplicationlab.com).
 
 ### Further reading
+{: .no_toc }
 
 - Scientists propose a framework to [discover which real-world problems
   are potentially accelerated by quantum
@@ -250,6 +270,7 @@ This section relies on technical knowledge from the previous chapter on
 [cybersecurity](https://quantumcomputingforbusiness.com/applications/cybersecurity/).
 
 ### Step 2b: Prepare your migration 
+{: .no_toc }
 
 Cryptography is a completely different beast, with a more concrete goal,
 and more urgent timelines for most organisations. Contrary to the
@@ -304,6 +325,7 @@ alt="Screenshot 2023 05 09 at 17.54.18" />
     exclusively used from 2033 onwards.
 
 #### Are you an urgent adopter?
+{: .no_toc }
 
 The PQC Migration Handbook distinguishes between regular and urgent
 adopters of quantum-safe cryptography. You are an urgent adopter when
@@ -324,6 +346,7 @@ construction agencies, etc. Urgent adopters are encouraged to start
 their migration as soon as possible if they haven't already.
 
 ### Step 3b: Migrate
+{: .no_toc }
 
 This is a much more technical step for which you will need a
 well-prepared migration plan from the previous step.
@@ -356,6 +379,7 @@ replaced. This is a vague term that isn't just a software feature - it
 requires alignment with business protocols and internal policies.
 
 ### Further reading
+{: .no_toc }
 
 - To learn more about transitioning to quantum-safe cryptography, we
   strongly recommend the [PQC Migration
