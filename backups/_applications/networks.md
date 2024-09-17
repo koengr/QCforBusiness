@@ -8,14 +8,18 @@ nav_order: 3
 # Applications of quantum networks
 {: .no_toc }
 
-<fieldset class="field-set" markdown="1"> 
-<legend class="leg-title">Contents</legend>
+
+Reading time: 10 minutes
+{: .fs-3 .floatr }
+
+### Contents
+{: .no_toc }
+{: .mini-header } 
+
 - TOC
 {:toc}
 
-{: .fs-3 }
-Reading time: 10 minutes
-</fieldset>
+
 
 
 If we're building computers that deal with qubits, superposition and
@@ -173,7 +177,7 @@ based on assumptions, and our trust derives from the empirical evidence
 that our smartest cryptographers have not found any weaknesses yet. In
 fact, well-regarded cryptosystems do get broken from time to time. A
 prototypical example is
-[SIKE](https://arstechnica.com/information-technology/2022/08/sike-once-a-post-quantum-encryption-contender-is-koed-in-nist-smackdown/)[^57],
+[SIKE](https://arstechnica.com/information-technology/2022/08/sike-once-a-post-quantum-encryption-contender-is-koed-in-nist-smackdown/)[^59],
 which was in the race to become a new NIST standard until it was proven
 unsafe. 
 
@@ -204,7 +208,7 @@ partial solution to the key distribution problem: it's mostly a key
 *extension* protocol, creating arbitrary amounts of key material based
 on a small initial key.
 
-[^57]: <https://arstechnica.com/information-technology/2022/08/sike-once-a-post-quantum-encryption-contender-is-koed-in-nist-smackdown/>
+[^59]: <https://arstechnica.com/information-technology/2022/08/sike-once-a-post-quantum-encryption-contender-is-koed-in-nist-smackdown/>
 
 ### Further reading about QKD
 {: .no_toc }

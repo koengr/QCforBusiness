@@ -8,18 +8,22 @@ nav_order: 2
 # Error correction
 {: .no_toc }
 
-<fieldset class="field-set" markdown="1"> 
-<legend class="leg-title">Contents</legend>
+
+Reading time: 16 minutes
+{: .fs-3 .floatr }
+
+### Contents
+{: .no_toc }
+{: .mini-header } 
+
 - TOC
 {:toc}
 
-{: .fs-3 }
-Reading time: 16 minutes
-</fieldset>
+
 
 
 <fieldset class="field-set" markdown="1"> 
-<legend class="leg-title">At a glance</legend>
+<legend class="leg-title mini-header">At a glance</legend>
 
 - To run long computations, we need to dramatically reduce the
   likelihood of error in each elementary step – not just a little bit,
@@ -34,7 +38,8 @@ Reading time: 16 minutes
   can survive is an important specification that determines whether they
   can run your application.
 
-</fieldset>
+</fieldset> 
+ <hr> 
 
 Around 2024, we’re seeing a major shift in the road maps of quantum
 computer manufacturers. Several companies no longer put their bare
@@ -423,8 +428,9 @@ number of steps that a device can handle!
   several experts what they find the most likely approach to
   fault-tolerance (section 4.5). 
 
-- British startup Riverlane builts a hardware chip that ‘decodes’ which
-  error occurred on logical qubits. ([Technical
+- British startup [Riverlane builts a hardware
+  chip](https://www.riverlane.com/news/riverlane-announces-world-s-most-powerful-quantum-decoder) that
+  ‘decodes’ which error occurred on logical qubits. ([Technical
   report](https://arxiv.org/abs/2309.05558)). 
 
 - Craig Gidney (Google) has a [more technical blog

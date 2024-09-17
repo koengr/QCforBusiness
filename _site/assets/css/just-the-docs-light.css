@@ -7773,6 +7773,14 @@ blockquote.recommendationbox-title > p:last-child {
   margin-bottom: 0;
 }
 
+.mini-header {
+  padding: 0em 1em;
+  font-weight: 600;
+  font-size: 14px !important;
+  text-transform: uppercase;
+  color: #744b38;
+}
+
 img {
   display: block;
   margin: auto;
@@ -7872,7 +7880,7 @@ p.recommendationbox::before, blockquote.recommendationbox::before {
   padding-bottom: 0.125rem;
 }
 
-details, fieldset {
+details {
   border: 1px solid #b1a29b;
   border-left: 4px solid #b1a29b;
   border-radius: 4px;
@@ -7890,11 +7898,13 @@ details > ul {
   margin-bottom: 0.3em;
 }
 
-legend {
-  padding: 0em 1em;
-  font-weight: 600;
-  font-size: 13px;
-  text-transform: uppercase;
+fieldset {
+  border: 1px solid #744b38;
+  /* border-right: 2px solid #b1a29b; */
+  border-radius: 4px;
+  padding: 0.8rem;
+  margin-top: 1em;
+  background-color: rgba(250, 241, 224, 0.1882352941);
 }
 
 .nav-category {

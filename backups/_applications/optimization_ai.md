@@ -8,14 +8,18 @@ nav_order: 4
 # Applications in optimisation and machine learning 
 {: .no_toc }
 
-<fieldset class="field-set" markdown="1"> 
-<legend class="leg-title">Contents</legend>
+
+Reading time: 2 minutes
+{: .fs-3 .floatr }
+
+### Contents
+{: .no_toc }
+{: .mini-header } 
+
 - TOC
 {:toc}
 
-{: .fs-3 }
-Reading time: 2 minutes
-</fieldset>
+
 
 
 TODO: write section! 🡪 See separate document!

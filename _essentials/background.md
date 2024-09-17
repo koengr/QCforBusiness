@@ -5,15 +5,16 @@ nav_order: 3
 ---
  
  
-# The background: why are we so enthusiastic about Quantum Technology? 
+# The background: why are we so enthusiastic about quantum technology? 
 {: .no_toc }
 
 
 Reading time: 12 minutes
 {: .fs-3 .floatr }
 
-## Contents
-{: .no_toc } 
+### Contents
+{: .no_toc }
+{: .mini-header } 
 
 - TOC
 {:toc}
@@ -22,7 +23,7 @@ Reading time: 12 minutes
 
 
 <fieldset class="field-set" markdown="1"> 
-<legend class="leg-title">At a glance</legend>
+<legend class="leg-title mini-header">At a glance</legend>
 
 Quantum technology is an umbrella term for devices that exploit quantum
 phenomena like superposition and entanglement. The most notable
@@ -33,7 +34,8 @@ Quantum computers will be much slower than conventional computers. Their
 advantage comes from the ability to run quantum algorithms, which solve
 specific problems in much fewer steps.
 
-</fieldset>
+</fieldset> 
+ <hr> 
 
 ## What is quantum technology?
 

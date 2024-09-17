@@ -12,8 +12,9 @@ nav_order: 1
 Reading time: 15 minutes
 {: .fs-3 .floatr }
 
-## Contents
-{: .no_toc } 
+### Contents
+{: .no_toc }
+{: .mini-header } 
 
 - TOC
 {:toc}
@@ -30,7 +31,7 @@ advantage compared to conventional computers, which struggle to store
 the complex quantum state of systems with many particles. As far back as
 1981, physicist Richard Feynman ended a conference talk with a famous
 [quote](https://link.springer.com/article/10.1007/BF02650179), hinting
-at the opportunities of quantum computing[^41]:
+at the opportunities of quantum computing[^43]:
 
 > *“I'm not happy with all the analyses that go with just the classical
 > theory, because nature isn't classical, dammit, and if you want to
@@ -51,8 +52,8 @@ and physics. We discuss the most relevant algorithms, evaluate claims
 about quantum computing’s benefits in the fight against climate change,
 and analyse why the enzyme FeMoco receives such widespread attention.
 
-[^41]: Feynman, R.P. Simulating physics with computers. *Int J Theor
-    Phys* **21**, 467–488 (1982). https://doi.org/10.1007/BF02650179
+[^43]: Feynman, R.P. Simulating physics with computers. *Int J Theor
+    Phys* **21**, 467–488 (1982). <https://doi.org/10.1007/BF02650179>
 
 ## What problems in chemistry and material science will we solve? 
 
@@ -92,7 +93,7 @@ It is a common misconception that quantum computers straightforwardly
 offer an exponential advantage compared to classical computers for all
 chemistry problems. An influential recent
 [paper](https://www.nature.com/articles/s41467-023-37587-6)
-reports[^42]:
+reports[^44]:
 
 > *“\[…\] we conclude that evidence for such an exponential advantage
 > across chemical space has yet to be found. While quantum computers may
@@ -117,7 +118,7 @@ It is not entirely clear how large this niche is, and it is an active
 research area to identify more systems where classical methods fall
 short. To illustrate, a recent [review
 article](https://www.nature.com/articles/s41567-024-02411-5)
-states[^43]:
+states[^45]:
 
 > *\[Classical methods struggle with\] multi-metal systems, where
 > multiple metal ions are in similar electronic environments and
@@ -134,7 +135,7 @@ experiments today. We wouldn’t call these devices computers yet, but
 rather ‘analogue simulators’. One of the first actual ‘computer’
 applications could be to study models of quantum materials, such as the
 famous [Hubbard
-model](https://www.nature.com/articles/s41586-022-04940-6)[^44].
+model](https://www.nature.com/articles/s41586-022-04940-6)[^46].
 
 The first error-corrected quantum computers will hopefully find their
 place in industrial R&D settings. One of the first application areas
@@ -144,39 +145,39 @@ the mechanism behind the biological production of ammonia. We address
 the latter example at the end of this chapter. Another exciting area
 could be to explore the mechanism behind Type-II superconductivity and
 to search for materials that become superconducting at even higher
-temperatures[^45]. It is hard to say what the impact of quantum
+temperatures[^47]. It is hard to say what the impact of quantum
 computers will be beyond such niche areas, as this will depend strongly
 on the usefulness of small polynomial speedups and unpredictable
 breakthroughs in quantum algorithms. We see a broad palette of other
 impactful applications that have been proposed, such as water splitting
-(to efficiently produce hydrogen fuel)[^46], carbon capture
-mechanisms[^47], the study of efficient solar cells[^48] and the
-development of higher capacity batteries[^49].
+(to efficiently produce hydrogen fuel)[^48], carbon capture
+mechanisms[^49], the study of efficient solar cells[^50] and the
+development of higher capacity batteries[^51].
 
-[^42]: Lee, S., Lee, J., Zhai, H. et al. Evaluating the evidence for
+[^44]: Lee, S., Lee, J., Zhai, H. et al. Evaluating the evidence for
     exponential quantum advantage in ground-state quantum chemistry. Nat
-    Commun 14, 1952 (2023). https://doi.org/10.1038/s41467-023-37587-6
+    Commun 14, 1952 (2023). <https://doi.org/10.1038/s41467-023-37587-6>
 
-[^43]: Santagati, R., Aspuru-Guzik, A., Babbush, R. et al. Drug design
+[^45]: Santagati, R., Aspuru-Guzik, A., Babbush, R. et al. Drug design
     on quantum computers. Nat. Phys. 20, 549–557 (2024).
     <https://doi.org/10.1038/s41567-024-02411-5>
 
-[^44]: Daley, A.J., Bloch, I., Kokail, C. et al. Practical quantum
+[^46]: Daley, A.J., Bloch, I., Kokail, C. et al. Practical quantum
     advantage in quantum simulation. Nature 607, 667–676 (2022).
     <https://doi.org/10.1038/s41586-022-04940-6>
 
-[^45]: Garnet Kin-Lic Chan, Quantum chemistry, classical heuristics, and
+[^47]: Garnet Kin-Lic Chan, Quantum chemistry, classical heuristics, and
     quantum advantage (preprint); <https://arxiv.org/abs/2407.11235>
 
-[^46]: <https://quantumapplicationlab.com/2024/01/08/photocatalysis-for-water-splitting/>
+[^48]: <https://quantumapplicationlab.com/2024/01/08/photocatalysis-for-water-splitting/>
 
-[^47]: Von Burg et al., Quantum computing enhanced computational
+[^49]: Von Burg et al., Quantum computing enhanced computational
     catalysis, Phys. Rev. Research 3, 033055.
     <https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.3.033055>
 
-[^48]: <https://www.pv-magazine.com/2023/08/04/quantum-physics-supercomputers-and-solar-cell-efficiency/>
+[^50]: <https://www.pv-magazine.com/2023/08/04/quantum-physics-supercomputers-and-solar-cell-efficiency/>
 
-[^49]: <https://spectrum.ieee.org/lithium-air-battery-quantum-computing>
+[^51]: <https://spectrum.ieee.org/lithium-air-battery-quantum-computing>
 
 ## Algorithms for quantum chemistry
 
@@ -222,13 +223,13 @@ with tools such as [Density functional theory
 [Quantum Monte Carlo
 (QMC)](https://en.wikipedia.org/wiki/Quantum_Monte_Carlo). These work
 for small systems but are often too slow to study large systems such as
-proteins or drugs[^50]. A workaround is to apply these methods to just a
+proteins or drugs[^52]. A workaround is to apply these methods to just a
 small part of the target system, employing faster but less accurate
 methods to oversee the larger whole.
 
 An example of a basic workflow to find find a ground state on a quantum
 computer could be as follows. The first step is to train a VQE to output
-states with low energy[^51]. These might not be the exact ground states,
+states with low energy[^53]. These might not be the exact ground states,
 but they will hopefully be very similar (in jargon, they have a large
 overlap with the ground state). As a second step, we append a QPE
 circuit, that will not only report the energy of the VQE states, but
@@ -237,14 +238,14 @@ states (in jargon: it projects onto the ground state). Running the VQE +
 QPE combination a few times will almost certainly give the lowest energy
 states, assuming the VQE produces proper approximations of it.
 
-[^50]: Santagati, R., Aspuru-Guzik, A., Babbush, R. *et al.* Drug design
+[^52]: Santagati, R., Aspuru-Guzik, A., Babbush, R. *et al.* Drug design
     on quantum computers. *Nat. Phys.* **20**, 549–557 (2024).
     <https://doi.org/10.1038/s41567-024-02411-5>.  
     Quote from this article: “Current classical quantum-chemistry
     algorithms fail to describe quantum systems accurately and
     efficiently enough to be of practical use for drug design.”
 
-[^51]: An interesting subtlety is how we measure the energy that the VQE
+[^53]: An interesting subtlety is how we measure the energy that the VQE
     is supposed to optimise. Luckily, there exist very short circuits
     that we can append to measure the output states in different
     *bases*. By running the VQE a relatively small number of times, we
@@ -260,19 +261,19 @@ refer to other more technical sources. These require expert knowledge of
 quantum chemistry.
 
 - Introduction to Quantum Algorithms for Physics and Chemistry
-  (2012)[^52], a pedagogical book chapter. Open version:
+  (2012)[^54], a pedagogical book chapter. Open version:
   <https://arxiv.org/abs/1203.1331>.
 
 - Quantum Algorithms for Quantum Chemistry and Quantum Materials Science
-  (2020)[^53], a scientific overview article. Open version:
+  (2020)[^55], a scientific overview article. Open version:
   <https://arxiv.org/abs/2001.03685>.
 
-[^52]: Yung, M.-H. et al. (2014) ‘Introduction to Quantum Algorithms for
+[^54]: Yung, M.-H. et al. (2014) ‘Introduction to Quantum Algorithms for
     Physics and Chemistry’, in Quantum Information and Computation for
     Chemistry. John Wiley & Sons, Ltd, pp. 67–106. Available at:
     <https://doi.org/10.1002/9781118742631.ch03>.
 
-[^53]: Bauer, B. et al. (2020) ‘Quantum Algorithms for Quantum Chemistry
+[^55]: Bauer, B. et al. (2020) ‘Quantum Algorithms for Quantum Chemistry
     and Quantum Materials Science’, Chemical Reviews, 120(22), pp.
     12685–12717. Available at:
     <https://doi.org/10.1021/acs.chemrev.9b00829>.
@@ -288,7 +289,7 @@ sustainable technologies.
 
 McKinsey takes the biscuit with their report titled “[Quantum computing
 just might save the
-planet](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/quantum-computing-just-might-save-the-planet)”[^54].
+planet](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/quantum-computing-just-might-save-the-planet)”[^56].
 The article rightfully selects some of the most impactful technologies
 to reduce CO<sub>2</sub> emissions, like electrification of transport,
 improved solar panels, and even vaccines that reduce methane emissions
@@ -307,7 +308,7 @@ alone will be sufficient to avert a climate disaster – we will remain
 agnostic in this debate. A much more concrete issue is the mismatch in
 timelines. Climate experts agree that, to limit global warming to no
 more than 1.5° C, we need to take action relatively soon. Imperial
-College London concludes on their website[^55], referencing the 2014
+College London concludes on their website[^57], referencing the 2014
 IPCC report:
 
 > “Limiting warming to 1.5°C will only be possible if global emissions
@@ -330,9 +331,9 @@ as we’ll soon see, it appears in reputable plans for decarbonization. To
 understand the relevance of this molecule, we need to dive into the
 world of food production.
 
-[^54]: https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/quantum-computing-just-might-save-the-planet
+[^56]: <https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/quantum-computing-just-might-save-the-planet>
 
-[^55]: https://www.imperial.ac.uk/grantham/publications/climate-change-faqs/how-and-when-do-we-need-to-act-on-climate-change-/
+[^57]: <https://www.imperial.ac.uk/grantham/publications/climate-change-faqs/how-and-when-do-we-need-to-act-on-climate-change-/>
 
 ## A case study of a potential killer application: FeMoco
 
@@ -400,7 +401,7 @@ all the boxes for quantum utility: classical methods are limited, we
 have well-understood quantum methods, and computational outputs have a
 significant commercial and societal impact. Unfortunately, there is yet
 another catch - innovation never comes so easily. [A recent
-article](https://arxiv.org/abs/2407.11235)[^56] quotes that industrial
+article](https://arxiv.org/abs/2407.11235)[^58] quotes that industrial
 production of a ton of Ammonia costs around 26 GJ of energy, compared to
 at least 24 GJ (estimated) in bacteria. This is indeed not the massive
 reduction we were hoping for. The article concludes that perhaps the
@@ -424,13 +425,10 @@ forget that quantum computers merely provide a new set of tools. The
 best we can hope for is that smart people will use them in the right
 way!
 
-[^56]: Garnet Kin-Lic Chan, Quantum chemistry, classical heuristics, and
-    quantum advantage (preprint); https://arxiv.org/abs/2407.11235
+[^58]: Garnet Kin-Lic Chan, Quantum chemistry, classical heuristics, and
+    quantum advantage (preprint); <https://arxiv.org/abs/2407.11235>
 
 ## Further reading
-
-- (Scientific article) Toward the first quantum simulation with quantum
-  speedup <https://www.pnas.org/doi/10.1073/pnas.1801723115>
 
 - (2022 review article) Prospects of quantum computing for molecular
   sciences
@@ -438,4 +436,7 @@ way!
 
 - (2019 review article) Quantum Chemistry in the Age of Quantum
   Computing <https://pubs.acs.org/doi/10.1021/acs.chemrev.8b00803>
+
+- (Scientific article) Toward the first quantum simulation with quantum
+  speedup <https://www.pnas.org/doi/10.1073/pnas.1801723115>
 

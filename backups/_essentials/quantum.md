@@ -8,18 +8,22 @@ nav_order: 2
 #  An introduction to the quantum world
 {: .no_toc }
 
-<fieldset class="field-set" markdown="1"> 
-<legend class="leg-title">Contents</legend>
+
+Reading time: 17 minutes
+{: .fs-3 .floatr }
+
+### Contents
+{: .no_toc }
+{: .mini-header } 
+
 - TOC
 {:toc}
 
-{: .fs-3 }
-Reading time: 17 minutes
-</fieldset>
+
 
 
 <fieldset class="field-set" markdown="1"> 
-<legend class="leg-title">At a glance</legend>
+<legend class="leg-title mini-header">At a glance</legend>
 
 You don’t need to understand quantum mechanics to understand the
 *functionality* of quantum computers.
@@ -30,7 +34,8 @@ computer memory can store multiple pieces of data at the same time, but
 upon measurement, nature selects just a single piece (and throws away
 all the others).
 
-</fieldset>
+</fieldset> 
+ <hr> 
 
 If you want to drive a car, do you need to understand how its engine
 works? Of course you don’t! In a similar vein, you don’t need to know

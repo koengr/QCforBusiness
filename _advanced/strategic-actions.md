@@ -12,8 +12,9 @@ nav_order: 3
 Reading time: 12 minutes
 {: .fs-3 .floatr }
 
-## Contents
-{: .no_toc } 
+### Contents
+{: .no_toc }
+{: .mini-header } 
 
 - TOC
 {:toc}
@@ -21,19 +22,16 @@ Reading time: 12 minutes
 
 
 
-In the previous chapters, we discussed the [use
-cases](https://quantumcomputingforbusiness.com/essentials/applications-overview/),
-the [threats](https://quantumcomputingforbusiness.com/applications/cybersecurity/), and
-the [timelines](https://quantumcomputingforbusiness.com/essentials/timelines/)
-of quantum technologies. We will now look at the strategic perspective
-of a typical non-quantum enterprise. We will assume a typical
-large-scale organisation that does not sell IT products per se, but
-relies heavily on computing infrastructure to optimise its operations,
-supervise processes, communicate with suppliers and clients, and
-potentially invest in computer-aided R&D. While these organizations may
-be excited about the potential of quantum computing, they may also feel
-vulnerable—whether due to competitors advancing ahead or due to hackers
-attacking legacy cryptography.
+In the previous chapters, we discussed the use cases, the threats, and
+the timelines of quantum technologies. We will now look at the strategic
+perspective of a typical non-quantum enterprise. We will assume a
+typical large-scale organisation that does not sell IT products per se,
+but relies heavily on computing infrastructure to optimise its
+operations, supervise processes, communicate with suppliers and clients,
+and potentially invest in computer-aided R&D. While these organizations
+may be excited about the potential of quantum computing, they may also
+feel vulnerable—whether due to competitors advancing ahead or due to
+hackers attacking legacy cryptography.
 
 The first steps, like growing expertise, finding adequate staff, and
 doing first proof-of-concept studies, will be largely
@@ -79,8 +77,7 @@ situation. These can be done with very little financial risk.
 
 - Read up and learn. If you’ve come this far in this Guide, you’re
   already doing a fantastic job. We have a separate chapter on further
-  [learning
-  resources](https://quantumcomputingforbusiness.com/resources/further-reading/).
+  learning resources.
 
 - Create internal awareness. Many employees will enjoy inspirational
   talks, tours or demonstrations that academics or quantum manufacturers
@@ -207,17 +204,14 @@ be found on their website:
 ### Further reading
 {: .no_toc }
 
-- Scientists propose a framework to [discover which real-world problems
-  are potentially accelerated by quantum
-  computers](https://arxiv.org/abs/2310.15505).  
+- Scientists propose a framework to discover which real-world problems
+  are potentially accelerated by quantum computers.  
 
-- Consultant Olivier Ezratti proposes a framework to [assess the
-  maturity of quantum computing case
-  studies](https://www.oezratty.net/wordpress/2023/a-framework-to-analyze-quantum-computing-case-studies/).
+- Consultant Olivier Ezratti proposes a framework to assess the maturity
+  of quantum computing case studies.
 
-- (Youtube) A recording of Quantum.Amsterdam's online seminar “[What do
-  companies get out of quantum projects
-  today?](https://www.youtube.com/watch?v=ZqFBW8tFX40&pp=ygUzd2hhdCBkbyBjb21wYW5pZXMgZ2V0IG91dCBvZiBxdWFudHVtIHByb2plY3RzIHRvZGF5)”
+- (Youtube) A recording of Quantum.Amsterdam's online seminar “What do
+  companies get out of quantum projects today?”
 
 <details markdown="1">
 
@@ -267,7 +261,7 @@ reports, which risk disappearing in someone's drawer.
 ## Migrating to post-quantum cryptography
 
 This section relies on technical knowledge from the previous chapter on
-[cybersecurity](https://quantumcomputingforbusiness.com/applications/cybersecurity/).
+cybersecurity.
 
 ### Step 2b: Prepare your migration 
 {: .no_toc }
@@ -283,7 +277,7 @@ thousands of different applications. Many businesses, especially those
 dealing with critical infrastructure, may additionally deal with
 regulators who may or may not have guidelines ready. Moreover, IT
 transitions can be incredibly slow - it is not uncommon to see plans
-that cover 5 or even 10 years[^59].
+that cover 5 or even 10 years[^61].
 
 Authorities seem to agree that the following initial steps should be
 taken urgently by all large organisations.
@@ -309,16 +303,15 @@ taken urgently by all large organisations.
   achieved in time, before the arrival of cryptographically relevant
   quantum computers.
 
-For more details, we recommend following the [PQC Migration
-Handbook](https://english.aivd.nl/publications/publications/2023/04/04/the-pqc-migration-handbook),
-a free guide written by the Dutch secret service AIVD and research
+For more details, we recommend following the PQC Migration Handbook, a
+free guide written by the Dutch secret service AIVD and research
 organisations CWI and TNO. Security authorities in other countries have
 made similar guidance available.
 
 <img src=" {{ site.baseurl }}/media/image31.png" style="width:1.84742in"
 alt="Screenshot 2023 05 09 at 17.54.18" />
 
-[^59]: To illustrate, the PQC Migration Handbook mentions that "Judging
+[^61]: To illustrate, the PQC Migration Handbook mentions that "Judging
     from previous migrations this process might take well over five
     years". The NSA's requirements for national security systems,
     published in 2022, demand that quantum-safe algorithms be
@@ -369,9 +362,8 @@ On the technical side, cryptographic experts recommend the use of
 against quantum attacks) with a proven conventional public key algorithm
 (which guarantees at least the original security in case the new PQC
 algorithm turns out to be less safe than expected). For example, early
-versions of quantum-safe connections with the Chrome web browser use [a
-combination of X25519 and Kyber-768
-(ML-KEM)](https://blog.chromium.org/2023/08/protecting-chrome-traffic-with-hybrid.html).
+versions of quantum-safe connections with the Chrome web browser use a
+combination of X25519 and Kyber-768 (ML-KEM).
 
 Moreover, the practice of **cryptographic agility** is strongly
 encouraged, meaning that security protocols can be easily updated and
@@ -382,18 +374,14 @@ requires alignment with business protocols and internal policies.
 {: .no_toc }
 
 - To learn more about transitioning to quantum-safe cryptography, we
-  strongly recommend the [PQC Migration
-  Handbook](https://english.aivd.nl/publications/publications/2023/04/04/the-pqc-migration-handbook)
-  written by the Dutch secret service AIVD and research organisations
-  TNO and CWI.
+  strongly recommend the PQC Migration Handbook written by the Dutch
+  secret service AIVD and research organisations TNO and CWI.
 
-- An extension to the handbook is the
-  [PQChoiceAssistant](https://tno.github.io/PQChoiceAssistant/), a tool
-  that recommends what cryptographic algorithms are best used in
-  specific situations.
+- An extension to the handbook is the PQChoiceAssistant, a tool that
+  recommends what cryptographic algorithms are best used in specific
+  situations.
 
-- In 2022, the NSA published [requirements for national security
-  systems](https://www.nsa.gov/Press-Room/News-Highlights/Article/Article/3148990/nsa-releases-future-quantum-resistant-qr-algorithm-requirements-for-national-se/).
+- In 2022, the NSA published requirements for national security systems.
   They indicate a concrete timeline with concrete deadlines between 2025
   and 2033.
 

@@ -12,8 +12,9 @@ nav_order: 6
 Reading time: 9 minutes
 {: .fs-3 .floatr }
 
-## Contents
-{: .no_toc } 
+### Contents
+{: .no_toc }
+{: .mini-header } 
 
 - TOC
 {:toc}
@@ -181,13 +182,11 @@ include:
 - Creating certifiable randomness.
 
 - Forming connections between separate quantum computers, allowing them
-  to send quantum data to each other using
-  [teleportation](https://en.wikipedia.org/wiki/Quantum_teleportation).
-  For this to work, devices also need to transfer some classical data,
-  so qubit transmission is never faster than the speed of light.
-  Teleportation is an intriguing method to scale up quantum computers
-  when a limited number of qubits can fit on a single chip or within a
-  single fridge.
+  to send quantum data to each other using teleportation. For this to
+  work, devices also need to transfer some classical data, so qubit
+  transmission is never faster than the speed of light. Teleportation is
+  an intriguing method to scale up quantum computers when a limited
+  number of qubits can fit on a single chip or within a single fridge.
 
 ## Myth 4: Quantum computers are always ten years away.
 
@@ -199,7 +198,7 @@ fusion for decades, but it’s still far from a mature energy source.
 Similarly, I’ve heard several overly optimistic claims about quantum
 computers being made in the past 10 years, often claiming that quantum
 computers are somewhere between 3 to 10 years away. An article by
-TechCrunch[^37] boldly paraphrases Dario Gil (IBM) and Chad Rigetti
+TechCrunch[^39] boldly paraphrases Dario Gil (IBM) and Chad Rigetti
 (founder of Rigetti Computing) saying that “[the moment that a quantum
 computer will be able to perform operations better than a classical
 computer is only three years
@@ -214,12 +213,12 @@ for “key potential applications” in chemistry. They also predicted that
 projects”. Clearly, these predictions were overly optimistic.
 
 Similarly, Microsoft made claims in 2018 that their cloud platform Azure
-would feature quantum computing in 5 years[^38], which is technically
+would feature quantum computing in 5 years[^40], which is technically
 true. However, they have repeatedly hinted to do this with
 fault-tolerant topological qubits, which still remain elusive. Startup
 PsiQuantum famously claimed to have a million photonic qubits by
-2025[^39], and consultants at BCG advised that quantum computers
-“generate business value” in the same year[^40]. Again, it remains to be
+2025[^41], and consultants at BCG advised that quantum computers
+“generate business value” in the same year[^42]. Again, it remains to be
 seen if this holds true.
 
 Luckily, if you’re reading this book, you must have noticed that not all
@@ -239,13 +238,13 @@ rather than become more stringent. Building a quantum computer is a long
 marathon, and it’s impossible to predict when they become commercially
 relevant, but the rapid rate of progress is undeniable.
 
-[^37]: <https://techcrunch.com/2018/09/07/the-reality-of-quantum-computing-could-be-just-three-years-away/>
+[^39]: <https://techcrunch.com/2018/09/07/the-reality-of-quantum-computing-could-be-just-three-years-away/>
 
-[^38]: <https://www.computerweekly.com/news/252440763/Microsoft-predicts-five-year-wait-for-quantum-computing-in-Azure>
+[^40]: <https://www.computerweekly.com/news/252440763/Microsoft-predicts-five-year-wait-for-quantum-computing-in-Azure>
 
-[^39]: <https://www.ft.com/content/a5af3039-abbf-4b25-92e2-c40e5957c8cd>
+[^41]: <https://www.ft.com/content/a5af3039-abbf-4b25-92e2-c40e5957c8cd>
 
-[^40]: <https://www.bcg.com/publications/2023/enterprise-grade-quantum-computing-almost-ready>
+[^42]: <https://www.bcg.com/publications/2023/enterprise-grade-quantum-computing-almost-ready>
 
 ## Further reading
 

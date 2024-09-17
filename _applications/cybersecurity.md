@@ -12,8 +12,9 @@ nav_order: 2
 Reading time: 13 minutes
 {: .fs-3 .floatr }
 
-## Contents
-{: .no_toc } 
+### Contents
+{: .no_toc }
+{: .mini-header } 
 
 - TOC
 {:toc}
@@ -60,11 +61,9 @@ following is missing, cybercriminals can cause a lot of harm: 
   seemingly impossible task if anyone can read bare internet traffic,
   but modern cryptography has a solution.
 
-There are many other vital functionalities,
-like [non-repudiation](https://en.wikipedia.org/wiki/Non-repudiation)
-and [availability](https://www.fortinet.com/resources/cyberglossary/cia-triad),
-that we don't discuss here. Remember the bold-faced terms above, as we
-will often come across these. 
+There are many other vital functionalities, like non-repudiation
+and availability, that we don't discuss here. Remember the bold-faced
+terms above, as we will often come across these. 
 
 We hope that this introduction makes you aware of the enormous
 importance of proper cryptography and the sheer number of cryptographic
@@ -98,13 +97,12 @@ In **symmetric (or private key) cryptography, **we assume that both
 Alice and Bob already know some secret key. This could be a password
 that they both know or, more commonly, a very long number represented by
 (say) 128 bits in their computer memory. Alice can use the key to
-encrypt any message using a protocol
-like [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard).
-Bob can then use the same key to decrypt this message. The details of
-how encryption and decryption work are unimportant for our purposes. The
-only relevant thing is that our computers can do this very efficiently
-and that it's considered sufficiently safe: without the key, nobody
-could reasonably break this encryption.
+encrypt any message using a protocol like AES. Bob can then use the same
+key to decrypt this message. The details of how encryption and
+decryption work are unimportant for our purposes. The only relevant
+thing is that our computers can do this very efficiently and that it's
+considered sufficiently safe: without the key, nobody could reasonably
+break this encryption.
 
 <img src=" {{ site.baseurl }}/media/image21.png" style="width:3.15014in"
 alt="Symm and asymmetric cryptography Page 3 copy 2 1" />
@@ -172,20 +170,16 @@ although one shouldn’t underestimate the time and costs for such changes
 within large organisations.
 
 The situation is entirely different with **public-key
-cryptography. **The most-used algorithms
-today, [RSA ](https://en.wikipedia.org/wiki/RSA_(cryptosystem))and [ECC](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography),
-can be straightforwardly broken by a large quantum computer. We
-discussed the details of Shor's
-algorithm [earlier](https://quantumcomputingforbusiness.com/essentials/applications-overview/),
-and saw that around [20 million
-qubits](https://quantum-journal.org/papers/q-2021-04-15-433/) and around
-8 hours are needed to retrieve a secret RSA key. Luckily, there exist
-PKC systems that are believed to be safe against quantum computers, and
-an obvious way forward is to start using these. We call such
-systems **post-quantum cryptography**, and despite the confusing name,
-they're built to work on conventional computers. We discuss the rabbit
-hole of migrating to new cryptography [in a different
-chapter](https://quantumcomputingforbusiness.com/advanced/strategic-actions/).
+cryptography. **The most-used algorithms today, RSA and ECC, can be
+straightforwardly broken by a large quantum computer. We discussed the
+details of Shor's algorithm earlier, and saw that around 20 million
+qubits and around 8 hours are needed to retrieve a secret RSA key.
+Luckily, there exist PKC systems that are believed to be safe against
+quantum computers, and an obvious way forward is to start using these.
+We call such systems **post-quantum cryptography**, and despite the
+confusing name, they're built to work on conventional computers. We
+discuss the rabbit hole of migrating to new cryptography in a different
+chapter.
 
 Unfortunately, even today's communication could be at risk due to a
 practice called **harvest now, decrypt later. **Encrypted messages that
@@ -281,16 +275,15 @@ parties would pose a particularly interesting target for attackers.
 ## What solutions exist?
 
 There is a clear need for post-quantum cryptography to replace commonly
-used algorithms like RSA and ECC. Luckily, back in 2016, the [American
-National Institute of Standards and
-Technology](https://csrc.nist.gov/projects/post-quantum-cryptography)
-(NIST) started a competition to select a new cryptosystem which should
-balance safety and practical usability (for example, it should not be
-too slow or memory-inefficient). They invited experts from around the
-globe to propose cryptographic algorithms, which peers assessed. Four
-rounds and several broken algorithms later, NIST selected a first set of
-winners that are suitable for large-scale use. As of August 2024, the
-first three PQC algorithms are now official NIST standards.
+used algorithms like RSA and ECC. Luckily, back in 2016, the American
+National Institute of Standards and Technology (NIST) started a
+competition to select a new cryptosystem which should balance safety and
+practical usability (for example, it should not be too slow or
+memory-inefficient). They invited experts from around the globe to
+propose cryptographic algorithms, which peers assessed. Four rounds and
+several broken algorithms later, NIST selected a first set of winners
+that are suitable for large-scale use. As of August 2024, the first
+three PQC algorithms are now official NIST standards.
 
 Even though this effort was coordinated by an American institute, the
 process was backed by cryptographers from around the world. A broad
@@ -359,11 +352,10 @@ Quantum key distribution is also presented as a solution for key
 exchange, making it a potential alternative to today's key exchange
 methods.
 
-Still, many security
-authorities [warn](https://www.nsa.gov/Cybersecurity/Quantum-Key-Distribution-QKD-and-Quantum-Cryptography-QC/) [against](https://www.ncsc.gov.uk/whitepaper/quantum-security-technologies) [adopting](https://english.aivd.nl/publications/publications/2022/01/18/prepare-for-the-threat-of-quantumcomputers) [QKD](https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Quantentechnologien-und-Post-Quanten-Kryptografie/Quantenkryptografie/quantenkryptografie.html)
-today. Although the idea is promising, today's hardware is still
-immature. Moreover, QKD doesn't provide any functionality for digital
-signatures, thus we will need the migration to PQC anyway.
+Still, many security authorities warn against adopting QKD today.
+Although the idea is promising, today's hardware is still immature.
+Moreover, QKD doesn't provide any functionality for digital signatures,
+thus we will need the migration to PQC anyway.
 
 It is somewhat of a pity that QKD is not so mature yet, because it would
 be a viable weapon against Harvest Now, Decrypt Later. Moreover,
@@ -377,10 +369,8 @@ stage, QKD can be considered as an add-on for further security.
 {: .no_toc }
 
 Good random number generators are exceptionally important in
-cryptography, and QRNGs could provide a good alternative to
-the [hardware random number
-generators ](https://en.wikipedia.org/wiki/Hardware_random_number_generator)that
-are widely used today. 
+cryptography, and QRNGs could provide a good alternative to the hardware
+random number generators that are widely used today. 
 
 However, all they do is generate random numbers – that doesn't make any
 protocol safe in itself quantum-safe. As a general warning: **products

@@ -9,11 +9,12 @@ nav_order: 4
 {: .no_toc }
 
 
-Reading time: 25 minutes
+Reading time: 26 minutes
 {: .fs-3 .floatr }
 
-## Contents
-{: .no_toc } 
+### Contents
+{: .no_toc }
+{: .mini-header } 
 
 - TOC
 {:toc}
@@ -22,7 +23,7 @@ Reading time: 25 minutes
 
 
 <fieldset class="field-set" markdown="1"> 
-<legend class="leg-title">At a glance</legend>
+<legend class="leg-title mini-header">At a glance</legend>
 
 The most important application areas are
 
@@ -40,7 +41,8 @@ that run on much faster classical computers), and it must tackle a
 problem with real-world relevance. Especially in optimisation and AI, we
 have not found a convincing ‘killer application’ yet.
 
-</fieldset>
+</fieldset> 
+ <hr> 
 
 In the previous chapter, we saw that quantum computers are extremely
 slow computers, but they happen to solve some problems more efficiently,
@@ -65,7 +67,7 @@ advantage, we split our main question into two parts:
 
 - How large is this speedup in practice?
 
-[^3]: https://quantumalgorithmzoo.org/
+[^3]: <https://quantumalgorithmzoo.org/>
 
 ## What applications offer a quantum speedup?
 
@@ -324,10 +326,9 @@ speedup: *there is no dispute that these require *fewer* *computational
 steps* than any classical algorithm. For instance, a famous quantum
 algorithm invented by [Lov
 Grover](https://en.wikipedia.org/wiki/Grover's_algorithm) (with
-extensions by [Durr and Hoyer](https://arxiv.org/abs/quant-ph/9607014))
-finds the maximum of a function in fewer steps than conventional
-brute-force search. Similarly, quantum speedups were found for popular
-computational methods such
+extensions by Durr and Hoyer) finds the maximum of a function in fewer
+steps than conventional brute-force search. Similarly, quantum speedups
+were found for popular computational methods such
 as [backtracking](https://arxiv.org/abs/1509.02374), [gradient
 descent](https://arxiv.org/abs/1711.00465), [semidefinite
 programming](https://arxiv.org/abs/1710.02581), [lasso](https://arxiv.org/abs/2110.13086),
@@ -858,4 +859,26 @@ installed in special-purpose computing facilities or, even more
 optimistically, that they become increasingly common additions to data
 centres (much like GPUs today). Where would you place yourself in this
 figure?
+
+## Further reading
+
+- “[The Potential Impact of Quantum Computers on
+  Society](https://arxiv.org/abs/1712.05380)“[^16] (Ronald de
+  Wolf, 2017) is an accessible overview of known algorithms, together
+  with an assessment of how we can ensure a mostly positive net effect
+  on society.
+
+- “[Quantum algorithms: an
+  overview](https://doi.org/10.1038/npjqi.2015.23)”[^17] (Ashley
+  Montanaro, 2016) is a more technical overview paper that describes a
+  selection of impactful algorithms in greater detail.
+
+[^16]: de Wolf, R. (2017) ‘The potential impact of quantum computers on
+    society’, Ethics and Information Technology, 19(4), pp. 271–276.
+    Available at: <https://doi.org/10.1007/s10676-017-9439-z>. (Open
+    access: <https://arxiv.org/abs/1712.05380>)
+
+[^17]: Montanaro, A. (2016) ‘Quantum algorithms: an overview’, npj
+    Quantum Information, 2(1), pp. 1–8. Available at:
+    <https://doi.org/10.1038/npjqi.2015.23>.
 
