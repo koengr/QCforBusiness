@@ -86,11 +86,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   jekyll-seo-tag
-<<<<<<< Updated upstream
   just-the-docs (= 0.10.0)
-=======
-  just-the-docs
->>>>>>> Stashed changes
 
 BUNDLED WITH
    2.5.9
