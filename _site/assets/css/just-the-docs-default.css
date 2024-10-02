@@ -8063,6 +8063,15 @@ blockquote.recommendationbox-title > p:last-child {
   color: #744b38;
 }
 
+.gradient-header {
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(24deg, #5b5962 5%, #b4785d 54%, #5b5962 94%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* padding: 100px 0; */
+  /* font-size: 6.5vw; */
+}
+
 img {
   display: block;
   margin: auto;

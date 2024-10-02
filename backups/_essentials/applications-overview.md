@@ -9,7 +9,7 @@ nav_order: 4
 {: .no_toc }
 
 
-Reading time: 26 minutes
+Reading time: 27 minutes
 {: .fs-3 .floatr }
 
 ### Contents
@@ -37,19 +37,20 @@ The most important application areas are
 
 Getting utility out of a quantum computer is not straightforward. It
 requires an algorithm that beats all other known methods (even those
-that run on much faster classical computers), and it must tackle a
-problem with real-world relevance. Especially in optimisation and AI, we
-have not found a convincing ‘killer application’ yet.
+that run on very fast classical computers), and it must tackle a problem
+with real-world relevance. Especially in optimisation and AI, we have
+not found a convincing ‘killer application’ yet.
 
 </fieldset> 
  <hr> 
 
-In the previous chapter, we saw that quantum computers are extremely
-slow computers, but they happen to solve some problems more efficiently,
-that is, in fewer steps. The most important question in this field is:
-**what advantage do quantum computers have on which problems**?
+In the previous chapter, we saw that quantum computers have relatively
+low clock speeds, but they happen to solve some problems more
+efficiently, that is, in fewer steps. Therefore, the most important
+question in this field is: **what advantage do quantum computers have on
+which problems**?
 
-The [Quantum Algorithm Zoo](https://quantumalgorithmzoo.org/)[^3] lists
+The [Quantum Algorithm Zoo](https://quantumalgorithmzoo.org/)[^5] lists
 pretty much all known quantum algorithms. It has grown into an
 impressive list that cites over 400 papers. Unfortunately, upon closer
 inspection, it’s hard to extract precisely the useful business
@@ -67,7 +68,8 @@ advantage, we split our main question into two parts:
 
 - How large is this speedup in practice?
 
-[^3]: https://quantumalgorithmzoo.org/
+[^5]: Jordan, S. (2024) *Quantum Algorithm Zoo*. Available at:
+    <https://quantumalgorithmzoo.org/> (Accessed: 27 September 2024).
 
 ## What applications offer a quantum speedup?
 
@@ -123,7 +125,7 @@ See also:
 {: .no_toc }
 
 The security of today’s internet communication relies heavily on a
-cryptographic protocol invented by Rivest, Shamit and Adleman
+cryptographic protocol invented by Rivest, Shamir and Adleman
 ([RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem))) in the late
 70s. The protocol helps distribute secret encryption keys (so that
 nobody else can read messages in transit) and guarantees the origin of
@@ -143,9 +145,9 @@ quite good at factoring.
   
 The quantum algorithm by Shor can crack RSA (and also its cousin
 called [elliptic curve
-cryptography](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography))
-in a relatively efficient way using a quantum computer. To be more
-concrete, according to [a
+cryptography](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography),
+abbreviated ECC) in a relatively efficient way using a quantum computer.
+To be more concrete, according to [a
 recent](https://arxiv.org/abs/1905.09749) paper, a plausible quantum
 computer could factor the required 2048-bit number in roughly 8 hours
 (and using approximately 20 million imperfect qubits). Note that future
@@ -153,16 +155,16 @@ breakthroughs will likely further reduce the stated time and qubit
 requirements.
 
 Luckily, not all cryptography is broken as easily by a quantum computer.
-RSA falls in the category of[ *public key
+RSA and ECC fall in the category of[ *public key
 cryptography*](https://en.wikipedia.org/wiki/Public-key_cryptography)*, *which
 delivers a certain range of functionalities. A different class of
 protocols is *[symmetric key
 cryptography](https://en.wikipedia.org/wiki/Cryptography#Modern_cryptography),* which
 is reasonably safe against quantum computers but doesn’t provide the
 same rich functionality as *public key *crypto. The most sensible
-approach is replacing RSA with so-called [post-quantum
+approach is replacing RSA and ECC with so-called [post-quantum
 cryptography](https://en.wikipedia.org/wiki/Post-quantum_cryptography) (PQC):
-public-key cryptosystems resilient to attackers with a large-scale
+public key cryptosystems resilient to attackers with a large-scale
 quantum computer. Interestingly, PQC does *not* require honest users
 (that’s you) to have a quantum computer: it will work perfectly fine on
 today’s PCs, laptops and servers.
@@ -178,23 +180,21 @@ See also:
 - Nature feature article: [The race to save the Internet from quantum
   hackers](https://www.nature.com/articles/d41586-022-00339-5)
 
- 
+At the time of writing, a complex migration lies ahead of pretty much
+every large organisation in the world, which comes in addition to many
+existing cybersecurity threats. The foundations have been laid: thanks
+to the American National Institute of Standards and Technology (NIST),
+cryptographers from around the globe came together to select the best
+quantum-safe alternatives, culminating in the publication of the first
+standards in August 2024. These are the new algorithms that the vast
+majority of users will adopt.
 
-In the following years, every large organisation will have to worry
-about updating to post-quantum cryptography – a complex migration that
-comes in addition to the many existing cybersecurity threats. The
-foundations have been laid: thanks to the American National Institute of
-Standards and Technology (NIST), cryptographers from around the globe
-came together to select the best quantum-safe alternatives, culminating
-in the publication of the first standards in August 2024. These are the
-new algorithms that the vast majority of users will adopt.
-
-Unfortunately, many organisations run a vast amount of legacy software
-that is hard to update, making this a complex IT migration that can
-easily take 5-15 years, depending on the organisation. There’s a serious
-threat that quantum computers will be able to run Shor’s algorithm
-within such a timeframe, so organisations are encouraged to start
-migrating as early as possible. 
+Unfortunately, many governments and enterprises run a great amount of
+legacy software that is hard to update, making this a complex IT
+migration that can easily take 5-15 years, depending on the
+organisation. There’s a serious threat that quantum computers will be
+able to run Shor’s algorithm within such a timeframe, so organisations
+are encouraged to start migrating as early as possible. 
 
 A new type of cryptography comes with its own additional risks: the new
 standards have not yet been tested as thoroughly as the nearly
@@ -207,28 +207,6 @@ can be easily changed or updated if the need arises. 
 [**Read more: What steps should your organisation
 take?**](https://quantumcomputingforbusiness.com/advanced/strategic-actions/)
 
-Other great sources are:
-
-- [The PQC Migration
-  Handbook](https://english.aivd.nl/publications/publications/2023/04/04/the-pqc-migration-handbook),
-  written by the Dutch secret service AIVD and research organisations
-  CWI and TNO, goes into many more details on how to update to
-  quantum-safe cryptography.
-
-- Cloudflare [tracks the adoption of post-quantum
-  cryptography](https://blog.cloudflare.com/pq-2024) and explains many
-  technical details extremely well. 
-
-- UK National Cyber Security Center: [Preparing for Quantum-Safe
-  Cryptography](https://www.ncsc.gov.uk/whitepaper/preparing-for-quantum-safe-cryptography)
-
-- BSI (German secret service): [Quantum-safe cryptography –
-  fundamentals, current developments and
-  recommendations](https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/Brochure/quantum-safe-cryptography.html?nn=916626)
-
-- [NIST’s webpage on standardization of
-  PQC](https://csrc.nist.gov/projects/post-quantum-cryptography).
-
 ### 3. Quantum Key Distribution to strengthen cryptography
 {: .no_toc }
 
@@ -239,14 +217,14 @@ everyday needs like encryption and authentication. It requires a quantum
 network connection that transports photons in fragile quantum states.
 Such connections can currently reach a few hundred kilometres, and there
 is a clear roadmap to expand to a much wider internet. The most likely
-usage will be as an “add-on” for high-security purposes (such as
+usage will be as an ‘add-on’ for high-security purposes (such as
 military communication or data exchange between data centres), in
 addition to standard post-quantum cryptography. 
 
 Unfortunately, we often see media articles suggesting that QKD is a
 solution to the threat of Shor’s algorithm and that it would form an
 ‘unbreakable internet’. Both claims are highly inaccurate. Firstly, QKD
-does not offer the wide range of functionality that public-key
+does not offer the wide range of functionality that public key
 cryptography offers, so it is not a complete replacement for the
 cryptosystems broken by Shor. Secondly, there will almost certainly be
 ways to hack a QKD system (just like with any other security system).
@@ -260,13 +238,13 @@ long period of time. 
 At this time, pretty much every national security agency discourages the
 use of QKD simply because the available products are far from mature
 (and because PQC should be prioritised). It is unclear how successful
-QKD could be in the future—we will discuss this in depth in another
+QKD could be in the future—we will discuss this in-depth in another
 chapter.
 
-We firmly warn that other security products with the word “quantum” in
+We firmly warn that other security products with the word ‘quantum’ in
 the name do not necessarily offer protection against Shor’s algorithm.
-In particular, “[quantum random number
-generators](https://en.wikipedia.org/wiki/Hardware_random_number_generator)”
+In particular, [quantum random number
+generators](https://en.wikipedia.org/wiki/Hardware_random_number_generator)
 (QRNGs) are sometimes promoted as a saviour against the quantum threat,
 which is nonsense. These devices serve a completely different purpose:
 they compete with existing hardware to generate unpredictable secret
@@ -282,9 +260,9 @@ See also: 
 - [A short video explainer about how QKD
   works.](https://www.youtube.com/watch?v=2kdRuqvIaww&ab_channel=QuantumVisions%28WWUM%C3%BCnster%29)
 
-- [The NCSC states that it “does not endorse the use of QKD for any
+- [The NCSC states that it ‘does not endorse the use of QKD for any
   government or military
-  applications”](https://www.quantum.amsterdam/%E2%80%A2%09https:/www.ncsc.gov.uk/whitepaper/quantum-security-technologies)
+  applications’](https://www.quantum.amsterdam/%E2%80%A2%09https:/www.ncsc.gov.uk/whitepaper/quantum-security-technologies)
 
 - [The French ANSSI, German BSI, Dutch NLNCSA and Swedish SNCSA
   published a critical position paper on QKD in
@@ -297,12 +275,13 @@ See also: 
 {: .no_toc }
 
 This is the part where most enterprises get excited. Can we combine the
-success of AI and machine learning with the radically new capabilities
-of quantum computers? Can we create a superpowered version of ChatGPT or
-DALL-E, or at least speed up the demanding training process?
+success of artificial intelligence (AI) and machine learning with the
+radically new capabilities of quantum computers? Can we create a
+superpowered version of ChatGPT or DALL-E, or at least speed up the
+demanding training process?
 
 In this section, we’ll take a closer look at the known applications for
-quantum computers on “non-quantum problems” other than cryptography. We
+quantum computers on ‘non-quantum problems’ other than cryptography. We
 focus specifically on the harder optimisation problems that currently
 take up large amounts of classical resources. Under the hood, all such
 applications are based on concrete mathematical problems such as binary
@@ -315,7 +294,7 @@ Unfortunately, the amount of value that ‘quantum’ can add to
 optimisation tasks is very much a disputed topic. The situation here is
 very subtle: there exist many promising quantum algorithms, but as we’ll
 see, each comes with important caveats that might limit their practical
-usefulness. To start, we can classify the known algorithms in the
+usefulness. To start, we can classify the known algorithms into the
 following three categories.
 
 #### Rigorous but slow algorithms
@@ -326,14 +305,14 @@ speedup: *there is no dispute that these require *fewer* *computational
 steps* than any classical algorithm. For instance, a famous quantum
 algorithm invented by [Lov
 Grover](https://en.wikipedia.org/wiki/Grover's_algorithm) (with
-extensions by [Durr and Hoyer](https://arxiv.org/abs/quant-ph/9607014))
+extensions by [Dürr and](https://arxiv.org/abs/quant-ph/9607014) Høyer)
 finds the maximum of a function in fewer steps than conventional
 brute-force search. Similarly, quantum speedups were found for popular
 computational methods such
 as [backtracking](https://arxiv.org/abs/1509.02374), [gradient
-descent](https://arxiv.org/abs/1711.00465), [semidefinite
-programming](https://arxiv.org/abs/1710.02581), [lasso](https://arxiv.org/abs/2110.13086),
-and [interior point methods for solving differential
+descent](https://arxiv.org/abs/1711.00465), [linear
+programming](https://arxiv.org/abs/2311.03215), [lasso](https://arxiv.org/abs/2110.13086),
+and [for solving differential
 equations](https://arxiv.org/abs/1512.05903). 
 
 The main question is whether this also means that the quantum computer
@@ -388,17 +367,18 @@ noteworthy variants are:
   hardware with up to 5000 qubits and offers a cloud service that
   handles relatively large optimisation problems. 
 
-#### Fast solutions in search of a suitable problem
+#### Fast algorithms in search of a use case
 {: .no_toc }
 
 Finally, there exist algorithms with large speedups, for which we are
-still looking for use-cases with any scientific or economic relevance.
+still looking for applications with any scientific or economic
+relevance. These are classic cases of solutions in search of a problem.
 The most notable example is the quantum algorithm that solves [systems
-of linear equations](https://en.wikipedia.org/wiki/HHL_algorithm)[^4]
+of linear equations](https://en.wikipedia.org/wiki/HHL_algorithm)[^6]
 with an exponential advantage. This problem is ubiquitous in engineering
-and optimization, but unfortunately, there are [so many
+and optimisation, but unfortunately, there are [so many
 caveats](https://doi.org/10.1038/nphys3272) that no convincing practical
-uses have been found[^5].
+uses have been found[^7].
 
 Recently, much attention has gone to the algorithm for [topological data
 analysis](https://www.nature.com/articles/ncomms10138) (a method to
@@ -409,40 +389,44 @@ still searching for a convincing application.
 Similarly, a quantum version of a classical machine learning algorithm
 called Support Vector Machines was found to have an [exponential
 advantage over classical
-methods](https://www.nature.com/articles/s41567-021-01287-z)[^6].
+methods](https://www.nature.com/articles/s41567-021-01287-z)[^8].
 Unfortunately, this only works with a very specific dataset based on the
 factoring problem that Shor’s algorithm is well known for. No rigorous
 advantage is known for more general datasets.
 
-[^4]: Harrow, Aram W; Hassidim, Avinatan; Lloyd, Seth (2008). "Quantum
-    algorithm for linear systems of equations". Physical Review Letters.
+[^6]: Harrow, Aram W; Hassidim, Avinatan; Lloyd, Seth (2008). ‘Quantum
+    algorithm for linear systems of equations’. Physical Review Letters.
     103 (15) 150502. <https://doi.org/10.1103/PhysRevLett.103.150502>
 
-[^5]: Aaronson, S. Read the fine print. Nature Phys 11, 291–293 (2015).
-    <https://doi.org/10.1038/nphys3272>
+[^7]: Aaronson, Scott. ‘Read the Fine Print.’ *Nature Physics* 11, no. 4
+    (April 2015): 291–93. <https://doi.org/10.1038/nphys3272>. Open
+    access: <https://www.scottaaronson.com/papers/qml.pdf>.
 
-[^6]: Liu, Y., Arunachalam, S. & Temme, K. A rigorous and robust quantum
-    speed-up in supervised machine learning. Nat. Phys. 17, 1013–1017
-    (2021). <https://doi.org/10.1038/s41567-021-01287-z>
+[^8]: Liu, Yunchao, Srinivasan Arunachalam, and Kristan Temme. ‘A
+    Rigorous and Robust Quantum Speed-up in Supervised Machine
+    Learning.’ *Nature Physics* 17, no. 9 (September 2021): 1013–17.
+    <https://doi.org/10.1038/s41567-021-01287-z>.
 
 #### A fourth class: quantum-inspired algorithms
 {: .no_toc }
 
 Some impressive speedups that were recently found have been
-‘dequantized’: these algorithms were found to work on classical
+‘dequantised’: these algorithms were found to work on classical
 computers too! There’s a beautiful story behind this process, where Ewin
-Tang, a Master’s student at the time, made one of the largest
-algorithmic breakthroughs of the decade. A great report by Robert Davis
-can be found [on
-Medium](https://medium.com/qiskit/how-ewin-tangs-dequantized-algorithms-are-helping-quantum-algorithm-researchers-3821d3e29c65)[^7]. 
+Tang, an undergraduate student at the time, made one of the most
+unexpected algorithmic breakthroughs of the decade. A great report by
+Robert Davis can be found [on
+Medium](https://medium.com/qiskit/how-ewin-tangs-dequantized-algorithms-are-helping-quantum-algorithm-researchers-3821d3e29c65)[^9]. 
 
-[^7]: <https://medium.com/qiskit/how-ewin-tangs-dequantized-algorithms-are-helping-quantum-algorithm-researchers-3821d3e29c65>
+[^9]: Qiskit. ‘How Ewin Tang’s Dequantized Algorithms Are Helping
+    Quantum Algorithm Researchers.’ *Qiskit* (blog), March 15, 2023.
+    <https://medium.com/qiskit/how-ewin-tangs-dequantized-algorithms-are-helping-quantum-algorithm-researchers-3821d3e29c65>.
 
 #### What’s left?
 {: .no_toc }
 
-Unfortunately, there does not yet exist an optimisation algorithm with
-undisputed economic value: all of them come with serious caveats. This
+Unfortunately, a quantum optimisation algorithm with undisputed economic
+value does not yet exist; all of them come with serious caveats. This
 perspective is perhaps a bit disappointing, especially in a context
 where quantum computing is often presented as a disruptive innovation.
 Our main takeaway is that quantum optimisation (especially quantum
@@ -450,30 +434,17 @@ machine learning!) is rather over-hyped. 
 
 That doesn’t mean that there’s no hope for quantum optimisation.
 Firstly, there are good reasons to believe that *new* algorithms and
-applications will be found. Secondly, the usefulness of the “slower”
-quantum optimization algorithms ultimately depends on the speed of a
+applications will be found. Secondly, the usefulness of the ‘slower’
+quantum optimisation algorithms ultimately depends on the speed of a
 future quantum computer compared to the speed of a future classical
 computer. To better understand the differences in computational speeds,
 we will need to quantify the amount of ‘quantum advantage’ that
 different algorithms have.
 
+**[Read more: Optimisation and AI: what are companies doing
+today?](https://quantumcomputingforbusiness.com/applications/optimisation_ai/)**
+
  
-
-Further reading: 
-
-- Volkswagen and ExxonMobil used annealing to optimise routes
-  for [buses](https://www.volkswagen-newsroom.com/en/press-releases/volkswagen-optimizes-traffic-flow-with-quantum-computers-5507) and [transport
-  ships](https://ibm-research.medium.com/exxonmobil-ibm-scientists-explore-state-of-art-quantum-algorithms-to-solve-routing-formulations-e7ce39f8741c).
-
-- [Professor Scott Aaronson warns us to ‘Read the fine print’ of
-  optimisation
-  algorithms.](https://scottaaronson.com/papers/qml.pdf) \[Appeared
-  in [Nature Physics, with
-  paywall](https://www.nature.com/articles/nphys3272)\] 
-
-- [Professor Sanker Das Sarma warns of hype within the field of quantum
-  optimisation and machine
-  learning.](https://www.technologyreview.com/2022/03/28/1048355/quantum-computing-has-a-hype-problem/)
 
 ## How can we compare different types of speedups? 
 
@@ -484,7 +455,7 @@ problem, but what we really care about is whether it solves it *faster*.
 Classical computers are already extremely fast, so quantum algorithms
 should offer a substantial speedup before they become competitive. 
 
-The most fair way to compare algorithms is by running them on actual
+The fairest way to compare algorithms is by running them on actual
 hardware in a setting similar to how you would use the algorithm in
 practice. In the future, we expect such **benchmarks** to be the main
 tool to compare quantum and classical approaches. However, mature
@@ -503,33 +474,34 @@ larger, theoretically all the way to infinity.
 
 Size turns out to be a very relevant parameter. For example, computing
 54 x 12 is much easier than 231.423 x 971.321, even though in technical
-jargon, they are the same problem of ‘multiplication’, and we’d use the
-very same [long multiplication
+jargon, they are *instances* of the same problem of ‘multiplication’,
+and we’d use the very same [long multiplication
 algorithm](https://en.wikipedia.org/wiki/Multiplication_algorithm) that
 we learned in elementary school to tackle them. Similarly, creating a
-work schedule for a team of 5 is simpler than dealing with 10.000
+work schedule for a team of 5 is simpler than dealing with 10,000
 employees. We typically use the letter \\(n\\) to denote the problem size.
 You can see \\(n\\) as the number of digits in a multiplication (like 2 or 6
 above) or the number of employees involved in a schedule. 
 
 For some very hard problems, the time to solution takes the form of an
-exponential, something like \\(T\ \sim\ 2^{n}\\), where \\(T\\) is the time
-taken[^8]. Exponential scaling is typically a bad thing, as the function
-\\(2^{n}\\) becomes incredibly large even for moderate values of \\(n\\). For
-example, the problem of factoring scales [somewhat
-similar](https://en.wikipedia.org/wiki/General_number_field_sieve) to
-\\(T\ \sim\ 2^{n}\\) on a classical computer.
+exponential, something like \\(T\ \sim\ 2^{n}\\) or \\(T\ \sim\ 10^{n}\\), where
+\\(T\\) is the number of steps (or time) taken[^10]. Exponential scaling is
+typically a bad thing, as such functionsss becomes incredibly large even
+for moderate values of \\(n\\). For example, brute-force guessing a pin code
+of \\(n\\) digits takes roughly \\(T\ \sim\ 10^{n}\\).
 
-There are also problems for which the scaling looks like a polynomial,
-such as \\(T\ \sim\ n^{3}\\) or \\(T\ \sim\ n\\). Polynomials grow much slower
-than exponentials, making it easier to solve large problems in a
-reasonable amount of time. Quantum computers tackle factoring with
-roughly \\(T\ \sim\ n^{3}\\) (thanks to [Shor’s
-algorithm](https://en.wikipedia.org/wiki/Shor%27s_algorithm)[^9]).
-Because a quantum computer brought the exponential down to a polynomial,
-we call this an ‘**exponential speedup**’. Such speedups are a computer
-scientist’s dream because they have a tremendous impact on practical
-runtimes. 
+There are also problems for which the number of steps scales like a
+polynomial, such as \\(T\ \sim\ n^{3}\\) or \\(T\ \sim\ n\\). Polynomials grow
+much slower than exponentials, allowing use to solve large problems in a
+reasonable amount of time. Whenever a new algorithm can bring an
+exponential scaling down to a polynomial, we may call this an
+‘**exponential speedup**’. Such speedups are a computer scientist’s
+dream because they have a tremendous impact on practical runtimes. For
+example, quantum computers can factor large numbers in time roughly
+\\(T\ \sim\ n^{3}\\) (thanks to [Shor’s
+algorithm](https://en.wikipedia.org/wiki/Shor%27s_algorithm)[^11]),
+whereas the best classical algorithm requires close to exponentially
+many steps[^12].
 
 Often, we deal with ‘merely’ a **polynomial speedup**, which happens
 when we obtain a smaller polynomial (for example, going from
@@ -539,7 +511,7 @@ Reducing the exponent by a factor of two (like \\(n^{2}\  \rightarrow n\\))
 is also sometimes called a **quadratic speedup**, which is precisely
 what Grover’s algorithm gives us.
 
-Further reading:
+**See also:**
 
 - At a more coarse level, we can define different [complexity
   classes](https://medium.com/qiskit/what-can-a-quantum-computer-actually-do-4daed0691f6b)
@@ -552,10 +524,10 @@ today, categorised by their type of asymptotic speedup:
 
  
 
-<img src=" {{ site.baseurl }}/media/image11.png"
+<img src=" {{ site.baseurl }}/media/image13.png"
 style="width:6.26806in" />
 
-🟢   The “**exponential**” box is the most interesting one, featuring
+🟢   The ‘**exponential**’ box is the most interesting one, featuring
 applications where quantum computers seem to have a groundbreaking
 advantage over classical computers. It contains **Shor’s algorithm** for
 factoring, explaining the towering advantage that quantum computers have
@@ -563,7 +535,7 @@ in codebreaking. We also believe it contains some applications
 in **chemistry and material science**, especially those relating to
 dynamics (studying how molecules and materials change over time). 
 
-🟡   The **“polynomial” **box is still interesting, but its
+🟡   The **’polynomial’ **box is still interesting, but its
 applicability is unclear. Recall that a quantum computer would need much
 more time *per step *– and on top of that, it will have considerable
 overhead due to [error
@@ -592,40 +564,35 @@ category, and these caused a significant revolution in AI.
 Unfortunately, it is unclear what the impact of currently known
 heuristic quantum algorithms will be. 
 
-In summary, we see that the utility of the mentioned quantum
-applications is unclear – but some are more unclear than others. The
-following graph summarises this well: the most ‘valuable’ applications
-(like quantum machine learning) also come with the largest risks,
-whereas the most convincing speedups (like codebreaking) offer less
-value. The applications of chemistry and material science sit somewhere
-in between.
+In summary, the potential for a useful quantum speedup varies greatly
+across applications, and so does their range of applicability. The case
+of factoring has a clear and convincing speedup but provides little
+value except to those with malicious intent. In contrast, machine
+learning and optimisation do tackle a broad palette of relevant
+problems, but the speed advantage of a quantum computer remains
+uncertain in this field. The applications of chemistry and material
+science fall somewhere in the middle, with some relevant areas
+of applicability and concrete indications of a practical speed
+advantage.
 
-<img src=" {{ site.baseurl }}/media/image12.png"
-style="width:4.05987in" />
-
-Unfortunately, we don’t dare to assign concrete numbers to this graph.
-That’s something that we will need to empirically find out in the near
-future.
-
-See also:
-
-- [A quantitative analysis of Grover’s runtime compared to today’s
-  supercomputers.](https://cacm.acm.org/research/disentangling-hype-from-practicality-on-realistically-achieving-quantum-advantage/) 
-
-- (Technical) [Amazon researchers lay out a comprehensive list of
-  end-to-end complexities of nearly every known quantum
-  algorithm.](https://arxiv.org/abs/2310.03011)
-
-[^8]: With the symbol \\(\sim\\) we mean ‘roughly proportional to’. It
+[^10]: With the symbol \\(\sim\\) we mean ‘roughly proportional to’. It
     essentially allows us to write down an approximation of a function,
     making them easier to read, throwing away some details are not
     important here.
 
-[^9]:  You may find even sources stating that Shor’s algorithm takes a
+[^11]:  You may find even sources stating that Shor’s algorithm takes a
     time proportional to n<sup>2</sup> log(n). Such scaling is
     theoretically possible but relies on [asymptotic
-    optimizations](https://en.wikipedia.org/wiki/Sch%C3%B6nhage%E2%80%93Strassen_algorithm) that
+    optimisations](https://en.wikipedia.org/wiki/Sch%C3%B6nhage%E2%80%93Strassen_algorithm) that
     are unlikely to be used in practice.
+
+[^12]: Technically, the best algorithms for factoring, like the general
+    number field sieve, have a scaling behavior that lies between
+    polynomial and exponential. Hence, the speedup of Shor’s algorithm
+    is technically a bit less than ‘exponential’ – a more correct term
+    would be ‘superpolynomial’. Still, this book (and many other
+    sources) continue to use the term ‘exponential speedup’ to emphasize
+    the enormous scaling advantage over polynomial speedups.
 
 ## Where is the killer application?
 
@@ -668,8 +635,8 @@ option because it creates good PR or because it keeps the workforce
 excited. Then perhaps the first utility has already been reached!
 However, this is not the computational revolution that we’re looking
 for, so I explicitly exclude such non-technical reasons in property (2).
-Similarly, I don’t want to worry too much about legal issues (“it
-doesn’t comply with regulations”) because it feels somewhat artificial
+Similarly, I don’t want to worry too much about legal issues (‘it
+doesn’t comply with regulations’) because it feels somewhat artificial
 to dismiss a quantum algorithm for such reasons.
 
 ### Supremacy, advantage, utility
@@ -678,7 +645,7 @@ to dismiss a quantum algorithm for such reasons.
 Around 2019 and 2020, the terms **quantum supremacy** and **quantum
 advantage** were popularly used when quantum computers did, for the
 first time, beat the best supercomputers in terms of speed (property
-2)[^10] [^11]. This involved an algorithm that was cherry-picked to
+2)[^13] [^14]. This involved an algorithm that was cherry-picked to
 perform well on a relatively small and noisy quantum computer whilst
 being as challenging as possible for a conventional supercomputer.
 Quantum advantage was mostly a man-on-the-moon-type scientific
@@ -688,18 +655,18 @@ work. There was no attempt to have any practical value (1).
 
 As a natural next step, the race is on to be the first to run something
 *useful* whilst leaving classical supercomputers in the dust. This led
-IBM to coin the term **quantum utility**[^12], which we adapted above.
+IBM to coin the term **quantum utility**[^15], which we adapted above.
 In the following years, we can expect the leading hardware and software
 manufacturers to maximise the amount of ‘utility’ that they could
-possible squeeze out of medium-sized quantum computers, whilst
+possibly squeeze out of medium-sized quantum computers, whilst
 competitors will use their best classical simulations to dispute these
 claims. The first battles have already been fought: in June 2023, IBM
 claimed to simulate certain material science models better than
-classically possible[^13], quickly followed by two scientific responses
+classically possible[^16], quickly followed by two scientific responses
 that showed how easy it was to simulate the same experiment on a
-laptop[^14] [^15].
+laptop[^17] [^18].
 
-It seems to me that a healthy competition is good for the field overall.
+It seems to me that healthy competition is good for the field overall.
 It should lead to increasingly convincing and rigorous quantum utility,
 from which the end-users will eventually profit!
 
@@ -713,21 +680,22 @@ reports I’ve seen hardly bother to show any argumentation in this
 direction. Such claims should only be taken seriously if a rigorous
 benchmark against state-of-the-art classical techniques is included.
 
-[^10]: Han-Sen Zhong et al., Quantum computational advantage using
+[^13]: Han-Sen Zhong et al., Quantum computational advantage using
     photons. Science 370, 1460-1463 (2020).
     <https://doi.org/10.1126/science.abe8770>
 
-[^11]: Arute, F., Arya, K., Babbush, R. et al. Quantum supremacy using a
-    programmable superconducting processor. Nature 574, 505–510 (2019).
-    <https://doi.org/10.1038/s41586-019-1666-5>
+[^14]: Arute, Frank, Kunal Arya, Ryan Babbush, Dave Bacon, Joseph C.
+    Bardin, Rami Barends, Rupak Biswas, et al. ‘Quantum Supremacy Using
+    a Programmable Superconducting Processor’. *Nature* 574, no. 7779
+    (October 2019): 505–10. <https://doi.org/10.1038/s41586-019-1666-5>.
 
-[^12]: Technically, IBM has a subtly different interpretation. In a blog
+[^15]: Technically, IBM has a subtly different interpretation. In a blog
     post (see
     <https://www.ibm.com/quantum/blog/what-is-quantum-utlity>), they
-    define ‘utility’ as: *“Quantum computation that provides reliable,
+    define ‘utility’ as: *‘Quantum computation that provides reliable,
     accurate solutions to problems that are beyond the reach of brute
     force classical computing methods, and which are otherwise only
-    accessible to classical approximation methods.”* In other words: a
+    accessible to classical approximation methods.’* In other words: a
     quantum computer doesn’t have to outperform any classical algorithm,
     it merely has to compete with the silly approach of brute-force
     search – which is almost never the best algorithm in practise. This
@@ -736,17 +704,21 @@ benchmark against state-of-the-art classical techniques is included.
     have a similar notion of ‘advantage for end-users’ in mind, so I’m
     happy to adopt the term ‘utility’ anyway.
 
-[^13]: Kim, Y., Eddins, A., Anand, S. et al. Evidence for the utility of
-    quantum computing before fault tolerance. Nature 618, 500–505
-    (2023). <https://doi.org/10.1038/s41586-023-06096-3>
+[^16]: Kim, Youngseok, Andrew Eddins, Sajant Anand, Ken Xuan Wei, Ewout
+    van den Berg, Sami Rosenblatt, Hasan Nayfeh, et al. ‘Evidence for
+    the Utility of Quantum Computing before Fault Tolerance’. *Nature*
+    618, no. 7965 (June 2023): 500–505.
+    <https://doi.org/10.1038/s41586-023-06096-3>.
 
-[^14]: Tomislav Begušić, Garnet Kin-Lic Chan, Fast classical simulation
-    of evidence for the utility of quantum computing before fault
-    tolerance (2023). <https://doi.org/10.48550/arXiv.2306.16372>
+[^17]: Begušić, Tomislav, and Garnet Kin-Lic Chan. ‘Fast Classical
+    Simulation of Evidence for the Utility of Quantum Computing before
+    Fault Tolerance’. arXiv, 28 June 2023.
+    <https://doi.org/10.48550/arXiv.2306.16372>.
 
-[^15]: Joseph Tindall et al., Efficient Tensor Network Simulation of
-    IBM’s Eagle Kicked Ising Experiment, PRX Quantum 5, 010308 (2023),
-    <https://doi.org/10.48550/arXiv.2306.16372>
+[^18]: Tindall, Joseph, Matthew Fishman, E. Miles Stoudenmire, and Dries
+    Sels. ‘Efficient Tensor Network Simulation of IBM’s Eagle Kicked
+    Ising Experiment’. *PRX Quantum* 5, no. 1 (23 January 2024): 010308.
+    <https://doi.org/10.1103/PRXQuantum.5.010308>.
 
 ### Do known algorithms provide utility?
 {: .no_toc }
@@ -754,49 +726,13 @@ benchmark against state-of-the-art classical techniques is included.
 With the quantum utility criteria in mind, we can revisit the algorithms
 that were discussed before.
 
-<table>
-<colgroup>
-<col style="width: 51%" />
-<col style="width: 17%" />
-<col style="width: 31%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th>(1)<br />
-Useful</th>
-<th><p>(2)</p>
-<p>Better than classical</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Optimisation: Rigorous but slow algorithms</td>
-<td>✓</td>
-<td>?</td>
-</tr>
-<tr class="even">
-<td>Optimisation: Solutions in search of a problem</td>
-<td>?</td>
-<td>✓</td>
-</tr>
-<tr class="odd">
-<td>Optimisation: Heuristic algorithms</td>
-<td>✓</td>
-<td>?</td>
-</tr>
-<tr class="even">
-<td>Simulation of molecules and materials</td>
-<td>✓</td>
-<td>?</td>
-</tr>
-<tr class="odd">
-<td>Breaking RSA</td>
-<td>✓</td>
-<td>✓</td>
-</tr>
-</tbody>
-</table>
+|  | \(1\) Useful | \(2\) Better than classical |
+|----|----|----|
+| Optimisation: Rigorous but slow algorithms | ✓ | ? |
+| Optimisation: Fast algorithms in search of a use casess | ? | ✓ |
+| Optimisation: Heuristic algorithms | ✓ | ? |
+| Simulation of molecules and materials | ✓ | ? |
+| Breaking RSA | ✓ | ✓ |
 
 Several algorithms, most notably Grover’s algorithm, have an extensive
 range of industrial applicability. However, it seems that in practice,
@@ -815,16 +751,18 @@ Even for simulation of molecules and materials, it is hard to pinpoint
 precisely where we can find utility. Classical computers are already
 incredibly fast, and excellent classical algorithmic techniques have
 been developed. Scientist Garnet Chan even gives talks which are
-suggestively titled “Is There Evidence of Exponential Quantum Advantage
-in Quantum Chemistry?”. The case for chemistry and material science is
+suggestively titled ‘Is There Evidence of Exponential Quantum Advantage
+in Quantum Chemistry?’. The case for chemistry and material science is
 quite subtle, and we discuss this further in the in-depth chapter on
 quantum simulation.
 
 To our best knowledge, codebreaking (Shor’s algorithm) is the only
 impactful algorithm that has little competition from classical methods.
-Unfortunately, this is primarily a negative application that helps
-criminals – we are not aware of any positive uses of Shor, so it is not
-quite the killer application we’re looking for. 
+Hopefully, most critical cryptography will be updated well before a
+quantum computer arrives, making large-scale deployment of Shor’s
+algorithm relatively uninteresting. Either way, the application of
+codebreaking is not quite the positive innovation that quantum
+enthusiasts are looking for.  
 
 Could the nature of quantum mechanics be such that exponential speedups
 are only found in codebreaking, chemistry, and a bunch of highly
@@ -849,7 +787,7 @@ on these questions. If we allow ourselves to do some more hypothetical
 dreaming, I picture that the following future scenarios could be
 possible, on a spectrum of optimism versus pessimism:
 
-<img src=" {{ site.baseurl }}/media/image13.png"
+<img src=" {{ site.baseurl }}/media/image14.png"
 style="width:6.26806in" />
 
 Starting on the pessimistic side, if one believes that optimisation
@@ -863,23 +801,40 @@ figure?
 
 ## Further reading
 
-- “[The Potential Impact of Quantum Computers on
-  Society](https://arxiv.org/abs/1712.05380)“[^16] (Ronald de
+- ‘[The Potential Impact of Quantum Computers on
+  Society](https://arxiv.org/abs/1712.05380)‘[^19] (Ronald de
   Wolf, 2017) is an accessible overview of known algorithms, together
   with an assessment of how we can ensure a mostly positive net effect
   on society.
 
-- “[Quantum algorithms: an
-  overview](https://doi.org/10.1038/npjqi.2015.23)”[^17] (Ashley
+- ‘[Quantum algorithms: an
+  overview](https://doi.org/10.1038/npjqi.2015.23)‘[^20] (Ashley
   Montanaro, 2016) is a more technical overview paper that describes a
   selection of impactful algorithms in greater detail.
 
-[^16]: de Wolf, R. (2017) ‘The potential impact of quantum computers on
-    society’, Ethics and Information Technology, 19(4), pp. 271–276.
-    Available at: <https://doi.org/10.1007/s10676-017-9439-z>. (Open
-    access: <https://arxiv.org/abs/1712.05380>)
+- [Professor Scott Aaronson warns us to ‘Read the fine print’ of
+  optimisation
+  algorithms.](https://scottaaronson.com/papers/qml.pdf) \[Appeared
+  in [Nature Physics, with
+  paywall](https://www.nature.com/articles/nphys3272)\] 
 
-[^17]: Montanaro, A. (2016) ‘Quantum algorithms: an overview’, npj
-    Quantum Information, 2(1), pp. 1–8. Available at:
+- [Professor Sanker Das Sarma warns of hype within the field of quantum
+  optimisation and machine
+  learning.](https://www.technologyreview.com/2022/03/28/1048355/quantum-computing-has-a-hype-problem/)
+
+- [A quantitative analysis of Grover’s runtime compared to today’s
+  supercomputers.](https://cacm.acm.org/research/disentangling-hype-from-practicality-on-realistically-achieving-quantum-advantage/) 
+
+- (Scientific paper) [Amazon researchers lay out a comprehensive list of
+  end-to-end complexities of nearly every known quantum
+  algorithm.](https://arxiv.org/abs/2310.03011)
+
+[^19]: de Wolf, R. (2017) ‘The potential impact of quantum computers on
+    society’, Ethics and Information Technology, 19(4), pp.
+    271–276.<https://doi.org/10.1007/s10676-017-9439-z>. (Open access:
+    <https://arxiv.org/abs/1712.05380>)
+
+[^20]: Montanaro, A. (2016) ‘Quantum algorithms: an overview’, npj
+    Quantum Information, 2(1), pp. 1–8.
     <https://doi.org/10.1038/npjqi.2015.23>.
 

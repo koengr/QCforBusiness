@@ -30,13 +30,13 @@ this fascinating topic.
 {: .no_toc }
 
 - [**Quantum.Country**](https://quantum.country/qcvc) \[Website\] – the
-  “Duolingo of Quantum Computing”, a very well-written introduction for
-  those with late high-school or early university level math
+  ‘Duolingo of Quantum Computing’, a very well-written introduction for
+  those with a late high-school or early university-level math
   background. 
 
 - [**Quantum Computation and Quantum
   Information**](https://en.wikipedia.org/wiki/Quantum_Computation_and_Quantum_Information) (Nielsen,
-  Chuang) \[Book\] – the “bible of quantum computing”. Perhaps not the
+  Chuang) \[Book\] – the ‘bible of quantum computing’. Perhaps not the
   most up-to-date, but definitely the most well-known resource in our
   field. Sets the standards for jargon and notation. 
 
@@ -50,27 +50,27 @@ this fascinating topic.
 - [**Quantum Computing Since
   Democritus**](https://en.wikipedia.org/wiki/Quantum_Computing_Since_Democritus) (Aaronson)
   \[Book\] – Aaronson is an authority in the field. His book touched
-  upon many topics such as the foundations of computer science, black
+  upon many topics, such as the foundations of computer science, black
   holes and consciousness, making it a good read for those looking for
-  something much more broad than just quantum computing.
+  something much broader than just quantum computing.
 
 ### Graduate (Master's) level:
 {: .no_toc }
 
-These assume no prior knowledge about quantum physics, but require a
+These assume no prior knowledge about quantum physics but require a
 strong background in mathematics (i.e. linear algebra, calculus,
 advanced inequality bounds and approximations, etc.). In exchange, they
 go into much more detail. 
 
-- **[Lecture Notes for UvA course “Quantum Computing” by Ronald de
+- **[Lecture Notes for UvA course ‘Quantum Computing’ by Ronald de
   Wolf](https://arxiv.org/abs/1907.09415),** which is frequently updated
   and features some cutting-edge algorithms. Via the [course
-  website](https://homepages.cwi.nl/~rdewolf/qc22.html), you can find
-  the link and password to view all the recorded lectures too. 
+  website](https://homepages.cwi.nl/~rdewolf/qc24.html), you can find
+  the link and password to view all the recorded lectures. 
 
 <!-- -->
 
-- [**Lecture Notes for Caltech course “Quantum Computing” by John
+- [**Lecture Notes for Caltech course ‘Quantum Computing’ by John
   Preskil **](http://theory.caltech.edu/~preskill/ph229/)
 
 ### Scientific overview papers
@@ -105,15 +105,15 @@ introductory tutorials. The ones we recommend below are all in Python. 
 
 - [**Qiskit**](https://learning.quantum.ibm.com/), the language by IBM,
   probably features the largest catalogue of learning materials. To
-  start from scratch, we recommend following the “[Basics of Quantum
-  Information](https://learning.quantum.ibm.com/course/basics-of-quantum-information/single-systems)”,
+  start from scratch, we recommend following the ‘[Basics of Quantum
+  Information](https://learning.quantum.ibm.com/course/basics-of-quantum-information/single-systems)‘,
   which teaches both the mathematics behind qubits and the usage of the
   package itself.
 
 - [**Cirq**](https://quantumai.google/cirq/) is a very similar package
   developed by Google. As of 2024, they have a [more focused
   tutorial](https://quantumai.google/cirq/start/) to explain the
-  programming package itself, without extensive theory of quantum
+  programming package itself without extensive theory of quantum
   mechanics.
 
 - [**QWorld Bronze **](https://qworld.net/workshop-bronze/)offers
@@ -124,20 +124,40 @@ introductory tutorials. The ones we recommend below are all in Python. 
 - [**PennyLane**](https://pennylane.ai/) is a package by startup Xanadu
   with a strong focus on machine learning applications.
 
+- [**Classiq**](https://www.classiq.io/) is one of the largest players
+  that focuses on a higher-level programming language. This makes it
+  easier to re-use code and to synthesise circuits for different types
+  of hardware, but it also requires more background knowledge to get
+  started.
+
 ## I want to stay up-to-date with the latest developments
 
-### Major conferences
+### Major business conferences
 {: .no_toc }
 
-- [**Q2B (organized by QCWare)**](https://q2b.qcware.com/)
+- [**Q2B (organised by QCWare)**](https://q2b.qcware.com/)
 
 - [**IQT (Inside Quantum Technology)**](http://iqtevent.com/)
 
-- [**Quantum.Tech (organized by Alpha
+- [**Quantum.Tech (organised by Alpha
   Events)**](https://new.quantumtechdigital.co.uk/)
 
-- [**Commercializing Quantum (organized by The
+- [**Commercialising Quantum (organised by The
   Economist)**](https://events.economist.com/commercialising-quantum/)
+
+### Major scientific conferences
+{: .no_toc }
+
+These are very technical and only recommended for those acquainted with
+the field. They take place at a different location each year.
+
+- [**Quantum Information Processing (QIP)**](https://qipconference.org/)
+
+- [**Theory of Quantum Computation, Communication and Cryptography
+  (TQC)**](https://tqc-conference.org/)
+
+- [**Quantum Computing Theory in Practice
+  (QCTIP)**](https://www.qctip2024.com/) (mostly based in the UK)
 
 ### Business News 
 {: .no_toc }
@@ -145,8 +165,8 @@ introductory tutorials. The ones we recommend below are all in Python. 
 - [**Quantum Computing
   Report**](https://quantumcomputingreport.com/news/) - don’t be fooled
   by the basic look on the website. The content is written with a very
-  critical eye and with very relevant contextual information, making
-  them our favourite source for quantum-related news.  
+  critical eye and with very relevant contextual information, making it
+  our favourite source for quantum-related news.  
 
 <!-- -->
 
@@ -172,26 +192,33 @@ sometimes too optimistic and predict that quantum applications will come
 much sooner than the typical expert would anticipate. On the other hand,
 they collect insightful details about financial matters. 
 
-- **McKinsey** publishes yearly “Quantum Technology Monitor” reports,
-  focusing on the economic impact the quantum computers will have. [Here
-  is the 2024
-  edition](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/steady-progress-in-approaching-the-quantum-advantage).
+- **McKinsey** publishes yearly ‘[Quantum Technology
+  Monitor](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/steady-progress-in-approaching-the-quantum-advantage)’
+  reports, focusing on the economic impact the quantum computers will
+  have.
 
-- **Cloudlfare**’s support pages contain an incredibly complete [bible
+- **Cloudflare**’s support pages contain an incredibly complete [bible
   of Post-Quantum Cryptography.](https://blog.cloudflare.com/pq-2024)
+
+- Are you looking for a much more extensive source that covers pretty
+  much everything there is to know about quantum computers? French
+  consultant **Olivier Ezratti** maintains a 1500+ page book,
+  ‘[Understanding Quantum
+  Technologies](https://www.oezratty.net/wordpress/2024/understanding-quantum-technologies-2024/)‘.
 
 ### Workshops and trainings
 {: .no_toc }
 
-These might not be the most relevant if you completed this book, by can
-be particularly useful to inspire your colleagues.
+Short workshops will likely cover content similar to this book. A
+one-afternoon training can be particularly useful to inspire your
+colleagues and friends.
 
 - [**The Workshop General Awareness Quantum
-  Computing**](https://new.quantum.amsterdam/education/education-workshops/)
+  Computing**](https://www.quantum.amsterdam/education/workshops-and-training/)
   follows the same philosophy as this book: an introduction to business
   opportunities that should be understandable for everyone.
 
-- [**Qureca**](https://www.qureca.com/training/) is a british startup
-  that offers several trainings, such as “Quantum for everyone” and
-  “Quantum Training for Business”.
+- [**Qureca**](https://www.qureca.com/training/) is a British startup
+  that offers several trainings, such as ‘Quantum for everyone’ and
+  ‘Quantum Training for Business’.
 

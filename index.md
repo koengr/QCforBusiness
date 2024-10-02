@@ -4,9 +4,13 @@ layout: default
 nav_order: 0
 ---
 
-<img src=" {{ site.baseurl }}/site-img/header-logo.webp" width="700" />
+<!-- <img src=" {{ site.baseurl }}/site-img/header-logo.webp" width="700" /> -->
 
-This free book contains everything you should know about quantum
+
+Introduction to Quantum Computing for Business 
+{: .gradient-header .fs-7}
+
+This open-access book contains everything you should know about quantum
 computers, without going into tedious technical details. It answers questions such as:
 
 - What are the [applications]({% link _essentials/applications-overview.md %}) of quantum computers and quantum networks?
@@ -24,15 +28,13 @@ As the first generation of quantum computers is on the horizon, understanding th
 
 This book, written by [Koen Groenland](https://www.koengroenland.com), is a gentle and business-oriented introduction to the opportunities and threats of quantum technologies. It equips you with the necessary knowledge to join cutting-edge discussions and to make strategic decisions. 
 
-
-**📖 Prefer to read a printed version? A paperback edition will be released in Q4 2024.**
-
-
 <br>
 <center>
 <a href="{{ site.baseurl }}/essentials/preface"><button class="btn fs-6">Start reading</button></a>
 </center>
-<br>
+
+**📖 Prefer to read a printed version? A paperback edition will be released in Q1 2025.**
+
 
 <!-- 
 ## Audience

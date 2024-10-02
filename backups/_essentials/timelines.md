@@ -9,7 +9,7 @@ nav_order: 5
 {: .no_toc }
 
 
-Reading time: 21 minutes
+Reading time: 24 minutes
 {: .fs-3 .floatr }
 
 ### Contents
@@ -25,8 +25,8 @@ Reading time: 21 minutes
 <fieldset class="field-set" markdown="1"> 
 <legend class="leg-title mini-header">At a glance</legend>
 
-The earliest quantum applications will need several million qubits,
-according to the most rigorous studies.
+The earliest commercial quantum applications will need several million
+qubits, according to the most rigorous studies.
 
 Assuming an exponential growth similar to Moore’s Law, we predict that
 the first applications could be within reach around 2035-2040.
@@ -78,12 +78,12 @@ these other parameters are not a bottleneck, allowing us to focus only
 on the number of qubits and gate accuracies.
 
 The relevance of accuracy is often overlooked, perhaps because this
-hardly plays a role for classical computers. The problem is as follows.
-A computation consists of many small, discrete steps called **quantum
-gates**. Unfortunately, even the most precisely engineered quantum
-computers are imperfect, and every gate has a slight chance of
+hardly plays a role for classical computers anymore. The problem is as
+follows. A computation consists of many small, discrete steps called
+**quantum gates**. Unfortunately, even the most precisely engineered
+quantum computers are imperfect, and every gate has a slight chance of
 introducing an error. You can picture this intuitively as a qubit
-accidentally flipping from ‘0’ to ‘1’ or vice versa[^18]. The
+accidentally flipping from ‘0’ to ‘1’ or vice versa[^21]. The
 probability that a gate introduces such an error on today’s hardware is
 around 0.1% to 1%. Sometimes the term ‘accuracy’ or ‘fidelity’ is used
 for the probability of not making an error, translating into numbers
@@ -100,12 +100,12 @@ problems, we do not only need to increase the number of qubits, but we
 *also* need to reduce the likelihood of errors.
 
 We should take a moment to appreciate the enormous challenge ahead of
-us. It took decades of engineering to minimize errors to about one in a
+us. It took decades of engineering to minimise errors to about one in a
 thousand. Now, we should bring this rate down to one in *billions.*
 That’s a huge gap that likely cannot be covered by hardware improvements
 alone – even a breakthrough that reduces errors by 100x wouldn’t cut it.
 
-[^18]: Technically, quantum gates are continuous operations, so numbers
+[^21]: Technically, quantum gates are continuous operations, so numbers
     like fidelity are defined slightly differently. Still, the picture
     of discrete bit flips is not too much off and will lead to the same
     conclusions, so I prefer this more accessible explanation.
@@ -127,7 +127,7 @@ error-resilient logical qubit, leaving a programmer with just 10.000
 logical qubits to use. The image below shows a similar situation with a
 ratio of 1:12 between logical and physical qubits.
 
-<img src=" {{ site.baseurl }}/media/image14.png"
+<img src=" {{ site.baseurl }}/media/image15.png"
 style="width:4.17102in" />
 
 For error correction to work, we need to make several assumptions. For
@@ -135,11 +135,11 @@ example, depending on the precise error correction protocol, gate
 fidelities need to be quite good to start with – numbers like 99.99% are
 often mentioned. This means that, as of 2024, the world’s best devices
 would still need to improve gate fidelities by more or less a factor of
-10. Moreover, qubits need to be routinely measured and reset, and large
-amounts of classical processing are available to deduce precisely how to
-repair a given error. These are significant engineering challenges, but
-experts are optimistic that this can be achieved. We discuss many more
-details in [a separate chapter on error
+\\(10\\). Moreover, qubits need to be routinely measured and reset, and
+large amounts of classical processing are needed to deduce precisely how
+to repair a given error. These are significant engineering challenges,
+but experts are optimistic that this can be achieved. We discuss many
+more details in [a separate chapter on error
 correction](https://quantumcomputingforbusiness.com/advanced/error_correction/).
 
 For now, let’s take for granted that we can somehow reach any desired
@@ -169,7 +169,7 @@ question into two parts:
 
 - How many qubits are needed?
 
-- How long until we have million-qubit machines?
+- In what year will that many qubits be available?
 
 ## How many qubits are needed?
 
@@ -192,7 +192,7 @@ A [recent
 estimate](https://quantum-journal.org/papers/q-2021-04-15-433/) finds
 that a plausible quantum computer would require roughly **20
 million** ‘reasonably good’ physical qubits to factor a 2048-bit number.
-The whole computation would take about 8 hours[^19]. Such estimates
+The whole computation would take about 8 hours[^22]. Such estimates
 require several assumptions on what a future quantum computer would look
 like. In this case, the authors assume qubits are built using
 superconducting circuits, which are laid out in a square grid. Error
@@ -202,62 +202,63 @@ future breakthroughs could reduce the required time and number of qubits
 even further.
 
 For **chemistry and material simulation**, it’s a lot harder to make
-such esimates because there is not just a single problem to tackle here:
-one typically uses computers to gradually improve our understanding of a
-complex structure or chemical reaction. This should be combined with
-theoretical reasoning and practical experiments. Moreover, classical
-computers can often perform the same computations that the quantum
-computer would make at the cost of making certain assumptions or
-simplifications. There’s a fuzzy region between ‘classically tractable’
-and ‘quantum advantage’.
+such estimates because there is not just a single problem to tackle
+here: one typically uses computers to gradually improve our
+understanding of a complex structure or chemical reaction. This should
+be combined with theoretical reasoning and practical experiments.
+Moreover, classical computers can often perform the same computations
+that the quantum computer would make at the cost of making certain
+assumptions or simplifications. There’s a fuzzy region between
+‘classically tractable’ and ‘quantum advantage’.
 
-The most concrete task is to compute the energy of certain molecular
-configurations. The benchmark is to provide energies more accurately
-than done in conventional experiments; one canonically takes the
-‘chemical accuracy’ of roughly 1 kcal/mol as the precision to beat.
-Then, we should focus on molecules where classical computers cannot
-already achieve such accuracies.   
+The most concrete task in quantum simulation is to compute the energy of
+certain molecular configurations. The benchmark is to obtain energies
+more accurately than done in conventional experiments; one canonically
+takes the ‘chemical accuracy’ of roughly 1 kcal/mol as the precision to
+beat. Then, we should focus on molecules where classical computers
+cannot already achieve such accuracies.   
 
 Note that the accuracy of a chemical energy should not be confused with
 the accuracy of a quantum gate, which is a whole different number.
 
 A highly promising and well-studied benchmark problem is the simulation
-of the so-called FeMo cofactor, in short, FeMoco. This molecule is
-relevant when bacteria produce Ammonia (NH3), a compound that is of
-great relevance to a plant’s root system. A better understanding of this
-process could help us reduce the [ridiculously large carbon
+of the so-called FeMo cofactor of the nitrogenase enzyme, in short,
+FeMoco. This active site is relevant when bacteria produce Ammonia
+(NH3), a compound that is of great relevance to a plant’s root system. A
+better understanding of this process could help us reduce
+the [ridiculously large carbon
 emissions](https://climate.mit.edu/explainers/fertilizer-and-climate-change) now
 associated with the production of artificial fertiliser. [We give more
 details in a separate
 chapter](https://quantumcomputingforbusiness.com/applications/chemistry/#a-case-study-of-a-promising-enzyme-femoco).
 
 Simulating FeMoco is believed [to require around **4 million
-qubits**](https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.2.030305)[^20] (and
-around 4 days of computation for a single simulation run). The hardware
-and error correction assumptions are similar to those of Shor’s
-algorithm: the estimate is based on a square grid of superconducting
-qubits, using surface code to correct errors.
+qubits**](https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.2.030305)[^23] (and
+around 4 days of computation time). The hardware and error correction
+assumptions are similar to those of Shor’s algorithm: the estimate is
+based on a square grid of superconducting qubits, using surface code to
+correct errors.
 
 For a different enzyme, namely cytochrome P450, it [has been estimated
 that around **5 million** qubits are
-needed](https://www.pnas.org/doi/10.1073/pnas.2203533119)[^21] (again
+needed](https://www.pnas.org/doi/10.1073/pnas.2203533119)[^24] (again
 taking roughly 4 days of computation). Altogether, we conclude that a
-couple million qubits (of sufficiently high quality) can make quantum
+few million qubits (of sufficiently high quality) can make quantum
 computers relevant for R&D in chemistry. 
 
 Some tasks that are mainly of interest for scientific purposes, such as
 simulating models of quantum magnets, can be achieved with fewer
 resources. Under similar assumptions, simulating a 2D transverse field
 Ising model is estimated to take [just under 1 million
-qubits](https://arxiv.org/abs/2211.07629)[^22].
+qubits](https://arxiv.org/abs/2211.07629)[^25].
 
-For many **optimization problems**, it’s practically impossible to give
+For many **optimisation problems**, it’s practically impossible to give
 reasonable estimates. As we saw previously, a true killer algorithm for
 optimisation problems is not known yet. The algorithms that are
-presented as the most promising are often *heuristic, *meaning that
-scientists do not know how long an algorithm will take to find
-solutions. This can happen, for example, when an algorithm repeats a
-certain loop until a stopping criterion has been met.
+presented as the most promising are often *heuristic*, meaning that it’s
+hard to predict how accurate their results will be compared to
+conventional methods. We’ll need to test them in rigorous benchmarks
+once larger quantum computers become available.
 
 Our perspective starkly contrasts some other sources claiming that
 quantum computers are already solving practical problems today. But
@@ -266,7 +267,7 @@ computers *can* indeed solve relatively simple problems but often fail
 to mention that there exist *different *approaches by which classical
 computers can solve the same problems much, much faster. 
 
-Moreover, many of these algorithms involve optimization problems that
+Moreover, many of these algorithms involve optimisation problems that
 have a plethora of potential solutions, but the goal is to find
 the *optimal* solution (say, the one that incurs the least costs or gets
 you to your destination the fastest). The solution space is often so
@@ -288,7 +289,7 @@ bare hardware alone doesn’t seem to perform that well, but D-Wave
 cleverly combines it with classical high-performance computing in what
 they call a ‘hybrid’ solver. Comparisons and benchmarks of the hybrid
 solution report results ranging from ‘much worse’ to ‘very competitive’
-relative to classical optimization solutions. Because it is unclear to
+relative to classical optimisation solutions. Because it is unclear to
 what extent the hybrid solver actually exploits quantum phenomena and
 little is known about D-Wave’s future plans, I don’t dare to make any
 future predictions about annealing.
@@ -307,37 +308,40 @@ See also:
   commercial adoption.
 
 - Researchers report that D-Wave’s bare quantum hardware is quite slow,
-  but the [hybrid solution is very competetive with classical
+  but the [hybrid solution is very competitive with classical
   optimisation techniques](https://arxiv.org/abs/2208.07633).
 
 </details>
 
-We can summarize our conclusions in the table below.
+We can summarise our conclusions in the table below.
 
-| **Application** | **How well can we estimate qubit requirements?** | **Use case example** | **Qubits needed?** | **Gate error assumed?** |
+| **Application** | **How well can we estimate qubit requirements?** | **Use case example** | **Physical qubits needed** | **Gate error assumed** |
 |----|----|----|----|----|
 | Breaking cryptography | Good | Cracking RSA-2048 | ~ 20 million | ~ 0.1% |
 | Chemistry | Reasonable | Simulation of FeMoco | ~ 4 million | ~ 0.1% |
 |  |  | Simulation of P450 | ~ 5 million | ~ 0.1 % |
-| Optimization / AI | Bad | ? | ? |  |
+| Optimisation / AI | Bad | ? | ? |  |
 
-[^19]: How to factor 2048 bit RSA integers in 8 hours using 20 million
-    noisy qubits; Craig Gidney, and Martin Ekerå, Quantum 5, 433 (2021),
-    <https://quantum-journal.org/papers/q-2021-04-15-433/>
+[^22]: Gidney, Craig, and Martin Ekerå. ‘How to Factor 2048 Bit RSA
+    Integers in 8 Hours Using 20 Million Noisy Qubits.’ *Quantum* 5
+    (April 15, 2021): 433. <https://doi.org/10.22331/q-2021-04-15-433>.
 
-[^20]: Lee, J. *et al.* (2021) ‘Even More Efficient Quantum Computations
-    of Chemistry Through Tensor Hypercontraction’, *PRX Quantum*, 2(3),
-    p. 030305. Available at:
+[^23]: Lee, Joonho, Dominic W. Berry, Craig Gidney, William J. Huggins,
+    Jarrod R. McClean, Nathan Wiebe, and Ryan Babbush. ‘Even More
+    Efficient Quantum Computations of Chemistry Through Tensor
+    Hypercontraction’. *PRX Quantum* 2, no. 3 (8 July 2021): 030305.
     <https://doi.org/10.1103/PRXQuantum.2.030305>.
 
-[^21]: Goings, J.J. *et al.* (2022) ‘Reliably assessing the electronic
-    structure of cytochrome P450 on today’s classical computers and
-    tomorrow’s quantum computers’, *Proceedings of the National Academy
-    of Sciences*, 119(38), p. e2203533119. Available at:
+[^24]: Goings, Joshua J., Alec White, Joonho Lee, Christofer S.
+    Tautermann, Matthias Degroote, Craig Gidney, Toru Shiozaki, Ryan
+    Babbush, and Nicholas C. Rubin. ‘Reliably Assessing the Electronic
+    Structure of Cytochrome P450 on Today’s Classical Computers and
+    Tomorrow’s Quantum Computers’. *Proceedings of the National Academy
+    of Sciences* 119, no. 38 (20 September 2022): e2203533119.
     <https://doi.org/10.1073/pnas.2203533119>.
 
-[^22]: Beverland, M.E. *et al.* (2022) ‘Assessing requirements to scale
-    to practical quantum advantage’. arXiv. Available at:
+[^25]: Beverland, M.E. *et al.* (2022) ‘Assessing requirements to scale
+    to practical quantum advantage’. arXiv.
     <https://doi.org/10.48550/arXiv.2211.07629>.
 
 ### What about future improvements?
@@ -349,8 +353,8 @@ the number of qubits required by a few per cent? Or by a factor of ten?
 By a factor of one thousand?
 
 Some sources actually try to extrapolate the reduction in required
-qubits over time (like Youtube science educator Veritasium[^23] and a
-report by McKinsey[^24]), but this is such a wonky extrapolation over a
+qubits over time (like Youtube science educator Veritasium[^26] and a
+report by McKinsey[^27]), but this is such a wonky extrapolation over a
 handful of data points that we will not follow this strategy.
 
 On the other hand, it would also be naive to stick to the numbers above
@@ -368,17 +372,17 @@ scientific interest.
 | Chemistry (Optimistic) | Reasonable | Simulation of FeMoco (with 10x improved methods) | ~ 400.000 | ~ 0.1 % |
 | Science | Reasonable | 2D Transverse field Ising model | ~ 900.000 | ~ 0.1 % |
 
-[^23]: See <https://www.youtube.com/watch?v=-UrdExQW0cs&t=1024s>,
+[^26]: See <https://www.youtube.com/watch?v=-UrdExQW0cs&t=1024s>,
     starting at 17:04.
 
-[^24]: McKinsey Quantum Technology Monitor 2024,
-    <https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/steady-progress-in-approaching-the-quantum-advantage>
+[^27]: McKinsey Digital. ‘Quantum Technology Monitor,’ April 2024.
+    <https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/steady-progress-in-approaching-the-quantum-advantage>.
 
 ### Can noisy algorithms be good enough?
 {: .no_toc }
 
 Current quantum computers have a limited number of qubits and are not
-yet capable of large-scale error correction: they are Noisy
+yet capable of large-scale error correction; they are Noisy
 Intermediate-Scale Quantum (NISQ) devices. An important question is: can
 we already achieve any utility with such noisy devices before the era of
 large-scale error correction? That is one of the most disputed topics in
@@ -395,22 +399,23 @@ were just on the horizon, several consultants made ridiculous claims
 about how such tiny machines would bring an exponential advantage over
 enormous supercomputers. Now that the field is coming of age, many are
 becoming more careful. To illustrate, when looking back at a 2021
-report, [BCG chivalrously
-admits](https://www.bcg.com/publications/2024/long-term-forecast-for-quantum-computing-still-looks-bright)[^25]:
+report, consultancy firm [BCG chivalrously
+admits](https://www.bcg.com/publications/2024/long-term-forecast-for-quantum-computing-still-looks-bright)[^28]:
 
-> “Our assumptions for near-term value creation in the NISQ era,
-> however, have proved optimistic and must be revised.”
+> ‘Our assumptions for near-term value creation in the NISQ era,
+> however, have proved optimistic and must be revised.’
 
-The most serious recent claim about NISQ utility comes from the IBM
-team, in a paper titled “Evidence for the utility of quantum computing
-before fault-tolerance”[^26]. However, their arguments were quickly
-refuted by further studies that simulated IBM’s impressive quantum
-experiment on a conventional laptop[^27].
+The most serious recent claim about NISQ utility comes from the IBM team
+in a paper titled ‘Evidence for the utility of quantum computing before
+fault-tolerance’[^29], in which a quantum simulation of a specific
+physical system was performed using 127 noisy qubits. However, their
+arguments were quickly refuted by further studies that simulated IBM’s
+impressive quantum experiment on a conventional laptop[^30].
 
 Maryland-based professor Sankar Das Darma expresses the view of many
-academics in his opinion article “Quantum computing has a hype
-problem”[^28]. He stresses about NISQ that “the commercialization
-potential is far from clear”, pointing out that claims of speedups in
+academics in his opinion article ‘Quantum computing has a hype
+problem’[^31]. He stresses about NISQ that ‘the commercialisation
+potential is far from clear’, pointing out that claims of speedups in
 finance, machine learning and drug discovery have so far come with
 highly unsatisfying evidence.
 
@@ -418,52 +423,66 @@ That certainly doesn’t mean that NISQ utility is ruled out. Most experts
 seem to keep an eye on the developments of NISQ applications but will
 agree that no utility for NISQ machines has been found yet. To
 illustrate, an overview article about [pharmaceutical
-applications](https://www.nature.com/articles/s41567-024-02411-5)[^29]
+applications](https://www.nature.com/articles/s41567-024-02411-5)[^32]
 has a careful yet suggestive message:
 
-> “Most NISQ algorithms \[…\] rely heavily on classical optimization
+> ‘Most NISQ algorithms \[…\] rely heavily on classical optimisation
 > heuristics, and the actual run time is difficult to estimate.
 > Furthermore, recent results suggest that in NISQ approaches, the
 > number of measurements required to achieve a given error scales
 > exponentially with the depth of the circuit. For these reasons, here
 > we focus our discussion exclusively on fault-tolerant quantum
-> computers.”
+> computers.’
 
 Similarly, a
 [recent](https://pubs.acs.org/doi/10.1021/acs.chemrev.8b00803)
-overview[^30] of quantum chemistry seems to remain agnostic with regard
+overview[^33] of quantum chemistry seems to remain agnostic with regard
 to NISQ advantage while pointing out that fault-tolerance has a higher
 chance of succeeding.
 
-> “… it is difficult to predict when or if algorithms on near-term noisy
+> ‘… it is difficult to predict when or if algorithms on near-term noisy
 > intermediate-scale quantum devices will outperform classical computers
 > for useful tasks. But it is likely that, at some point, the
 > achievement of large-scale quantum error correction will enable the
-> deployment of a host of so-called error-corrected quantum algorithms.”
+> deployment of a host of so-called error-corrected quantum algorithms.’
 
-In this book, I choose to follow the view of most authorities and
-sticking to the well-understood use cases for early fault-tolerant
-quantum computers that we discussed previously. Nobody can rule out new
+In this book, I choose to follow the view of most scientists and stick
+to the well-understood use cases for early fault-tolerant quantum
+computers that we discussed previously. Nobody can rule out new
 breakthroughs that allow NISQ utility, but it seems unwise to count on
 these. A potential scientific leap could completely stir up our fragile
 prediction – but so would unexpected backlashes in hardware development
 or even unforeseen funding stops.
 
-[^25]: <https://www.bcg.com/publications/2024/long-term-forecast-for-quantum-computing-still-looks-bright>
+[^28]: BCG Global. ‘The Long-Term Forecast for Quantum Computing Still
+    Looks Bright,’ July 3, 2024.
+    <https://www.bcg.com/publications/2024/long-term-forecast-for-quantum-computing-still-looks-bright>.
 
-[^26]: <https://www.nature.com/articles/s41586-023-06096-3>
+[^29]: Kim, Youngseok, Andrew Eddins, Sajant Anand, Ken Xuan Wei, Ewout
+    van den Berg, Sami Rosenblatt, Hasan Nayfeh, et al. ‘Evidence for
+    the Utility of Quantum Computing before Fault Tolerance.’ *Nature*
+    618, no. 7965 (June 2023): 500–505.
+    <https://doi.org/10.1038/s41586-023-06096-3>.
 
-[^27]: <https://arxiv.org/abs/2306.16372>
+[^30]: Begušić, Tomislav, and Garnet Kin-Lic Chan. ‘Fast Classical
+    Simulation of Evidence for the Utility of Quantum Computing before
+    Fault Tolerance.’ arXiv, June 28, 2023.
+    <https://doi.org/10.48550/arXiv.2306.16372>.
 
-[^28]: <https://www.technologyreview.com/2022/03/28/1048355/quantum-computing-has-a-hype-problem/>
+[^31]: Das Sarma, Sankar. ‘Quantum Computing Has a Hype Problem.’ *MIT
+    Technology Review* (blog). Accessed September 26, 2024.
+    <https://www.technologyreview.com/2022/03/28/1048355/quantum-computing-has-a-hype-problem/>.
 
-[^29]: Santagati, R., Aspuru-Guzik, A., Babbush, R. et al. Drug design
-    on quantum computers. Nat. Phys. 20, 549–557 (2024).
-    <https://doi.org/10.1038/s41567-024-02411-5>
+[^32]: Santagati, Raffaele, Alan Aspuru-Guzik, Ryan Babbush, Matthias
+    Degroote, Leticia González, Elica Kyoseva, Nikolaj Moll, et al.
+    ‘Drug Design on Quantum Computers.’ *Nature Physics* 20, no. 4
+    (April 2024): 549–57. <https://doi.org/10.1038/s41567-024-02411-5>.
 
-[^30]: Quantum Chemistry in the Age of Quantum Computing, *Chem.
-    Rev.* 2019, 119, 19, 10856–10915,
-    <https://pubs.acs.org/doi/abs/10.1021/acs.chemrev.8b00803>
+[^33]: Cao, Yudong, Jonathan Romero, Jonathan P. Olson, Matthias
+    Degroote, Peter D. Johnson, Mária Kieferová, Ian D. Kivlichan, et
+    al. ‘Quantum Chemistry in the Age of Quantum Computing.’ *Chemical
+    Reviews* 119, no. 19 (October 9, 2019): 10856–915.
+    <https://doi.org/10.1021/acs.chemrev.8b00803>.
 
 ## How long until we have million-qubit machines?
 
@@ -481,7 +500,7 @@ following sources:
 {: .no_toc }
 
 Below, we see the qubit numbers that several manufacturers have already
-realized (solid disks) and what they will produce in the future
+realised (solid disks) and what they will produce in the future
 according to their public road maps (opaque plusses). Note that the
 vertical axis is logarithmic, displaying a very broad range from around
 10 to 10.000 qubits. A lower number of qubits does by no means indicate
@@ -489,8 +508,8 @@ that these computers are worse. In fact, the machines with the lower
 numbers of qubits on this graph have an important edge in other
 parameters, such as gate accuracies and qubit connectivity.
 
-<img src=" {{ site.baseurl }}/media/image15.png"
-style="width:4.14493in" />
+<img src=" {{ site.baseurl }}/media/image16.png"
+style="width:4.94215in" />
 
 {: .caption }  
 Figure: The number of qubits in the most mature quantum computers from a
@@ -500,61 +519,80 @@ Besides their road maps, companies sometimes make more daring claims in
 media interviews or at presentations at large events. Based on the
 application targets above, it should be no surprise that manufacturers
 aim for around a million qubits as a ‘moonshot’ accomplishment. Back in
-2020, IBM claimed to reach the 1 million qubit target by 2030[^31].
+2020, IBM claimed to reach the 1 million qubit target by 2030[^34].
 Around the same time, Google was interpreted by journalists to do this
-even faster (around 2029[^32]). The start-up PsiQuantum, which made
+even faster (around 2029[^35]). The start-up PsiQuantum, which made
 waves thanks to record-high investments of over a billion dollars for
 their photonic quantum chips, went as far as claiming to have a million
-qubits by 2025[^33].
+qubits by 2025[^36] [^37].
 
 It seems that these claims were a bit too ambitious. In 2024, with only
 a year to go and no publicly presented product progression, PsiQuantum
-shifted its 1 million qubit road map to 2027[^34]. IBM took an even more
+shifted its 1 million qubit road map to 2027[^38]. IBM took an even more
 conservative step, where it’s now claiming to have just 100.000 qubits
-in 2033[^35] (although this machine should meet the error correction
+in 2033[^39] (although this machine should meet the error correction
 assumptions that we dreamingly assumed in the previous sections).
 Although this delay sounds disappointing, hardware manufacturers are
 still making impressive progress, as the number of available qubits
 grows faster than one would predict according to Moore’s Law for
 classical chips!
 
-Trapped ion machines tend to have fewer qubits but higher gate
+Trapped-ion machines tend to have fewer qubits but higher gate
 accuracies. Perhaps this is why
 [IonQ](https://ionq.com/posts/december-09-2020-scaling-quantum-computer-roadmap) displays
 its road map in a different format: they aim to achieve 1024 so-called
 [algorithmic qubits](https://en.wikipedia.org/wiki/Quantum_volume) by
-2028[^36]. This means that IonQ will have *at least *this number of
+2028[^40]. This means that IonQ will have *at least *this number of
 qubits, but also guarantees sufficient gate accuracy to run reasonably
 long circuits. It’s unclear whether error correction will be used for
 this. Competitor
 [Quantinuum](https://www.quantinuum.com/blog/quantinuum-accelerates-the-path-to-universal-fault-tolerant-quantum-computing-supports-microsofts-ai-and-quantum-powered-compute-platform-and-the-path-to-a-quantum-supercomputer)
-recently announced a more concrete road map[^37], predicting around 100
+recently announced a more concrete road map[^41], predicting around 100
 logical qubits in 2027. These should bring the effective gate errors
 down by roughly a factor of 10. Looking ahead to 2029, Quantinuum
 projects 1000’s of physical qubits that form 100’s of logical qubits.
 This might not be enough to run the algorithms discussed earlier, but
 it’s not too far off either.
 
-[^31]: <https://fortune.com/2020/09/15/ibm-quantum-computer-1-million-qubits-by-2030/>
+[^34]: Hackett, Robert. ‘IBM Plans a Huge Leap in Superfast Quantum
+    Computing by 2023.’ Fortune. Accessed September 26, 2024.
+    <https://fortune.com/2020/09/15/ibm-quantum-computer-1-million-qubits-by-2030/>.
 
-[^32]: <https://quantumcomputingreport.com/google-goal-error-corrected-computer-with-1-million-physical-qubits-by-the-end-of-the-decade/>
+[^35]: Finke, Doug. ‘Google Goal: Build an Error Corrected Computer with
+    1 Million Physical Qubits by the End of the Decade.’ *Quantum
+    Computing Report* (blog), September 5, 2020.
+    <https://quantumcomputingreport.com/google-goal-error-corrected-computer-with-1-million-physical-qubits-by-the-end-of-the-decade/>.
 
-[^33]: <https://www.nextbigfuture.com/2020/04/psiquantum-targets-million-silicon-photonic-qubits-by-2025.html>;
-    https://www.icvtank.com/newsinfo/629365.html
+[^36]: Wang, Brian. ‘PsiQuantum Targets Million Silicon Photonic Qubits
+    by 2025’, April 23, 2020.
+    <https://www.nextbigfuture.com/2020/04/psiquantum-targets-million-silicon-photonic-qubits-by-2025.html>.
 
-[^34]: <https://quantumcomputingreport.com/psiquantum-receives-940-million-aud-620m-usd-to-install-a-1-million-qubit-machine-in-australia-by-2027/>
+[^37]: ICV TAnK-icv. ‘What Will Million-Qubit Computers Look like in a
+    Few Years?’, 21 March 2022.
+    <https://www.icvtank.com/newsinfo/629365.html>.
 
-[^35]: <https://www.iotworldtoday.com/industry/ibm-details-road-to-100-000-qubits-by-2033>
+[^38]: Finke, Doug. ‘PsiQuantum Receives \\\(940 Million AUD (\\\)620M USD)
+    to Install a 1 Million Qubit Machine in Australia by 2027.’ *Quantum
+    Computing Report* (blog), April 30, 2024.
+    <https://quantumcomputingreport.com/psiquantum-receives-940-million-aud-620m-usd-to-install-a-1-million-qubit-machine-in-australia-by-2027/>.
 
-[^36]: <https://ionq.com/posts/december-09-2020-scaling-quantum-computer-roadmap>
+[^39]: Baker, Berenice. ‘IBM Details Road to 100,000 Qubits by 2033.’
+    IoT World Today. Accessed September 26, 2024.
+    <https://www.iotworldtoday.com/industry/ibm-details-road-to-100-000-qubits-by-2033>.
 
-[^37]: <https://www.quantinuum.com/blog/quantinuum-accelerates-the-path-to-universal-fault-tolerant-quantum-computing-supports-microsofts-ai-and-quantum-powered-compute-platform-and-the-path-to-a-quantum-supercomputer>
+[^40]: Chapman, Peter. ‘Scaling IonQ’s Quantum Computers: The Roadmap.’
+    *IonQ* (blog), December 9, 2020.
+    <https://ionq.com/posts/december-09-2020-scaling-quantum-computer-roadmap>.
+
+[^41]: Quantinuum. ‘Quantinuum Accelerates the Path to Universal Fully
+    Fault-Tolerant Quantum Computing,’ September 10, 2024.
+    <https://www.quantinuum.com/blog/quantinuum-accelerates-the-path-to-universal-fault-tolerant-quantum-computing-supports-microsofts-ai-and-quantum-powered-compute-platform-and-the-path-to-a-quantum-supercomputer>.
 
 ### What does Moore’s law say?
 {: .no_toc }
 
-<img src=" {{ site.baseurl }}/media/image16.png"
-style="width:4.48551in" />
+<img src=" {{ site.baseurl }}/media/image17.png"
+style="width:5.53125in" />
 
 One could assume that quantum computers will ‘grow’ at a similar rate as
 classical computers. Moore’s law states that the number of transistors
@@ -575,7 +613,7 @@ for themselves, hoping to double every 7-9 months.
 
 The Global Risk Institute conducts yearly surveys asking experts to
 state the *likelihood* that quantum computers will pose a significant
-threat to public-key cryptography 5 years from now. Similarly,
+threat to public key cryptography 5 years from now. Similarly,
 respondents would also estimate the likeliness 10, 15, 20, and 30 years
 away.
 
@@ -586,26 +624,28 @@ take into account that this number can still be lowered).
 
 We consider this an important source because many important authorities
 in the field (like professors and corporate leaders) take part in this
-study. The results from December 2023[^38], gathered from 37
+study. The results from December 2023[^42], gathered from 37
 participants, are displayed below.
 
-<img src=" {{ site.baseurl }}/media/image17.png" style="width:5.27992in"
+<img src=" {{ site.baseurl }}/media/image18.png" style="width:5.27992in"
 alt="threat timeline expert estimates" />
 
 {: .caption }  
-Figure: Results of an expert survey by Global Risk Institute (source:
-globalriskinstitute.org).
+Figure: Results of the 2023 expert survey by Global Risk Institute
+(source: globalriskinstitute.org). Image rights belong to Global Risk
+Institute.
 
 <details markdown="1">
 
 <summary>How to read this graph?</summary>
 
-Let’s look at the column labeled ‘5 years’. A total of 24 correspondents
-indicate that there is less than 1% chance that quantum computers pose a
-security threat in the next five years. A single person is quite
-pessimistic and assigns a \>70% chance that this will happen. On
-average, experts say that there’s a fairly small chance that quantum
-computers will pose a threat to cryptography in the next 5 years. 
+Let’s look at the column labelled ‘5 years’. A total of 24
+correspondents indicate that there is less than 1% probability that
+quantum computers pose a security threat in the next five years. A
+single person is quite pessimistic and assigns a \>70% chance that this
+will happen. On average, experts say that there’s a fairly small
+likelihood that quantum computers will pose a threat to cryptography in
+the next five years. 
 
 Further to the right, the ratios shift. Looking at 20 years from now,
 the majority of experts believe that quantum computers pose a serious
@@ -624,12 +664,14 @@ conclusion from this data.
 These experts are likely aware of hardware manufacturer’s road maps, as
 we shall see below.
 
-[^38]: <https://globalriskinstitute.org/publication/2023-quantum-threat-timeline-report/>
+[^42]: Mosca, Michele, and Marco Piani. ‘Quantum Threat Timeline Report
+    2023,’ 2023.
+    <https://globalriskinstitute.org/publication/2023-quantum-threat-timeline-report/>.
 
 ## Putting it all together
 
 The infographic below sums up our earlier findings.
-<img src=" {{ site.baseurl }}/media/image18.png"
+<img src=" {{ site.baseurl }}/media/image19.png"
 style="width:6.26806in" />
 
 Assuming that qubit numbers will grow exponentially (and that all other
@@ -637,7 +679,9 @@ parameters will keep up accordingly), we can consider several scenarios.
 A pessimistic scenario would be that the number of qubits ‘merely’
 follows the classical version of Moore’s Law, and qubit numbers double
 only once every two years (dotted line). Then, we’d have to wait well
-past 2040 to reach 100.000 qubits.
+past 2040 to reach 100.000 qubits. An even worse scenario would be if we
+cannot achieve exponential growth, which would stretch the timelines
+even further.
 
 An extremely optimistic outlook would follow the blue dashed line (which
 extrapolates the progress by IBM, doubling their qubits every ~9

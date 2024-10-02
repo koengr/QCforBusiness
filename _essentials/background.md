@@ -9,7 +9,7 @@ nav_order: 3
 {: .no_toc }
 
 
-Reading time: 12 minutes
+Reading time: 13 minutes
 {: .fs-3 .floatr }
 
 ### Contents
@@ -30,9 +30,11 @@ phenomena like superposition and entanglement. The most notable
 innovations are expected in computers, networks, sensors, and
 simulators.
 
-Quantum computers will be much slower than conventional computers. Their
-advantage comes from the ability to run quantum algorithms, which solve
-specific problems in much fewer steps.
+Quantum computers can have a speed advantage thanks to their ability to
+run quantum algorithms, which solve specific problems in much fewer
+steps than conventional methods. However, quantum computers are expected
+to have relatively low clock speeds, so the algorithmic advantage must
+be significant before a practical speedup manifests itself.
 
 </fieldset> 
  <hr> 
@@ -45,17 +47,16 @@ technologies. Without this scientific theory, many invaluable tools like
 LED lighting, MRI scanners and solar cells may not have been invented.
 And it’s still relevant to push the limits of innovation,
 with [nano-size vehicles that consist of just a few
-atoms](https://www.rug.nl/news/2019/12/molecular-motors-and-switches?lang=en),
+atoms](https://www.rug.nl/news/2019/12/molecular-motors-and-switches?lang=en)
 or [ever-smaller transistors on computer
 chips](https://www.nature.com/articles/nature.2012.9747) on the horizon.
 
 Just ahead of us is a new paradigm, which we’ll call **quantum
-technology**. The distinguishing factor is that it goes further than
-merely building stuff from small particles. Quantum technology is about
-devices that perform certain processes in a fundamentally different way.
-That is, the data (or operations) we work with can have special
-properties unique to quantum physics, such as superposition and
-entanglement.
+technology**. The distinguishing factor is that it goes beyond merely
+building stuff from small particles. Quantum technology is about devices
+that perform certain processes in a fundamentally different way. That
+is, the data (or operations) we work with can have special properties
+unique to quantum physics, such as superposition and entanglement.
 
 In our jargon, we will refer to ‘classical’ technology for devices that
 don’t carefully exploit the possibilities of quantum physics – they are
@@ -66,11 +67,10 @@ electrical circuits might be so tiny that quantum physics is relevant
 there, but the fundamental point is that the information that they
 process is purely classical. Whereas classical computers work with
 ‘bits’, quantum technology will need a different type of information
-carrier that that itself can be controlled at a quantum-mechanical
-level. We’ll call these objects ‘quantum bits’, or shortly ‘qubits’.
+carrier that itself can be controlled at a quantum-mechanical level.
+We’ll call these objects ‘quantum bits’, or shortly ‘qubits’.
 
-Generally, under the nomer of quantum technology, we distinguish four
-categories:
+Within the field of quantum technology, we distinguish four categories:
 
 - **Quantum computers** are devices that use quantum physics to perform
   automatic calculations to solve a problem. Computing is considered the
@@ -90,18 +90,17 @@ categories:
 - **Quantum simulators** are devices similar to quantum computers,
   except that they specialise in solving a limited set of problems.
   Typically, they are built to reproduce the behaviour of atoms and
-  electrons in a molecule or a piece of material, allowing us to measure
-  properties like energies and reaction rates.
+  electrons in a specific molecule or a piece of material, allowing us
+  to measure properties like energies and reaction rates.
 
 Each of these categories accomplishes a different goal or functionality.
 For now, we’ll remain agnostic about how they are built – it will be a
 task for hardware engineers to figure out how our desired functionality
-is best implemented. However, since all of these have to deal with
+is best implemented. Since all of these have to deal with
 quantum-mechanical processes under the hood, it is not uncommon that
-they use similar building blocks.
-
-In this book, we mainly focus on **computers **and **networks**, because
-these seem to have the biggest impact on typical (business) users.
+they use similar building blocks. In this book, we mainly focus
+on **computers **and **networks** because these seem to have the biggest
+impact on typical (business) users.
 
 ## The importance of high-performance computing
 
@@ -109,20 +108,22 @@ The abundance of cheap computational power has given humanity incredible
 wealth. We automated the most tedious tasks to free up time for leisure
 and to solve other urgent problems. It allowed us to scale factories,
 supply chains and logistics to unprecedented sizes, allowing us to
-transport resources around the globe at minimal costs. Computer chips,
-aeroplane wings, heart monitors, and LCD screens have improved with
-every generation.
+transport resources around the globe at minimal costs. Thanks to
+computer-aided design, the performance of computer chips, aeroplane
+wings, heart monitors, and LCD screens has improved with every
+generation.
 
 Today, our computers are already incredibly fast. In fact, for many
 applications, there is little economic gain in making these computers
 even faster. Decades-old machines can successfully oversee factory
-operations, and writing a text document or scheduling a meeting with 8
-busy colleagues is not limited by the speed of your computer in any way.
+operations, and writing a text document or scheduling a meeting with
+eight busy colleagues is not limited by the speed of your computer in
+any way.
 
 However, this book specifically is about the applications where we are
 still hungry for more computational power. For example, by feeding more
 data into weather models, our forecasts can become more accurate. If
-staff rostering would take less time, we could take better last-minute
+staff rostering would take less time, we could take more last-minute
 changes into account. Accurate predictions of drug reactivity in the
 human body could save on costly medical trials and reduce the time to
 market. Machine learning models like ChatGPT are still demanding more
@@ -130,20 +131,20 @@ training hours to produce more sophisticated results.
 
 It should be clear that we’re not talking about computations that happen
 on your laptop. We’re thinking of problems where somehow there’s value
-in investing in the fastest possible computers on earth:
-**high-performance computing (HPC)**, colloquially called
+in investing in the fastest possible computers on earth. This is the
+domain of **high-performance computing (HPC)**, colloquially called
 *supercomputers***.** Merely looking at the market, there seems to be
 incredible value in computing stuff: companies and academics spend tens
 of billions of dollars on them[^2], and hardware suppliers like Nvidia
 have rapidly grown to become among the most valuable companies on earth.
-The kinds of problems that are now being crunched in HPC data centres
-are also the ones for which a quantum treatment could have the largest
-impact.
+We should keep a close eye on this field because the kinds of problems
+that are now being crunched in HPC are likely the ones where radically
+new computational tools can have the biggest commercial impact.
 
 [^2]: See e.g.
     <https://www.marketsandmarkets.com/Market-Reports/Quantum-High-Performance-Computing-Market-631.html>
     and
-    <https://www.mordorintelligence.com/industry-reports/cloud-high-performance-computing-hpc-market>
+    <https://www.mordorintelligence.com/industry-reports/cloud-high-performance-computing-hpc-market>.
 
 ## Why can quantum computers have an advantage? 
 
@@ -153,32 +154,35 @@ Law: with transistors reaching atomic scales, we run into quantum
 effects, so quantum physics may help us make better chips. However, none
 of these are our core motivations for looking at quantum computers. 
 
-Firstly, it seems unlikely that quantum computers will catch up with
-classical machines in terms of raw clock speed any time soon, partially
-because the speed of a modern CPU is already spectacular. A modern
-desktop processor, or even the one in your phone, works at a rate of
-several GHz, that is, several billions of steps per second. In each of
-these steps, a broad palette of operations can be applied to
-astronomically large numbers – modern chips work with 64-bit values,
-meaning that numbers up to 18,446,744,073,709,551,615 can be processed.
-Each of these elementary steps can be something like addition,
-multiplication, a comparison, etcetera, and we have powerful tools to
-weave these basic operations together to form efficient software.
+When we talk about a computer’s speed, most people will refer to its
+clock speed: the number of basic computational steps that a single
+processor core can complete in one second. Unfortunately, it seems
+unlikely that quantum computers will catch up with classical machines in
+terms of raw clock speed any time soon, partially because the speed of a
+modern CPU is already spectacular. A modern desktop processor, or even
+the one in your phone, works at a rate of several GHz, that is, several
+billions of steps per second. In each of these steps, a broad palette of
+operations can be applied to astronomically large numbers – modern chips
+work with 64-bit values, meaning that numbers up to
+18,446,744,073,709,551,615 can be processed. Each of these elementary
+steps can be something like addition, multiplication, a comparison,
+etcetera, and we have powerful tools to weave these basic operations
+together to form efficient software.
 
 Now, quantum computers are supposed to be even faster, right? Well, it’s
 not hard to find backing for that claim: 
 
-> <img src=" {{ site.baseurl }}/media/image8.png"
+> <img src=" {{ site.baseurl }}/media/image10.png"
 > style="width:4.44635in" />
 >
-> <img src=" {{ site.baseurl }}/media/image9.png"
+> <img src=" {{ site.baseurl }}/media/image11.png"
 > style="width:5.06565in" />
 
 {: .caption }  
-Figure: News headers by Techradar and IFLScience. Sources:
-<https://www.techradar.com/news/google-creates-quantum-chip-millions-of-times-faster-than-the-fastest-supercomputer>
-;
-<https://www.iflscience.com/chinese-scientists-create-quantum-processor-60000-times-faster-than-current-supercomputers-61475>
+News headers by
+[Techradar](https://www.techradar.com/news/google-creates-quantum-chip-millions-of-times-faster-than-the-fastest-supercomputer)[^3]
+and
+[IFLScience](https://www.iflscience.com/chinese-scientists-create-quantum-processor-60000-times-faster-than-current-supercomputers-61475)[^4].
 
 You may be disappointed to hear that quantum computers, at this moment,
 cannot even add or multiply numbers of more than 3 or 4 bits. And even
@@ -200,8 +204,8 @@ different way**. Let’s look at a beautiful analogy that Andy Matuschak
 and Michael Nielsen bring up in their online course
 [Quantum.country](https://quantum.country/). 
 
-<img src=" {{ site.baseurl }}/media/image10.png"
-style="width:4.9899in" />
+<img src=" {{ site.baseurl }}/media/image12.png"
+style="width:6.03686in" />
 
 Imagine that you’d like to travel from Morocco to Spain, which are
 separated by a small piece of sea called the Strait of Gibraltar. If
@@ -215,8 +219,8 @@ a hovercraft) so that you can take a much more direct route.
 
 The beauty of quantum computation is that we have a fundamentally
 different way to travel (do computations), which can sometimes bring us
-to our destination using a shorter route (doing fewer *computational
-steps)*. Even with a much slower vehicle (computer), one may arrive at
+to our destination using a shorter route (doing fewer computational
+steps*)*. Even with a much slower vehicle (computer), one may arrive at
 the destination sooner. In fact, the quantum advantage often grows as
 problems become larger and more complicated.
 
@@ -225,33 +229,34 @@ advantage: you would not want to travel from Amsterdam to Berlin by
 hovercraft. Unfortunately, in many cases, we don’t yet know what the
 fastest means of transportation is. It is still an active area of
 research to completely map out the landscape over which quantum and
-classical computers can travel and to determine which problems can be
-sped up or not.
+classical computers can travel and to determine which problems allow a
+speedup, and which don’t.
 
 For this reason, we don’t expect that classical computers will be
 replaced any time soon. Instead, classical and quantum processors will
 live side by side, and programmers will pick whichever tool is better
 suited to solve a certain problem. The situation could be similar to how
 we use graphical processing units (GPUs) today, which offer tremendous
-speedups for the training of AI models but are not made to replace
-regular classical processors (CPUs). Perhaps we should even give quantum
-computers a similar name, like “QPU” for Quantum Processing Unit.
+speedups for the training of artificial intelligence models but are not
+made to replace regular classical processors (CPUs). Perhaps we should
+even give quantum computers a similar name, like ‘QPU’ for Quantum
+Processing Unit.
 
 In the analogy with the Strait of Gibraltar, the precise route that you
 travel denotes the chosen **algorithm**. In the field of computer
 science, an algorithm is a step-by-step list of instructions that
 describes how a computational problem should be solved.
 The ‘steps’* *here should be sufficiently simple so that it is
-completely unambiguously how to do them. They could be operations such
-as adding, multiplying, or comparing two numbers. Needless the say, the
+completely unambiguous how to do them. They could be operations such as
+adding, multiplying, or comparing two numbers. Needless the say, the
 fewer steps the algorithm requires, the better.
 
 By exploiting quantum mechanics, a quantum computer introduces new basic
-steps (like crossing the sea) that are impossible to perform on a
-classical computer. For example, the previous chapter introduced quantum
-logic gates that generalise operations like AND and OR. Using these
-building blocks, we can formulate quantum algorithms that take fewer
-steps than the best classical algorithm ever could!
+steps that are impossible to perform on a classical computer. For
+example, the previous chapter introduced quantum logic gates that
+generalise operations like AND and OR. Using these building blocks, we
+can formulate quantum algorithms that take much fewer steps than the
+best classical algorithm ever could!
 
 In the end, the time needed to solve a problem can be very roughly
 calculated as:  
@@ -277,6 +282,18 @@ attempts by scientists worldwide. We might go as far as to say that,
 even if we had a large-scale quantum computer today, its value would be
 limited. For this reason, the ongoing development of novel algorithms is
 exceedingly important.
+
+[^3]: Wyciślik-Wilson, S.E. (2019) *Google creates quantum chip millions
+    of times faster than the fastest supercomputer*, *TechRadar*.
+    Available at:
+    <https://www.techradar.com/news/google-creates-quantum-chip-millions-of-times-faster-than-the-fastest-supercomputer>
+    (Accessed: 29 September 2024).
+
+[^4]: Dunhill, J. (2021) Chinese Scientists Create Quantum Processor
+    60,000 Times Faster Than Current Supercomputers, IFLScience.
+    Available at:
+    <https://www.iflscience.com/chinese-scientists-create-quantum-processor-60000-times-faster-than-current-supercomputers-61475>
+    (Accessed: 29 September 2024).
 
 ## From algorithm to software
 
@@ -324,7 +341,8 @@ classical equivalents? This will be the topic of the next chapter.
 
 - [The Map of Quantum Computing
   (Youtube)](https://www.youtube.com/watch?v=-UlxHPIEVqA)  – A 30-minute
-  video that forms a great supplement to this book. 
+  overview video by Domain of Science that forms a great supplement to
+  this book. 
 
 - Chris Ferrie’s book [‘What You Shouldn't Know About Quantum
   Computers’](https://arxiv.org/abs/2405.15838) debunks several myths
@@ -332,7 +350,7 @@ classical equivalents? This will be the topic of the next chapter.
 
 - Are you looking for a much more extensive source that covers pretty
   much everything there is to know about quantum computers? French
-  consultant Olivier Ezratti maintains a 1300+ page book “[Understanding
-  Quantum
-  Technologies](https://www.oezratty.net/wordpress/2023/understanding-quantum-technologies-2023/)”.
+  consultant Olivier Ezratti maintains a 1500+ page book,
+  ‘[Understanding Quantum
+  Technologies](https://www.oezratty.net/wordpress/2024/understanding-quantum-technologies-2024/)‘.
 
