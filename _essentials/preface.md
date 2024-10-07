@@ -32,8 +32,7 @@ right?’, I countered. He leaned in, eyes still gleaming with
 excitement.*
 
 *‘That's what most people think. But the reality is, we're closer than
-ever. Quantum supremacy has already been achieved. Google did it in
-2019; since then, progress has been exponential. Did you see the
+ever. Quantum supremacy has already been achieved. Google did it in 2019. Since then, progress has been exponential. Did you see the
 presentation by that guy from Goldman Sachs? Their investments already
 see higher returns than ever since their new Monte Carlo algorithm.’*
 

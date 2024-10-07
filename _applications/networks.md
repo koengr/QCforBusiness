@@ -50,8 +50,7 @@ protocol](https://en.wikipedia.org/wiki/BB84). Similarly, the
 commercialisation of network technologies has long been ahead of
 computing. Early quantum startups like MagiQ Technologies and ID
 Quantique were founded around the start of this century, and their first
-commercial networking products were brought to the market in 2003 and
-2004. This technology, where a quantum network is used to generate a
+commercial networking products were brought to the market in 2003 and 2004. This technology, where a quantum network is used to generate a
 secret key at two endpoints, is called Quantum Key Distribution (QKD) –
 an application that we will address in much more detail below.
 

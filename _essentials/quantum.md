@@ -93,8 +93,7 @@ virtual).
 In the spirit of computing, we might look at a ‘bit’ that stores
 information. You may think of it as a tiny magnet that can either point
 ‘up’ (1) or ‘down’ (0). The state of a piece of memory is easy to
-describe, simply by stating the bit values one by one. For example:
-11010.
+describe, simply by stating the bit values one by one. For example: 11010.
 
 <img src=" {{ site.baseurl }}/media/image3.png"
 style="width:2.53184in" />

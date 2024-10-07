@@ -1,10 +1,5 @@
-// ==============================
-//  Basic floats (for headers)
-// .floatr {
-// 	float:right;
-// 	padding-top: 2.2em;
-// }
 
+// These are the "table of contents" headings at the start of each page. 
 .mini-header {
 	padding: 0em 1em;	// Spaces the legend line away from the text.
 	font-weight: 600;
@@ -12,28 +7,39 @@
 	// text-align: center;
 	text-transform: uppercase;
 	color: #744b38;
-
 }
 
 
-// Fancy grad header
-.gradient-header {
+// Fancy gradients in primary headings
+h1 {
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(24deg, #5b5962 5%, #b4785d 54%, #5b5962 94%);
+    background-image: linear-gradient(10deg, #5b5962 5%, #b4785d 54%, #5b5962 94%);
     -webkit-background-clip: text;
     background-clip: text;
-    // width: 80%;
-    // margin: 0 auto;
-    /* padding: 100px 0; */
-    /* font-size: 6.5vw; */
-    // line-height: 110%;
-    // margin-bottom: 3em;
 }
+
+// ==============================
+//  EXAMPLE PAPERS
+.examplepaper{
+    font-size: 0.875rem;
+	margin: 1em;
+	padding: 1em;
+	background: white;
+    border: 1px solid $color-borders-soft;
+    /* border: 1px solid $color-borders-soft; */
+    border-radius: 4px;
+    // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
+	// box-shadow: 0 0 0 ;
+	background-color: #faf1e030;
+
+}
+
+
 
 // ==============================
 //  IMAGES
 
-// All images should be centered (using flex-blocks. 
+// All images should be centered (using flex-blocks). 
 img {
 	display: block;
     //width: 60%;  // This is typically superceded by individual image settings.
@@ -84,13 +90,6 @@ p:has(+ .caption) {
 	content: "References";
 }
 
-
-
-// ==============================
-// Fancybox is (for now) just a weird background
-
-// .fancybox-red { background-color: rgb(250, 200, 200); }
-// .fancybox-blue { background-color: rgb(197, 197, 255); }
 
 // ==============================
 // The .gradient-bg class gets a gradient background.
