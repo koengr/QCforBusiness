@@ -15,3 +15,4 @@ _site/
 vendor/
 test/available-hardware.md
 test/manufacturers.md
+/backups

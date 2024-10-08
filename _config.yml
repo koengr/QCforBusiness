@@ -70,21 +70,12 @@ just_the_docs:
 
 # Define callout boxes
 callouts:
-  warning:
-    title: Warning
-    color: red
   note:
     title: Note
     color: faintgray
     #color: grey-dk
-  new:
-    color: yellow
-  graycallout:
-    color: faintgray
   redcallout:
     color: faintred
-  greencallout:
-    color: green
   recommendationbox:
     title: See also
     color: testgray
@@ -103,3 +94,20 @@ toc:
   sublist_class: ''
   item_class: toc-entry
   item_prefix: toc-
+
+
+## Optimize the speed of the website
+sass:
+  style: compressed
+
+
+## See https://jch.penibelst.de/ 
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
+  # ignore:
+  #   envs: all
