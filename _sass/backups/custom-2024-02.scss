@@ -1,0 +1,360 @@
+
+
+// ===========================
+// Headers
+// ===========================
+
+
+// These are the "table of contents" headings at the start of each page. 
+.mini-header {
+	padding: 0em 1em;	// Spaces the legend line away from the text.
+	font-weight: 600;
+	font-size: 14px !important;
+	// text-align: center;
+	text-transform: uppercase;
+	color: #744b38;
+}
+
+// Fancy gradients in primary headings
+h1 {
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(10deg, #5b5962 5%, #b4785d 54%, #5b5962 94%);  // TODO: make these defined theme colors!
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+// Remake ugly H4 headers
+h4 {
+	font-size: 2rem;
+	//font-weight: 400;
+	text-transform: none;
+	letter-spacing: 0rem;
+	@include fs-4;		// Put this last to avoid the Mixed Declaration warning (https://sass-lang.com/documentation/breaking-changes/mixed-decls/)
+
+  }
+
+
+// ===========================
+// Special environments
+// ===========================
+
+//  Example papers appear with a distinct background and border
+.examplepaper{
+    font-size: 0.875rem;
+	margin: 1em;
+	padding: 1em;
+	background: white;
+    border: 1px solid $color-borders-soft;
+    /* border: 1px solid $color-borders-soft; */
+    border-radius: 4px;
+    // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
+	// box-shadow: 0 0 0 ;
+	background-color: #faf1e030;	// TODO make this a defined color?
+
+}
+
+// ".note" and ".recommendationbox" are modified "callouts" defined through just-the-docs. 
+// For the yellow theme, I didn't like colored callouts, hence we stick with just a border.
+
+p.recommendationbox, blockquote.recommendationbox, p.note, blockquote.note {
+    background: white;
+    border: 1px solid $color-borders-soft;
+    border-left: 4px solid $color-borders-soft;
+    /* border: 1px solid $color-borders-soft; */
+    border-radius: 4px;
+    // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
+	box-shadow: 0 0 0 ;
+    padding: 0.8rem;
+}
+
+p.recommendationbox::before, blockquote.recommendationbox::before {
+    color: $color-borders-soft;
+    content: "See also";
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    padding-bottom: 0.125rem;
+}
+
+
+// ==============================
+// Fieldsets are the boxex around the "at a glance" 
+// ==============================
+
+fieldset {
+	border: 1px solid #744b38;		// TODO make this a defined theme color
+    /* border-right: 2px solid #b1a29b; */
+    border-radius: 4px;
+    padding: 0.8rem;
+    margin-top: 1em;
+    background-color: #faf1e030;
+}
+
+// Make text fit the block better
+fieldset > p {
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+    padding-left: 0.5em;
+}
+
+
+
+// ==============================
+// Expandable Details boxes / fancy box
+// "details" are expandable 'fancy' boxes; these look pretty neat. 
+// Use <details> and <summary> tags!
+// ==============================
+
+details {  
+
+    // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
+    padding: 0.8rem;
+	margin-top: 1em;
+
+	// Same settings as .recommendatiobox and .note
+	border: 1px solid $color-borders-soft;
+    border-left: 4px solid $color-borders-soft;
+    border-radius: 4px;
+}
+
+// This is the header of a details box.  
+details summary 
+{     
+	  font-weight: 550;
+	//   text-transform: uppercase; 
+}
+
+// Remove the long margin at the when 'summary' is used for the ToC
+details > ul{
+	margin-bottom: 0.3em;
+}
+
+
+
+
+// ===========================
+//  IMAGES
+// ===========================
+// All images should be centered (using flex-blocks). 
+img {
+	display: block;
+    //width: 60%;  // This is typically superceded by individual image settings.
+    margin: auto;	// A block with auto-margins automatically has left/right margins equal (=centered).
+}
+
+// Add margin to the bottom EXCEPT if there is a caption below. 
+// We add margin to the p element in which the image sits. 
+p:has(img) {
+	margin-top: 2.4em;
+	margin-bottom: 2.4em;
+}
+p:has(+ .caption) {
+	margin-bottom: 0.5em;
+}
+
+// CUSTOM FIGURE CAPTIONS (pandoc doesn't work well with native captions in word. 
+// Use {: .caption } in word/markdown. 
+.caption {
+	font-size: small;
+}
+
+
+
+// ==============================
+// Items in the footer
+// ==============================
+
+// NEXT buttons in the footer
+.btn-next {
+	margin-top: 1.5em;
+	padding: 1em 2em;
+	display:block;
+	// width: -webkit-fill-available; // don't like this because it only works in chrome. 
+	text-align: center;
+	align-content: center;
+}
+
+// ==============================
+// FOOTNOTES for bibliography at the end of some pages (auto-generated)
+// ==============================
+.footnotes {
+	font-size: small;
+	margin-top: 2rem;
+}
+
+.footnotes::before {
+	display: block;
+	font-size: larger;
+	content: "References";
+}
+
+
+ 
+
+
+
+// ==============================
+// Sidebar and Search Bar
+// ==============================
+
+/*    We have the following sizes:
+Wide screens (min-width: 1270px)
+	- Very wide nav bar through: .site-nav, .site-header, .site-footer -> 23.5rem
+
+Laptop screens (min-width: 66.5rem)
+	- Smaller nav bar (16.5 rem (default)). 
+
+iPad / Smallest with sidebar (min-width: 50rem)
+	- Sidebar appears for the first time
+
+Phones / Ultra-small (min-width: 31.25rem)
+	- Just the docs also automatically sets smaller text size
+
+
+We avoid scrolling in the sidebar by setting body[position]=relative and sidebar[position]=absolute. 
+*/ 
+
+
+// specify the borders around categories (for us, these are the 'parts'
+.nav-category {
+    // border-bottom: 1px solid $color-borders-soft;
+ border-top: 0px solid $color-borders-soft;
+ border-bottom: 0px solid $color-borders-soft;
+
+}
+
+// Side border 
+// regular background: #f9f0e0
+// background of highlighted page: #fcf8f1
+@media (min-width: 50rem) {
+    .side-bar {
+		border-right: none;
+		border-radius: 0px 20px 20px 0px; // Create a rounded corner on (top_left, top-right, bottom-right, bottom-left)
+		position: absolute; // This makes the sidebare stick on top of the page (no independent scrolling). 
+		height: auto; // Removes the 100% height, which may swallow items on smaller screens. 
+
+		// box-shadow: 1px 1.3px 3px 0px #c7c6c6; 
+		// box-shadow: 1px 1.3px 0.1px 0px #744b38;
+		box-shadow: 1px 1.3px 3px 0px #744b38;  // Box shadow, same as .search-input-wrap; // [inset] xstart, ystart, blur-size, shadow-size, color
+    }
+
+	// Make search box nicely rounded
+	.search-input-wrap{
+		border-radius: 20px;
+		// box-shadow: inset 1px 1.3px 0.1px 10px #744b38;
+		box-shadow: 1px 1.3px 3px 0px #744b38;  // Box shadow, same as .search-input-wrap
+	}
+
+	// Create pretty borders for sidebar and search bar together. 
+	.search-input-wrap, .side-bar{
+		margin-top: 10px;
+	}
+
+
+	// Prevent overlap between search bar and sidebar. 
+	.main {
+		padding-left: 20px; // Ugly fix to make space with the sidebar. Flex elements cannot have regular margins. 
+	}
+
+	// Remove border around the header
+	.main-header{
+		border:none;
+	}
+
+
+}
+
+body {
+	position: relative; // Makes all elements (especially sidebar) take up all available vertical space. 
+}
+
+
+// Very large desktop screens: large sidebar, large logo
+@media (min-width: 1270px) {
+
+	// Make sidebar extra wide  
+    .site-nav, .site-header, .site-footer {
+        width: 23.5rem;
+    }
+
+	// Give the logo more space on large screens
+	.site-header {
+        height: 12rem;
+		margin-top: 3em;
+	}
+}
+
+// iPad sized and bigger: show large logo.	
+@media (min-width: 50rem) {
+	.site-logo {
+		background-image: url(/site-img/header-logo.webp);
+	}
+
+	.site-header {
+		height: 7rem;
+		max-height: 12rem;
+		border-bottom: none;
+	}
+
+	// Make the main content a bit smaller (normally width: 50rem)
+	.main-content {
+		max-width: 42rem;
+	}
+
+	// Manage spacing of the Navigation area
+	.site-nav {
+		padding-top: 2rem;
+		padding-bottom: 2.4rem;
+	}
+}
+
+
+
+// ==============================
+// ==============================
+// // // UNUSED ITEMS // // // // //
+// ==============================
+// ==============================
+
+// // This is not needed -- it's set in config.yml as the main logo
+// .site-logo {  
+// 	background-image: url(/site-img/lineart-header-wide.webp);  // this is the default
+// }
+
+
+// Fancy alternative for DETAILS boxes
+// details {
+// 	// Box shadow: ( xstart, ystart, blur-size, shadow-size, color )
+// 	box-shadow: 5px 5px 3px 1.5px rgba(0, 0, 0, .1);
+// 	// width: 100%;
+// 	// background: #f5f6fa;  // Original background for blue-ish theme.
+// // 	background: #f4f2f1; // Set background to sidebar color?
+// 	// background: #faf9f5;  // Slightly more dim blue background
+
+// // 	border-radius: 12px;
+// 	// position: relative;
+// // 	/* width: 500px; */
+// 	margin: 0.5em;
+// 	padding: 1em;
+// // }
+// }
+
+
+// At a glance: create space around the legend (header)
+// legend {
+// 	padding: 0em 1em;	// Spaces the legend line away from the text.
+// 	font-weight: bold;
+// 	text-align: center;
+//   }
+
+// Legend for At a Glance (used Sept 2024)
+//   legend {
+// 	padding: 0em 1em;	// Spaces the legend line away from the text.
+// 	font-weight: 600;
+// 	font-size: 13px;
+// 	// text-align: center;
+// 	text-transform: uppercase;
+// 	color: #744b38;
+//   }
+

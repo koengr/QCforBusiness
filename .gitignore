@@ -16,3 +16,8 @@ vendor/
 test/available-hardware.md
 test/manufacturers.md
 /backups
+
+# Ignore Mac DS_Store files
+.DS_Store
+**/.DS_Store
+
