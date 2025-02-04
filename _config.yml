@@ -60,25 +60,30 @@ just_the_docs:
       # Exclude the collection from the navigation (true/false)
       nav_exclude: False
       # Fold the collection in the navigation
-      nav_fold: false  
+      # nav_fold: true  
     applications:
       name: "Part 2: Understanding the applications"
+      # nav_fold: true  
+
     advanced:
       name: "Part 3: Going deeper"
+      # nav_fold: true  
+
     resources:
       name: "Part 4: Recommended resources"
+      # nav_fold: true  
+
 
 # Define callout boxes
+# NB: This automatically creates a box environment, but we have further modificaitons in custom.scss
 callouts:
-  note:
+  note:     # Used for "note" in timelines
     title: Note
-    color: faintgray
-    #color: grey-dk
-  redcallout:
-    color: faintred
+    # color: faintgray
+    color: grey-dk    # This is the default that looks similar, but has a very dark title that I don't like.
   recommendationbox:
     title: See also
-    color: testgray
+    color: faintgray
 
 # aux_links:
 #   Template Repository: https://github.com/just-the-docs/just-the-docs-template
@@ -97,7 +102,7 @@ toc:
 
 
 ## Optimize the speed of the website
-sass:
+sass:  #TODO enable!!
   style: compressed
 
 

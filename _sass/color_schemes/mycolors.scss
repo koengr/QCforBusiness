@@ -6,15 +6,50 @@
 
 // Select pretty schemes:  https://coolors.co/palettes/trending
 
+// @import "./color_schemes/light";
+/* 
+Changes to '@import' function in newer version SASS; they recommend useing @use or @forward
+It seems that 
+1. @forward throws an error
+2. @use does not actually consider the settings below
+*/
+@import "./color_schemes/light";       // @forward supercedes 'import', which will be deprecated in newer SASS versions. 
+
+// Set my favorite colours.
+$color-mid: #b4785e;
+$color-headings: darken( $color-mid, 20%) ;
+
+$color-dark: #33494d;
+$color-faint: #f9f0e0; 
+$color-alt: #83564f;
+
+// // The following must be defined in custom/custom.scss (although I don't see why exactly... )
+// $color-borders-soft: #b1a29b;  // Soft gray, Used for Details, Callouts, etc. 
+// $color-borders-details: #b4785e;  // Maroon, like the headers
+
+// Set selected body items
+$body-heading-color: $color-headings;
+$link-color: $color-mid;
+$body-text-color: $grey-dk-100 !default;
+$body-background-color: $white ;
+// $body-font-family: Brush  ;
 
 
-@import "./color_schemes/light";
 
-// $color-mid: #40798C;
-// $color-dark: #164656;
-// $color-faint: #edf2f4;
-// $color-alt: #A790A5;
+// Sidebar & main body
+$sidebar-color: $color-faint;
+$feedback-color: lighten($color-faint, 4%);
 
+
+// CHANGE THE SIDEBAR IN NAV
+body {
+    scrollbar-width: thin;
+	scrollbar-color: darken($color-faint,8%) $color-faint; /* Two valid colors.
+	The first applies to the thumb of the scrollbar, the second to the track. */    
+}
+
+
+// // Older color settings (not used)
 // $color-mid: #40798C;
 // $color-dark: #164656;
 // $color-faint: #edf2f4;
@@ -23,42 +58,4 @@
 //$color-mid: #4F7278;
 //$color-headings: #be8e3a; 
 
-$color-mid: #b4785e;
-$color-headings: darken( $color-mid, 20%) ;
 
-$color-dark: #33494d;
-$color-faint: #f9f0e0; 
-$color-alt: #83564f;
-
-$color-borders-soft: #b1a29b;  // Soft gray, Used for Details, Callouts, etc. 
-
-
-$body-heading-color: $color-headings;
-$link-color: $color-mid;
-
-$body-text-color: $grey-dk-100 !default;
-
-
-
-// Sidebar & main body
-$sidebar-color: $color-faint;
-$feedback-color: lighten($color-faint, 4%);
-$body-background-color: $white ;
-
-
-// SETTING THE FONT
-// $body-font-family: Brush  ;
-
-body {
-    font-family: $body-font-family; 
-}
-
-// CHANGE THE SIDEBAR IN NAV
-// Change the SCROLL BAR Behaviour
-
-body {
-    scrollbar-width: thin;
-	scrollbar-color: darken($color-faint,8%) $color-faint; /* Two valid colors.
-	The first applies to the thumb of the scrollbar, the second to the track. */    
-
-}

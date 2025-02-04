@@ -1,43 +1,51 @@
-// Code used for color boxes
+/*
+NB: It's probably better to store custom colors in color_schemes/mycolors.scss (to which _config.yml refers). The just-the-docs documentation states
+
+To define new SCSS variables or functions, place SCSS code in _sass/custom/setup.scss. This should not be used for defining custom styles (see the
+ next section) or overriding color scheme variables (in this case, you should create a new color scheme).
+This is most commonly-used to define custom callout colors.
+
+Bottom line: colors defined here will also work in custom.scss but those in color_schemes/... will not!
+*/
+
+
 $color-borders-soft: #b1a29b;  // Soft gray, Used for Details, Callouts, etc. 
-$color-borders-details: #b4785e;  // Maroon, like the headers
 
-$pink-000: #f77ef1;
-$pink-100: #f967f1;
-$pink-200: #e94ee1;
-$pink-300: #dd2cd4;
+// $color-borders-details: #b4785e;  // Maroon, like the headers
 
-$yellow-000: darken( #f9f0e0, 12%) ; 
-$yellow-100: darken( $yellow-000, 10%) ;
-$yellow-200: darken( $yellow-000, 50%) ;
-$yellow-300: darken( $yellow-000, 10%) ;
+// // Code used for color boxes (mostly unused, except faintgray right now?(!)
+// $pink-000: #f77ef1;
+// $pink-100: #f967f1;
+// $pink-200: #e94ee1;
+// $pink-300: #dd2cd4;
 
-$faintred-000: darken( #f9e1e0, 12%) ; 
-$faintred-100: darken( $yellow-000, 10%) ;
-$faintred-200: darken( $yellow-000, 50%) ;
-$faintred-300: darken( $yellow-000, 10%) ;
+// $yellow-000: darken( #f9f0e0, 12%) ; 
+// $yellow-100: darken( $yellow-000, 10%) ;
+// $yellow-200: darken( $yellow-000, 50%) ;
+// $yellow-300: darken( $yellow-000, 10%) ;
 
-$green-000: darken( #e0f9e0, 12%) ; 
-$green-100: darken( $yellow-000, 10%) ;
-$green-200: darken( $yellow-000, 50%) ;
-$green-300: darken( $yellow-000, 10%) ;
+// $faintred-000: darken( #f9e1e0, 12%) ; 
+// $faintred-100: darken( $yellow-000, 10%) ;
+// $faintred-200: darken( $yellow-000, 50%) ;
+// $faintred-300: darken( $yellow-000, 10%) ;
 
-$faintred-000: darken( #f9e1e0, 12%) ; 
-$faintred-100: darken( $yellow-000, 10%) ;
-$faintred-200: darken( $yellow-000, 50%) ;
-$faintred-300: darken( $yellow-000, 10%) ;
+// $green-000: darken( #e0f9e0, 12%) ; 
+// $green-100: darken( $yellow-000, 10%) ;
+// $green-200: darken( $yellow-000, 50%) ;
+// $green-300: darken( $yellow-000, 10%) ;
 
 // $faintgray-000: #dbdbdb ;   // Taken from buttons.scss but darkened to match. 
 $faintgray-000: #f4f2f1;                                // Taken from Details boxes
+// $faintgray-000: $color-headings; // Wouldn't work :(
 $faintgray-100: darken( $faintgray-000, 1%) ;
 $faintgray-200: darken( $faintgray-000, 1%) ;
 $faintgray-300: darken( $faintgray-000, 30%) ;
 
-// $faintgray-000: #dbdbdb ;   // Taken from buttons.scss but darkened to match. 
-$testgray-000: #f9f0e027;                                // Taken from Details boxes
-$testgray-100: #1b7426;
-$testgray-200: #2614ab ;
-$testgray-300: #b4785e;
+// // $faintgray-000: #dbdbdb ;   // Taken from buttons.scss but darkened to match. 
+// $testgray-000: #f9f0e027;                                // Taken from Details boxes
+// $testgray-100: #1b7426;
+// $testgray-200: #2614ab ;
+// $testgray-300: #b4785e;
 
 
 
