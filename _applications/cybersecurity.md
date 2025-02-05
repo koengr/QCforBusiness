@@ -65,7 +65,7 @@ In asymmetric cryptography, more often called **public key cryptography (PKC)**
 
 The setting with two keys offers more functionality. For example, using public key cryptography, Alice could securely send a secret key to Bob that they can subsequently use for symmetric cryptography, which is faster in practice. When public key cryptography is built for this purpose, we call it a **key encapsulation mechanism** (KEM).  
 
-<img src="/img/cybersecurity/crypto-public-key-sign.webp" alt="Digital signatures using public key cryptography." style="width:3.8fin">
+<img src="/img/cybersecurity/crypto-public-key-sign.webp" alt="Digital signatures using public key cryptography." style="width:3.8in">
 
 Furthermore, the protocol works in ‘reverse’. Alice can use her private key to encrypt a message, which then anyone in the world (including Bob) can decrypt using the corresponding public key. Bob should then be confident that Alice is the only person who could have encrypted this message. Indeed, something encrypted with the private key can *only* be decrypted with the public key, and vice versa. The encrypted message is much like a signature that only Alice can produce. This forms the basis of digital signatures and certificates.  
 

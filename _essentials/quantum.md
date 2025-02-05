@@ -58,7 +58,7 @@ In the spirit of computing, we might look at a ‘bit’ that stores information
 
 <img src="/img/quantum/quantum-arrows.png" alt="The state of a piece of computer memory can be described by simply stating the bit values" style="width:2.8in">
 
-Importantly, the state of the world can change over time. We will often care about the state of the world at a certain moment, for example, at the beginning of computation or at the end of it.
+Importantly, the state of the world can change over time. We will often care about the state of the world at a certain moment, for example, at the beginning of a computation or at the end of it.
 
 ## Four surprising phenomena
 
