@@ -35,5 +35,3 @@ This book, written by [Koen Groenland](https://www.koengroenland.com), is a gent
 
 📖 Prefer to read a printed version? A paperback edition will be released in Q1 2025.
 
-
-[Click here to open the image in a new window. ](https://{baseurl}/img/timelines/long-term-inforgraphic.webp)
