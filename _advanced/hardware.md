@@ -52,7 +52,7 @@ Currently, gate-based computers are by far the most widespread and appear to be 
 
 </details>
 
-No matter what architecture or qubit type you pick, today’s technology will only allow you to run relatively short computations. This is due to the inherent imperfections in qubit construction and control methods. The imperfections cause errors to accumulate, so after some number of steps, the result is almost surely corrupted and unusable. For longer computations, fixing errors on the fly is essential, using so-calleds [**error correction**](https://quantumcomputingforbusiness.com/advanced/error_correction/).
+No matter what architecture or qubit type you pick, today’s technology will only allow you to run relatively short computations. This is due to the inherent imperfections in qubit construction and control methods. The imperfections cause errors to accumulate, so after some number of steps, the result is almost surely corrupted and unusable. For longer computations, fixing errors on the fly is essential, using so-calleds [**error correction**](https://introtoquantum.org/advanced/error_correction/).
 
 At the time of writing, we live in the so-called NISQ era, with **Noisy Intermediate-Scale Quantum** devices. Many are theoretically fully universal, except that they are limited both in the number of qubits and, most of all, in the number of steps they can execute. Companies like IBM, IonQ, Quantinuum, and Pasqal all have NISQ computers available to test over the cloud. 
 

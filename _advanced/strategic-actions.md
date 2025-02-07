@@ -39,7 +39,7 @@ Most companies start with early steps aimed at better understanding the situatio
 
 - Appoint a quantum lead or a quantum working group tasked with following the developments.
 
-- Read up and learn. If you’ve come this far in this book, you’re already doing a fantastic job. We have a separate chapter on further [learning resources](https://quantumcomputingforbusiness.com/resources/further-reading/).
+- Read up and learn. If you’ve come this far in this book, you’re already doing a fantastic job. We have a separate chapter on further [learning resources](https://introtoquantum.org/resources/further-reading/).
 
 - Create internal awareness. Many employees will enjoy inspirational talks, tours or demonstrations that academics or quantum manufacturers can provide.
 
@@ -74,7 +74,7 @@ At this stage, most organisations will want to make low-regret moves that get th
 
 **Optionally: **
 
-- Start concrete proof-of-concept projects. Right now, these are unlikely to offer practical utility and will likely tackle just a toy problem. However, these help build experience in setting up quantum projects and can uncover ‘unknown unknowns’. For staff with a strong physics or mathematics background, it is relatively accessible (and fun!) to get acquainted with quantum [programming packages](https://quantumcomputingforbusiness.com/resources/further-reading/#i-want-to-learn-to-program-a-quantum-computer) and implement a first test algorithm.
+- Start concrete proof-of-concept projects. Right now, these are unlikely to offer practical utility and will likely tackle just a toy problem. However, these help build experience in setting up quantum projects and can uncover ‘unknown unknowns’. For staff with a strong physics or mathematics background, it is relatively accessible (and fun!) to get acquainted with quantum [programming packages](https://introtoquantum.org/resources/further-reading/#i-want-to-learn-to-program-a-quantum-computer) and implement a first test algorithm.
 
 - Find strategic partners. Organisations can save costs by collaborating on early, pre-competitive exploration. 
 
@@ -126,7 +126,7 @@ A straightforward way to ensure that the company learns from the academic develo
 
 ## Migrating to post-quantum cryptography
 
-This section relies on technical knowledge from the previous chapter on [cybersecurity](https://quantumcomputingforbusiness.com/applications/cybersecurity/)s.
+This section relies on technical knowledge from the previous chapter on [cybersecurity](https://introtoquantum.org/applications/cybersecurity/)s.
 
 ### Step 2b: Prepare your migration 
 {: .no_toc }

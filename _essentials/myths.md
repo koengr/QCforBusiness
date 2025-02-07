@@ -22,7 +22,7 @@ Reading time: 10 minutes
 
 
 
-This chapter relies on a bit of quantum physics jargon. See the chapter ‘[An introduction to the quantum world](https://quantumcomputingforbusiness.com/essentials/quantum/)’ for a quick introduction.
+This chapter relies on a bit of quantum physics jargon. See the chapter ‘[An introduction to the quantum world](https://introtoquantum.org/essentials/quantum/)’ for a quick introduction.
 
 ## Myth 1: Quantum computers find all solutions at once
 

@@ -36,7 +36,7 @@ The billion-dollar question in our field is:
 
 *When will quantum computers outperform conventional computers on relevant problems?*
 
-In the [previous chapter](https://quantumcomputingforbusiness.com/essentials/applications-overview/), we defined the requirements more precisely and coined the term ‘utility’ for such an achievement.
+In the [previous chapter](https://introtoquantum.org/essentials/applications-overview/), we defined the requirements more precisely and coined the term ‘utility’ for such an achievement.
 
 Unfortunately, nobody can confidently answer this question today, and past predictions often proved inaccurate. Moreover, a relevant quantum computer won’t just appear from one day to the next: there’s a continuous evolution where these devices will become increasingly capable. In this chapter, we will show how we can make a rough prediction about future timelines and discuss what will happen on the path towards large-scale quantum computation.
 
@@ -70,7 +70,7 @@ For example, suppose we have a device with a million physical qubits. In that ca
 
 <img src="/img/timelines/qubits_in_boxes_for_ecc.png" alt="Quantum error correction uses logical qubits that are formed by exploiting redundant physical qubits." style="width:4.5in">
 
-For error correction to work, we need to make several assumptions. For example, depending on the precise error correction protocol, gate fidelities need to be quite good to start with – numbers like 99.99% are often mentioned. This means that, as of 2024, the world’s best devices would still need to improve gate fidelities by more or less a factor of \\(10\\). Moreover, qubits need to be routinely measured and reset, and large amounts of classical processing are needed to deduce precisely how to repair a given error. These are significant engineering challenges, but experts are optimistic that this can be achieved. We discuss many more details in a [separate chapter on error correction](https://quantumcomputingforbusiness.com/advanced/error_correction/).
+For error correction to work, we need to make several assumptions. For example, depending on the precise error correction protocol, gate fidelities need to be quite good to start with – numbers like 99.99% are often mentioned. This means that, as of 2024, the world’s best devices would still need to improve gate fidelities by more or less a factor of \\(10\\). Moreover, qubits need to be routinely measured and reset, and large amounts of classical processing are needed to deduce precisely how to repair a given error. These are significant engineering challenges, but experts are optimistic that this can be achieved. We discuss many more details in a [separate chapter on error correction](https://introtoquantum.org/advanced/error_correction/).
 
 For now, let’s take for granted that we can somehow reach any desired accuracy (or any desired computation length) by simply adding sufficiently many physical qubits. Then, we can greatly simplify our analysis! For each application, we will forget about errors altogether and only count the number of physical qubits needed.
 
@@ -86,7 +86,7 @@ Back to the main question: When can we expect a large quantum computer? Now that
 
 ## How many qubits are needed?
 
-In the [previous chapter](https://quantumcomputingforbusiness.com/essentials/applications-overview/), we discussed the three main applications of quantum computers: quantum simulation, breaking cryptography, and optimisation.
+In the [previous chapter](https://introtoquantum.org/essentials/applications-overview/), we discussed the three main applications of quantum computers: quantum simulation, breaking cryptography, and optimisation.
 
 The most concrete numbers can be given for **Shor’s algorithm **(breaking cryptography), where we have a very clear problem to tackle: obtain a private (secret) key from a widely used cryptosystem, like the RSA-2048 protocol. This is the perfect benchmark because there can be no discussion about whether the problem is solved: one either obtains the correct key or one doesn’t. Moreover, we’re quite convinced that even the best classical computers can’t solve the problem (or else you shouldn’t use internet banking or trust software updates). 
 
@@ -98,7 +98,7 @@ The most concrete task in quantum simulation is to compute the energy of certain
 
 Note that the accuracy of a chemical energy should not be confused with the accuracy of a quantum gate, which is a whole different number.
 
-A highly promising and well-studied benchmark problem is the simulation of the so-called FeMo cofactor of the nitrogenase enzyme, in short, FeMoco. This active site is relevant when bacteria produce Ammonia (NH3), a compound that is of great relevance to a plant’s root system. A better understanding of this process could help us reduce the [ridiculously large carbon emissions ](https://climate.mit.edu/explainers/fertilizer-and-climate-change)now associated with the production of artificial fertiliser. [We give more details in a separate chapter](https://quantumcomputingforbusiness.com/applications/chemistry/#a-case-study-of-a-promising-enzyme-femoco).
+A highly promising and well-studied benchmark problem is the simulation of the so-called FeMo cofactor of the nitrogenase enzyme, in short, FeMoco. This active site is relevant when bacteria produce Ammonia (NH3), a compound that is of great relevance to a plant’s root system. A better understanding of this process could help us reduce the [ridiculously large carbon emissions ](https://climate.mit.edu/explainers/fertilizer-and-climate-change)now associated with the production of artificial fertiliser. We give more details in a separate chapter.
 
 Simulating FeMoco is believed to require [around **4 million qubits**](https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.2.030305)[^27] (and around 4 days of computation time). The hardware and error correction assumptions are similar to those of Shor’s algorithm: the estimate is based on a square grid of superconducting qubits, using surface code to correct errors.
 

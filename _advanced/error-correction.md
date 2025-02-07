@@ -164,7 +164,7 @@ Below are the three most popular approaches to error correction. Each of them ca
 
 - Colour codes;
 
-- Low-Density Parity Check (LPDC) codes.
+- Low-Density Parity Check (LDPC) codes.
 
 The surface code (or toric code) has received a lot of scientific attention, as this seems to be on the roadmap of large tech companies like Google and IBM. Their superconducting qubits cannot interact with each other over long distances, and the surface code can deal with this limitation. Many estimates that we use in this book (such as the resources required to break RSA or to simulate FeMoco) are based on this code. It has already been tested experimentally on relatively small systems:
 

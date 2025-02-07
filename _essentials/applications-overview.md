@@ -63,7 +63,7 @@ Most materials can be accurately simulated on classical computers. However, in s
 
 Simulation is, however, not a silver bullet, and quantum computers will not be spitting out recipes for new pharmaceuticals by themselves. Breakthroughs in chemistry and material science will still require a mix of theory, lab testing, computation, and, most of all, the hard work of smart scientists and engineers. From this perspective, quantum computers have the potential to become a valued new tool for R&D departments.
 
-[**Read more: What are the main applications in chemistry and material science?**](https://quantumcomputingforbusiness.com/applications/chemistry/)
+[**Read more: What are the main applications in chemistry and material science?**](https://introtoquantum.org/applications/chemistry/)
 
 See also:
 
@@ -86,7 +86,7 @@ The quantum algorithm by Shor can crack RSA (and also its cousin called [ellipt
 
 Fortunately, not all cryptography is broken as easily by a quantum computer. RSA and ECC fall into the category of *[public key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography), *which delivers a certain range of functionalities. A different class of protocols is *[symmetric key cryptography](https://en.wikipedia.org/wiki/Cryptography#Modern_cryptography),* which is reasonably safe against quantum computers but doesn’t provide the same rich functionality as *public key *crypto. The most sensible approach is replacing RSA and ECC with so-called [post-quantum cryptography](post-quantum%20cryptography) (PQC): public key cryptosystems resilient to attackers with a large-scale quantum computer. Interestingly, PQC does *not* require honest users (that’s you) to have a quantum computer: it will work perfectly fine on today’s PCs, laptops, and servers.
 
-[**Read more: How will quantum computers impact cybersecurity? **](https://quantumcomputingforbusiness.com/applications/cybersecurity/)
+[**Read more: How will quantum computers impact cybersecurity? **](https://introtoquantum.org/applications/cybersecurity/)
 
 At the time of writing, a complex migration lies ahead of pretty much every large organisation in the world, which comes in addition to many existing cybersecurity threats. The foundations have been laid: thanks to the American [National Institute of Standards and Technology](https://csrc.nist.gov/projects/post-quantum-cryptography) (NIST), cryptographers from around the globe came together to select the best quantum-safe alternatives, culminating in the publication of the first standards in August 2024. These are the new algorithms that the vast majority of users will adopt.
 
@@ -94,7 +94,7 @@ Unfortunately, many governments and enterprises run a great amount of legacy sof
 
 A new type of cryptography comes with its own additional risks: the new standards have not yet been tested as thoroughly as the nearly fifty-year-old RSA algorithm. Ideally, new implementations will be *hybrid*, meaning that they combine the security of a conventional and a post-quantum algorithm. Moreover, organisations are encouraged to adopt *cryptographic agility*, meaning that cryptosystems can be easily changed or updated if the need arises. 
 
-[**Read more: What steps should your organisation take?**](https://quantumcomputingforbusiness.com/advanced/strategic-actions/)
+[**Read more: What steps should your organisation take?**](https://introtoquantum.org/advanced/strategic-actions/)
 
 [^7]: Gidney, C. and M. Ekerå (2021) ‘How to Factor 2048 Bit RSA Integers in 8 Hours Using 20 Million Noisy Qubits’, *Quantum*, 5, p. 433. <https://doi.org/10.22331/q-2021-04-15-433>.
 
@@ -109,7 +109,7 @@ As of 2024, pretty much every national security agency discourages the use of QK
 
 We firmly warn that other security products with the word ‘quantum’ in the name do not necessarily offer protection against Shor’s algorithm. In particular, [quantum random number generators](https://en.wikipedia.org/wiki/Hardware_random_number_generator) (QRNGs) are sometimes promoted as a saviour against the quantum threat, which is nonsense. These devices serve a completely different purpose: they compete with existing hardware to generate unpredictable secret keys, which find a use (for example) in [hardware security modules ](https://en.wikipedia.org/wiki/Hardware_security_module)in data centres. 
 
-[**Read more: What are the use cases of quantum networks?**](https://quantumcomputingforbusiness.com/applications/networks/)
+[**Read more: What are the use cases of quantum networks?**](https://introtoquantum.org/applications/networks/)
 
 ### 4. Optimisation and machine learning
 {: .no_toc }
@@ -167,7 +167,7 @@ Unfortunately, a quantum optimisation algorithm with undisputed economic value d
 
 That doesn’t mean that there’s no hope for quantum optimisation. Firstly, there are good reasons to believe that *new* algorithms and applications will be found. Secondly, the usefulness of the ‘slower’ quantum optimisation algorithms ultimately depends on the speed of a future quantum computer compared to the speed of a future classical computer. To better understand the differences in computational speeds, we will need to quantify the amount of ‘quantum advantage’ that different algorithms have.
 
-[**Read more: Quantum optimisation and AI, what are companies doing today?**](https://quantumcomputingforbusiness.com/applications/optimisation_ai/)
+[**Read more: Quantum optimisation and AI, what are companies doing today?**](https://introtoquantum.org/applications/optimisation_ai/)
 
 ## How can we compare different types of speedups? 
 
@@ -197,7 +197,7 @@ Here is a rough overview of quantum speedups as we understand them today, catego
 
 🟢   The ‘**exponential**’ box is the most interesting one, featuring applications where quantum computers seem to have a groundbreaking benefit over classical computers. It contains **Shor’s algorithm** for factoring, explaining the towering advantage that quantum computers have in codebreaking. We also believe it contains some applications in **chemistry and material science**, especially those relating to dynamics (studying how molecules and materials change over time). 
 
-🟡   The **’polynomial’ **box is still interesting, but its applicability is unclear. Recall that a quantum computer would need much more time *per step *– and, moreover, it will have considerable overhead due to [error correction](https://quantumcomputingforbusiness.com/advanced/error_correction/). Does a polynomial reduction in the number of steps overcome this slowness? According to a [recent paper](https://arxiv.org/abs/2011.04149),[^15] small polynomial speedups (as achieved by **Grover’s algorithm**) will not cut it, at least not in the foreseeable future. 
+🟡   The **’polynomial’ **box is still interesting, but its applicability is unclear. Recall that a quantum computer would need much more time *per step *– and, moreover, it will have considerable overhead due to [error correction](https://introtoquantum.org/advanced/error_correction/). Does a polynomial reduction in the number of steps overcome this slowness? According to a [recent paper](https://arxiv.org/abs/2011.04149),[^15] small polynomial speedups (as achieved by **Grover’s algorithm**) will not cut it, at least not in the foreseeable future. 
 
 🔴   For some computations, a quantum computer offers **no speedup. **Examples include sorting a list or loading large amounts of data. 
 
