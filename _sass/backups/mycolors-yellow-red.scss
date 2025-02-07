@@ -15,23 +15,13 @@ It seems that
 */
 @import "./color_schemes/light";       // @forward supercedes 'import', which will be deprecated in newer SASS versions. 
 
-// For future use: book color set
-$book-blue: #0b68a4;
-$book-yellow: #fff9e8;
-$book-yellow-dark: darken( $book-yellow, 0%);
-
 // Set my favorite colours.
-
-
-
 $color-mid: #b4785e;
 $color-headings: darken( $color-mid, 20%) ;
 
 $color-dark: #33494d;
 $color-faint: #f9f0e0; 
-// $color-faint: $book-yellow-dark;
 $color-alt: #83564f;
-
 
 // // The following must be defined in custom/custom.scss (although I don't see why exactly... )
 // $color-borders-soft: #b1a29b;  // Soft gray, Used for Details, Callouts, etc. 

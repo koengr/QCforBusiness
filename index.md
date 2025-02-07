@@ -18,7 +18,7 @@ nav_exclude: true
 
 }
 .book-3d {
-  --book-thickness: 26px;
+  --book-thickness: 20px;
   /* --cover-color: #1c67a2ff; */
   --cover-color:rgba(28, 104, 162, 0.83);
 
@@ -58,7 +58,7 @@ nav_exclude: true
   transform: translateZ( calc( var(--book-thickness) * -1 ) );
   background-color: var(--cover-color);
   border-radius: 0 2px 2px 0;
-  box-shadow: 0px 20px 20px 10px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 0px 20px 34px rgba(117, 74, 55, 0.0), 24px 15px 20px 0px rgba(61, 61, 61, 0.64);
 }
 
 .book-3d__cover {
@@ -67,7 +67,9 @@ nav_exclude: true
   height: auto;
   border-radius: 0px 2px 2px 0px;
   transform: translateZ( var(--book-thickness) );
-  box-shadow: 0px 0px 20px 1px rgba(0,0,0, 0.1);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.40);
+  /* filter: drop-shadow(1px 2px 40px hsl(220deg 00% 00%) ); */
+  
 }
 
 

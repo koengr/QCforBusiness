@@ -16,9 +16,9 @@
     "doc": "Introduction to Quantum Computing for Business",
     "title": "Introduction to Quantum Computing for Business",
     "content": "This open-access book contains everything you should know about quantum computers, without going into tedious technical details. It answers questions such as: . | What are the applications of quantum computers and quantum networks? . | In what year will we have large-scale quantum computers? . | What are the consequences for cybersecurity ? . | What strategic actions should organisations take? . | What is the status of today’s hardware? . | . As the first generation of quantum computers is on the horizon, understanding their impact is more important than ever. Luckily, you don’t need a physics degree to understand their functionality - just like you don’t need to know how a transistor works to thrive in conventional IT. This book, written by Koen Groenland, is a gentle and business-oriented introduction to the opportunities and threats of quantum technologies. It equips you with the necessary knowledge to join cutting-edge discussions and to make strategic decisions. Start reading &gt; 📖 Prefer to read a printed version? A paperback edition will be released in Q1 2025. ",
-    "url": "/landing.html",
+    "url": "/test/landing.html",
     
-    "relUrl": "/landing.html"
+    "relUrl": "/test/landing.html"
   },"3": {
     "doc": "The applications: what problems will we solve?",
     "title": "The applications: What problems will we solve with quantum computers?",
