@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Quantum hardware"
+title: "10. Quantum hardware"
 nav_order: 1
 ---
  

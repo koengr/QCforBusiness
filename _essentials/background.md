@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "The background: why are we so enthusiastic about quantum?"
+title: "2. The background: why are we so enthusiastic about quantum?"
 nav_order: 3
 ---
  

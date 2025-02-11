@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Four myths about quantum computing"
+title: "5. Four myths about quantum computing"
 nav_order: 6
 ---
  

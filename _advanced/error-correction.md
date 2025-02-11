@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Error correction"
+title: "11. Error correction"
 nav_order: 2
 ---
  

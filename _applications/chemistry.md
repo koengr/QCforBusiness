@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Applications in chemistry and material science"
+title: "6. Applications in chemistry and material science"
 nav_order: 1
 ---
  

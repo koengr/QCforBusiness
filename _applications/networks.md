@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Applications of quantum networks"
+title: "8. Applications of quantum networks"
 nav_order: 3
 ---
  
