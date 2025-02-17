@@ -91,7 +91,7 @@ This book is the perfect introduction to the opportunities and threats of quantu
 
 ## About *Intro To Quantum*
 
-Through [www.IntroToQuantum.org](https://www.introtoquantum.org), the book is available for everyone to read, conveniently from your webbrowser, including plenty of useful links to other resources. 
+The website [www.IntroToQuantum.org](https://www.introtoquantum.org) makes the texts of Introduction to Quantum Computing for Business freely available everyone to read, conveniently from your webbrowser. It can include occasional updates and adds plenty of useful links to other resources. 
 
 Do you prefer a printed version? A paperback will be released soon! 
 
