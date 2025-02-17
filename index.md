@@ -98,10 +98,9 @@ nav_exclude: true
 
 
 
-This open-access book contains everything you should know about quantum
-computers, without going into tedious technical details. It answers questions such as:
+**Introduction to Quantum Computing for Business** is an open-access book that contains everything you should know about quantum technologies, without going into tedious technical details. It answers questions such as:
 
-- What are the [applications]({% link _essentials/applications-overview.md %}) of quantum computers and quantum networks?
+- What is a quantum computer or a quantum network? What are their [applications]({% link _essentials/applications-overview.md %})?
 
 - In [what year]({% link _essentials/timelines.md %}) will we have large-scale quantum computers?
 
