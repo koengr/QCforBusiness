@@ -281,18 +281,20 @@ body {
 	// Give the logo more space on large screens
 	.site-header {
         height: 12rem;
-		margin-top: 3em;
+		margin-top: 2em;
 	}
 }
 
 // iPad sized and bigger: show large logo.	
 @media (min-width: 50rem) {
 	.site-logo {
-		background-image: url(/site-img/header-logo.webp);
+		background-image: url(/site-img/header.webp);
+		background-position: center;
+
 	}
 
 	.site-header {
-		height: 7rem;
+		height: 12rem;
 		max-height: 12rem;
 		border-bottom: none;
 	}
