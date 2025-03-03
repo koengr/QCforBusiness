@@ -1,4 +1,32 @@
 
+// ===========================
+// Bingo table: make solid headers
+// ===========================
+
+.bingo {
+	padding-top: 50px;
+	padding-bottom: 70px;
+
+}
+
+.bingo td {
+    border: 1px solid;
+	border-bottom: 1px solid !important;
+	// box-shadow: 1px 1.3px 3px 0px #744b38;
+	// min-height: 300px !important;
+	height: 130px !important;
+	background-color: #faf1e030
+	// padding-top: 30px !important;
+}
+
+@media (min-width: 50rem) {
+	.bingo td {
+		font-size: 12px !important;
+		text-align: center;
+		width: 25%;
+
+	}
+}
 
 // ===========================
 // Headers

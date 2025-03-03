@@ -7,7 +7,7 @@ nav_order: 3
  
 # Quantum Hype Bingo
 
-<table>
+<table class="bingo">
 <colgroup>
 <col style="width: 21%" />
 <col style="width: 25%" />
