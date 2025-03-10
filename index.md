@@ -40,9 +40,9 @@ nav_exclude: true
   position: absolute;
   content: ' ';
   left: 100%;
-  top: 1%;
+  top: 0%;
   width: calc( var(--book-thickness) * 2 );
-  height: 98%;
+  height: 100%;
   transform: translate(-55%,0) rotateY( 90deg );
   background: linear-gradient( 90deg , #fff 0%, hsl(0, 0%, 94%) 5%, #fff 10%, hsl(0, 0%, 94%) 15%, #fff 20%, hsl(0, 0%, 94%) 25%, #fff 30%, hsl(0, 0%, 94%) 35%, #fff 40%, hsl(0, 0%, 94%) 45%, #fff 50%, hsl(0, 0%, 94%) 55%, #fff 60%, hsl(0, 0%, 94%) 65%, #fff 70%, hsl(0, 0%, 94%) 75%, #fff 80%, hsl(0, 0%, 94%) 85%, #fff 90%, hsl(0, 0%, 94%) 95%, #fff 100% );
 }
@@ -52,8 +52,8 @@ nav_exclude: true
   content: '';
   position: absolute;
   top: 0;
-  left: 1%;
-  width: 100%;
+  left: 0%;
+  width: 100.2%;
   height: 100%;
   transform: translateZ( calc( var(--book-thickness) * -1 ) );
   background-color: var(--cover-color);
@@ -119,5 +119,4 @@ This book, written by [Koen Groenland](https://www.koengroenland.com), is a gent
 <a href="{{ site.baseurl }}/essentials/preface"><button class="btn fs-5 btn-outline" style="padding:1em;">Start reading > </button></a>
 </center>
 
-📖 Prefer to read a printed version? A paperback edition will be released in Q1 2025.
-
+📖 Prefer to read a printed version? A paperback edition will be released on [14 April 2025](https://worldquantumday.org/)!.
