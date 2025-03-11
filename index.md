@@ -119,4 +119,4 @@ This book, written by [Koen Groenland](https://www.koengroenland.com), is a gent
 <a href="{{ site.baseurl }}/essentials/preface"><button class="btn fs-5 btn-outline" style="padding:1em;">Start reading > </button></a>
 </center>
 
-📖 Prefer to read a printed version? A paperback edition will be released on [14 April 2025](https://worldquantumday.org/)!.
+📖 Prefer to read a printed version? A paperback edition will be released on [18 March 2025](https://www.aup.nl/en/book/9789048568987/introduction-to-quantum-computing-for-business).
