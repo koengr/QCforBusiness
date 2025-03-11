@@ -219,49 +219,12 @@ p:has(+ .caption) {
 }
 
 
-
-// ==============================
-// Search Bar (large screens)
-// This is wrapped as:  .main-header > .search > .search-input-wrap & .search-results
-// ==============================
-@media (min-width: 50rem) {
-
-	// Top-level search bar container, same width as main text
-	.main-header {
-
-		// Set padding equal to .main-content-wrap
-		padding-left: 2rem; 
-		padding-right: 2rem;
-
-		border: none; 		// Remove default border below the header
-	}
-
-	// The actual search bar with border
-    .search-input-wrap {
-        border-radius: 20px;
-		// box-shadow: inset 1px 1.3px 0.1px 10px #744b38;
-        box-shadow: 1px 1.3px 3px 0px #744b38;
-
-		// Make search span the whole textwidth
-		width: 100%;
-        min-width: 100%;
-
-    }
-
-	.search-results {
-
-		// Make search span the whole textwidth
-		width: 100%;
-		min-width: 100%;
-		box-shadow: 1px 1.3px 3px 0px #744b38;
-	}
-
-}
+ 
 
 
 
 // ==============================
-// Sidebar!
+// Sidebar and Search Bar
 // ==============================
 
 /*    We have the following sizes:
@@ -277,28 +240,22 @@ iPad / Smallest with sidebar (min-width: 50rem)
 Phones / Ultra-small (min-width: 31.25rem)
 	- Just the docs also automatically sets smaller text size
 
-We avoid scrolling in the sidebar by setting body[position]=relative and sidebar[position]=absolute. 
 
-Colours:
-	r- egular background: #f9f0e0
-	- background of highlighted page: #fcf8f1
+We avoid scrolling in the sidebar by setting body[position]=relative and sidebar[position]=absolute. 
 */ 
 
 
-// Remove the borders around categories (for us, these are the 'parts')
+// specify the borders around categories (for us, these are the 'parts'
 .nav-category {
-	border-top: 0px solid $color-borders-soft;
-	border-bottom: 0px solid $color-borders-soft;
+    // border-bottom: 1px solid $color-borders-soft;
+ border-top: 0px solid $color-borders-soft;
+ border-bottom: 0px solid $color-borders-soft;
+
 }
 
-// // Makes all elements (especially sidebar) take up all available vertical space. 
-// // (I believe this is already a default option - can be removed?
-// body {
-// 	position: relative; 
-// }
-
-
-// Generic styling for IPAD/LAPTOP/DESKTOP
+// Side border 
+// regular background: #f9f0e0
+// background of highlighted page: #fcf8f1
 @media (min-width: 50rem) {
     .side-bar {
 		border-right: none;
@@ -311,30 +268,39 @@ Colours:
 		box-shadow: 1px 1.3px 3px 0px #744b38;  // Box shadow, same as .search-input-wrap; // [inset] xstart, ystart, blur-size, shadow-size, color
     }
 
+	// Make search box nicely rounded
+	.search-input-wrap{
+		border-radius: 20px;
+		// box-shadow: inset 1px 1.3px 0.1px 10px #744b38;
+		box-shadow: 1px 1.3px 3px 0px #744b38;  // Box shadow, same as .search-input-wrap
+	}
+
 	// Create pretty borders for sidebar and search bar together. 
-	.search, .side-bar{
+	.search-input-wrap, .side-bar{
 		margin-top: 10px;
 	}
+
 
 	// Prevent overlap between search bar and sidebar. 
 	.main {
 		padding-left: 20px; // Ugly fix to make space with the sidebar. Flex elements cannot have regular margins. 
 	}
 
+	// Remove border around the header
+	.main-header{
+		border:none;
+	}
 
 
+}
+
+body {
+	position: relative; // Makes all elements (especially sidebar) take up all available vertical space. 
 }
 
 
 // Very large desktop screens: large sidebar, large logo
 @media (min-width: 1270px) {
-
-	.side-bar {
-		width: 23.5rem;		// Overwrites standard layout.scss (value: 16.5 rem)
-		margin-left: calc( (100% - 80rem)/2);	// Keep complete sidebar at fixed location
-		border-radius: 20px 20px 20px 20px;
-	}
-
 
 	// Make sidebar extra wide  
     .site-nav, .site-header, .site-footer {
@@ -362,18 +328,16 @@ Colours:
 		border-bottom: none;
 	}
 
+	// Make the main content a bit smaller (normally width: 50rem)
+	.main-content {
+		max-width: 42rem;
+	}
+
 	// Manage spacing of the Navigation area
 	.site-nav {
 		padding-top: 2rem;
 		padding-bottom: 2.4rem;
 	}
-
-	// Make the main content a bit smaller (normally width: 50rem)
-	// .main-content {
-	// 	max-width: 42rem;
-	// }
-
-
 }
 
 
