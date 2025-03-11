@@ -71,21 +71,6 @@ nav_exclude: true
   /* filter: drop-shadow(1px 2px 40px hsl(220deg 00% 00%) ); */
   
 }
-
-
-/**
- * Pen Specific Styles
- * ===================
-*/
-
-/* *, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-} */
-
-
-
 </style>
 
 <div class="book-container">
@@ -97,6 +82,9 @@ nav_exclude: true
 </div>
 
 
+
+
+<!-- Start main text -->
 
 **Introduction to Quantum Computing for Business** is an open-access book that contains everything you should know about quantum technologies, without going into tedious technical details. It answers questions such as:
 
@@ -115,8 +103,48 @@ As the first generation of quantum computers is on the horizon, understanding th
 
 This book, written by [Koen Groenland](https://www.koengroenland.com), is a gentle and business-oriented introduction to the opportunities and threats of quantum technologies. It equips you with the necessary knowledge to join cutting-edge discussions and to make strategic decisions. 
 
-<center>
-<a href="{{ site.baseurl }}/essentials/preface"><button class="btn fs-5 btn-outline" style="padding:1em;">Start reading > </button></a>
-</center>
+<!-- Start buttons -->
 
-📖 Prefer to read a printed version? A paperback edition will be released on [18 March 2025](https://www.aup.nl/en/book/9789048568987/introduction-to-quantum-computing-for-business).
+<style>
+.button-container {
+    display: flex;
+    width: 100%; /* Full width of the viewport */
+}
+
+.full-width-btn {
+    flex: 1; /* Each button takes equal space */
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    /* background-color: #007bff; */
+    /* color: white; */
+    cursor: pointer;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.full-width-btn:hover {
+    background-color:rgba(250, 218, 164, 0.28);
+}
+
+.btn{
+  width:100%;
+  height:80px;
+  background-color: #f9f0e0;
+  box-shadow: 1px 1.3px 3px 0px #744b38;
+  border-radius: 20px;
+
+}
+</style>
+
+<div class="button-container">
+
+<div class = "full-width-btn">
+<a href="{{ site.baseurl }}/essentials/preface"><button class="btn fs-5" style="padding:1em;">Read online</button></a>
+</div>
+
+<div class = "full-width-btn">
+<a href="https://www.aup.nl/en/book/9789048568987/introduction-to-quantum-computing-for-business"><button class="btn fs-5" style="padding:1em;">Order the paperback version </button></a>
+</div>
+
+</div>
