@@ -8,6 +8,12 @@ description: Introduction to Quantum Computing for Business can be found at all 
 
 ## Where to buy the paperback?
 
+Bookstores in most major countries should have the book in their database and will be able to order the book from their suppliers. Is it missing in your region? Please don't hesitate to [inform the publisher](https://www.aup.nl/en/about/contact)! 
+
+In the meantime, anyone in the world can enjoy the free online versions. You can download the [e-book](https://www.aup.nl/en/book/9789048568994/introduction-to-quantum-computing-for-business) directly from the publisher, or use [www.introtoquantum.org](www.introtoquantum.org) to read it as a web page (also works great on phones!).
+
+Below are some of the larger bookstores that I know about. The list is far from exhaustive! 
+
 
 ### United States (USA)
 (coming soon!)
@@ -18,9 +24,9 @@ description: Introduction to Quantum Computing for Business can be found at all 
 ### Belgium
 - [Amazon BE](https://www.amazon.com.be/-/en/Koen-Groenland/dp/9048568986)
 
-
+<!-- 
 ### Canada
-(coming soon!)
+(coming soon!) -->
 
 ### France
 - [Amazon FR](https://www.amazon.fr/Introduction-Quantum-Computing-Business-Groenland/dp/9048568986)
@@ -47,8 +53,3 @@ description: Introduction to Quantum Computing for Business can be found at all 
 - [Amazon UK](https://www.amazon.co.uk/Introduction-Quantum-Computing-Business-Groenland/dp/9048568986/)
 - [Waterstones](https://www.waterstones.com/book/introduction-to-quantum-computing-for-business/koen-groenland/9789048568987)
 
-## Not listed?
-
-Bookstores in most major countries should be able to order the book from their suppliers. If not, please don't hesitate to [inform the publisher](https://www.aup.nl/en/about/contact)! 
-
-In the meantime, please enjoy the free online versions. You can download the [e-book](https://www.aup.nl/en/book/9789048568994/introduction-to-quantum-computing-for-business) directly from the publisher, or use [www.introtoquantum.org](www.introtoquantum.org) to read it as a web page (also works great on phones!).
