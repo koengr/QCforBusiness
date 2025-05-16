@@ -8,25 +8,24 @@ description: Introduction to Quantum Computing for Business can be found at all 
 
 ## Where to buy the paperback?
 
-Bookstores in most major countries should have the book in their database and will be able to order the book from their suppliers. Is it missing in your region? Please don't hesitate to [inform the publisher](https://www.aup.nl/en/about/contact)! 
+Bookstores in most major countries should have the book in their database and will be able to order the book from their suppliers. Additionally, thanks to Wiley Distribution Services, the book can be shipped to nearly every country in the world! The most generic way to get the book is directly through the publisher [Amsterdam University Press](https://www.aup.nl/en/book/9789048568987/introduction-to-quantum-computing-for-business). 
 
-In the meantime, anyone in the world can enjoy the free online versions. You can download the [e-book](https://www.aup.nl/en/book/9789048568994/introduction-to-quantum-computing-for-business) directly from the publisher, or use [www.introtoquantum.org](www.introtoquantum.org) to read it as a web page (also works great on phones!).
+Alternatively, anyone in the world can enjoy the free online versions. You can **download the [e-book](https://www.aup.nl/en/book/9789048568994/introduction-to-quantum-computing-for-business)** directly from the publisher, or use [www.introtoquantum.org](www.introtoquantum.org) to read it as a web page (also works great on phones!).
 
 Below are some of the larger bookstores that I know about. The list is far from exhaustive! 
 
 
 ### United States (USA)
-(coming soon!)
+[Amsterdam University Press](https://www.aup.nl/en/book/9789048568987/introduction-to-quantum-computing-for-business)
 
-<!-- ## Australia
-(coming soon!) -->
+### Australia
+[Amsterdam University Press](https://www.aup.nl/en/book/9789048568987/introduction-to-quantum-computing-for-business)
 
 ### Belgium
 - [Amazon BE](https://www.amazon.com.be/-/en/Koen-Groenland/dp/9048568986)
 
-<!-- 
 ### Canada
-(coming soon!) -->
+[Amsterdam University Press](https://www.aup.nl/en/book/9789048568987/introduction-to-quantum-computing-for-business). 
 
 ### France
 - [Amazon FR](https://www.amazon.fr/Introduction-Quantum-Computing-Business-Groenland/dp/9048568986)
@@ -40,7 +39,7 @@ Below are some of the larger bookstores that I know about. The list is far from 
 ### The Netherlands
 
 - [Amazon NL](https://www.amazon.nl/-/en/Koen-Groenland/dp/9048568986)
-- [Amsterdam University Press (publisher)](https://www.aup.nl/en/book/9789048568987/introduction-to-quantum-computing-for-business)
+- [Amsterdam University Press](https://www.aup.nl/en/book/9789048568987/introduction-to-quantum-computing-for-business)
 - [Bol.com](https://www.bol.com/nl/nl/p/introduction-to-quantum-computing-for-business/)
 - [Bruna](https://www.bruna.nl/engelse-boeken/introduction-to-quantum-computing-for-business-9789048568987)
 - [Managementboek](https://www.managementboek.nl/boek/9789048568987/introduction-to-quantum-computing-for-business-koen-groenland)
