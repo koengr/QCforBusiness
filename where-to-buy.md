@@ -16,16 +16,17 @@ Below are some of the larger bookstores that I know about. The list is far from 
 
 
 ### United States (USA)
-[Amsterdam University Press](https://www.aup.nl/en/book/9789048568987/introduction-to-quantum-computing-for-business)
+- [Amsterdam University Press](https://www.aup.nl/en/book/9789048568987/introduction-to-quantum-computing-for-business)
+- [Amazon.com](https://www.amazon.com/Introduction-Quantum-Computing-Business-Groenland/dp/9048568986)
 
 ### Australia
-[Amsterdam University Press](https://www.aup.nl/en/book/9789048568987/introduction-to-quantum-computing-for-business)
+- [Amsterdam University Press](https://www.aup.nl/en/book/9789048568987/introduction-to-quantum-computing-for-business)
 
 ### Belgium
 - [Amazon BE](https://www.amazon.com.be/-/en/Koen-Groenland/dp/9048568986)
 
 ### Canada
-[Amsterdam University Press](https://www.aup.nl/en/book/9789048568987/introduction-to-quantum-computing-for-business). 
+- [Amsterdam University Press](https://www.aup.nl/en/book/9789048568987/introduction-to-quantum-computing-for-business) 
 
 ### France
 - [Amazon FR](https://www.amazon.fr/Introduction-Quantum-Computing-Business-Groenland/dp/9048568986)
